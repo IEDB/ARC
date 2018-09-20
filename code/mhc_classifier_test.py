@@ -33,5 +33,5 @@ def mro_tsvTofasta(mro_file, outfile=None):
 
 
 # Converts MRO chain_sequence.tsv file to fasta format file.
-#mro_tsvTofasta('../data/MRO-master_09202018/ontology/chain-sequence.tsv')
+mro_tsvTofasta('../data/MRO-master_09202018/ontology/chain-sequence.tsv')
 
