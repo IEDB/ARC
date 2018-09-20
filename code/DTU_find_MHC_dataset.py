@@ -3,6 +3,13 @@ import argparse
 import tempfile 
 from Bio import SeqIO
 
+"""
+How to run:
+# python DTU_find_MHC_dataset.py ../data/mro_chain_seq.fasta ../out/DTU_MHC-I_out.csv ../data/DTU_MHC_I_complete.hmm
+"""
+
+score_threshold=25
+
 ##################################
 ##          Functions           ##
 ##################################
@@ -69,9 +76,9 @@ sequences = SeqIO.parse(args.infile, 'fasta')
 for record in sequences:
   # Return None if the HMM does not align to the sequence 
   score = is_MHC(record.seq,args.hmm) 
-  if score != None:
+  if score != None and score >= score_threshold:
     # Only write out positive HMM scores 
-    outfile.write('{},{}\n'.format(record.id, score))
+    outfile.write('{},{}\n'.format(record.description, score))
 
 outfile.close()
 
