@@ -1,0 +1,3520 @@
+ID,class,chain_type
+'4FQX_B_beta II HLA-DRB1*01:01,MHC-II,beta
+'4GBX_B_beta II HLA-DRB1*01:01,MHC-II,beta
+'1S9V_D_alpha II HLA-DQA1*05:01/DQB1*02:01,MHC-II,alpha
+'1S9V_E_beta II HLA-DQA1*05:01/DQB1*02:01,MHC-II,beta
+'1WBY_A_alpha I H2-Db,MHC-I,alpha
+'1WBY_B_b2m I H2-Db,,
+'1WBX_A_alpha I H2-Db,MHC-I,alpha
+'1WBX_B_b2m I H2-Db,,
+'1WBZ_A_alpha I H2-Kb,MHC-I,alpha
+'1WBZ_B_b2m I H2-Kb,,
+'1YDP_A_non classical non classical HLA-G*01:01,MHC-I,alpha
+'1YDP_B_non classical non classical HLA-G*01:01,,
+'1HQR_A_alpha II HLA-DRA*01:01/DRB5*01:01,MHC-II,alpha
+'1HQR_B_beta II HLA-DRA*01:01/DRB5*01:01,MHC-II,beta
+'1HXY_A_alpha II HLA-DRA*01:01/DRB1*01:01,MHC-II,alpha
+'1HXY_B_beta II HLA-DRA*01:01/DRB1*01:01,MHC-II,beta
+'1P1Z_A_alpha I H2-Kb,MHC-I,alpha
+'1P1Z_B_b2m I H2-Kb,,
+'1P4L_A_alpha I H2-Kb,MHC-I,alpha
+'1P4L_B_b2m I H2-Kb,,
+'2BSR_A_alpha I HLA-B*27:05,MHC-I,alpha
+'2BSR_B_b2m I HLA-B*27:05,,
+'2BSS_A_alpha I HLA-B*27:05,MHC-I,alpha
+'2BSS_B_b2m I HLA-B*27:05,,
+'2BST_A_alpha I HLA-B*27:05,MHC-I,alpha
+'2BST_B_b2m I HLA-B*27:05,,
+'2AK4_Q_alpha I HLA-B*35:08,MHC-I,alpha
+'2AK4_R_b2m I HLA-B*35:08,,
+'2G9H_A_alpha II HLA-DRA*01:01/DRB1*01:01,MHC-II,alpha
+'2G9H_B_beta II HLA-DRA*01:01/DRB1*01:01,MHC-II,beta
+'2F74_A_alpha I H2-Db,MHC-I,alpha
+'2F74_B_b2m I H2-Db,,
+'2VAA_A_alpha I H2-Kb,MHC-I,alpha
+'2VAA_B_b2m I H2-Kb,,
+'2VAB_A_alpha I H2-Kb,MHC-I,alpha
+'2VAB_B_b2m I H2-Kb,,
+'2VE6_A_alpha I H2-Db,MHC-I,alpha
+'2VE6_B_b2m I H2-Db,,
+'4JFE_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4JFE_B_b2m I HLA-A*02:01,,
+'4JFO_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4JFO_B_b2m I HLA-A*02:01,,
+'4JFQ_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4JFQ_B_b2m I HLA-A*02:01,,
+'4JFF_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4JFF_B_b2m I HLA-A*02:01,,
+'4JFD_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4JFD_B_b2m I HLA-A*02:01,,
+'4JFP_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4JFP_B_b2m I HLA-A*02:01,,
+'3C5J_B_beta II HLA-DRB3*03:01,MHC-II,beta
+'1I4F_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1I4F_B_b2m I HLA-A*02:01,,
+'3CPL_A_alpha I H2-Db,MHC-I,alpha
+'3CPL_B_b2m I H2-Db,,
+'4Z78_A_alpha I H2-Kd,MHC-I,alpha
+'4Z78_B_b2m I H2-Kd,,
+'4WDI_A_alpha I H2-Kd,MHC-I,alpha
+'4WDI_B_b2m I H2-Kd,,
+'4Z76_A_alpha I H2-Kd,MHC-I,alpha
+'4Z76_B_b2m I H2-Kd,,
+'3WL9_A_alpha I HLA-A*24:02,MHC-I,alpha
+'3WL9_B_b2m I HLA-A*24:02,,
+'3WLB_A_alpha I HLA-A*24:02,MHC-I,alpha
+'3WLB_B_b2m I HLA-A*24:02,,
+'1A9E_A_alpha I HLA-B*35:01,MHC-I,alpha
+'1A9E_B_b2m I HLA-B*35:01,,
+'1A9B_A_alpha I HLA-B*35:01,MHC-I,alpha
+'1A9B_B_b2m I HLA-B*35:01,,
+'1N3N_A_alpha I H2-Db,MHC-I,alpha
+'1N3N_B_b2m I H2-Db,,
+'2FO4_A_alpha I H2-Kb,MHC-I,alpha
+'2FO4_B_b2m I H2-Kb,,
+'4NT6_A_alpha I HLA-C*08:01,MHC-I,alpha
+'4NT6_B_b2m I HLA-C*08:01,,
+'3NWM_A_alpha I H2-Kd,MHC-I,alpha
+'3NWM_nan_b2m I H2-Kd,,
+'3LV3_A_alpha I HLA-B*27:05,MHC-I,alpha
+'3LV3_B_b2m I HLA-B*27:05,,
+'3B3I_A_alpha I HLA-B*27:09,MHC-I,alpha
+'3B3I_B_b2m I HLA-B*27:09,,
+'3B6S_A_alpha I HLA-B*27:05,MHC-I,alpha
+'3B6S_B_b2m I HLA-B*27:05,,
+'2XPG_A_alpha I HLA-A*03:01,MHC-I,alpha
+'2XPG_B_b2m I HLA-A*03:01,,
+'3P4M_A_alpha I H2-Kb,MHC-I,alpha
+'3P4M_B_b2m I H2-Kb,,
+'3P4N_A_alpha I H2-Kb,MHC-I,alpha
+'3P4N_B_b2m I H2-Kb,,
+'3P4O_A_alpha I H2-Kb,MHC-I,alpha
+'3P4O_B_b2m I H2-Kb,,
+'2FWO_A_alpha I H2-Kd,MHC-I,alpha
+'2FWO_B_b2m I H2-Kd,,
+'6BIR_B_beta II HLA-DRB1*04:04,MHC-II,beta
+'6BIX_B_beta II HLA-DRB1*04:04,MHC-II,beta
+'6BIZ_B_beta II HLA-DRB1*04:04,MHC-II,beta
+'6BIN_B_beta II HLA-DRB1*04:01,MHC-II,beta
+'5NME_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5NME_B_b2m I HLA-A*02:01,,
+'5NMF_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5NMF_B_b2m I HLA-A*02:01,,
+'5NMG_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5NMG_B_b2m I HLA-A*02:01,,
+'5NMH_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5NMH_B_b2m I HLA-A*02:01,,
+'5WJL_A_nan I HLA-A*11:01,MHC-I,alpha
+'5WJL_B_nan I HLA-A*11:01,,
+'5WKF_A_nan I HLA-A*11:01,MHC-I,alpha
+'5WKF_B_nan I HLA-A*11:01,,
+'5WJN_A_nan I HLA-A*11:01,MHC-I,alpha
+'5WJN_B_nan I HLA-A*11:01,,
+'5JLZ_A_alpha II HLA-DRA*01:01/DRB1*04:01,MHC-II,alpha
+'5JLZ_B_beta II HLA-DRA*01:01/DRB1*04:01,MHC-II,beta
+'3VH8_A_alpha I HLA-B*57:01,MHC-I,alpha
+'3VH8_B_b2m I HLA-B*57:01,,
+'4HUW_A_alpha I H2-Db,MHC-I,alpha
+'4HUW_B_b2m I H2-Db,,
+'4HUV_A_alpha I H2-Db,MHC-I,alpha
+'4HUV_B_b2m I H2-Db,,
+'4HUU_A_alpha I H2-Db,MHC-I,alpha
+'4HUU_B_b2m I H2-Db,,
+'5WKH_A_nan I HLA-A*11:01,MHC-I,alpha
+'5WKH_B_nan I HLA-A*11:01,,
+'2YPK_A_alpha I HLA-B*57:01,MHC-I,alpha
+'2YPK_B_b2m I HLA-B*57:01,,
+'2YPL_A_alpha I HLA-B*57:03,MHC-I,alpha
+'2YPL_B_b2m I HLA-B*57:03,,
+'4HKJ_A_alpha I H2-Kb,MHC-I,alpha
+'4HKJ_B_b2m I H2-Kb,,
+'5E8N_A_alpha I H2-Db,MHC-I,alpha
+'5E8N_B_b2m I H2-Db,,
+'5E8P_A_alpha I H2-Db,MHC-I,alpha
+'5E8P_B_b2m I H2-Db,,
+'5E8O_A_alpha I H2-Db,MHC-I,alpha
+'5E8O_B_b2m I H2-Db,,
+'1QO3_A_alpha I H2-Dd,MHC-I,alpha
+'1QO3_B_b2m I H2-Dd,,
+'1AKJ_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1AKJ_B_b2m I HLA-A*02:01,,
+'1BII_A_alpha I H2-Dd,MHC-I,alpha
+'1BII_B_b2m I H2-Dd,,
+'1DDH_A_alpha I H2-Dd,MHC-I,alpha
+'1DDH_B_b2m I H2-Dd,,
+'1I1Y_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1I1Y_B_b2m I HLA-A*02:01,,
+'1I1F_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1I1F_B_b2m I HLA-A*02:01,,
+'1ZVS_A_alpha I Mamu-A1*001:01,MHC-I,alpha
+'1ZVS_B_b2m I Mamu-A1*001:01,,
+'5NMK_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5NMK_B_b2m I HLA-A*02:01,,
+'1A1N_A_alpha I HLA-B*35:01,MHC-I,alpha
+'1A1N_B_b2m I HLA-B*35:01,,
+'1IM9_A_alpha I HLA-C*04:01,MHC-I,alpha
+'1IM9_B_b2m I HLA-C*04:01,,
+'3FOL_A_alpha I H2-Kwm7,MHC-I,alpha
+'3FOL_B_b2m I H2-Kwm7,,
+'3FOM_A_alpha I H2-Kwm7,MHC-I,alpha
+'3FOM_B_b2m I H2-Kwm7,,
+'3LQZ_A_alpha II HLA-DPA1*01:03/DPB1*02:01,MHC-II,alpha
+'3LQZ_B_beta II HLA-DPA1*01:03/DPB1*02:01,MHC-II,beta
+'4WUU_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4WUU_B_b2m I HLA-A*02:01,,
+'3QXD_B_beta II HLA-DRA*01:01 F54C mutant/DRB1*01:01,MHC-II,beta
+'3QXA_A_alpha II HLA-DRA*01:01/DRB1*01:01,MHC-II,alpha
+'3QXA_B_beta II HLA-DRA*01:01/DRB1*01:01,MHC-II,beta
+'5TEZ_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5TEZ_B_b2m I HLA-A*02:01,,
+'1AQD_G_alpha II HLA-DRA*01:01/DRB1*01:01,MHC-II,alpha
+'1AQD_H_beta II HLA-DRA*01:01/DRB1*01:01,MHC-II,beta
+'4MJI_A_alpha I HLA-B*51:01,MHC-I,alpha
+'4MJI_B_b2m I HLA-B*51:01,,
+'1JK8_B_beta II HLA-DQB1*03:02,MHC-II,beta
+'2ICW_B_beta II HLA-DRB1*01:01,MHC-II,beta
+'1ZSD_A_alpha I HLA-B*35:01,MHC-I,alpha
+'1ZSD_B_b2m I HLA-B*35:01,,
+'4K7F_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4K7F_B_b2m I HLA-A*02:01,,
+'4PG2_A_alpha I H2-Db,MHC-I,alpha
+'4PG2_C_b2m I H2-Db,,
+'5IM7_A_alpha I HLA-B*58:01,MHC-I,alpha
+'5IM7_B_b2m I HLA-B*58:01,,
+'3BO8_A_alpha I HLA-A*01:01,MHC-I,alpha
+'3BO8_B_b2m I HLA-A*01:01,,
+'3D25_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3D25_B_b2m I HLA-A*02:01,,
+'1P7Q_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1P7Q_B_b2m I HLA-A*02:01,,
+'3CDG_A_non classical non classical HLA-E*01:03,MHC-I,alpha
+'3CDG_B_non classical non classical HLA-E*01:03,,
+'3ECB_A_alpha I H2-Dd,MHC-I,alpha
+'3ECB_B_b2m I H2-Dd,,
+'3DMM_A_alpha I H2-Dd,MHC-I,alpha
+'3DMM_B_b2m I H2-Dd,,
+'3C8K_A_alpha I H2-Kb,MHC-I,alpha
+'3C8K_B_b2m I H2-Kb,,
+'3KLA_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3KLA_B_b2m I HLA-A*02:01,,
+'3KYO_A_non classical non classical HLA-G*01:01,MHC-I,alpha
+'3KYO_B_non classical non classical HLA-G*01:01,,
+'3KYN_A_non classical non classical HLA-G*01:01,MHC-I,alpha
+'3KYN_B_non classical non classical HLA-G*01:01,,
+'3LV3_A_alpha I HLA-B*27:05,MHC-I,alpha
+'3LV3_B_b2m I HLA-B*27:05,,
+'4L8D_A_alpha I H2-Db,MHC-I,alpha
+'4L8D_B_b2m I H2-Db,,
+'4L8C_A_alpha I H2-Db,MHC-I,alpha
+'4L8C_B_b2m I H2-Db,,
+'1BZ9_A_alpha I H2-Db,MHC-I,alpha
+'1BZ9_B_b2m I H2-Db,,
+'1B0G_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1B0G_B_b2m I HLA-A*02:01,,
+'1JGE_A_alpha I HLA-B*27:05,MHC-I,alpha
+'1JGE_B_b2m I HLA-B*27:05,,
+'1K5N_A_alpha I HLA-B*27:09,MHC-I,alpha
+'1K5N_B_b2m I HLA-B*27:09,,
+'2QRI_A_alpha I H2-Kb,MHC-I,alpha
+'2QRI_nan_b2m I H2-Kb,,
+'2IPK_A_alpha II HLA-DRA*01:01/DRB1*01:01,MHC-II,alpha
+'2IPK_B_beta II HLA-DRA*01:01/DRB1*01:01,MHC-II,beta
+'1SYV_A_alpha I HLA-B*44:05,MHC-I,alpha
+'1SYV_B_b2m I HLA-B*44:05,,
+'1SYS_A_alpha I HLA-B*44:03,MHC-I,alpha
+'1SYS_B_b2m I HLA-B*44:03,,
+'1G6R_H_alpha I H2-Kb,MHC-I,alpha
+'1G6R_L_b2m I H2-Kb,,
+'4L3E_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4L3E_B_b2m I HLA-A*02:01,,
+'1LP9_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1LP9_B_b2m I HLA-A*02:01,,
+'3MRG_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3MRG_B_b2m I HLA-A*02:01,,
+'3MRH_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3MRH_B_b2m I HLA-A*02:01,,
+'3MRL_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3MRL_B_b2m I HLA-A*02:01,,
+'3MRO_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3MRO_B_b2m I HLA-A*02:01,,
+'3MRR_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3MRR_B_b2m I HLA-A*02:01,,
+'3MRC_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3MRC_B_b2m I HLA-A*02:01,,
+'3BUY_A_alpha I H2-Db,MHC-I,alpha
+'3BUY_B_b2m I H2-Db,,
+'1FV1_A_alpha II HLA-DRA*01:01/DRB5*01:01,MHC-II,alpha
+'1FV1_B_beta II HLA-DRA*01:01/DRB5*01:01,MHC-II,beta
+'1JHT_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1JHT_B_b2m I HLA-A*02:01,,
+'1JF1_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1JF1_B_b2m I HLA-A*02:01,,
+'2BNR_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2BNR_B_b2m I HLA-A*02:01,,
+'2BNQ_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2BNQ_B_b2m I HLA-A*02:01,,
+'3PGD_B_beta II HLA-DRB1*01:01,MHC-II,beta
+'3PGC_B_beta II HLA-DRB1*01:01,MHC-II,beta
+'3PDO_B_beta II HLA-DRB1*01:01,MHC-II,beta
+'1OSZ_A_alpha I H2-Kb,MHC-I,alpha
+'1OSZ_B_b2m I H2-Kb,,
+'2ZOK_A_alpha I H2-Db,MHC-I,alpha
+'2ZOK_B_b2m I H2-Db,,
+'2ZOL_A_alpha I H2-Db,MHC-I,alpha
+'2ZOL_B_b2m I H2-Db,,
+'4GG6_A_alpha II HLA-DQA1*03:01/DQB1*03:02,MHC-II,alpha
+'4GG6_B_beta II HLA-DQA1*03:01/DQB1*03:02,MHC-II,beta
+'1Q94_A_alpha I HLA-A*11:01,MHC-I,alpha
+'1Q94_B_b2m I HLA-A*11:01,,
+'1QVO_A_alpha I HLA-A*11:01,MHC-I,alpha
+'1QVO_B_b2m I HLA-A*11:01,,
+'2D31_A_non classical non classical HLA-G*01:01,MHC-I,alpha
+'2D31_B_non classical non classical HLA-G*01:01,,
+'2CLR_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2CLR_B_b2m I HLA-A*02:01,,
+'1YMM_B_beta II HLA-DRB1*15:01,MHC-II,beta
+'1D9K_C_alpha II H2-IAk,MHC-II,alpha
+'1D9K_D_beta II H2-IAk,MHC-II,beta
+'1ZGL_A_alpha II HLA-DRA*01:01/DRB5*01:01,MHC-II,alpha
+'1ZGL_B_beta II HLA-DRA*01:01/DRB5*01:01,MHC-II,beta
+'2FSE_A_alpha II HLA-DRA*01:01/DRB1*01:01,MHC-II,alpha
+'2FSE_B_beta II HLA-DRA*01:01/DRB1*01:01,MHC-II,beta
+'2IAN_B_beta II HLA-DRB1*01:01,MHC-II,beta
+'2IAM_B_beta II HLA-DRB1*01:01,MHC-II,beta
+'1S8D_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1S8D_B_b2m I HLA-A*02:01,,
+'1T21_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1T21_B_b2m I HLA-A*02:01,,
+'1T22_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1T22_B_b2m I HLA-A*02:01,,
+'1T20_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1T20_B_b2m I HLA-A*02:01,,
+'1T1X_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1T1X_B_b2m I HLA-A*02:01,,
+'1T1Y_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1T1Y_B_b2m I HLA-A*02:01,,
+'1T1Z_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1T1Z_B_b2m I HLA-A*02:01,,
+'1T1W_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1T1W_B_b2m I HLA-A*02:01,,
+'2A83_A_alpha I HLA-B*27:05,MHC-I,alpha
+'2A83_B_b2m I HLA-B*27:05,,
+'1RK1_A_alpha I H2-Kb,MHC-I,alpha
+'1RK1_B_b2m I H2-Kb,,
+'1RK0_A_alpha I H2-Kb,MHC-I,alpha
+'1RK0_B_b2m I H2-Kb,,
+'4L8B_A_alpha I H2-Db,MHC-I,alpha
+'4L8B_B_b2m I H2-Db,,
+'1H15_A_alpha II HLA-DRA*01:01/DRB5*01:01,MHC-II,alpha
+'1H15_B_beta II HLA-DRA*01:01/DRB5*01:01,MHC-II,beta
+'1YN6_A_alpha I H2-Db,MHC-I,alpha
+'1YN6_B_b2m I H2-Db,,
+'1X7Q_A_alpha I HLA-A*11:01,MHC-I,alpha
+'1X7Q_B_b2m I HLA-A*11:01,,
+'2HN7_A_alpha I HLA-A*11:01,MHC-I,alpha
+'2HN7_B_b2m I HLA-A*11:01,,
+'1U3H_C_alpha II H2-IAu,MHC-II,alpha
+'1U3H_D_beta II H2-IAu,MHC-II,beta
+'4HX1_A_alpha I HLA-A*68:02,MHC-I,alpha
+'4HX1_B_b2m I HLA-A*68:02,,
+'4HWZ_A_alpha I HLA-A*68:01,MHC-I,alpha
+'4HWZ_B_b2m I HLA-A*68:01,,
+'4GKS_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4GKS_B_b2m I HLA-A*02:01,,
+'4GKN_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4GKN_B_b2m I HLA-A*02:01,,
+'4I48_A_alpha I HLA-A*68:02,MHC-I,alpha
+'4I48_B_b2m I HLA-A*68:02,,
+'2XFX_A_alpha I BoLA-6*01301,MHC-I,alpha
+'2XFX_B_b2m I BoLA-6*01301,,
+'1KBG_H_alpha I H2-Kb,MHC-I,alpha
+'1KBG_L_b2m I H2-Kb,,
+'1G7Q_A_alpha I H2-Kb,MHC-I,alpha
+'1G7Q_B_b2m I H2-Kb,,
+'4NQV_A_alpha I HLA-A*01:01,MHC-I,alpha
+'4NQV_B_b2m I HLA-A*01:01,,
+'4NQX_A_alpha I HLA-A*01:01,MHC-I,alpha
+'4NQX_B_b2m I HLA-A*01:01,,
+'4MNQ_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4MNQ_B_b2m I HLA-A*02:01,,
+'1UXS_A_alpha I HLA-B*27:05,MHC-I,alpha
+'1UXS_B_b2m I HLA-B*27:05,,
+'1UXW_A_alpha I HLA-B*27:09,MHC-I,alpha
+'1UXW_B_b2m I HLA-B*27:09,,
+'3LN4_A_alpha I HLA-B*41:03,MHC-I,alpha
+'3LN4_B_b2m I HLA-B*41:03,,
+'3LN5_A_alpha I HLA-B*41:04,MHC-I,alpha
+'3LN5_B_b2m I HLA-B*41:04,,
+'3FON_A_alpha I H2-Kwm7,MHC-I,alpha
+'3FON_B_b2m I H2-Kwm7,,
+'2BCK_A_alpha I HLA-A*24:02,MHC-I,alpha
+'2BCK_B_b2m I HLA-A*24:02,,
+'2ZSV_A_alpha I H2-Kb,MHC-I,alpha
+'2ZSV_B_b2m I H2-Kb,,
+'1LD9_A_alpha I H2-Ld,MHC-I,alpha
+'1LD9_B_b2m I H2-Ld,,
+'1VAC_A_alpha I H2-Kb,MHC-I,alpha
+'1VAC_B_b2m I H2-Kb,,
+'1VAD_A_alpha I H2-Kb,MHC-I,alpha
+'1VAD_B_b2m I H2-Kb,,
+'2Q6W_B_beta II HLA-DRB3*01:01,MHC-II,beta
+'2Z31_C_alpha II H2-IAu,MHC-II,alpha
+'2Z31_D_beta II H2-IAu,MHC-II,beta
+'2PXY_C_alpha II H2-IAu,MHC-II,alpha
+'2PXY_D_beta II H2-IAu,MHC-II,beta
+'3TIE_A_alpha I H2-Kb,MHC-I,alpha
+'3TIE_B_b2m I H2-Kb,,
+'3TID_A_alpha I H2-Kb,MHC-I,alpha
+'3TID_B_b2m I H2-Kb,,
+'1ZHB_A_alpha I H2-Db,MHC-I,alpha
+'1ZHB_B_b2m I H2-Db,,
+'2AK4_A_alpha I HLA-B*35:08,MHC-I,alpha
+'2AK4_B_b2m I HLA-B*35:08,,
+'5JWE_A_alpha I H2-Db,MHC-I,alpha
+'5JWE_B_b2m I H2-Db,,
+'5JWD_A_alpha I H2-Db,MHC-I,alpha
+'5JWD_B_b2m I H2-Db,,
+'5DEG_A_alpha I HLA-B*27:06,MHC-I,alpha
+'5DEG_B_b2m I HLA-B*27:06,,
+'5EU6_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5EU6_B_b2m I HLA-A*02:01,,
+'5EU3_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5EU3_B_b2m I HLA-A*02:01,,
+'5EU4_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5EU4_B_b2m I HLA-A*02:01,,
+'5EU5_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5EU5_B_b2m I HLA-A*02:01,,
+'3P9L_A_alpha I H2-Kb,MHC-I,alpha
+'3P9L_B_b2m I H2-Kb,,
+'3PAB_A_alpha I H2-Kb,MHC-I,alpha
+'3PAB_B_b2m I H2-Kb,,
+'5IND_A_alpha I HLA-B*58:01,MHC-I,alpha
+'5IND_B_b2m I HLA-B*58:01,,
+'5INC_A_alpha I HLA-B*58:01,MHC-I,alpha
+'5INC_B_b2m I HLA-B*58:01,,
+'3P9M_A_alpha I H2-Kb,MHC-I,alpha
+'3P9M_B_b2m I H2-Kb,,
+'5V5L_A_alpha I HLA-B*58:01,MHC-I,alpha
+'5V5L_B_b2m I HLA-B*58:01,,
+'5V5M_A_alpha I HLA-B*57:01,MHC-I,alpha
+'5V5M_B_b2m I HLA-B*57:01,,
+'1FFP_A_alpha I H2-Db,MHC-I,alpha
+'1FFP_B_b2m I H2-Db,,
+'1FFN_A_alpha I H2-Db,MHC-I,alpha
+'1FFN_B_b2m I H2-Db,,
+'1FFO_A_alpha I H2-Db,MHC-I,alpha
+'1FFO_B_b2m I H2-Db,,
+'3BW9_A_alpha I HLA-B*35:08,MHC-I,alpha
+'3BW9_B_b2m I HLA-B*35:08,,
+'3BWA_A_alpha I HLA-B*35:08,MHC-I,alpha
+'3BWA_B_b2m I HLA-B*35:08,,
+'2BVP_A_alpha I HLA-B*57:03,MHC-I,alpha
+'2BVP_B_b2m I HLA-B*57:03,,
+'2BVO_A_alpha I HLA-B*57:03,MHC-I,alpha
+'2BVO_B_b2m I HLA-B*57:03,,
+'2BVQ_A_alpha I HLA-B*57:03,MHC-I,alpha
+'2BVQ_B_b2m I HLA-B*57:03,,
+'2HJK_A_alpha I HLA-B*57:03,MHC-I,alpha
+'2HJK_B_b2m I HLA-B*57:03,,
+'2HJL_A_alpha I HLA-B*57:03,MHC-I,alpha
+'2HJL_B_b2m I HLA-B*57:03,,
+'1AGE_A_alpha I HLA-B*08:01,MHC-I,alpha
+'1AGE_B_b2m I HLA-B*08:01,,
+'1AGC_A_alpha I HLA-B*08:01,MHC-I,alpha
+'1AGC_B_b2m I HLA-B*08:01,,
+'1AGF_A_alpha I HLA-B*08:01,MHC-I,alpha
+'1AGF_B_b2m I HLA-B*08:01,,
+'1AGB_A_alpha I HLA-B*08:01,MHC-I,alpha
+'1AGB_B_b2m I HLA-B*08:01,,
+'1AGD_A_alpha I HLA-B*08:01,MHC-I,alpha
+'1AGD_B_b2m I HLA-B*08:01,,
+'3BGM_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3BGM_B_b2m I HLA-A*02:01,,
+'3BH8_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3BH8_B_b2m I HLA-A*02:01,,
+'3BH9_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3BH9_B_b2m I HLA-A*02:01,,
+'3BHB_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3BHB_B_b2m I HLA-A*02:01,,
+'2H6P_A_alpha I HLA-B*35:01,MHC-I,alpha
+'2H6P_B_b2m I HLA-B*35:01,,
+'2FYY_A_alpha I HLA-B*35:01,MHC-I,alpha
+'2FYY_B_b2m I HLA-B*35:01,,
+'1EFX_A_alpha I HLA-C*03:04,MHC-I,alpha
+'1EFX_B_b2m I HLA-C*03:04,,
+'3W39_A_alpha I HLA-B*52:01,MHC-I,alpha
+'3W39_B_b2m I HLA-B*52:01,,
+'3MRD_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3MRD_B_b2m I HLA-A*02:01,,
+'3MRE_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3MRE_B_b2m I HLA-A*02:01,,
+'1LK2_A_alpha I H2-Kb,MHC-I,alpha
+'1LK2_B_b2m I H2-Kb,,
+'3HPJ_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3HPJ_B_b2m I HLA-A*02:01,,
+'1S7V_A_alpha I H2-Db,MHC-I,alpha
+'1S7V_B_b2m I H2-Db,,
+'1S7R_A_alpha I H2-Kb,MHC-I,alpha
+'1S7R_B_b2m I H2-Kb,,
+'1S7W_A_alpha I H2-Db,MHC-I,alpha
+'1S7W_B_b2m I H2-Db,,
+'1S7T_A_alpha I H2-Kb,MHC-I,alpha
+'1S7T_B_b2m I H2-Kb,,
+'1S7S_A_alpha I H2-Kb,MHC-I,alpha
+'1S7S_B_b2m I H2-Kb,,
+'1S7Q_A_alpha I H2-Kb,MHC-I,alpha
+'1S7Q_B_b2m I H2-Kb,,
+'1S7U_A_alpha I H2-Db,MHC-I,alpha
+'1S7U_B_b2m I H2-Db,,
+'1S7X_A_alpha I H2-Db,MHC-I,alpha
+'1S7X_D_b2m I H2-Db,,
+'1I7R_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1I7R_B_b2m I HLA-A*02:01,,
+'1I7U_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1I7U_B_b2m I HLA-A*02:01,,
+'1I7T_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1I7T_B_b2m I HLA-A*02:01,,
+'4NO2_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4NO2_B_b2m I HLA-A*02:01,,
+'4NO0_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4NO0_B_b2m I HLA-A*02:01,,
+'4NO3_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4NO3_B_b2m I HLA-A*02:01,,
+'4NO5_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4NO5_B_b2m I HLA-A*02:01,,
+'4NNX_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4NNX_B_b2m I HLA-A*02:01,,
+'4NNY_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4NNY_B_b2m I HLA-A*02:01,,
+'3TF7_A_alpha I H2-Ld,MHC-I,alpha
+'3TF7_nan_b2m I H2-Ld,,
+'3TPU_E_alpha I H2-Ld,MHC-I,alpha
+'3TPU_nan_b2m I H2-Ld,,
+'3TFK_A_alpha I H2-Ld,MHC-I,alpha
+'3TFK_nan_b2m I H2-Ld,,
+'3TJH_A_alpha I H2-Ld,MHC-I,alpha
+'3TJH_nan_b2m I H2-Ld,,
+'1JUF_A_alpha I H2-Db,MHC-I,alpha
+'1JUF_B_b2m I H2-Db,,
+'1M6O_A_alpha I HLA-B*44:02,MHC-I,alpha
+'1M6O_B_b2m I HLA-B*44:02,,
+'1N2R_A_alpha I HLA-B*44:03,MHC-I,alpha
+'1N2R_B_b2m I HLA-B*44:03,,
+'1W0V_A_alpha I HLA-B*27:05,MHC-I,alpha
+'1W0V_B_b2m I HLA-B*27:05,,
+'1W0W_A_alpha I HLA-B*27:09,MHC-I,alpha
+'1W0W_B_b2m I HLA-B*27:09,,
+'1B0R_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1B0R_B_b2m I HLA-A*02:01,,
+'1YN7_A_alpha I H2-Db,MHC-I,alpha
+'1YN7_B_b2m I H2-Db,,
+'1OF2_A_alpha I HLA-B*27:09,MHC-I,alpha
+'1OF2_B_b2m I HLA-B*27:09,,
+'1OGT_A_alpha I HLA-B*27:05,MHC-I,alpha
+'1OGT_B_b2m I HLA-B*27:05,,
+'1UVQ_A_alpha II HLA-DQA1*01:02/DQB1*06:02,MHC-II,alpha
+'1UVQ_B_beta II HLA-DQA1*01:02/DQB1*06:02,MHC-II,beta
+'3LKN_A_alpha I HLA-B*35:01,MHC-I,alpha
+'3LKN_B_b2m I HLA-B*35:01,,
+'3LKO_A_alpha I HLA-B*35:01,MHC-I,alpha
+'3LKO_B_b2m I HLA-B*35:01,,
+'3LKP_A_alpha I HLA-B*35:01,MHC-I,alpha
+'3LKP_B_b2m I HLA-B*35:01,,
+'3LKQ_A_alpha I HLA-B*35:01,MHC-I,alpha
+'3LKQ_B_b2m I HLA-B*35:01,,
+'3LKS_A_alpha I HLA-B*35:01,MHC-I,alpha
+'3LKS_B_b2m I HLA-B*35:01,,
+'3LKR_A_alpha I HLA-B*35:01,MHC-I,alpha
+'3LKR_B_b2m I HLA-B*35:01,,
+'1A1O_A_alpha I HLA-B*53:01,MHC-I,alpha
+'1A1O_B_b2m I HLA-B*53:01,,
+'1A1M_A_alpha I HLA-B*53:01,MHC-I,alpha
+'1A1M_B_b2m I HLA-B*53:01,,
+'2RFX_A_alpha I HLA-B*57:01,MHC-I,alpha
+'2RFX_B_b2m I HLA-B*57:01,,
+'4NO5_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4NO5_B_b2m I HLA-A*02:01,,
+'4NNX_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4NNX_B_b2m I HLA-A*02:01,,
+'4NNY_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4NNY_B_b2m I HLA-A*02:01,,
+'4NO2_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4NO2_B_b2m I HLA-A*02:01,,
+'4NO0_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4NO0_B_b2m I HLA-A*02:01,,
+'4NO3_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4NO3_B_b2m I HLA-A*02:01,,
+'5B38_A_alpha I HLA-B*57:01,MHC-I,alpha
+'5B38_B_b2m I HLA-B*57:01,,
+'5B39_A_alpha I HLA-B*57:01,MHC-I,alpha
+'5B39_B_b2m I HLA-B*57:01,,
+'3PQY_A_alpha I H2-Db,MHC-I,alpha
+'3PQY_B_b2m I H2-Db,,
+'5WET_A_alpha I H2-Dd,MHC-I,alpha
+'5WET_B_b2m I H2-Dd,,
+'5WEU_A_alpha I H2-Dd,MHC-I,alpha
+'5WEU_B_b2m I H2-Dd,,
+'1DLH_B_beta II HLA-DRB1*01:01,MHC-II,beta
+'1K2D_A_alpha II H2-IAu,MHC-II,alpha
+'1K2D_B_beta II H2-IAu,MHC-II,beta
+'2OJE_B_beta II HLA-DRB1*01:01,MHC-II,beta
+'4PV9_A_alpha I H2-Kb,MHC-I,alpha
+'4PV9_B_b2m I H2-Kb,,
+'4PV8_A_alpha I H2-Kb,MHC-I,alpha
+'4PV8_B_b2m I H2-Kb,,
+'1KPR_A_non classical non classical HLA-E*01:03,MHC-I,alpha
+'1KPR_B_non classical non classical HLA-E*01:03,,
+'1KTL_A_non classical non classical HLA-E*01:03,MHC-I,alpha
+'1KTL_B_non classical non classical HLA-E*01:03,,
+'1G7P_A_alpha I H2-Kb,MHC-I,alpha
+'1G7P_B_b2m I H2-Kb,,
+'2ZSW_A_alpha I H2-Kb,MHC-I,alpha
+'2ZSW_H_b2m I H2-Kb,,
+'3MGT_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3MGT_B_b2m I HLA-A*02:01,,
+'1MUJ_A_alpha II H2-IAb,MHC-II,alpha
+'1MUJ_B_beta II H2-IAb,MHC-II,beta
+'4H1L_B_beta II HLA-DRB3*03:01,MHC-II,beta
+'3I6G_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3I6G_B_b2m I HLA-A*02:01,,
+'3I6K_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3I6K_B_b2m I HLA-A*02:01,,
+'3VJ6_A_non classical non classical H2-Qa-1b,MHC-I,alpha
+'2F53_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2F53_B_b2m I HLA-A*02:01,,
+'2F54_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2F54_B_b2m I HLA-A*02:01,,
+'2F54_F_alpha I HLA-A*02:01,MHC-I,alpha
+'2F54_G_b2m I HLA-A*02:01,,
+'4OZI_A_alpha II HLA-DQA1*05:01/DQB1*02:01,MHC-II,alpha
+'4OZI_B_beta II HLA-DQA1*05:01/DQB1*02:01,MHC-II,beta
+'4OZH_A_alpha II HLA-DQA1*05:01/DQB1*02:01,MHC-II,alpha
+'4OZH_B_beta II HLA-DQA1*05:01/DQB1*02:01,MHC-II,beta
+'4OZG_A_alpha II HLA-DQA1*05:01/DQB1*02:01,MHC-II,alpha
+'4OZG_B_beta II HLA-DQA1*05:01/DQB1*02:01,MHC-II,beta
+'2AXG_A_alpha I HLA-B*35:01,MHC-I,alpha
+'2AXG_B_b2m I HLA-B*35:01,,
+'2AXF_A_alpha I HLA-B*35:08,MHC-I,alpha
+'2AXF_B_b2m I HLA-B*35:08,,
+'3L6F_A_alpha II HLA-DRA*01:01/DRB1*01:01,MHC-II,alpha
+'3L6F_B_beta II HLA-DRA*01:01/DRB1*01:01,MHC-II,beta
+'2VLL_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2VLL_B_b2m I HLA-A*02:01,,
+'2VLJ_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2VLJ_B_b2m I HLA-A*02:01,,
+'2VLK_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2VLK_B_b2m I HLA-A*02:01,,
+'4F7M_A_alpha I HLA-A*24:02,MHC-I,alpha
+'4F7M_B_b2m I HLA-A*24:02,,
+'4F7P_A_alpha I HLA-A*24:02,MHC-I,alpha
+'4F7P_B_b2m I HLA-A*24:02,,
+'4F7T_A_alpha I HLA-A*24:02,MHC-I,alpha
+'4F7T_B_b2m I HLA-A*24:02,,
+'5JZI_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5JZI_B_b2m I HLA-A*02:01,,
+'5SWQ_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5SWQ_B_b2m I HLA-A*02:01,,
+'2GTZ_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2GTZ_B_b2m I HLA-A*02:01,,
+'2GUO_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2GUO_B_b2m I HLA-A*02:01,,
+'2GTZ_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2GTZ_B_b2m I HLA-A*02:01,,
+'2GTW_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2GTW_B_b2m I HLA-A*02:01,,
+'2GT9_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2GT9_B_b2m I HLA-A*02:01,,
+'2GUO_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2GUO_B_b2m I HLA-A*02:01,,
+'1EEY_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1EEY_B_b2m I HLA-A*02:01,,
+'1EEZ_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1EEZ_B_b2m I HLA-A*02:01,,
+'1EEZ_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1EEZ_B_b2m I HLA-A*02:01,,
+'3FQX_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3FQX_B_b2m I HLA-A*02:01,,
+'3FQN_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3FQN_B_b2m I HLA-A*02:01,,
+'3FQR_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3FQR_B_b2m I HLA-A*02:01,,
+'3FQT_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3FQT_B_b2m I HLA-A*02:01,,
+'3FQW_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3FQW_B_b2m I HLA-A*02:01,,
+'3FQU_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3FQU_B_b2m I HLA-A*02:01,,
+'5BRZ_A_alpha I HLA-A*01:01,MHC-I,alpha
+'5BRZ_B_b2m I HLA-A*01:01,,
+'5BS0_A_alpha I HLA-A*01:01,MHC-I,alpha
+'5BS0_B_b2m I HLA-A*01:01,,
+'2C7U_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2C7U_B_b2m I HLA-A*02:01,,
+'5DEF_A_alpha I HLA-B*27:04,MHC-I,alpha
+'5DEF_B_b2m I HLA-B*27:04,,
+'3QQ4_A_alpha I SLA-1*04:01,MHC-I,alpha
+'3QQ4_B_b2m I SLA-1*04:01,,
+'3QQ3_A_alpha I SLA-1*04:01,MHC-I,alpha
+'3QQ3_B_b2m I SLA-1*04:01,,
+'1IAO_A_alpha II H2-IAd,MHC-II,alpha
+'1IAO_B_beta II H2-IAd,MHC-II,beta
+'2IAD_A_alpha II H2-IAd,MHC-II,alpha
+'2IAD_B_beta II H2-IAd,MHC-II,beta
+'4ZUW_A_alpha I Eqca-N*00601,MHC-I,alpha
+'2VLR_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2VLR_B_b2m I HLA-A*02:01,,
+'3RGV_C_alpha I H2-Kb,MHC-I,alpha
+'3RGV_D_b2m I H2-Kb,,
+'3QFD_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3QFD_B_b2m I HLA-A*02:01,,
+'3ERY_A_alpha I H2-Ld,MHC-I,alpha
+'3ERY_nan_b2m I H2-Ld,,
+'2X4T_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2X4T_B_b2m I HLA-A*02:01,,
+'2V2X_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2V2X_B_b2m I HLA-A*02:01,,
+'2V2W_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2V2W_B_b2m I HLA-A*02:01,,
+'3ROL_A_alpha I H2-Kb,MHC-I,alpha
+'3ROL_B_b2m I H2-Kb,,
+'1S9X_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1S9X_B_b2m I HLA-A*02:01,,
+'1S9W_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1S9W_B_b2m I HLA-A*02:01,,
+'1S9Y_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1S9Y_B_b2m I HLA-A*02:01,,
+'2WBJ_A_alpha II HLA-DRA*01:01/DRB1*15:01,MHC-II,alpha
+'2WBJ_B_beta II HLA-DRA*01:01/DRB1*15:01,MHC-II,beta
+'3FTG_A_alpha I H2-Db,MHC-I,alpha
+'3FTG_B_b2m I H2-Db,,
+'3WEX_A_alpha II HLA-DPA1*02:02/DPB1*05:01,MHC-II,alpha
+'3WEX_B_beta II HLA-DPA1*02:02/DPB1*05:01,MHC-II,beta
+'3GSQ_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3GSQ_B_b2m I HLA-A*02:01,,
+'3GSW_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3GSW_B_b2m I HLA-A*02:01,,
+'3GSX_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3GSX_B_b2m I HLA-A*02:01,,
+'3GSU_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3GSU_B_b2m I HLA-A*02:01,,
+'3GSR_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3GSR_B_b2m I HLA-A*02:01,,
+'3GSV_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3GSV_B_b2m I HLA-A*02:01,,
+'3GSO_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3GSO_B_b2m I HLA-A*02:01,,
+'4JRY_A_alpha I HLA-B*35:08,MHC-I,alpha
+'4JRY_B_b2m I HLA-B*35:08,,
+'4JRX_A_alpha I HLA-B*35:08,MHC-I,alpha
+'4JRX_B_b2m I HLA-B*35:08,,
+'1LO5_B_beta II HLA-DRB1*01:01,MHC-II,beta
+'3UTQ_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3UTQ_B_b2m I HLA-A*02:01,,
+'4I4W_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4I4W_B_b2m I HLA-A*02:01,,
+'5VGE_A_alpha I HLA-C*07:02,MHC-I,alpha
+'5VGE_B_b2m I HLA-C*07:02,,
+'5VGD_A_alpha I HLA-C*05:01,MHC-I,alpha
+'5VGD_B_b2m I HLA-C*05:01,,
+'5XS3_A_alpha I HLA-C*06:02,MHC-I,alpha
+'5XS3_B_b2m I HLA-C*06:02,,
+'5V4M_F_beta II HLA-DRB1*15:01,MHC-II,beta
+'5V4N_D_alpha II HLA-DRA*01:01/DRB1*01:01,MHC-II,alpha
+'5V4N_F_beta II HLA-DRA*01:01/DRB1*01:01,MHC-II,beta
+'5ISZ_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5ISZ_B_b2m I HLA-A*02:01,,
+'5JHD_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5JHD_B_b2m I HLA-A*02:01,,
+'5GSV_A_alpha I H2-Kd,MHC-I,alpha
+'5GSV_B_b2m I H2-Kd,,
+'5GSB_A_alpha I H2-Kd,MHC-I,alpha
+'5GSB_B_b2m I H2-Kd,,
+'5GSX_A_alpha I H2-Kd,MHC-I,alpha
+'5GSX_B_b2m I H2-Kd,,
+'5GR7_A_alpha I H2-Kd,MHC-I,alpha
+'5GR7_B_b2m I H2-Kd,,
+'5GSR_A_alpha I H2-Kd,MHC-I,alpha
+'5GSR_B_b2m I H2-Kd,,
+'5ENW_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5ENW_B_b2m I HLA-A*02:01,,
+'5F7D_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5F7D_B_b2m I HLA-A*02:01,,
+'5FA3_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5FA3_B_b2m I HLA-A*02:01,,
+'5EOT_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5EOT_B_b2m I HLA-A*02:01,,
+'5F9J_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5F9J_B_b2m I HLA-A*02:01,,
+'5FDW_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5FDW_B_b2m I HLA-A*02:01,,
+'5FA4_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5FA4_B_b2m I HLA-A*02:01,,
+'5EUO_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5EUO_B_b2m I HLA-A*02:01,,
+'5KSU_A_alpha II HLA-DQA1*05:01/DQB1*02:01,MHC-II,alpha
+'5KSU_B_beta II HLA-DQA1*05:01/DQB1*02:01,MHC-II,beta
+'5KSV_A_alpha II HLA-DQA1*05:01/DQB1*02:01,MHC-II,alpha
+'5KSV_B_beta II HLA-DQA1*05:01/DQB1*02:01,MHC-II,beta
+'5KSA_A_alpha II HLA-DQA1*05:01/DQB1*03:02,MHC-II,alpha
+'5KSA_B_beta II HLA-DQA1*05:01/DQB1*03:02,MHC-II,beta
+'5LAX_A_alpha II HLA-DRA*01:01/DRB1*04:01,MHC-II,alpha
+'5LAX_B_beta II HLA-DRA*01:01/DRB1*04:01,MHC-II,beta
+'5KSB_A_alpha II HLA-DQA1*05:01/DQB1*03:02,MHC-II,alpha
+'5KSB_B_beta II HLA-DQA1*05:01/DQB1*03:02,MHC-II,beta
+'5KS9_A_alpha II HLA-DQA1*03:01/DQB1*03:02,MHC-II,alpha
+'5KS9_B_beta II HLA-DQA1*03:01/DQB1*03:02,MHC-II,beta
+'5HHP_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5HHP_B_b2m I HLA-A*02:01,,
+'5HHQ_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5HHQ_B_b2m I HLA-A*02:01,,
+'5HHN_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5HHN_B_b2m I HLA-A*02:01,,
+'5HHO_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5HHO_B_b2m I HLA-A*02:01,,
+'5HHM_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5HHM_B_b2m I HLA-A*02:01,,
+'4Y19_B_beta II HLA-DRB1*04:01,MHC-II,beta
+'3ROO_A_alpha I H2-Kb,MHC-I,alpha
+'3ROO_B_b2m I H2-Kb,,
+'3QUK_A_alpha I H2-Db,MHC-I,alpha
+'3QUK_B_b2m I H2-Db,,
+'3QUL_A_alpha I H2-Db,MHC-I,alpha
+'3QUL_B_b2m I H2-Db,,
+'3WS6_A_alpha I H2-Db,MHC-I,alpha
+'3WS6_B_b2m I H2-Db,,
+'3WS3_A_alpha I H2-Db,MHC-I,alpha
+'3WS3_B_b2m I H2-Db,,
+'4L29_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4L29_B_b2m I HLA-A*02:01,,
+'4L3C_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4L3C_B_b2m I HLA-A*02:01,,
+'4WJ5_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4WJ5_B_b2m I HLA-A*02:01,,
+'3L3H_A_alpha I H2-Db,MHC-I,alpha
+'3L3H_B_b2m I H2-Db,,
+'3L3D_A_alpha I HLA-B*44:02,MHC-I,alpha
+'3L3D_B_b2m I HLA-B*44:02,,
+'3L3G_A_alpha I HLA-B*44:02,MHC-I,alpha
+'3L3G_B_b2m I HLA-B*44:02,,
+'3L3I_A_alpha I HLA-B*44:02,MHC-I,alpha
+'3L3I_B_b2m I HLA-B*44:02,,
+'3L3J_A_alpha I HLA-B*44:02,MHC-I,alpha
+'3L3J_B_b2m I HLA-B*44:02,,
+'3L3K_A_alpha I HLA-B*44:02,MHC-I,alpha
+'3L3K_B_b2m I HLA-B*44:02,,
+'1SJE_A_alpha II HLA-DRA*01:01/DRB1*01:01,MHC-II,alpha
+'1SJE_B_beta II HLA-DRA*01:01/DRB1*01:01,MHC-II,beta
+'1SJH_A_alpha II HLA-DRA*01:01/DRB1*01:01,MHC-II,alpha
+'1SJH_B_beta II HLA-DRA*01:01/DRB1*01:01,MHC-II,beta
+'3BXN_A_alpha I HLA-B*14:02,MHC-I,alpha
+'3BXN_B_b2m I HLA-B*14:02,,
+'3BP4_A_alpha I HLA-B*27:05,MHC-I,alpha
+'3BP4_B_b2m I HLA-B*27:05,,
+'3BP7_A_alpha I HLA-B*27:09,MHC-I,alpha
+'3BP7_B_b2m I HLA-B*27:09,,
+'5MEO_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5MEO_B_b2m I HLA-A*02:01,,
+'5MEP_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5MEP_B_b2m I HLA-A*02:01,,
+'5MEQ_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5MEQ_B_b2m I HLA-A*02:01,,
+'5MER_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5MER_B_b2m I HLA-A*02:01,,
+'5MEN_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5MEN_B_b2m I HLA-A*02:01,,
+'4U6X_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4U6X_B_b2m I HLA-A*02:01,,
+'4U6Y_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4U6Y_B_b2m I HLA-A*02:01,,
+'4P2O_A_alpha II H2-IEk,MHC-II,alpha
+'4P2O_B_beta II H2-IEk,MHC-II,beta
+'4P2R_A_alpha II H2-IEk,MHC-II,alpha
+'4P2R_B_beta II H2-IEk,MHC-II,beta
+'4P2Q_A_alpha II H2-IEk,MHC-II,alpha
+'4P2Q_B_beta II H2-IEk,MHC-II,beta
+'1ZT7_A_alpha I H2-Kk,MHC-I,alpha
+'1ZT7_B_b2m I H2-Kk,,
+'1ZT1_A_alpha I H2-Kk,MHC-I,alpha
+'1ZT1_B_b2m I H2-Kk,,
+'4OV5_A_alpha II HLA-DRA*01:01/DRB1*01:01,MHC-II,alpha
+'4OV5_B_beta II HLA-DRA*01:01/DRB1*01:01,MHC-II,beta
+'4UQ2_A_alpha I HLA-A*11:01,MHC-I,alpha
+'4UQ2_B_b2m I HLA-A*11:01,,
+'4UQ3_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4UQ3_B_b2m I HLA-A*02:01,,
+'1JGD_A_alpha I HLA-B*27:09,MHC-I,alpha
+'1JGD_B_b2m I HLA-B*27:09,,
+'4OZF_A_alpha II HLA-DQA1*05:01/DQB1*02:01,MHC-II,alpha
+'4OZF_B_beta II HLA-DQA1*05:01/DQB1*02:01,MHC-II,beta
+'3VFR_A_alpha I HLA-B*35:08,MHC-I,alpha
+'3VFR_B_b2m I HLA-B*35:08,,
+'3VFS_A_alpha I HLA-B*35:08,MHC-I,alpha
+'3VFS_B_b2m I HLA-B*35:08,,
+'3VFT_A_alpha I HLA-B*35:08,MHC-I,alpha
+'3VFT_B_b2m I HLA-B*35:08,,
+'3VFU_A_alpha I HLA-B*35:08,MHC-I,alpha
+'3VFU_B_b2m I HLA-B*35:08,,
+'3VFV_A_alpha I HLA-B*35:08,MHC-I,alpha
+'3VFV_B_b2m I HLA-B*35:08,,
+'3VFW_A_alpha I HLA-B*35:08,MHC-I,alpha
+'3VFW_B_b2m I HLA-B*35:08,,
+'3VFN_A_alpha I HLA-B*35:08,MHC-I,alpha
+'3VFN_B_b2m I HLA-B*35:08,,
+'3VFM_A_alpha I HLA-B*35:08,MHC-I,alpha
+'3VFM_B_b2m I HLA-B*35:08,,
+'3VFO_A_alpha I HLA-B*35:08,MHC-I,alpha
+'3VFO_B_b2m I HLA-B*35:08,,
+'3VFP_A_alpha I HLA-B*35:08,MHC-I,alpha
+'3VFP_B_b2m I HLA-B*35:08,,
+'1HHJ_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1HHJ_B_b2m I HLA-A*02:01,,
+'1HHI_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1HHI_B_b2m I HLA-A*02:01,,
+'1HHG_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1HHG_B_b2m I HLA-A*02:01,,
+'1HHH_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1HHH_B_b2m I HLA-A*02:01,,
+'1HHK_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1HHK_B_b2m I HLA-A*02:01,,
+'1R5I_B_beta II HLA-DRB1*01:01,MHC-II,beta
+'1INQ_A_alpha I H2-Db,MHC-I,alpha
+'1INQ_B_b2m I H2-Db,,
+'1LDP_H_alpha I H2-Ld,MHC-I,alpha
+'1LDP_L_b2m I H2-Ld,,
+'1LDP_H_alpha I H2-Ld,MHC-I,alpha
+'1LDP_L_b2m I H2-Ld,,
+'4PG9_A_alpha I H2-Kb,MHC-I,alpha
+'4PG9_B_b2m I H2-Kb,,
+'4PGB_A_alpha I H2-Kb,MHC-I,alpha
+'4PGB_B_b2m I H2-Kb,,
+'4PGC_A_alpha I H2-Kb,MHC-I,alpha
+'4PGC_B_b2m I H2-Kb,,
+'4PGD_A_alpha I H2-Kb,MHC-I,alpha
+'4PGD_B_b2m I H2-Kb,,
+'4PGE_A_alpha I H2-Kb,MHC-I,alpha
+'4PGE_B_b2m I H2-Kb,,
+'2E7L_E_alpha I H2-Ld,MHC-I,alpha
+'2E7L_nan_b2m I H2-Ld,,
+'2OI9_A_alpha I H2-Ld,MHC-I,alpha
+'2OI9_nan_b2m I H2-Ld,,
+'5XOV_A_alpha I HLA-A*24:02,MHC-I,alpha
+'5XOV_B_b2m I HLA-A*24:02,,
+'5XOT_A_alpha I HLA-B*35:01,MHC-I,alpha
+'5XOT_B_b2m I HLA-B*35:01,,
+'5XOS_A_alpha I HLA-B*35:01,MHC-I,alpha
+'5XOS_B_b2m I HLA-B*35:01,,
+'4X5W_B_beta II HLA-DRB1*01:01,MHC-II,beta
+'3MGO_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3MGO_B_b2m I HLA-A*02:01,,
+'3PWV_A_alpha I BoLA-2*01801,MHC-I,alpha
+'3PWV_B_b2m I BoLA-2*01801,,
+'3PWU_A_alpha I BoLA-2*01801,MHC-I,alpha
+'3PWU_B_b2m I BoLA-2*01801,,
+'3FT2_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3FT2_B_b2m I HLA-A*02:01,,
+'4N8V_A_alpha I HLA-A*11:01,MHC-I,alpha
+'4N8V_B_b2m I HLA-A*11:01,,
+'3FT3_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3FT3_B_b2m I HLA-A*02:01,,
+'3FT4_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3FT4_B_b2m I HLA-A*02:01,,
+'3O4L_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3O4L_B_b2m I HLA-A*02:01,,
+'2NW3_A_alpha I HLA-B*35:08,MHC-I,alpha
+'2NW3_B_b2m I HLA-B*35:08,,
+'2NX5_A_alpha I HLA-B*35:01,MHC-I,alpha
+'2NX5_B_b2m I HLA-B*35:01,,
+'2FZ3_A_alpha I HLA-B*35:08,MHC-I,alpha
+'2FZ3_B_b2m I HLA-B*35:08,,
+'4JQX_A_alpha I HLA-B*44:03,MHC-I,alpha
+'4JQX_C_b2m I HLA-B*44:03,,
+'4JQV_A_alpha I HLA-B*18:01,MHC-I,alpha
+'4JQV_C_b2m I HLA-B*18:01,,
+'3DX8_A_alpha I HLA-B*44:05,MHC-I,alpha
+'3DX8_B_b2m I HLA-B*44:05,,
+'3DX6_A_alpha I HLA-B*44:02,MHC-I,alpha
+'3DX6_B_b2m I HLA-B*44:02,,
+'3DX7_A_alpha I HLA-B*44:03,MHC-I,alpha
+'3DX7_B_b2m I HLA-B*44:03,,
+'3DXA_A_alpha I HLA-B*44:05,MHC-I,alpha
+'3DXA_B_b2m I HLA-B*44:05,,
+'1MHC_A_non classical non classical H2-M3,MHC-I,alpha
+'1MHC_B_non classical non classical H2-M3,,
+'2PYE_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2PYE_B_b2m I HLA-A*02:01,,
+'2P5E_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2P5E_B_b2m I HLA-A*02:01,,
+'2P5W_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2P5W_B_b2m I HLA-A*02:01,,
+'1IAK_A_alpha II H2-IAk,MHC-II,alpha
+'1IAK_B_beta II H2-IAk,MHC-II,beta
+'1IEA_A_alpha II H2-IEk,MHC-II,alpha
+'1IEA_B_beta II H2-IEk,MHC-II,beta
+'1IEB_A_alpha II H2-IEk,MHC-II,alpha
+'1IEB_B_beta II H2-IEk,MHC-II,beta
+'1LNU_A_alpha II H2-IAb,MHC-II,alpha
+'1LNU_B_beta II H2-IAb,MHC-II,beta
+'4O2E_A_alpha I HLA-B*39:01,MHC-I,alpha
+'4O2E_B_b2m I HLA-B*39:01,,
+'4O2C_A_alpha I HLA-B*39:01,MHC-I,alpha
+'4O2C_B_b2m I HLA-B*39:01,,
+'4O2F_A_alpha I HLA-B*39:01,MHC-I,alpha
+'4O2F_B_b2m I HLA-B*39:01,,
+'4QRU_A_alpha I HLA-B*08:01,MHC-I,alpha
+'4QRU_B_b2m I HLA-B*08:01,,
+'4QRS_A_alpha I HLA-B*08:01,MHC-I,alpha
+'4QRS_B_b2m I HLA-B*08:01,,
+'4QRT_A_alpha I HLA-B*08:01,MHC-I,alpha
+'4QRT_B_b2m I HLA-B*08:01,,
+'5DDH_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5DDH_B_b2m I HLA-A*02:01,,
+'5D9S_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5D9S_B_b2m I HLA-A*02:01,,
+'4AEN_A_alpha II HLA-DRA*01:01/DRB1*01:01,MHC-II,alpha
+'4AEN_B_beta II HLA-DRA*01:01/DRB1*01:01,MHC-II,beta
+'5UJT_A_alpha II HLA-DQA1*03:01/DQB1*02:01,MHC-II,alpha
+'5UJT_B_beta II HLA-DQA1*03:01/DQB1*02:01,MHC-II,beta
+'1T5W_B_beta II HLA-DRB1*01:01,MHC-II,beta
+'1T5X_B_beta II HLA-DRB1*01:01,MHC-II,beta
+'1E27_A_alpha I HLA-B*51:01,MHC-I,alpha
+'1E27_B_b2m I HLA-B*51:01,,
+'1E28_A_alpha I HLA-B*51:01,MHC-I,alpha
+'1E28_B_b2m I HLA-B*51:01,,
+'3E6H_A_alpha I H2-Dd,MHC-I,alpha
+'3E6H_B_b2m I H2-Dd,,
+'3E6F_A_alpha I H2-Dd,MHC-I,alpha
+'3E6F_B_b2m I H2-Dd,,
+'4XXC_A_alpha I HLA-B*18:01,MHC-I,alpha
+'4XXC_C_b2m I HLA-B*18:01,,
+'5EO0_A_alpha I HLA-B*07:02,MHC-I,alpha
+'5EO0_B_b2m I HLA-B*07:02,,
+'5EO1_A_alpha I HLA-B*07:02,MHC-I,alpha
+'5EO1_B_b2m I HLA-B*07:02,,
+'3C9N_A_alpha I HLA-B*15:01,MHC-I,alpha
+'3C9N_B_b2m I HLA-B*15:01,,
+'1PYW_B_beta II HLA-DRB1*01:01,MHC-II,beta
+'1FNE_A_alpha II H2-IEk,MHC-II,alpha
+'1FNE_B_beta II H2-IEk,MHC-II,beta
+'1KJ3_H_alpha I H2-Kb,MHC-I,alpha
+'1KJ3_L_b2m I H2-Kb,,
+'1KJ2_H_alpha I H2-Kb,MHC-I,alpha
+'1KJ2_L_b2m I H2-Kb,,
+'1LEG_A_alpha I H2-Kb,MHC-I,alpha
+'1LEG_B_b2m I H2-Kb,,
+'2CKB_H_alpha I H2-Kb,MHC-I,alpha
+'2CKB_L_b2m I H2-Kb,,
+'2MHA_A_alpha I H2-Kb,MHC-I,alpha
+'2MHA_B_b2m I H2-Kb,,
+'1KT2_A_alpha II H2-IEk,MHC-II,alpha
+'1KT2_B_beta II H2-IEk,MHC-II,beta
+'1KTD_A_alpha II H2-IEk,MHC-II,alpha
+'1KTD_B_beta II H2-IEk,MHC-II,beta
+'3C5Z_C_alpha II H2-IAb,MHC-II,alpha
+'3C5Z_D_beta II H2-IAb,MHC-II,beta
+'3C6L_C_alpha II H2-IAb,MHC-II,alpha
+'3C6L_D_beta II H2-IAb,MHC-II,beta
+'3C60_C_alpha II H2-IAb,MHC-II,alpha
+'3C60_D_beta II H2-IAb,MHC-II,beta
+'1ZHK_A_alpha I HLA-B*35:01,MHC-I,alpha
+'1ZHK_B_b2m I HLA-B*35:01,,
+'1ZHL_A_alpha I HLA-B*35:08,MHC-I,alpha
+'1ZHL_B_b2m I HLA-B*35:08,,
+'1TVH_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1TVH_B_b2m I HLA-A*02:01,,
+'1TVB_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1TVB_B_b2m I HLA-A*02:01,,
+'3BZE_A_non classical non classical HLA-E*01:01,MHC-I,alpha
+'3BZE_B_non classical non classical HLA-E*01:01,,
+'3BZF_A_non classical non classical HLA-E*01:01,MHC-I,alpha
+'3BZF_B_non classical non classical HLA-E*01:01,,
+'1QR1_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1QR1_B_b2m I HLA-A*02:01,,
+'3GIV_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3GIV_B_b2m I HLA-A*02:01,,
+'3CH1_A_alpha I H2-Db,MHC-I,alpha
+'3CH1_B_b2m I H2-Db,,
+'3CCH_A_alpha I H2-Db,MHC-I,alpha
+'3CCH_B_b2m I H2-Db,,
+'3CC5_A_alpha I H2-Db,MHC-I,alpha
+'3CC5_B_b2m I H2-Db,,
+'1KLG_B_beta II HLA-DRB1*01:01,MHC-II,beta
+'1KLU_B_beta II HLA-DRB1*01:01,MHC-II,beta
+'1OGA_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1OGA_B_b2m I HLA-A*02:01,,
+'1FYT_B_beta II HLA-DRB1*01:01,MHC-II,beta
+'1J8H_B_beta II HLA-DRB1*04:01,MHC-II,beta
+'2NNA_B_beta II HLA-DQB1*03:02,MHC-II,beta
+'1JWS_B_beta II HLA-DRB1*01:01,MHC-II,beta
+'1JWU_B_beta II HLA-DRB1*01:01,MHC-II,beta
+'1JWM_B_beta II HLA-DRB1*01:01,MHC-II,beta
+'1A6A_B_beta II HLA-DRB1*03:01,MHC-II,beta
+'3OX8_A_alpha I HLA-A*02:03,MHC-I,alpha
+'3OX8_B_b2m I HLA-A*02:03,,
+'3OXR_A_alpha I HLA-A*02:06,MHC-I,alpha
+'3OXR_B_b2m I HLA-A*02:06,,
+'3OXS_A_alpha I HLA-A*02:07,MHC-I,alpha
+'3OXS_B_b2m I HLA-A*02:07,,
+'2X4Q_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2X4Q_B_b2m I HLA-A*02:01,,
+'2X4P_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2X4P_B_b2m I HLA-A*02:01,,
+'2X4N_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2X4N_B_b2m I HLA-A*02:01,,
+'2X4U_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2X4U_B_b2m I HLA-A*02:01,,
+'2X4R_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2X4R_B_b2m I HLA-A*02:01,,
+'2X4S_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2X4S_B_b2m I HLA-A*02:01,,
+'2X70_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2X70_B_b2m I HLA-A*02:01,,
+'2X4O_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2X4O_B_b2m I HLA-A*02:01,,
+'4IS6_B_beta II HLA-DRB1*04:01,MHC-II,beta
+'4MDJ_B_beta II HLA-DRB1*04:02,MHC-II,beta
+'4MCY_B_beta II HLA-DRB1*04:01,MHC-II,beta
+'4MDI_B_beta II HLA-DRB1*04:02,MHC-II,beta
+'4MD5_B_beta II HLA-DRB1*04:04,MHC-II,beta
+'4MCZ_B_beta II HLA-DRB1*04:01,MHC-II,beta
+'4MD0_B_beta II HLA-DRB1*04:01,MHC-II,beta
+'4MD4_B_beta II HLA-DRB1*04:01,MHC-II,beta
+'4MJ5_A_alpha I HLA-A*11:01,MHC-I,alpha
+'4MJ5_B_b2m I HLA-A*11:01,,
+'4MJ6_A_alpha I HLA-A*11:01,MHC-I,alpha
+'4MJ6_B_b2m I HLA-A*11:01,,
+'4U1I_A_alpha I HLA-B*81:01,MHC-I,alpha
+'4U1I_B_b2m I HLA-B*81:01,,
+'4U1H_A_alpha I HLA-B*07:02,MHC-I,alpha
+'4U1H_B_b2m I HLA-B*07:02,,
+'4U1J_A_alpha I HLA-B*42:01,MHC-I,alpha
+'4U1J_B_b2m I HLA-B*42:01,,
+'4U1K_A_alpha I HLA-B*07:02,MHC-I,alpha
+'4U1K_B_b2m I HLA-B*07:02,,
+'4U1L_A_alpha I HLA-B*81:01,MHC-I,alpha
+'4U1L_B_b2m I HLA-B*81:01,,
+'4U1M_A_alpha I HLA-B*42:01,MHC-I,alpha
+'4U1M_B_b2m I HLA-B*42:01,,
+'4U1N_A_alpha I HLA-B*42:02,MHC-I,alpha
+'4U1N_B_b2m I HLA-B*42:02,,
+'4U1S_A_alpha I HLA-B*81:01,MHC-I,alpha
+'4U1S_B_b2m I HLA-B*81:01,,
+'1T0M_A_alpha I H2-Kb,MHC-I,alpha
+'1T0M_B_b2m I H2-Kb,,
+'4I5B_A_alpha II HLA-DRA*01:01/DRB1*01:01,MHC-II,alpha
+'4I5B_B_beta II HLA-DRA*01:01/DRB1*01:01,MHC-II,beta
+'1XH3_A_alpha I HLA-B*35:01,MHC-I,alpha
+'1XH3_B_b2m I HLA-B*35:01,,
+'2SEB_A_alpha II HLA-DRA*01:01/DRB1*04:01,MHC-II,alpha
+'2SEB_B_beta II HLA-DRA*01:01/DRB1*04:01,MHC-II,beta
+'1SEB_B_beta II HLA-DRB1*01:01,MHC-II,beta
+'1D5M_B_beta II HLA-DRB1*04:01,MHC-II,beta
+'1D5Z_B_beta II HLA-DRB1*04:01,MHC-II,beta
+'1D5X_B_beta II HLA-DRB1*04:01,MHC-II,beta
+'1D6E_B_beta II HLA-DRB1*04:01,MHC-II,beta
+'1HOC_A_alpha I H2-Db,MHC-I,alpha
+'1HOC_B_b2m I H2-Db,,
+'6AT5_A_alpha I HLA-B*07:02,MHC-I,alpha
+'6AT5_B_b2m I HLA-B*07:02,,
+'6AVF_H_alpha I HLA-B*07:02,MHC-I,alpha
+'6AVF_M_b2m I HLA-B*07:02,,
+'6AVG_G_alpha I HLA-B*07:02,MHC-I,alpha
+'6AVG_H_b2m I HLA-B*07:02,,
+'3I6L_D_alpha I HLA-A*24:02,MHC-I,alpha
+'3I6L_E_b2m I HLA-A*24:02,,
+'4QRR_A_alpha I HLA-B*35:01,MHC-I,alpha
+'4QRR_B_b2m I HLA-B*35:01,,
+'1QLF_A_alpha I H2-Db,MHC-I,alpha
+'1QLF_B_b2m I H2-Db,,
+'1CE6_A_alpha I H2-Db,MHC-I,alpha
+'1CE6_B_b2m I H2-Db,,
+'3REW_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3REW_B_b2m I HLA-A*02:01,,
+'3VCL_A_alpha I HLA-B*07:02,MHC-I,alpha
+'3VCL_B_b2m I HLA-B*07:02,,
+'3SKM_A_alpha I HLA-B*08:01,MHC-I,alpha
+'3SKM_B_b2m I HLA-B*08:01,,
+'3SJV_A_alpha I HLA-B*08:01,MHC-I,alpha
+'3SJV_B_b2m I HLA-B*08:01,,
+'4GRL_A_alpha II HLA-DQA1*01:02/DQB1*05:02,MHC-II,alpha
+'4GRL_B_beta II HLA-DQA1*01:02/DQB1*05:02,MHC-II,beta
+'4MAY_A_alpha II HLA-DQA1*01:02/DQB1*05:02,MHC-II,alpha
+'4MAY_B_beta II HLA-DQA1*01:02/DQB1*05:02,MHC-II,beta
+'5C0J_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5C0J_B_b2m I HLA-A*02:01,,
+'5C0F_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5C0F_B_b2m I HLA-A*02:01,,
+'5C0E_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5C0E_B_b2m I HLA-A*02:01,,
+'5C0I_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5C0I_B_b2m I HLA-A*02:01,,
+'5C0G_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5C0G_B_b2m I HLA-A*02:01,,
+'5C0D_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5C0D_B_b2m I HLA-A*02:01,,
+'5N1Y_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5N1Y_B_b2m I HLA-A*02:01,,
+'5C0A_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5C0A_B_b2m I HLA-A*02:01,,
+'5C09_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5C09_B_b2m I HLA-A*02:01,,
+'5HYJ_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5HYJ_B_b2m I HLA-A*02:01,,
+'5C0C_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5C0C_B_b2m I HLA-A*02:01,,
+'5C08_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5C08_B_b2m I HLA-A*02:01,,
+'5C07_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5C07_B_b2m I HLA-A*02:01,,
+'5C0B_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5C0B_B_b2m I HLA-A*02:01,,
+'5IEK_A_alpha I HLA-B*40:02,MHC-I,alpha
+'5IEK_B_b2m I HLA-B*40:02,,
+'5W1W_A_non classical non classical HLA-E*01:03,MHC-I,alpha
+'5W1W_B_non classical non classical HLA-E*01:03,,
+'5W1V_A_non classical non classical HLA-E*01:03,MHC-I,alpha
+'5W1V_B_non classical non classical HLA-E*01:03,,
+'5IVX_A_alpha I H2-Db,MHC-I,alpha
+'5IVX_B_b2m I H2-Db,,
+'5T70_A_alpha I HLA-B*57:01,MHC-I,alpha
+'5T70_B_b2m I HLA-B*57:01,,
+'5T6X_A_alpha I HLA-B*57:01,MHC-I,alpha
+'5T6X_B_b2m I HLA-B*57:01,,
+'5T6W_A_alpha I HLA-B*57:01,MHC-I,alpha
+'5T6W_B_b2m I HLA-B*57:01,,
+'5T6Z_A_alpha I HLA-B*57:01,MHC-I,alpha
+'5T6Z_B_b2m I HLA-B*57:01,,
+'5T6Y_A_alpha I HLA-B*57:01,MHC-I,alpha
+'5T6Y_B_b2m I HLA-B*57:01,,
+'5IEH_A_alpha I HLA-B*40:02,MHC-I,alpha
+'5IEH_B_b2m I HLA-B*40:02,,
+'5WES_A_alpha I H2-Dd,MHC-I,alpha
+'5WES_B_b2m I H2-Dd,,
+'6ATZ_B_beta II HLA-DRB1*14:02,MHC-II,beta
+'6ATF_B_beta II HLA-DRB1*14:02,MHC-II,beta
+'6ATI_B_beta II HLA-DRB1*14:02,MHC-II,beta
+'5GJY_A_alpha I Anpl-UAA*01,MHC-I,alpha
+'5GJX_A_alpha I Anpl-UAA*01,MHC-I,alpha
+'5GSD_A_alpha I HLA-A*11:01,MHC-I,alpha
+'5GSD_B_b2m I HLA-A*11:01,,
+'5GRD_A_alpha I HLA-A*11:01,MHC-I,alpha
+'5GRD_B_b2m I HLA-A*11:01,,
+'1QQD_A_alpha I HLA-C*04:01,MHC-I,alpha
+'1QQD_B_b2m I HLA-C*04:01,,
+'2CII_A_alpha I H2-Db,MHC-I,alpha
+'2CII_B_b2m I H2-Db,,
+'2CIK_A_alpha I HLA-B*35:01,MHC-I,alpha
+'2CIK_B_b2m I HLA-B*35:01,,
+'1XR9_A_alpha I HLA-B*15:01,MHC-I,alpha
+'1XR9_B_b2m I HLA-B*15:01,,
+'1XR8_A_alpha I HLA-B*15:01,MHC-I,alpha
+'1XR8_B_b2m I HLA-B*15:01,,
+'1R5V_A_alpha II H2-IEk,MHC-II,alpha
+'1R5V_B_beta II H2-IEk,MHC-II,beta
+'1R5W_A_alpha II H2-IEk,MHC-II,alpha
+'1R5W_B_beta II H2-IEk,MHC-II,beta
+'6BIY_B_beta II HLA-DRB1*04:04,MHC-II,beta
+'6BIL_B_beta II HLA-DRB1*04:01,MHC-II,beta
+'6BIJ_B_beta II HLA-DRB1*04:01,MHC-II,beta
+'6BIV_B_beta II HLA-DRB1*04:01,MHC-II,beta
+'1JPG_A_alpha I H2-Db,MHC-I,alpha
+'1JPG_B_b2m I H2-Db,,
+'1JPF_A_alpha I H2-Db,MHC-I,alpha
+'1JPF_B_b2m I H2-Db,,
+'1FG2_A_alpha I H2-Db,MHC-I,alpha
+'1FG2_B_b2m I H2-Db,,
+'5W67_A_alpha I HLA-C*06:02,MHC-I,alpha
+'5W67_B_b2m I HLA-C*06:02,,
+'5W6A_A_alpha I HLA-C*06:02,MHC-I,alpha
+'5W6A_B_b2m I HLA-C*06:02,,
+'5W69_A_alpha I HLA-C*06:02,MHC-I,alpha
+'5W69_B_b2m I HLA-C*06:02,,
+'5OQF_A_alpha I H2-Kb,MHC-I,alpha
+'5OQF_nan_b2m I H2-Kb,,
+'5U98_A_alpha I HLA-B*57:01,MHC-I,alpha
+'5U98_A_b2m I HLA-B*57:01,,
+'1N5A_A_alpha I H2-Db,MHC-I,alpha
+'1N5A_B_b2m I H2-Db,,
+'1N59_A_alpha I H2-Kb,MHC-I,alpha
+'1N59_B_b2m I H2-Kb,,
+'4P4K_B_beta II HLA-DPB1*02:01,MHC-II,beta
+'4P5M_B_beta II HLA-DPB1*02:01,MHC-II,beta
+'4P5K_B_beta II HLA-DPB1*02:01,MHC-II,beta
+'4P4R_B_beta II HLA-DPB1*02:01,MHC-II,beta
+'5FKP_A_non classical non classical mouse CD1d,MHC-I,alpha
+'5FKP_B_non classical non classical mouse CD1d,,
+'5EFI_A_non classical non classical mouse CD1d,MHC-I,alpha
+'5EFI_B_non classical non classical mouse CD1d,,
+'3UPR_A_alpha I HLA-B*57:01,MHC-I,alpha
+'3UPR_B_b2m I HLA-B*57:01,,
+'2ESV_A_non classical non classical HLA-E*01:01,MHC-I,alpha
+'2ESV_B_non classical non classical HLA-E*01:01,,
+'1MI5_A_alpha I HLA-B*08:01,MHC-I,alpha
+'1MI5_B_b2m I HLA-B*08:01,,
+'1M05_A_alpha I HLA-B*08:01,MHC-I,alpha
+'1M05_B_b2m I HLA-B*08:01,,
+'1MHE_A_non classical non classical HLA-E*01:01,MHC-I,alpha
+'1MHE_B_non classical non classical HLA-E*01:01,,
+'1HSA_A_alpha I HLA-B*27:05,MHC-I,alpha
+'1HSA_B_b2m I HLA-B*27:05,,
+'1TMC_A_alpha I HLA-A*68:01,MHC-I,alpha
+'1TMC_B_b2m I HLA-A*68:01,,
+'5KD7_A_alpha I H2-Dd,MHC-I,alpha
+'5KD7_B_b2m I H2-Dd,,
+'5KD4_A_alpha I H2-Dd,MHC-I,alpha
+'5KD4_B_b2m I H2-Dd,,
+'5T7G_A_alpha I H2-Dd,MHC-I,alpha
+'5T7G_B_b2m I H2-Dd,,
+'1NAN_H_alpha I H2-Kb,MHC-I,alpha
+'1NAN_P_b2m I H2-Kb,,
+'1NAM_H_alpha I H2-Kb,MHC-I,alpha
+'1NAM_L_b2m I H2-Kb,,
+'3E3Q_A_alpha I H2-Ld,MHC-I,alpha
+'3E3Q_nan_b2m I H2-Ld,,
+'1FO0_H_alpha I H2-Kb,MHC-I,alpha
+'1FO0_L_b2m I H2-Kb,,
+'3FFC_A_alpha I HLA-B*08:01,MHC-I,alpha
+'3FFC_B_b2m I HLA-B*08:01,,
+'3KPN_A_alpha I HLA-B*44:03,MHC-I,alpha
+'3KPN_B_b2m I HLA-B*44:03,,
+'3KPL_A_alpha I HLA-B*44:02,MHC-I,alpha
+'3KPL_B_b2m I HLA-B*44:02,,
+'3KPP_A_alpha I HLA-B*44:05,MHC-I,alpha
+'3KPP_B_b2m I HLA-B*44:05,,
+'3KPM_A_alpha I HLA-B*44:02,MHC-I,alpha
+'3KPM_B_b2m I HLA-B*44:02,,
+'3KPQ_A_alpha I HLA-B*44:05,MHC-I,alpha
+'3KPQ_B_b2m I HLA-B*44:05,,
+'3KPO_A_alpha I HLA-B*44:03,MHC-I,alpha
+'3KPO_B_b2m I HLA-B*44:03,,
+'3HG1_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3HG1_B_b2m I HLA-A*02:01,,
+'3MV7_A_alpha I HLA-B*35:01,MHC-I,alpha
+'3MV7_B_b2m I HLA-B*35:01,,
+'3MV8_A_alpha I HLA-B*35:01,MHC-I,alpha
+'3MV8_B_b2m I HLA-B*35:01,,
+'3MV9_A_alpha I HLA-B*35:01,MHC-I,alpha
+'3MV9_B_b2m I HLA-B*35:01,,
+'3O6F_A_alpha II HLA-DRA*01:01/DRB1*04:01,MHC-II,alpha
+'3O6F_B_beta II HLA-DRA*01:01/DRB1*04:01,MHC-II,beta
+'3QIU_A_alpha II H2-IEk,MHC-II,alpha
+'3QIU_B_beta II H2-IEk,MHC-II,beta
+'3QIW_A_alpha II H2-IEk,MHC-II,alpha
+'3QIW_B_beta II H2-IEk,MHC-II,beta
+'3QIB_A_alpha II H2-IEk,MHC-II,alpha
+'3QIB_B_beta II H2-IEk,MHC-II,beta
+'4G9D_A_alpha I HLA-B*27:05,MHC-I,alpha
+'4G9D_B_b2m I HLA-B*27:05,,
+'4G8I_A_alpha I HLA-B*27:05,MHC-I,alpha
+'4G8I_B_b2m I HLA-B*27:05,,
+'3VXN_A_alpha I HLA-A*24:02,MHC-I,alpha
+'3VXN_B_b2m I HLA-A*24:02,,
+'3VXO_A_alpha I HLA-A*24:02,MHC-I,alpha
+'3VXO_B_b2m I HLA-A*24:02,,
+'3VXP_A_alpha I HLA-A*24:02,MHC-I,alpha
+'3VXP_B_b2m I HLA-A*24:02,,
+'4P23_C_alpha II H2-IAb,MHC-II,alpha
+'4P23_D_beta II H2-IAb,MHC-II,beta
+'4P46_C_alpha II H2-IAb,MHC-II,alpha
+'4P46_D_beta II H2-IAb,MHC-II,beta
+'4P5T_C_alpha II H2-IAb,MHC-II,alpha
+'4P5T_D_beta II H2-IAb,MHC-II,beta
+'4PRI_A_alpha I HLA-B*35:08,MHC-I,alpha
+'4PRI_B_b2m I HLA-B*35:08,,
+'4PRB_A_alpha I HLA-B*35:08,MHC-I,alpha
+'4PRB_B_b2m I HLA-B*35:08,,
+'4PR5_A_alpha I HLA-B*35:01,MHC-I,alpha
+'4PR5_B_b2m I HLA-B*35:01,,
+'4PRN_A_alpha I HLA-B*35:01,MHC-I,alpha
+'4PRN_B_b2m I HLA-B*35:01,,
+'4PRD_A_alpha I HLA-B*35:08,MHC-I,alpha
+'4PRD_B_b2m I HLA-B*35:08,,
+'4PRA_A_alpha I HLA-B*35:01,MHC-I,alpha
+'4PRA_B_b2m I HLA-B*35:01,,
+'4PRE_A_alpha I HLA-B*35:08,MHC-I,alpha
+'4PRE_B_b2m I HLA-B*35:08,,
+'4PRH_A_alpha I HLA-B*35:08,MHC-I,alpha
+'4PRH_B_b2m I HLA-B*35:08,,
+'4PRP_A_alpha I HLA-B*35:01,MHC-I,alpha
+'4PRP_B_b2m I HLA-B*35:01,,
+'3QDM_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3QDM_B_b2m I HLA-A*02:01,,
+'3QDG_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3QDG_B_b2m I HLA-A*02:01,,
+'3QEQ_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3QEQ_B_b2m I HLA-A*02:01,,
+'3QDJ_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3QDJ_B_b2m I HLA-A*02:01,,
+'4QRQ_A_alpha I HLA-B*08:01,MHC-I,alpha
+'4QRQ_B_b2m I HLA-B*08:01,,
+'4QRP_A_alpha I HLA-B*08:01,MHC-I,alpha
+'4QRP_B_b2m I HLA-B*08:01,,
+'4QOK_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4QOK_B_b2m I HLA-A*02:01,,
+'4Z7V_C_alpha II HLA-DQA1*03:01/DQB1*03:02,MHC-II,alpha
+'4Z7V_D_beta II HLA-DQA1*03:01/DQB1*03:02,MHC-II,beta
+'4Z7U_C_alpha II HLA-DQA1*03:01/DQB1*03:02,MHC-II,alpha
+'4Z7U_D_beta II HLA-DQA1*03:01/DQB1*03:02,MHC-II,beta
+'4Z7W_C_alpha II HLA-DQA1*03:01/DQB1*03:02,MHC-II,alpha
+'4Z7W_D_beta II HLA-DQA1*03:01/DQB1*03:02,MHC-II,beta
+'5D2N_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5D2N_B_b2m I HLA-A*02:01,,
+'5WLI_A_alpha I H2-Db,MHC-I,alpha
+'5WLI_B_b2m I H2-Db,,
+'5WLG_A_alpha I H2-Db,MHC-I,alpha
+'5WLG_B_b2m I H2-Db,,
+'3VRJ_A_alpha I HLA-B*57:01,MHC-I,alpha
+'3VRJ_B_b2m I HLA-B*57:01,,
+'3VRI_A_alpha I HLA-B*57:01,MHC-I,alpha
+'3VRI_B_b2m I HLA-B*57:01,,
+'5MZM_A_alpha I H2-Db,MHC-I,alpha
+'5MZM_B_b2m I H2-Db,,
+'1QSE_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1QSE_B_b2m I HLA-A*02:01,,
+'1QRN_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1QRN_B_b2m I HLA-A*02:01,,
+'1QSF_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1QSF_B_b2m I HLA-A*02:01,,
+'1BD2_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1BD2_B_b2m I HLA-A*02:01,,
+'2GIT_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2GIT_B_b2m I HLA-A*02:01,,
+'2GJ6_A_alpha I HLA-A*02:01,MHC-I,alpha
+'2GJ6_B_b2m I HLA-A*02:01,,
+'1IM3_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1IM3_B_b2m I HLA-A*02:01,,
+'1AO7_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1AO7_B_b2m I HLA-A*02:01,,
+'1DUY_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1DUY_B_b2m I HLA-A*02:01,,
+'1DUZ_A_alpha I HLA-A*02:01,MHC-I,alpha
+'1DUZ_B_b2m I HLA-A*02:01,,
+'3D39_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3D39_B_b2m I HLA-A*02:01,,
+'3D3V_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3D3V_B_b2m I HLA-A*02:01,,
+'3H7B_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3H7B_B_b2m I HLA-A*02:01,,
+'3H9S_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3H9S_B_b2m I HLA-A*02:01,,
+'3PWN_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3PWN_B_b2m I HLA-A*02:01,,
+'3PWL_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3PWL_B_b2m I HLA-A*02:01,,
+'3PWJ_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3PWJ_B_b2m I HLA-A*02:01,,
+'3PWP_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3PWP_B_b2m I HLA-A*02:01,,
+'3QFJ_A_alpha I HLA-A*02:01,MHC-I,alpha
+'3QFJ_B_b2m I HLA-A*02:01,,
+'4E5X_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4E5X_B_b2m I HLA-A*02:01,,
+'4FTV_A_alpha I HLA-A*02:01,MHC-I,alpha
+'4FTV_B_b2m I HLA-A*02:01,,
+'5E9D_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5E9D_B_b2m I HLA-A*02:01,,
+'5IRO_A_alpha I HLA-A*02:01,MHC-I,alpha
+'5IRO_C_b2m I HLA-A*02:01,,
+'5N6B_A_nan I HLA-A*02:01,MHC-I,alpha
+'5N6B_B_nan I HLA-A*02:01,,
+'5TXS_A_alpha I HLA-B*15:01,MHC-I,alpha
+'5TXS_B_b2m I HLA-B*15:01,,
+'5VZ5_A_alpha I HLA-B*15:01,MHC-I,alpha
+'5VZ5_B_b2m I HLA-B*15:01,,
+'6AT9_A_alpha I HLA-A*01:01,MHC-I,alpha
+'6AT9_B_b2m I HLA-A*01:01,,
+'6BXP_A_alpha I HLA-B*57:01,MHC-I,alpha
+'6BXP_B_b2m I HLA-B*57:01,,
+'6BXQ_B_alpha I HLA-B*57:01,MHC-I,alpha
+'6BXQ_C_b2m I HLA-B*57:01,,
+'4YC2_H_heavy,BCR,heavy
+'4YC2_L_light,BCR,lambda
+'2CMR_H_heavy,BCR,heavy
+'2CMR_L_light,BCR,kappa
+'3R1G_H_heavy,BCR,heavy
+'3R1G_L_light,BCR,kappa
+'3S88_H_heavy,BCR,heavy
+'3S88_L_light,BCR,kappa
+'3VE0_A_heavy,BCR,heavy
+'3VE0_B_light,BCR,kappa
+'3CSY_A_heavy,BCR,heavy
+'3CSY_B_light,BCR,kappa
+'1WEJ_H_heavy,BCR,heavy
+'1WEJ_L_light,BCR,kappa
+'3RVW_D_heavy,BCR,heavy
+'3RVW_C_light,BCR,kappa
+'3RVV_D_heavy,BCR,heavy
+'3RVV_C_light,BCR,kappa
+'3RVX_D_heavy,BCR,heavy
+'3RVX_C_light,BCR,kappa
+'4PP2_B_heavy,BCR,heavy
+'4PP2_A_light,BCR,kappa
+'4PP1_D_heavy,BCR,heavy
+'4PP1_C_light,BCR,kappa
+'3VI3_F_heavy,BCR,heavy
+'3VI3_E_light,BCR,kappa
+'4MQS_B_heavy,BCR,heavy
+'3KJ6_H_heavy,BCR,heavy
+'3KJ6_L_light,BCR,kappa
+'3PGF_H_heavy,BCR,heavy
+'3PGF_L_light,BCR,kappa
+'3LD8_C_heavy,BCR,heavy
+'3LD8_B_light,BCR,kappa
+'3LDB_C_heavy,BCR,heavy
+'3LDB_B_light,BCR,kappa
+'3SN6_N_heavy,BCR,heavy
+'3SN6_N_heavy,BCR,heavy
+'3ZTJ_G_heavy,BCR,heavy
+'3ZTJ_H_light,BCR,kappa
+'1EO8_H_heavy,BCR,heavy
+'1EO8_L_light,BCR,kappa
+'1QFU_H_heavy,BCR,heavy
+'1QFU_L_light,BCR,kappa
+'1QFU_H_heavy,BCR,heavy
+'1QFU_L_light,BCR,kappa
+'2VIS_B_heavy,BCR,heavy
+'2VIS_A_light,BCR,lambda
+'2VIT_B_heavy,BCR,heavy
+'2VIT_A_light,BCR,lambda
+'2VIR_B_heavy,BCR,heavy
+'2VIR_A_light,BCR,lambda
+'2VIR_B_heavy,BCR,heavy
+'2VIR_A_light,BCR,lambda
+'3SDY_H_heavy,BCR,heavy
+'3SDY_L_light,BCR,kappa
+'4FP8_H_heavy,BCR,heavy
+'4FP8_L_light,BCR,kappa
+'4GMS_H_heavy,BCR,heavy
+'4GMS_L_light,BCR,kappa
+'4KVN_H_heavy,BCR,heavy
+'4KVN_L_light,BCR,kappa
+'1KEN_H_heavy,BCR,heavy
+'1KEN_L_light,BCR,kappa
+'4O58_H_heavy,BCR,heavy
+'4O58_L_light,BCR,lambda
+'5K9K_H_heavy,BCR,heavy
+'5K9K_L_light,BCR,kappa
+'5K9Q_H_heavy,BCR,heavy
+'5K9Q_L_light,BCR,kappa
+'5KAN_H_heavy,BCR,heavy
+'5KAN_L_light,BCR,kappa
+'4EJ1_D_heavy,BCR,heavy
+'4EIZ_D_heavy,BCR,heavy
+'4FHB_D_heavy,BCR,heavy
+'4EIG_B_heavy,BCR,heavy
+'3K74_B_heavy,BCR,heavy
+'2VC2_H_heavy,BCR,heavy
+'2VC2_L_light,BCR,kappa
+'2VDP_H_heavy,BCR,heavy
+'2VDP_L_light,BCR,kappa
+'2VDQ_H_heavy,BCR,heavy
+'2VDQ_L_light,BCR,kappa
+'2VDR_H_heavy,BCR,heavy
+'2VDR_L_light,BCR,kappa
+'3NID_H_heavy,BCR,heavy
+'3NID_L_light,BCR,kappa
+'3NIF_H_heavy,BCR,heavy
+'3NIF_L_light,BCR,kappa
+'3NIG_H_heavy,BCR,heavy
+'3NIG_L_light,BCR,kappa
+'3T3M_H_heavy,BCR,heavy
+'3T3M_L_light,BCR,kappa
+'3ZDZ_E_heavy,BCR,heavy
+'3ZDZ_F_light,BCR,kappa
+'3T3P_H_heavy,BCR,heavy
+'3T3P_L_light,BCR,kappa
+'3ZDX_H_heavy,BCR,heavy
+'3ZDX_L_light,BCR,kappa
+'3ZDY_H_heavy,BCR,heavy
+'3ZDY_L_light,BCR,kappa
+'3ZE0_E_heavy,BCR,heavy
+'3ZE0_F_light,BCR,kappa
+'4Z7Q_H_heavy,BCR,heavy
+'4Z7Q_L_light,BCR,kappa
+'3ZE1_E_heavy,BCR,heavy
+'3ZE1_F_light,BCR,kappa
+'3ZE2_H_heavy,BCR,heavy
+'3ZE2_L_light,BCR,kappa
+'5HDB_H_heavy,BCR,heavy
+'5HDB_L_light,BCR,kappa
+'2VDK_H_heavy,BCR,heavy
+'2VDK_L_light,BCR,kappa
+'2VDK_H_heavy,BCR,heavy
+'2VDK_L_light,BCR,kappa
+'2VDL_H_heavy,BCR,heavy
+'2VDL_L_light,BCR,kappa
+'2VDM_H_heavy,BCR,heavy
+'2VDM_L_light,BCR,kappa
+'4Z7N_H_heavy,BCR,heavy
+'4Z7N_L_light,BCR,kappa
+'4Z7O_H_heavy,BCR,heavy
+'4Z7O_L_light,BCR,kappa
+'2VDN_H_heavy,BCR,heavy
+'2VDN_L_light,BCR,kappa
+'2VDP_H_heavy,BCR,heavy
+'2VDP_L_light,BCR,kappa
+'4LSS_H_heavy,BCR,heavy
+'4LSS_L_light,,
+'4MWF_Blight,BCR,kappa
+'4F9L_Dlight,BCR,kappa
+'4F9L_nan_heavy,BCR,kappa
+'4NBY_C_heavy,BCR,heavy
+'4NC1_C_heavy,BCR,heavy
+'4NBX_B_heavy,BCR,heavy
+'4NBY_B_heavy,BCR,heavy
+'4NBZ_B_heavy,BCR,heavy
+'4NC0_B_heavy,BCR,heavy
+'4NC1_E_heavy,BCR,heavy
+'4HEM_G_heavy,BCR,heavy
+'4HEP_G_heavy,BCR,heavy
+'5JMO_C_heavy,BCR,heavy
+'4AEI_H_heavy,BCR,heavy
+'4AEI_L_light,BCR,kappa
+'5ANM_H_heavy,BCR,heavy
+'5ANM_L_light,BCR,lambda
+'5HYS_A_heavy,BCR,heavy
+'5HYS_B_light,BCR,kappa
+'4AG4_H_heavy,BCR,heavy
+'4AG4_L_light,BCR,kappa
+'5C1M_B_heavy,BCR,heavy
+'5FYJ_H_heavy,BCR,heavy
+'5FYJ_L_light,BCR,lambda
+'5FYJ_D_heavy,BCR,heavy
+'5FYJ_E_light,BCR,lambda
+'4S10_A_heavy,BCR,heavy
+'2XQY_G_heavy,BCR,heavy
+'2XQY_L_light,BCR,kappa
+'2XQY_J_heavy,BCR,heavy
+'2XQY_K_light,BCR,kappa
+'4DAG_H_heavy,BCR,heavy
+'4DAG_L_light,BCR,lambda
+'5TLJ_B_heavy,BCR,heavy
+'5TLJ_A_light,BCR,kappa
+'5TLK_B_heavy,BCR,heavy
+'5TLK_A_light,BCR,kappa
+'5TLJ_D_heavy,BCR,heavy
+'5TLJ_C_light,BCR,kappa
+'5TLK_D_heavy,BCR,heavy
+'5TLK_C_light,BCR,kappa
+'3LZF_H_heavy,BCR,heavy
+'3LZF_L_light,BCR,lambda
+'3ZTN_H_heavy,BCR,heavy
+'3ZTN_L_light,BCR,kappa
+'4GXU_M_heavy,BCR,heavy
+'4GXU_N_light,BCR,lambda
+'4F15_B_heavy,BCR,heavy
+'4F15_C_light,BCR,kappa
+'4M5Z_H_heavy,BCR,heavy
+'4M5Z_L_light,BCR,lambda
+'4LVH_H_heavy,BCR,heavy
+'4LVH_I_light,BCR,kappa
+'4PY8_I_heavy,BCR,heavy
+'4PY8_J_light,BCR,kappa
+'5GJT_H_heavy,BCR,heavy
+'5GJT_L_light,BCR,kappa
+'5K9O_H_heavy,BCR,heavy
+'5K9O_L_light,BCR,kappa
+'3GBN_H_heavy,BCR,heavy
+'3GBN_L_light,BCR,lambda
+'5IBL_H_heavy,BCR,heavy
+'5IBL_L_light,BCR,kappa
+'3K2U_H_heavy,BCR,heavy
+'3K2U_L_light,BCR,kappa
+'5GGV_H_heavy,BCR,heavy
+'5GGV_L_light,BCR,kappa
+'2NXY_D_heavy,BCR,heavy
+'2NXY_C_light,BCR,kappa
+'2NXZ_D_heavy,BCR,heavy
+'2NXZ_C_light,BCR,kappa
+'2NY0_D_heavy,BCR,heavy
+'2NY0_C_light,BCR,kappa
+'2NY1_D_heavy,BCR,heavy
+'2NY1_C_light,BCR,kappa
+'2NY2_D_heavy,BCR,heavy
+'2NY2_C_light,BCR,kappa
+'2NY3_D_heavy,BCR,heavy
+'2NY3_C_light,BCR,kappa
+'2NY4_D_heavy,BCR,heavy
+'2NY4_C_light,BCR,kappa
+'2NY5_H_heavy,BCR,heavy
+'2NY5_L_light,BCR,kappa
+'2NY6_D_heavy,BCR,heavy
+'2NY6_C_light,BCR,kappa
+'1GC1_H_heavy,BCR,heavy
+'1GC1_L_light,BCR,kappa
+'1RZJ_H_heavy,BCR,heavy
+'1RZJ_L_light,BCR,kappa
+'1G9M_H_heavy,BCR,heavy
+'1G9M_L_light,BCR,kappa
+'3IDX_H_heavy,BCR,heavy
+'3IDX_L_light,BCR,kappa
+'3IDY_H_heavy,BCR,heavy
+'3IDY_L_light,BCR,kappa
+'4IOF_C_heavy,BCR,heavy
+'4IOF_D_light,BCR,kappa
+'4KHT_H_heavy,BCR,heavy
+'4KHT_L_light,BCR,lambda
+'4KHX_H_heavy,BCR,heavy
+'4KHX_L_light,BCR,lambda
+'5KZC_H_heavy,BCR,heavy
+'5KZC_L_light,BCR,kappa
+'4JPK_H_heavy,BCR,heavy
+'4JPK_L_light,BCR,kappa
+'5IES_H_heavy,BCR,heavy
+'5IES_L_light,BCR,kappa
+'5IF0_H_heavy,BCR,heavy
+'5IF0_L_light,BCR,kappa
+'4IDJ_H_heavy,BCR,heavy
+'4IDJ_L_light,BCR,kappa
+'4X7E_C_heavy,BCR,heavy
+'3Q3G_B_heavy,BCR,heavy
+'3Q3G_A_light,BCR,kappa
+'3QA3_B_heavy,BCR,heavy
+'3QA3_A_light,BCR,kappa
+'5IKC_B_heavy,BCR,heavy
+'5IKC_A_light,BCR,kappa
+'3ZKX_B_heavy,BCR,heavy
+'3ZKX_C_heavy,BCR,heavy
+'4X7D_D_heavy,BCR,heavy
+'4X7C_C_heavy,BCR,heavy
+'3UBX_H_heavy,BCR,heavy
+'3UBX_L_light,BCR,kappa
+'4QTI_H_heavy,BCR,heavy
+'4QTI_L_light,BCR,kappa
+'4ZS6_H_heavy,BCR,heavy
+'4ZS6_L_light,BCR,kappa
+'5DO2_C_heavy,BCR,heavy
+'5DO2_D_light,BCR,kappa
+'4ZPT_H_heavy,BCR,heavy
+'4ZPT_L_light,BCR,kappa
+'4ZPV_H_heavy,BCR,heavy
+'4ZPV_L_light,BCR,kappa
+'4XAK_D_heavy,BCR,heavy
+'4XAK_E_light,BCR,kappa
+'3CVH_H_heavy,BCR,heavy
+'3CVH_L_light,BCR,kappa
+'3CVH_H_heavy,BCR,heavy
+'3CVH_L_light,BCR,kappa
+'3GJF_H_heavy,BCR,heavy
+'3GJF_L_light,BCR,lambda
+'3GJF_H_heavy,BCR,heavy
+'3GJF_L_light,BCR,lambda
+'3HAE_H_heavy,BCR,heavy
+'3HAE_L_light,BCR,lambda
+'3HAE_H_heavy,BCR,heavy
+'3HAE_L_light,BCR,lambda
+'4KDT_A_heavy,BCR,heavy
+'2ZCH_H_heavy,BCR,heavy
+'2ZCH_L_light,BCR,kappa
+'2ZCK_H_heavy,BCR,heavy
+'2ZCK_L_light,BCR,kappa
+'2ZCL_H_heavy,BCR,heavy
+'2ZCL_L_light,BCR,kappa
+'3QUM_H_heavy,BCR,heavy
+'3QUM_L_light,BCR,kappa
+'3QUM_B_heavy,BCR,heavy
+'3QUM_A_light,BCR,kappa
+'4I3R_H_heavy,BCR,heavy
+'4I3R_L_light,BCR,kappa
+'4I3S_H_heavy,BCR,heavy
+'4I3S_L_light,BCR,kappa
+'2R56_H_heavy,BCR,heavy
+'2R56_L_light,BCR,kappa
+'2X7L_H_heavy,BCR,heavy
+'2X7L_L_light,BCR,kappa
+'5DHV_H_heavy,BCR,heavy
+'5DHV_L_light,BCR,kappa
+'5DHX_B_light,BCR,kappa
+'5DHX_nan_heavy,BCR,kappa
+'5DHY_H_heavy,BCR,heavy
+'5DHY_L_light,BCR,kappa
+'4NC2_B_heavy,BCR,heavy
+'5T5B_H_heavy,BCR,heavy
+'5T5B_L_light,BCR,lambda
+'5TPN_H_heavy,BCR,heavy
+'5TPN_L_light,BCR,kappa
+'5TOJ_D_heavy,BCR,heavy
+'4RFO_H_heavy,BCR,heavy
+'4RFO_L_light,BCR,lambda
+'3BQU_D_heavy,BCR,heavy
+'3BQU_C_light,BCR,kappa
+'4KFZ_C_heavy,BCR,heavy
+'3UZE_A_heavy,BCR,scFv
+'3UZE_A_light,BCR,scFv
+'4IOS_E_heavy,BCR,heavy
+'3B9K_H_heavy,BCR,heavy
+'3B9K_L_light,BCR,kappa
+'5TE4_H_heavy,BCR,heavy
+'5TE4_L_light,BCR,kappa
+'1G6V_K_heavy,BCR,heavy
+'4D9Q_H_heavy,BCR,heavy
+'4D9Q_L_light,BCR,kappa
+'4D9R_H_heavy,BCR,heavy
+'4D9R_L_light,BCR,kappa
+'4OT1_H_heavy,BCR,heavy
+'4OT1_L_light,BCR,lambda
+'4LMQ_H_heavy,BCR,heavy
+'4LMQ_L_light,BCR,kappa
+'4YBQ_D_heavy,BCR,heavy
+'4YBQ_C_light,BCR,kappa
+'4EDW_H_heavy,BCR,heavy
+'4EDW_L_light,BCR,kappa
+'5KJR_H_heavy,BCR,heavy
+'5KJR_L_light,BCR,lambda
+'2NYY_D_heavy,BCR,heavy
+'2NYY_C_light,BCR,kappa
+'3K81_A_heavy,BCR,heavy
+'3STB_B_heavy,BCR,heavy
+'3STB_A_heavy,BCR,heavy
+'2AEQ_H_heavy,BCR,heavy
+'2AEQ_L_light,BCR,kappa
+'3MJ9_H_heavy,BCR,heavy
+'3MJ9_L_light,BCR,lambda
+'5JXE_D_heavy,BCR,heavy
+'5JXE_C_light,BCR,kappa
+'3BGF_H_heavy,BCR,heavy
+'3BGF_L_light,BCR,kappa
+'2DD8_H_heavy,BCR,heavy
+'2DD8_L_light,BCR,lambda
+'2GHW_B_heavy,BCR,scFv
+'2GHW_B_light,BCR,scFv
+'3W2D_H_heavy,BCR,heavy
+'3W2D_L_light,BCR,kappa
+'4RGO_H_heavy,BCR,heavy
+'4RGO_L_light,BCR,kappa
+'4JRE_H_heavy,BCR,heavy
+'4JRE_L_light,BCR,kappa
+'4G6J_H_heavy,BCR,heavy
+'4G6J_L_light,BCR,kappa
+'5BVP_H_heavy,BCR,heavy
+'5BVP_L_light,BCR,kappa
+'4G6M_H_heavy,BCR,heavy
+'4G6M_L_light,BCR,kappa
+'3LEV_H_heavy,BCR,heavy
+'3LEV_L_light,BCR,kappa
+'1FNS_H_heavy,BCR,heavy
+'1FNS_L_light,BCR,kappa
+'1OAK_H_heavy,BCR,heavy
+'1OAK_L_light,BCR,kappa
+'2YBR_A_heavy,BCR,heavy
+'2YBR_B_light,BCR,kappa
+'2YC1_A_heavy,BCR,heavy
+'2YC1_B_light,BCR,kappa
+'4V1D_A_heavy,BCR,heavy
+'4V1D_B_light,BCR,kappa
+'4V1D_D_heavy,BCR,heavy
+'4V1D_E_light,BCR,lambda
+'1HYS_D_heavy,BCR,heavy
+'1HYS_C_light,BCR,kappa
+'1J5O_H_heavy,BCR,heavy
+'1J5O_L_light,BCR,kappa
+'1N5Y_H_heavy,BCR,heavy
+'1N5Y_L_light,BCR,kappa
+'1N6Q_H_heavy,BCR,heavy
+'1N6Q_L_light,BCR,kappa
+'1R0A_H_heavy,BCR,heavy
+'1R0A_L_light,BCR,kappa
+'1T03_H_heavy,BCR,heavy
+'1T03_L_light,BCR,kappa
+'2HMI_D_heavy,BCR,heavy
+'2HMI_C_light,BCR,kappa
+'3KLH_D_heavy,BCR,heavy
+'3KLH_C_light,BCR,kappa
+'3T2N_H_heavy,BCR,heavy
+'3T2N_L_light,BCR,lambda
+'5DA0_B_heavy,BCR,heavy
+'5BO1_H_heavy,BCR,heavy
+'5BO1_L_light,BCR,kappa
+'4RDQ_G_heavy,BCR,heavy
+'4RDQ_F_light,BCR,kappa
+'5T5N_I_heavy,BCR,heavy
+'5T5N_H_light,BCR,kappa
+'3UX9_B_light,BCR,lambda
+'3UX9_nan_heavy,BCR,lambda
+'4RGM_C_heavy,BCR,heavy
+'4RGM_B_light,BCR,kappa
+'3HI1_H_heavy,BCR,heavy
+'3HI1_L_light,BCR,kappa
+'4YPG_B_heavy,BCR,heavy
+'4YPG_A_light,BCR,kappa
+'4IRZ_H_heavy,BCR,heavy
+'4IRZ_L_light,BCR,kappa
+'3LHP_H_heavy,BCR,heavy
+'3LHP_L_light,BCR,kappa
+'2JIX_D_heavy,BCR,heavy
+'2JIX_G_light,BCR,kappa
+'2JIX_F_heavy,BCR,heavy
+'2JIX_A_light,BCR,kappa
+'5F3B_A_heavy,BCR,heavy
+'5F3B_B_light,BCR,kappa
+'5F3H_A_heavy,BCR,heavy
+'5F3H_B_light,BCR,kappa
+'5D1Q_B_heavy,BCR,heavy
+'5D1Q_A_light,BCR,kappa
+'5D1X_B_heavy,BCR,heavy
+'5D1X_A_light,BCR,kappa
+'5D1Q_C_heavy,BCR,heavy
+'5D1Q_D_light,BCR,kappa
+'5D1X_C_heavy,BCR,heavy
+'5D1X_D_light,BCR,kappa
+'5FYL_H_heavy,BCR,heavy
+'5FYL_L_light,BCR,lambda
+'5CEZ_D_heavy,BCR,heavy
+'5CEZ_E_light,BCR,lambda
+'5FYL_D_heavy,BCR,heavy
+'5FYL_E_light,BCR,lambda
+'5T3Z_H_heavy,BCR,heavy
+'5T3Z_L_light,BCR,lambda
+'5T3Z_D_heavy,BCR,heavy
+'5T3Z_E_light,BCR,lambda
+'3Q1S_H_heavy,BCR,heavy
+'3Q1S_L_light,BCR,kappa
+'4GFT_B_heavy,BCR,heavy
+'4JQI_H_heavy,BCR,heavy
+'4JQI_L_light,BCR,kappa
+'2ZUQ_C_heavy,BCR,heavy
+'2ZUQ_B_light,BCR,kappa
+'1ZA3_H_heavy,BCR,heavy
+'1ZA3_L_light,BCR,kappa
+'2H9G_H_heavy,BCR,heavy
+'2H9G_L_light,BCR,kappa
+'4OD2_B_heavy,BCR,heavy
+'4OD2_A_light,BCR,lambda
+'4N90_H_heavy,BCR,heavy
+'4N90_I_light,BCR,kappa
+'3GRW_H_heavy,BCR,heavy
+'3GRW_L_light,BCR,kappa
+'4WV1_E_heavy,BCR,heavy
+'4WV1_D_light,BCR,kappa
+'5MI0_B_heavy,BCR,heavy
+'5MI0_C_light,BCR,kappa
+'3WXV_H_heavy,BCR,heavy
+'3WXV_L_light,BCR,kappa
+'3WXW_H_heavy,BCR,heavy
+'3WXW_L_light,BCR,kappa
+'1E6J_H_heavy,BCR,heavy
+'1E6J_L_light,BCR,kappa
+'1I9R_H_heavy,BCR,heavy
+'1I9R_L_light,BCR,kappa
+'4DTG_H_heavy,BCR,heavy
+'4DTG_L_light,BCR,kappa
+'4G7V_H_heavy,BCR,heavy
+'4G7V_L_light,BCR,kappa
+'4G7Y_H_heavy,BCR,heavy
+'4G7Y_L_light,BCR,kappa
+'5HDQ_H_heavy,BCR,heavy
+'5HDQ_L_light,BCR,kappa
+'5B3J_H_heavy,BCR,heavy
+'5B3J_L_light,BCR,kappa
+'3JWD_H_heavy,BCR,heavy
+'3JWD_L_light,BCR,kappa
+'4U6V_H_heavy,BCR,heavy
+'4U6V_L_light,BCR,kappa
+'3TJE_H_heavy,BCR,heavy
+'3TJE_L_light,BCR,lambda
+'3THM_H_heavy,BCR,heavy
+'3THM_L_light,BCR,lambda
+'4Y7M_A_heavy,BCR,heavy
+'1Z3G_H_heavy,BCR,heavy
+'1Z3G_L_light,BCR,kappa
+'4HFU_H_heavy,BCR,heavy
+'4HFU_L_light,BCR,kappa
+'4HG4_J_heavy,BCR,heavy
+'4HG4_K_light,BCR,kappa
+'4HF5_H_heavy,BCR,heavy
+'4HF5_L_light,BCR,lambda
+'4HLZ_G_heavy,BCR,heavy
+'4HLZ_H_light,BCR,kappa
+'3MXW_H_heavy,BCR,heavy
+'3MXW_L_light,BCR,kappa
+'4CMH_B_heavy,BCR,heavy
+'4CMH_C_light,BCR,kappa
+'5F21_B_heavy,BCR,heavy
+'5F1O_B_heavy,BCR,heavy
+'5F1K_C_heavy,BCR,heavy
+'5GRJ_H_heavy,BCR,heavy
+'5GRJ_L_light,BCR,lambda
+'5GGT_H_heavy,BCR,heavy
+'5GGT_L_light,BCR,kappa
+'4CDG_C_heavy,BCR,heavy
+'4ZFG_H_heavy,BCR,heavy
+'4ZFG_L_light,BCR,kappa
+'3G04_B_heavy,BCR,heavy
+'3G04_A_light,BCR,lambda
+'2XWT_A_heavy,BCR,heavy
+'2XWT_B_light,BCR,lambda
+'1NSN_H_heavy,BCR,heavy
+'1NSN_L_light,BCR,kappa
+'4ALA_H_heavy,BCR,heavy
+'4ALA_L_light,BCR,kappa
+'2XRA_H_heavy,BCR,heavy
+'2XRA_L_light,BCR,kappa
+'4C58_B_heavy,BCR,heavy
+'3V0A_C_heavy,BCR,heavy
+'1PKQ_B_heavy,BCR,heavy
+'1PKQ_A_light,BCR,kappa
+'4X7F_C_heavy,BCR,heavy
+'3K1K_C_heavy,BCR,heavy
+'1JRH_H_heavy,BCR,heavy
+'1JRH_L_light,BCR,kappa
+'2FJH_H_heavy,BCR,heavy
+'2FJH_L_light,BCR,kappa
+'4ZFF_H_heavy,BCR,heavy
+'4ZFF_L_light,BCR,kappa
+'1TZI_B_heavy,BCR,heavy
+'1TZI_A_light,BCR,kappa
+'3BDY_H_heavy,BCR,heavy
+'3BDY_L_light,BCR,kappa
+'2QR0_H_heavy,BCR,heavy
+'2QR0_G_light,BCR,kappa
+'3P9W_D_heavy,BCR,heavy
+'2VXQ_H_heavy,BCR,heavy
+'2VXQ_L_light,BCR,kappa
+'3WIH_H_heavy,BCR,heavy
+'3WIH_L_light,BCR,kappa
+'2R29_H_heavy,BCR,heavy
+'2R29_L_light,BCR,kappa
+'4UT6_H_heavy,BCR,heavy
+'4UT6_L_light,BCR,lambda
+'4UT9_H_heavy,BCR,heavy
+'4UT9_L_light,BCR,lambda
+'4F3F_B_heavy,BCR,heavy
+'4F3F_A_light,BCR,kappa
+'3LIZ_H_heavy,BCR,heavy
+'3LIZ_L_light,BCR,kappa
+'3LIZ_H_heavy,BCR,heavy
+'3LIZ_L_light,BCR,kappa
+'2NR6_D_heavy,BCR,heavy
+'2NR6_C_light,BCR,kappa
+'1EGJ_H_heavy,BCR,heavy
+'1EGJ_L_light,BCR,kappa
+'4BFB_D_heavy,BCR,heavy
+'4HWB_H_heavy,BCR,heavy
+'4HWB_L_light,BCR,kappa
+'3N85_H_heavy,BCR,heavy
+'3N85_L_light,BCR,kappa
+'3HMX_H_heavy,BCR,heavy
+'3HMX_L_light,BCR,kappa
+'4KI5_C_heavy,BCR,heavy
+'4KI5_D_light,BCR,kappa
+'4XZU_A_heavy,BCR,heavy
+'4XZU_B_light,BCR,kappa
+'4KI5_E_heavy,BCR,heavy
+'4KI5_F_light,BCR,kappa
+'1IQD_B_heavy,BCR,heavy
+'1IQD_A_light,BCR,kappa
+'5C0R_H_heavy,BCR,heavy
+'5C0R_L_light,BCR,kappa
+'4W6Y_B_heavy,BCR,heavy
+'4W6W_B_heavy,BCR,heavy
+'4W6X_B_heavy,BCR,heavy
+'4F2M_A_heavy,BCR,heavy
+'4F2M_B_light,BCR,kappa
+'4CNI_H_heavy,BCR,heavy
+'4CNI_L_light,BCR,kappa
+'3BT2_H_heavy,BCR,heavy
+'3BT2_L_light,BCR,kappa
+'4TNW_H_heavy,BCR,heavy
+'4TNW_L_light,BCR,lambda
+'3H3B_C_light,BCR,kappa
+'3H3B_nan_heavy,BCR,kappa
+'4XMP_H_heavy,BCR,heavy
+'4XMP_L_light,BCR,kappa
+'4XNY_H_heavy,BCR,heavy
+'4XNY_L_light,BCR,kappa
+'1QFW_H_heavy,BCR,heavy
+'1QFW_L_light,BCR,kappa
+'1QFW_I_heavy,BCR,heavy
+'1QFW_M_light,BCR,kappa
+'3VI4_F_heavy,BCR,heavy
+'3VI4_E_light,BCR,kappa
+'1NMB_H_heavy,BCR,heavy
+'1NMB_L_light,BCR,kappa
+'1NMC_H_heavy,BCR,heavy
+'1NMC_L_light,BCR,kappa
+'1A14_H_heavy,BCR,heavy
+'1A14_L_light,BCR,kappa
+'1NMA_H_heavy,BCR,heavy
+'1NMA_L_light,BCR,kappa
+'1NCD_H_heavy,BCR,heavy
+'1NCD_L_light,BCR,kappa
+'1NCA_H_heavy,BCR,heavy
+'1NCA_L_light,BCR,kappa
+'1NCB_H_heavy,BCR,heavy
+'1NCB_L_light,BCR,kappa
+'1NCC_H_heavy,BCR,heavy
+'1NCC_L_light,BCR,kappa
+'2ADF_H_heavy,BCR,heavy
+'2ADF_L_light,BCR,kappa
+'4PIR_F_heavy,BCR,heavy
+'5GXB_B_heavy,BCR,heavy
+'4AL8_H_heavy,BCR,heavy
+'4AL8_L_light,BCR,kappa
+'3UZQ_A_heavy,BCR,scFv
+'3UZQ_A_light,BCR,scFv
+'4FFY_H_heavy,BCR,heavy
+'4FFY_L_light,BCR,kappa
+'4L5F_H_heavy,BCR,heavy
+'4L5F_L_light,BCR,kappa
+'4M1C_C_heavy,BCR,heavy
+'4M1C_D_light,BCR,kappa
+'5EN2_A_heavy,BCR,heavy
+'5EN2_B_light,BCR,kappa
+'3U4E_H_heavy,BCR,heavy
+'3U4E_L_light,BCR,lambda
+'3D85_B_heavy,BCR,heavy
+'3D85_A_light,BCR,kappa
+'1YNT_B_heavy,BCR,heavy
+'1YNT_A_light,BCR,kappa
+'2Q8A_H_heavy,BCR,heavy
+'2Q8A_L_light,BCR,kappa
+'3OGO_F_heavy,BCR,heavy
+'3G9A_B_heavy,BCR,heavy
+'5HVH_C_heavy,BCR,heavy
+'5HVG_B_heavy,BCR,heavy
+'5HVH_B_heavy,BCR,heavy
+'3SKJ_H_heavy,BCR,heavy
+'3SKJ_L_light,BCR,kappa
+'2XTJ_D_heavy,BCR,heavy
+'2XTJ_B_light,BCR,kappa
+'3H42_H_heavy,BCR,heavy
+'3H42_L_light,BCR,lambda
+'3SQO_H_heavy,BCR,heavy
+'3SQO_L_light,BCR,kappa
+'3OPZ_H_heavy,BCR,heavy
+'3OPZ_L_light,BCR,kappa
+'1OAZ_H_heavy,BCR,heavy
+'1OAZ_L_light,BCR,lambda
+'1OAZ_H_heavy,BCR,heavy
+'1OAZ_L_light,BCR,lambda
+'4LF3_B_heavy,BCR,heavy
+'4LF3_A_light,BCR,kappa
+'1KXT_B_heavy,BCR,heavy
+'1KXQ_H_heavy,BCR,heavy
+'1KXV_C_heavy,BCR,heavy
+'4TVS_a_heavy,BCR,heavy
+'4DKF_H_heavy,BCR,heavy
+'4DKF_L_light,BCR,kappa
+'4DKE_H_heavy,BCR,heavy
+'4DKE_L_light,BCR,kappa
+'5LCV_H_heavy,BCR,heavy
+'5LCV_L_light,BCR,lambda
+'5LBS_H_heavy,BCR,heavy
+'5LBS_L_light,BCR,kappa
+'5JHL_H_heavy,BCR,heavy
+'5JHL_L_light,BCR,kappa
+'5KVD_H_heavy,BCR,heavy
+'5KVD_L_light,BCR,kappa
+'5KVE_H_heavy,BCR,heavy
+'5KVE_L_light,BCR,kappa
+'5KVF_H_heavy,BCR,heavy
+'5KVF_L_light,BCR,kappa
+'5KVG_H_heavy,BCR,heavy
+'5KVG_L_light,BCR,kappa
+'5GZN_H_heavy,BCR,heavy
+'5GZN_L_light,BCR,lambda
+'5GZO_C_heavy,BCR,heavy
+'5GZO_D_light,BCR,kappa
+'3K80_A_heavy,BCR,heavy
+'2XQB_H_heavy,BCR,heavy
+'2XQB_L_light,BCR,lambda
+'4P2C_G_heavy,BCR,heavy
+'2J88_H_heavy,BCR,heavy
+'2J88_L_light,BCR,kappa
+'4IJ3_C_heavy,BCR,heavy
+'4IJ3_B_light,BCR,kappa
+'5D96_C_heavy,BCR,heavy
+'5D96_B_light,BCR,kappa
+'5D93_C_heavy,BCR,heavy
+'5D93_B_light,BCR,kappa
+'4QNP_E_heavy,BCR,heavy
+'4QNP_F_light,BCR,kappa
+'5C0N_H_heavy,BCR,heavy
+'5C0N_L_light,BCR,kappa
+'5D8J_H_heavy,BCR,heavy
+'5D8J_L_light,BCR,kappa
+'3SOB_H_heavy,BCR,heavy
+'3SOB_L_light,BCR,kappa
+'3KJ4_H_heavy,BCR,heavy
+'3KJ4_L_light,BCR,kappa
+'2OZ4_H_heavy,BCR,heavy
+'2OZ4_L_light,BCR,kappa
+'3U30_C_heavy,BCR,heavy
+'3U30_B_light,BCR,kappa
+'1ORS_B_heavy,BCR,heavy
+'1ORS_A_light,BCR,kappa
+'1ORQ_B_heavy,BCR,heavy
+'1ORQ_A_light,BCR,kappa
+'5L0Q_C_heavy,BCR,heavy
+'5L0Q_B_light,BCR,kappa
+'4DW2_H_heavy,BCR,heavy
+'4DW2_L_light,BCR,kappa
+'5I9Q_B_heavy,BCR,heavy
+'5I9Q_C_light,BCR,kappa
+'1ZTX_H_heavy,BCR,heavy
+'1ZTX_L_light,BCR,kappa
+'5IWL_A_heavy,BCR,scFv
+'5IWL_nan_light,BCR,scFv
+'5TZ2_H_heavy,BCR,heavy
+'5TZ2_L_light,BCR,kappa
+'5TZT_H_heavy,BCR,heavy
+'5TZT_L_light,BCR,kappa
+'5TZU_H_heavy,BCR,heavy
+'5TZU_L_light,BCR,kappa
+'5J3H_C_heavy,BCR,heavy
+'5J3H_D_light,BCR,kappa
+'3P0G_B_heavy,BCR,heavy
+'4LDO_B_heavy,BCR,heavy
+'4LDE_B_heavy,BCR,heavy
+'4LDL_B_heavy,BCR,heavy
+'4QKX_B_heavy,BCR,heavy
+'5JQH_C_heavy,BCR,heavy
+'5FCU_H_heavy,BCR,heavy
+'5FCU_L_light,BCR,lambda
+'3KR3_H_heavy,BCR,heavy
+'3KR3_L_light,BCR,kappa
+'3MA9_H_heavy,BCR,heavy
+'3MA9_L_light,BCR,lambda
+'3BN9_D_heavy,BCR,heavy
+'3BN9_C_light,BCR,kappa
+'3NPS_B_heavy,BCR,heavy
+'3NPS_C_light,BCR,lambda
+'3SO3_C_heavy,BCR,heavy
+'3SO3_B_light,BCR,kappa
+'1DVF_D_heavy,BCR,heavy
+'1DVF_C_light,BCR,kappa
+'4K94_H_heavy,BCR,heavy
+'4K94_L_light,BCR,kappa
+'4K9E_H_heavy,BCR,heavy
+'4K9E_L_light,BCR,kappa
+'1N8Z_B_heavy,BCR,heavy
+'1N8Z_A_light,BCR,kappa
+'3HI6_H_heavy,BCR,heavy
+'3HI6_L_light,BCR,kappa
+'3EOA_H_heavy,BCR,heavy
+'3EOA_L_light,BCR,kappa
+'4LGP_B_heavy,BCR,heavy
+'4LGR_B_heavy,BCR,heavy
+'4LGS_B_heavy,BCR,heavy
+'4LHJ_B_heavy,BCR,heavy
+'4LHQ_B_heavy,BCR,heavy
+'4Z9K_B_heavy,BCR,heavy
+'5E1H_B_heavy,BCR,heavy
+'5SV3_A_heavy,BCR,heavy
+'5J56_B_heavy,BCR,heavy
+'5BOZ_G_heavy,BCR,heavy
+'5J57_B_heavy,BCR,heavy
+'4KUC_H_heavy,BCR,heavy
+'4KUC_D_light,BCR,kappa
+'4WGV_B_heavy,BCR,heavy
+'4WGW_B_heavy,BCR,heavy
+'4JLR_H_heavy,BCR,heavy
+'4JLR_L_light,BCR,kappa
+'3NCY_P_heavy,BCR,heavy
+'3NCY_S_light,BCR,kappa
+'3CFI_C_heavy,BCR,heavy
+'2B4C_H_heavy,BCR,heavy
+'2B4C_L_light,BCR,kappa
+'4U1G_B_heavy,BCR,heavy
+'4U1G_C_light,BCR,kappa
+'4U0R_B_heavy,BCR,heavy
+'4U0R_C_light,BCR,kappa
+'4YUE_H_heavy,BCR,heavy
+'4YUE_L_light,BCR,kappa
+'5C2U_B_heavy,BCR,heavy
+'3BSZ_H_heavy,BCR,heavy
+'3BSZ_L_light,BCR,kappa
+'3PNW_B_heavy,BCR,heavy
+'3PNW_A_light,BCR,kappa
+'3NH7_H_heavy,BCR,heavy
+'3NH7_L_light,BCR,lambda
+'4LQF_H_heavy,BCR,heavy
+'4LQF_L_light,BCR,kappa
+'4LU5_H_heavy,BCR,heavy
+'4LU5_L_light,BCR,kappa
+'4M1G_H_heavy,BCR,heavy
+'4M1G_L_light,BCR,kappa
+'3RKD_H_heavy,BCR,heavy
+'3RKD_L_light,BCR,kappa
+'4PLJ_H_heavy,BCR,heavy
+'4PLJ_L_light,BCR,kappa
+'3EJY_C_heavy,BCR,heavy
+'3EJY_D_light,BCR,kappa
+'4KJP_C_heavy,BCR,heavy
+'4KJP_D_light,BCR,kappa
+'4KK6_C_heavy,BCR,heavy
+'4KK6_D_light,BCR,kappa
+'4KK9_C_heavy,BCR,heavy
+'4KK9_D_light,BCR,kappa
+'4KKA_C_heavy,BCR,heavy
+'4KKA_D_light,BCR,kappa
+'4JM2_D_heavy,BCR,heavy
+'4JM2_C_light,BCR,kappa
+'4JM2_A_heavy,BCR,heavy
+'4JM2_B_light,BCR,kappa
+'4R2G_Q_heavy,BCR,heavy
+'4R2G_P_light,BCR,lambda
+'3LH2_H_heavy,BCR,heavy
+'3LH2_L_light,BCR,kappa
+'4K2U_H_heavy,BCR,heavy
+'4K2U_L_light,BCR,kappa
+'3K7U_A_heavy,BCR,heavy
+'3EO1_B_heavy,BCR,heavy
+'3EO1_A_light,BCR,kappa
+'4KV5_H_heavy,BCR,heavy
+'4KV5_L_light,BCR,kappa
+'4KXZ_H_heavy,BCR,heavy
+'4KXZ_L_light,BCR,kappa
+'1BGX_H_heavy,BCR,heavy
+'1BGX_L_light,BCR,kappa
+'5K59_H_heavy,BCR,heavy
+'5K59_L_light,BCR,kappa
+'4WEM_B_heavy,BCR,heavy
+'4WEN_B_heavy,BCR,heavy
+'4I9W_E_heavy,BCR,heavy
+'4I9W_D_light,BCR,kappa
+'4WFF_E_heavy,BCR,heavy
+'4WFF_D_light,BCR,kappa
+'4WFH_E_heavy,BCR,heavy
+'4WFH_D_light,BCR,kappa
+'4DK3_A_heavy,BCR,heavy
+'3VG9_C_heavy,BCR,heavy
+'3VG9_B_light,BCR,kappa
+'3VGA_C_heavy,BCR,heavy
+'3VGA_B_light,BCR,kappa
+'4UAO_C_heavy,BCR,heavy
+'4UAO_B_light,BCR,kappa
+'3UAJ_H_heavy,BCR,heavy
+'3UAJ_L_light,BCR,kappa
+'4AM0_H_heavy,BCR,heavy
+'4AM0_L_light,BCR,kappa
+'3UYP_A_heavy,BCR,scFv
+'3UYP_A_light,BCR,scFv
+'5AAM_B_heavy,BCR,scFv
+'5AAM_nan_light,BCR,scFv
+'5AAW_H_heavy,BCR,scFv
+'5AAW_nan_light,BCR,scFv
+'2QAD_D_heavy,BCR,heavy
+'2QAD_C_light,BCR,kappa
+'3I50_H_heavy,BCR,heavy
+'3I50_L_light,BCR,kappa
+'5FUC_V_heavy,BCR,heavy
+'4K3J_H_heavy,BCR,heavy
+'4K3J_L_light,BCR,kappa
+'3GI8_H_heavy,BCR,heavy
+'3GI8_L_light,BCR,kappa
+'3GI9_H_heavy,BCR,heavy
+'3GI9_L_light,BCR,kappa
+'1FE8_H_heavy,BCR,heavy
+'1FE8_L_light,BCR,kappa
+'4OGX_H_heavy,BCR,heavy
+'4OGX_L_light,BCR,kappa
+'4OGY_H_heavy,BCR,heavy
+'4OGY_L_light,BCR,kappa
+'4NX3_B_heavy,BCR,heavy
+'4NX3_A_light,BCR,kappa
+'4RGN_B_heavy,BCR,heavy
+'4RGN_C_light,BCR,kappa
+'4RGN_D_heavy,BCR,heavy
+'4RGN_E_light,BCR,kappa
+'4G3Y_H_heavy,BCR,heavy
+'4G3Y_L_light,BCR,kappa
+'3WD5_H_heavy,BCR,heavy
+'3WD5_L_light,BCR,kappa
+'1PG7_X_heavy,BCR,heavy
+'1PG7_W_light,BCR,lambda
+'3AB0_B_heavy,BCR,heavy
+'3AB0_C_light,BCR,kappa
+'2JEL_H_heavy,BCR,heavy
+'2JEL_L_light,BCR,kappa
+'5FYK_H_heavy,BCR,heavy
+'5FYK_L_light,BCR,lambda
+'5FYK_D_heavy,BCR,heavy
+'5FYK_E_light,BCR,lambda
+'3NFP_H_heavy,BCR,heavy
+'3NFP_L_light,BCR,kappa
+'4OCN_C_heavy,BCR,heavy
+'4LVO_C_heavy,BCR,heavy
+'4LVO_B_light,BCR,kappa
+'4LVN_C_heavy,BCR,heavy
+'4LVN_B_light,BCR,kappa
+'3TT1_H_heavy,BCR,heavy
+'3TT1_L_light,BCR,kappa
+'3TT3_H_heavy,BCR,heavy
+'3TT3_L_light,BCR,kappa
+'4XVU_C_heavy,BCR,heavy
+'4XVU_D_light,BCR,kappa
+'4XHJ_D_heavy,BCR,heavy
+'4XHJ_C_light,BCR,kappa
+'5HGG_S_heavy,BCR,heavy
+'3P30_H_heavy,BCR,heavy
+'3P30_L_light,BCR,lambda
+'2Q8B_H_heavy,BCR,heavy
+'2Q8B_L_light,BCR,kappa
+'3ZKS_D_heavy,BCR,heavy
+'5F7L_B_heavy,BCR,heavy
+'5F7M_C_heavy,BCR,heavy
+'5F7W_C_heavy,BCR,heavy
+'5F8Q_C_heavy,BCR,heavy
+'4RFN_H_heavy,BCR,heavy
+'4RFN_L_light,BCR,lambda
+'4ZXB_A_heavy,BCR,heavy
+'4ZXB_B_light,BCR,kappa
+'4ZXB_C_heavy,BCR,heavy
+'4ZXB_D_light,BCR,kappa
+'1V7M_H_heavy,BCR,heavy
+'1V7M_L_light,BCR,kappa
+'1V7N_H_heavy,BCR,heavy
+'1V7N_L_light,BCR,kappa
+'3S35_H_heavy,BCR,heavy
+'3S35_L_light,BCR,kappa
+'3S36_H_heavy,BCR,heavy
+'3S36_L_light,BCR,kappa
+'3S37_H_heavy,BCR,heavy
+'3S37_L_light,BCR,kappa
+'3V6Z_A_heavy,BCR,heavy
+'3V6Z_B_light,BCR,kappa
+'5T29_H_heavy,BCR,heavy
+'5T29_L_light,BCR,lambda
+'2BSE_E_heavy,BCR,heavy
+'5GGR_H_heavy,BCR,heavy
+'5GGR_L_light,BCR,kappa
+'3DVN_H_heavy,BCR,heavy
+'3DVN_L_light,BCR,kappa
+'4Y5Y_A_heavy,BCR,heavy
+'4Y5Y_B_light,BCR,lambda
+'4OQT_H_heavy,BCR,heavy
+'4OQT_L_light,BCR,kappa
+'3C09_H_heavy,BCR,heavy
+'3C09_L_light,BCR,kappa
+'3B2U_H_heavy,BCR,heavy
+'3B2U_L_light,BCR,kappa
+'3B2V_H_heavy,BCR,heavy
+'3B2V_L_light,BCR,kappa
+'4KRL_B_heavy,BCR,heavy
+'4KRM_B_heavy,BCR,heavy
+'4KRO_B_heavy,BCR,heavy
+'4KRP_B_heavy,BCR,heavy
+'4UV7_H_heavy,BCR,heavy
+'4UV7_L_light,BCR,kappa
+'4KRO_D_heavy,BCR,heavy
+'4KRO_C_light,BCR,kappa
+'1YY9_D_heavy,BCR,heavy
+'1YY9_C_light,BCR,kappa
+'4KRP_D_heavy,BCR,heavy
+'4KRP_C_light,BCR,kappa
+'5SX4_H_heavy,BCR,heavy
+'5SX4_L_light,BCR,kappa
+'5SX5_H_heavy,BCR,heavy
+'5SX5_L_light,BCR,kappa
+'1NFD_F_heavy,BCR,heavy
+'1NFD_E_light,BCR,lambda
+'1NFD_H_heavy,BCR,heavy
+'1NFD_G_light,BCR,lambda
+'4YZF_E_heavy,BCR,heavy
+'4YZF_F_light,BCR,kappa
+'5FB8_B_heavy,BCR,heavy
+'5FB8_A_light,BCR,kappa
+'4WFE_E_heavy,BCR,heavy
+'4WFE_D_light,BCR,kappa
+'4WFG_E_heavy,BCR,heavy
+'4WFG_D_light,BCR,kappa
+'4NIK_B_heavy,BCR,scFv
+'4NIK_nan_light,BCR,scFv
+'3U9U_A_heavy,BCR,heavy
+'3U9U_B_light,BCR,kappa
+'1MHP_X_heavy,BCR,heavy
+'1MHP_Y_light,BCR,kappa
+'2B2X_H_heavy,BCR,heavy
+'2B2X_L_light,BCR,kappa
+'4OII_H_heavy,BCR,heavy
+'4OII_L_light,BCR,kappa
+'4YDJ_H_heavy,BCR,heavy
+'4YDJ_L_light,BCR,lambda
+'3EZJ_B_heavy,BCR,heavy
+'5B8C_B_heavy,BCR,heavy
+'5B8C_A_light,BCR,kappa
+'5GGS_A_heavy,BCR,heavy
+'5GGS_B_light,BCR,kappa
+'3L95_H_heavy,BCR,heavy
+'3L95_L_light,BCR,kappa
+'4MXV_H_heavy,BCR,heavy
+'4MXV_L_light,BCR,kappa
+'5J1T_C_heavy,BCR,heavy
+'4LIQ_H_heavy,BCR,heavy
+'4LIQ_L_light,BCR,kappa
+'4ZS7_H_heavy,BCR,heavy
+'4ZS7_L_light,BCR,lambda
+'4J6R_H_heavy,BCR,heavy
+'4J6R_L_light,BCR,kappa
+'4DQO_H_heavy,BCR,heavy
+'4DQO_L_light,BCR,lambda
+'4XWG_H_heavy,BCR,heavy
+'4XWG_L_light,BCR,lambda
+'5BV7_C_heavy,BCR,heavy
+'5BV7_B_light,BCR,lambda
+'5BV7_H_heavy,BCR,heavy
+'5BV7_L_light,BCR,lambda
+'4O9H_H_heavy,BCR,heavy
+'4O9H_L_light,BCR,lambda
+'2ATK_A_heavy,BCR,heavy
+'2ATK_B_light,BCR,kappa
+'2BOB_A_heavy,BCR,heavy
+'2BOB_B_light,BCR,kappa
+'2BOC_A_heavy,BCR,heavy
+'2BOC_B_light,BCR,kappa
+'1K4D_A_heavy,BCR,heavy
+'1K4D_B_light,BCR,kappa
+'2DWD_A_heavy,BCR,heavy
+'2DWD_B_light,BCR,kappa
+'2DWE_A_heavy,BCR,heavy
+'2DWE_B_light,BCR,kappa
+'2H8P_A_heavy,BCR,heavy
+'2H8P_B_light,BCR,kappa
+'2HFE_A_heavy,BCR,heavy
+'2HFE_B_light,BCR,kappa
+'2HG5_A_heavy,BCR,heavy
+'2HG5_B_light,BCR,kappa
+'2HJF_A_heavy,BCR,heavy
+'2HJF_B_light,BCR,kappa
+'2HVJ_A_heavy,BCR,heavy
+'2HVJ_B_light,BCR,kappa
+'2HVK_A_heavy,BCR,heavy
+'2HVK_B_light,BCR,kappa
+'2IH1_A_heavy,BCR,heavy
+'2IH1_B_light,BCR,kappa
+'2IH3_A_heavy,BCR,heavy
+'2IH3_B_light,BCR,kappa
+'2ITC_A_heavy,BCR,heavy
+'2ITC_B_light,BCR,kappa
+'2ITD_A_heavy,BCR,heavy
+'2ITD_B_light,BCR,kappa
+'2JK5_A_heavy,BCR,heavy
+'2JK5_B_light,BCR,kappa
+'2NLJ_B_heavy,BCR,heavy
+'2NLJ_A_light,BCR,kappa
+'1R3I_H_heavy,BCR,heavy
+'1R3I_L_light,BCR,kappa
+'2W0F_A_heavy,BCR,heavy
+'2W0F_B_light,BCR,kappa
+'3F5W_A_heavy,BCR,heavy
+'3F5W_B_light,BCR,kappa
+'3F7V_A_heavy,BCR,heavy
+'3F7V_B_light,BCR,kappa
+'3F7Y_A_heavy,BCR,heavy
+'3F7Y_B_light,BCR,kappa
+'3FB5_A_heavy,BCR,heavy
+'3FB5_B_light,BCR,kappa
+'3FB6_A_heavy,BCR,heavy
+'3FB6_B_light,BCR,kappa
+'1R3J_B_heavy,BCR,heavy
+'1R3J_A_light,BCR,kappa
+'3FB7_A_heavy,BCR,heavy
+'3FB7_B_light,BCR,kappa
+'3GB7_A_heavy,BCR,heavy
+'3GB7_B_light,BCR,kappa
+'3HPL_A_heavy,BCR,heavy
+'3HPL_B_light,BCR,kappa
+'3IGA_A_heavy,BCR,heavy
+'3IGA_B_light,BCR,kappa
+'3OR6_A_heavy,BCR,heavy
+'3OR6_B_light,BCR,kappa
+'3STL_A_heavy,BCR,heavy
+'3STL_B_light,BCR,kappa
+'3STZ_A_heavy,BCR,heavy
+'3STZ_B_light,BCR,kappa
+'4LBE_A_heavy,BCR,heavy
+'4LBE_B_light,BCR,kappa
+'4LCU_A_heavy,BCR,heavy
+'4LCU_B_light,BCR,kappa
+'4MSW_A_heavy,BCR,heavy
+'4MSW_B_light,BCR,kappa
+'4UUJ_A_heavy,BCR,heavy
+'4UUJ_B_light,BCR,kappa
+'5E1A_A_heavy,BCR,heavy
+'5E1A_B_light,BCR,kappa
+'5EBL_A_heavy,BCR,heavy
+'5EBL_B_light,BCR,kappa
+'5EBM_A_heavy,BCR,heavy
+'5EBM_B_light,BCR,kappa
+'5EBW_A_heavy,BCR,heavy
+'5EBW_B_light,BCR,kappa
+'5EC1_A_heavy,BCR,heavy
+'5EC1_B_light,BCR,kappa
+'5EC2_A_heavy,BCR,heavy
+'5EC2_B_light,BCR,kappa
+'3OR7_A_heavy,BCR,heavy
+'3OR7_B_light,BCR,kappa
+'5J9P_A_heavy,BCR,heavy
+'5J9P_B_light,BCR,kappa
+'1R3K_B_heavy,BCR,heavy
+'1R3K_A_light,BCR,kappa
+'1R3L_B_heavy,BCR,heavy
+'1R3L_A_light,BCR,kappa
+'1S5H_B_heavy,BCR,heavy
+'1S5H_A_light,BCR,kappa
+'1ZWI_A_heavy,BCR,heavy
+'1ZWI_B_light,BCR,kappa
+'1K4C_A_heavy,BCR,heavy
+'1K4C_B_light,BCR,kappa
+'3G6D_H_heavy,BCR,heavy
+'3G6D_L_light,BCR,lambda
+'3L5W_H_heavy,BCR,heavy
+'3L5W_L_light,BCR,kappa
+'3L5X_H_heavy,BCR,heavy
+'3L5X_L_light,BCR,kappa
+'4I77_H_heavy,BCR,heavy
+'4I77_L_light,BCR,kappa
+'5L6Y_H_heavy,BCR,heavy
+'5L6Y_L_light,BCR,lambda
+'4I2X_B_heavy,BCR,heavy
+'4I2X_A_light,BCR,kappa
+'5E0Q_A_heavy,BCR,heavy
+'4RX4_H_heavy,BCR,heavy
+'4RX4_L_light,BCR,kappa
+'4LEO_A_heavy,BCR,heavy
+'4LEO_B_light,BCR,kappa
+'4P59_H_heavy,BCR,heavy
+'4P59_L_light,BCR,kappa
+'5CUS_H_heavy,BCR,heavy
+'5CUS_L_light,BCR,lambda
+'4YE4_H_heavy,BCR,heavy
+'4YE4_L_light,BCR,kappa
+'3IU3_H_heavy,BCR,heavy
+'3IU3_L_light,BCR,kappa
+'4HT1_H_heavy,BCR,heavy
+'4HT1_L_light,BCR,kappa
+'4WEU_D_heavy,BCR,heavy
+'3BE1_H_heavy,BCR,heavy
+'3BE1_L_light,BCR,kappa
+'5E94_B_heavy,BCR,heavy
+'5E94_A_light,BCR,kappa
+'3G6J_F_heavy,BCR,heavy
+'3G6J_E_light,BCR,kappa
+'4Y5V_A_heavy,BCR,heavy
+'4Y5V_B_light,BCR,lambda
+'4ORZ_C_heavy,BCR,heavy
+'2ZJS_H_heavy,BCR,heavy
+'2ZJS_L_light,BCR,kappa
+'4OCM_C_heavy,BCR,heavy
+'1RJL_B_heavy,BCR,heavy
+'1RJL_A_light,BCR,kappa
+'4C59_B_heavy,BCR,heavy
+'4OCL_C_heavy,BCR,heavy
+'4YGA_B_heavy,BCR,heavy
+'5IP4_A_heavy,BCR,heavy
+'5E8E_B_heavy,BCR,heavy
+'5E8E_A_light,BCR,kappa
+'4QO1_A_heavy,BCR,heavy
+'4NP4_I_heavy,BCR,heavy
+'4NP4_M_light,BCR,kappa
+'4NP4_H_heavy,BCR,heavy
+'4NP4_L_light,BCR,kappa
+'3CX5_J_heavy,BCR,heavy
+'3CX5_K_light,BCR,kappa
+'1P84_J_heavy,BCR,heavy
+'1P84_K_light,BCR,kappa
+'2IBZ_X_heavy,BCR,heavy
+'2IBZ_Y_light,BCR,kappa
+'3CXH_J_heavy,BCR,heavy
+'3CXH_K_light,BCR,kappa
+'4PD4_J_heavy,BCR,heavy
+'4PD4_K_light,BCR,kappa
+'1EZV_X_heavy,BCR,heavy
+'1EZV_Y_light,BCR,kappa
+'1KB9_J_heavy,BCR,heavy
+'1KB9_K_light,BCR,kappa
+'1KYO_J_heavy,BCR,heavy
+'1KYO_K_light,BCR,kappa
+'5GS0_D_heavy,BCR,heavy
+'5GS0_C_light,BCR,lambda
+'3W9E_A_heavy,BCR,heavy
+'3W9E_B_light,BCR,kappa
+'1LK3_H_heavy,BCR,heavy
+'1LK3_L_light,BCR,kappa
+'5T5F_H_heavy,BCR,heavy
+'5T5F_L_light,BCR,kappa
+'5C8J_A_heavy,BCR,heavy
+'5C8J_B_light,BCR,kappa
+'5GJS_H_heavy,BCR,heavy
+'5GJS_L_light,BCR,kappa
+'3V6O_C_heavy,BCR,heavy
+'3V6O_E_light,BCR,kappa
+'4I18_H_heavy,BCR,heavy
+'4I18_L_light,BCR,kappa
+'1YJD_H_heavy,BCR,heavy
+'1YJD_L_light,BCR,kappa
+'4LSV_H_heavy,BCR,heavy
+'4LSV_L_light,BCR,kappa
+'4Y8D_C_heavy,BCR,heavy
+'5H35_H_heavy,BCR,heavy
+'5H35_I_light,BCR,kappa
+'1JPS_H_heavy,BCR,heavy
+'1JPS_L_light,BCR,kappa
+'5HVF_B_heavy,BCR,heavy
+'4QCI_H_heavy,BCR,heavy
+'4QCI_L_light,BCR,lambda
+'2YPV_H_heavy,BCR,heavy
+'2YPV_L_light,BCR,kappa
+'2VXT_H_heavy,BCR,heavy
+'2VXT_L_light,BCR,kappa
+'4XWO_C_heavy,BCR,heavy
+'4XWO_D_light,BCR,kappa
+'1KB5_H_heavy,BCR,heavy
+'1KB5_L_light,BCR,kappa
+'5F9A_C_heavy,BCR,heavy
+'4YWG_H_heavy,BCR,heavy
+'4YWG_L_light,BCR,kappa
+'5LQB_H_heavy,BCR,heavy
+'5LQB_L_light,BCR,kappa
+'2QQN_H_heavy,BCR,heavy
+'2QQN_L_light,BCR,kappa
+'4OGA_C_heavy,BCR,heavy
+'4OGA_D_light,BCR,kappa
+'4JR9_H_heavy,BCR,heavy
+'4JR9_L_light,BCR,kappa
+'3U9P_H_heavy,BCR,heavy
+'3U9P_L_light,BCR,kappa
+'3FMG_H_heavy,BCR,heavy
+'3FMG_L_light,BCR,kappa
+'3V7A_E_heavy,BCR,heavy
+'3V7A_H_light,BCR,kappa
+'4XT1_C_heavy,BCR,heavy
+'5BOP_A_heavy,BCR,heavy
+'5J1S_C_heavy,BCR,heavy
+'4YQX_H_heavy,BCR,heavy
+'4YQX_L_light,BCR,kappa
+'4YBL_H_heavy,BCR,heavy
+'4YBL_L_light,BCR,lambda
+'4FQJ_H_heavy,BCR,heavy
+'4FQJ_L_light,BCR,lambda
+'5F9D_C_heavy,BCR,heavy
+'4ETQ_H_heavy,BCR,heavy
+'4ETQ_L_light,BCR,kappa
+'4U6H_A_heavy,BCR,heavy
+'4U6H_B_light,BCR,kappa
+'2I9L_B_heavy,BCR,heavy
+'2I9L_A_light,BCR,kappa
+'5KW9_H_heavy,BCR,heavy
+'5KW9_L_light,BCR,kappa
+'2QQL_H_heavy,BCR,heavy
+'2QQL_L_light,BCR,kappa
+'1CIC_B_heavy,BCR,heavy
+'1CIC_A_light,BCR,kappa
+'3MAC_H_heavy,BCR,heavy
+'3MAC_L_light,BCR,lambda
+'1OP9_A_heavy,BCR,heavy
+'3EBA_A_heavy,BCR,heavy
+'4I0C_D_heavy,BCR,heavy
+'2QQK_H_heavy,BCR,heavy
+'2QQK_L_light,BCR,kappa
+'1FJ1_B_heavy,BCR,heavy
+'1FJ1_A_light,BCR,kappa
+'1OSP_H_heavy,BCR,heavy
+'1OSP_L_light,BCR,kappa
+'3RU8_H_heavy,BCR,heavy
+'3RU8_L_light,BCR,kappa
+'3V4P_H_heavy,BCR,heavy
+'3V4P_L_light,BCR,kappa
+'3V4V_H_heavy,BCR,heavy
+'3V4V_L_light,BCR,kappa
+'3KS0_H_heavy,BCR,heavy
+'3KS0_L_light,BCR,lambda
+'4JZJ_H_heavy,BCR,heavy
+'4JZJ_L_light,BCR,kappa
+'4DK6_A_heavy,BCR,heavy
+'4DKA_A_heavy,BCR,heavy
+'2J6E_H_heavy,BCR,heavy
+'2J6E_L_light,BCR,lambda
+'1ADQ_H_heavy,BCR,heavy
+'1ADQ_L_light,BCR,lambda
+'4Z5R_K_heavy,BCR,heavy
+'4Z5R_J_light,BCR,kappa
+'4XTR_C_heavy,BCR,heavy
+'4XTR_D_light,BCR,kappa
+'2VH5_H_heavy,BCR,heavy
+'2VH5_L_light,BCR,kappa
+'2UZI_H_heavy,BCR,heavy
+'2UZI_L_light,BCR,kappa
+'1AHW_B_heavy,BCR,heavy
+'1AHW_A_light,BCR,kappa
+'5EU7_E_heavy,BCR,heavy
+'5EU7_C_light,BCR,kappa
+'4F37_H_heavy,BCR,heavy
+'4F37_L_light,BCR,kappa
+'4YDI_H_heavy,BCR,heavy
+'4YDI_L_light,BCR,kappa
+'4HJ0_P_heavy,BCR,heavy
+'4HJ0_Q_light,BCR,lambda
+'5ESV_H_heavy,BCR,heavy
+'5ESV_L_light,BCR,kappa
+'4QWW_F_heavy,BCR,heavy
+'4QWW_E_light,BCR,kappa
+'3U2S_H_heavy,BCR,heavy
+'3U2S_L_light,BCR,lambda
+'5T33_H_heavy,BCR,heavy
+'5T33_L_light,BCR,lambda
+'3ZLQ_C_heavy,BCR,heavy
+'4BEL_D_heavy,BCR,heavy
+'3ZKQ_D_heavy,BCR,heavy
+'3ZKM_H_heavy,BCR,heavy
+'3ZKM_L_light,BCR,kappa
+'3ZKN_H_heavy,BCR,heavy
+'3ZKN_L_light,BCR,kappa
+'3UC0_H_heavy,BCR,heavy
+'3UC0_L_light,BCR,kappa
+'1FSK_C_heavy,BCR,heavy
+'1FSK_B_light,BCR,kappa
+'5SY8_H_heavy,BCR,heavy
+'5SY8_L_light,BCR,lambda
+'5T6L_H_heavy,BCR,heavy
+'5T6L_L_light,BCR,lambda
+'5T80_H_heavy,BCR,heavy
+'5T80_L_light,BCR,lambda
+'5T85_H_heavy,BCR,heavy
+'5T85_L_light,BCR,lambda
+'5TFW_H_heavy,BCR,heavy
+'5TFW_L_light,BCR,lambda
+'4M8Q_H_heavy,BCR,heavy
+'4M8Q_L_light,BCR,kappa
+'4ODX_H_heavy,BCR,heavy
+'4ODX_B_light,BCR,kappa
+'4M62_H_heavy,BCR,heavy
+'4M62_L_light,BCR,kappa
+'2W9E_H_heavy,BCR,heavy
+'2W9E_L_light,BCR,kappa
+'1TPX_B_heavy,BCR,heavy
+'1TPX_C_light,BCR,kappa
+'1TQC_B_heavy,BCR,heavy
+'1TQC_C_light,BCR,kappa
+'1TQB_B_heavy,BCR,heavy
+'1TQB_C_light,BCR,kappa
+'4MA7_H_heavy,BCR,heavy
+'4MA7_L_light,BCR,kappa
+'4MA8_H_heavy,BCR,heavy
+'4MA8_L_light,BCR,kappa
+'4YX2_H_heavy,BCR,heavy
+'4YX2_L_light,BCR,kappa
+'4YXH_H_heavy,BCR,heavy
+'4YXH_L_light,BCR,kappa
+'4YXK_H_heavy,BCR,heavy
+'4YXK_L_light,BCR,kappa
+'4YXL_H_heavy,BCR,heavy
+'4YXL_L_light,BCR,kappa
+'4DGI_H_heavy,BCR,heavy
+'4DGI_L_light,BCR,kappa
+'4H88_H_heavy,BCR,heavy
+'4H88_L_light,BCR,kappa
+'4N9O_B_heavy,BCR,heavy
+'4KML_B_heavy,BCR,heavy
+'2R0L_H_heavy,BCR,heavy
+'2R0L_L_light,BCR,kappa
+'2WUB_H_heavy,BCR,heavy
+'2WUB_L_light,BCR,kappa
+'2WUC_H_heavy,BCR,heavy
+'2WUC_L_light,BCR,kappa
+'2P42_B_heavy,BCR,heavy
+'2P43_B_heavy,BCR,heavy
+'2P44_B_heavy,BCR,heavy
+'2P45_B_heavy,BCR,heavy
+'2P46_B_heavy,BCR,heavy
+'2P47_B_heavy,BCR,heavy
+'2P48_B_heavy,BCR,heavy
+'2P49_B_heavy,BCR,heavy
+'1BZQ_L_heavy,BCR,heavy
+'2P4A_B_heavy,BCR,heavy
+'3QSK_B_heavy,BCR,heavy
+'4POU_B_heavy,BCR,heavy
+'2ARJ_H_heavy,BCR,heavy
+'2ARJ_L_light,BCR,kappa
+'3WKM_H_heavy,BCR,heavy
+'3WKM_L_light,BCR,kappa
+'2FD6_H_heavy,BCR,heavy
+'2FD6_L_light,BCR,kappa
+'5KOV_C_heavy,BCR,scFv
+'5KOV_nan_light,BCR,scFv
+'5HHV_H_heavy,BCR,heavy
+'5HHV_L_light,BCR,lambda
+'5HHX_H_heavy,BCR,heavy
+'5HHX_L_light,BCR,lambda
+'5HI3_H_heavy,BCR,heavy
+'5HI3_L_light,BCR,lambda
+'5HI4_H_heavy,BCR,heavy
+'5HI4_L_light,BCR,lambda
+'5HI5_H_heavy,BCR,heavy
+'5HI5_L_light,BCR,lambda
+'2VXS_H_heavy,BCR,heavy
+'2VXS_L_light,BCR,lambda
+'1FBI_H_heavy,BCR,heavy
+'1FBI_L_light,BCR,kappa
+'1BVK_B_heavy,BCR,heavy
+'1BVK_A_light,BCR,kappa
+'1FDL_H_heavy,BCR,heavy
+'1FDL_L_light,BCR,kappa
+'1KIR_B_heavy,BCR,heavy
+'1KIR_A_light,BCR,kappa
+'1VFB_B_heavy,BCR,heavy
+'1VFB_A_light,BCR,kappa
+'1A2Y_B_heavy,BCR,heavy
+'1A2Y_A_light,BCR,kappa
+'1G7H_B_heavy,BCR,heavy
+'1G7H_A_light,BCR,kappa
+'1G7I_B_heavy,BCR,heavy
+'1G7I_A_light,BCR,kappa
+'1G7J_B_heavy,BCR,heavy
+'1G7J_A_light,BCR,kappa
+'1G7L_B_heavy,BCR,heavy
+'1G7L_A_light,BCR,kappa
+'1G7M_B_heavy,BCR,heavy
+'1G7M_A_light,BCR,kappa
+'1BQL_H_heavy,BCR,heavy
+'1BQL_L_light,BCR,kappa
+'1YQV_H_heavy,BCR,heavy
+'1YQV_L_light,BCR,kappa
+'2IFF_H_heavy,BCR,heavy
+'2IFF_L_light,BCR,kappa
+'1DQJ_B_heavy,BCR,heavy
+'1DQJ_A_light,BCR,kappa
+'1NBY_B_heavy,BCR,heavy
+'1NBY_A_light,BCR,kappa
+'1NBZ_B_heavy,BCR,heavy
+'1NBZ_A_light,BCR,kappa
+'1KIP_B_heavy,BCR,heavy
+'1KIP_A_light,BCR,kappa
+'1KIQ_B_heavy,BCR,heavy
+'1KIQ_A_light,BCR,kappa
+'1JHL_H_heavy,BCR,heavy
+'1JHL_L_light,BCR,kappa
+'1DZB_A_heavy,BCR,scFv
+'1DZB_A_light,BCR,scFv
+'1DZB_B_heavy,BCR,scFv
+'1DZB_B_light,BCR,scFv
+'1JTO_B_heavy,BCR,heavy
+'1JTP_A_heavy,BCR,heavy
+'1JTP_B_heavy,BCR,heavy
+'1JTT_A_heavy,BCR,heavy
+'1MEL_A_heavy,BCR,heavy
+'1ZMY_A_heavy,BCR,heavy
+'1JTO_A_heavy,BCR,heavy
+'1NDM_B_heavy,BCR,heavy
+'1NDM_A_light,BCR,kappa
+'1NDG_B_heavy,BCR,heavy
+'1NDG_A_light,BCR,kappa
+'2EIZ_B_heavy,BCR,heavy
+'2EIZ_A_light,BCR,kappa
+'2EKS_B_heavy,BCR,heavy
+'2EKS_A_light,BCR,kappa
+'2YSS_B_heavy,BCR,heavy
+'2YSS_A_light,BCR,kappa
+'2DQC_H_heavy,BCR,heavy
+'2DQC_L_light,BCR,kappa
+'2DQF_B_heavy,BCR,heavy
+'2DQF_A_light,BCR,kappa
+'2DQF_E_heavy,BCR,heavy
+'2DQF_D_light,BCR,kappa
+'1ZVY_A_heavy,BCR,heavy
+'1ZVH_A_heavy,BCR,heavy
+'1ZV5_A_heavy,BCR,heavy
+'1P2C_B_heavy,BCR,heavy
+'1P2C_A_light,BCR,kappa
+'1IC4_H_heavy,BCR,heavy
+'1IC4_L_light,BCR,kappa
+'1IC5_H_heavy,BCR,heavy
+'1IC5_L_light,BCR,kappa
+'1IC7_H_heavy,BCR,heavy
+'1IC7_L_light,BCR,kappa
+'1XGP_B_heavy,BCR,heavy
+'1XGP_A_light,BCR,kappa
+'1RJC_A_heavy,BCR,heavy
+'1RI8_A_heavy,BCR,heavy
+'1XGQ_B_heavy,BCR,heavy
+'1XGQ_A_light,BCR,kappa
+'1XGT_B_heavy,BCR,heavy
+'1XGT_A_light,BCR,kappa
+'1XGR_B_heavy,BCR,heavy
+'1XGR_A_light,BCR,kappa
+'1XGU_B_heavy,BCR,heavy
+'1XGU_A_light,BCR,kappa
+'3A67_H_heavy,BCR,heavy
+'3A67_L_light,BCR,kappa
+'3A6C_H_heavy,BCR,heavy
+'3A6C_L_light,BCR,kappa
+'3A6B_H_heavy,BCR,heavy
+'3A6B_L_light,BCR,kappa
+'1J1P_H_heavy,BCR,heavy
+'1J1P_L_light,BCR,kappa
+'1J1X_H_heavy,BCR,heavy
+'1J1X_L_light,BCR,kappa
+'1J1O_H_heavy,BCR,heavy
+'1J1O_L_light,BCR,kappa
+'1UA6_H_heavy,BCR,heavy
+'1UA6_L_light,BCR,kappa
+'1UAC_H_heavy,BCR,heavy
+'1UAC_L_light,BCR,kappa
+'2DQD_H_heavy,BCR,heavy
+'2DQD_L_light,BCR,kappa
+'2DQE_H_heavy,BCR,heavy
+'2DQE_L_light,BCR,kappa
+'2DQG_H_heavy,BCR,heavy
+'2DQG_L_light,BCR,kappa
+'1C08_B_heavy,BCR,heavy
+'1C08_A_light,BCR,kappa
+'2DQH_H_heavy,BCR,heavy
+'2DQH_L_light,BCR,kappa
+'2DQI_H_heavy,BCR,heavy
+'2DQI_L_light,BCR,kappa
+'2DQJ_H_heavy,BCR,heavy
+'2DQJ_L_light,BCR,kappa
+'2ZNW_A_light,BCR,kappa
+'2ZNW_nan_heavy,BCR,kappa
+'2ZNX_A_light,BCR,kappa
+'2ZNX_nan_heavy,BCR,kappa
+'3D9A_H_heavy,BCR,heavy
+'3D9A_L_light,BCR,kappa
+'3HFM_H_heavy,BCR,heavy
+'3HFM_L_light,BCR,kappa
+'1MLC_D_heavy,BCR,heavy
+'1MLC_C_light,BCR,kappa
+'1MLC_B_heavy,BCR,heavy
+'1MLC_A_light,BCR,kappa
+'4PGJ_A_heavy,BCR,heavy
+'4U3X_A_heavy,BCR,heavy
+'2VYR_H_heavy,BCR,heavy
+'5UGY_H_heavy,BCR,heavy
+'5UGY_L_light,BCR,lambda
+'4HKX_A_heavy,BCR,heavy
+'4HKX_B_light,BCR,lambda
+'4YK4_C_heavy,BCR,heavy
+'4YK4_B_light,BCR,kappa
+'4YJZ_L_light,BCR,lambda
+'4YJZ_nan_heavy,BCR,lambda
+'2BDN_H_heavy,BCR,heavy
+'2BDN_L_light,BCR,kappa
+'4DN4_H_heavy,BCR,heavy
+'4DN4_L_light,BCR,kappa
+'1IAI_I_heavy,BCR,heavy
+'1IAI_M_light,BCR,kappa
+'4CAD_B_heavy,BCR,heavy
+'4CAD_A_light,BCR,kappa
+'4DVR_H_heavy,BCR,heavy
+'4DVR_L_light,BCR,kappa
+'4LST_H_heavy,BCR,heavy
+'4LST_L_light,BCR,kappa
+'3NGB_H_heavy,BCR,heavy
+'3NGB_L_light,BCR,kappa
+'3SE9_H_heavy,BCR,heavy
+'3SE9_L_light,BCR,kappa
+'4JPV_H_heavy,BCR,heavy
+'4JPV_L_light,BCR,kappa
+'4JPW_H_heavy,BCR,heavy
+'4JPW_L_light,BCR,kappa
+'4JAN_H_heavy,BCR,heavy
+'4JAN_L_light,BCR,lambda
+'5IGX_H_heavy,BCR,heavy
+'5IGX_L_light,BCR,kappa
+'4JDT_H_heavy,BCR,heavy
+'4JDT_L_light,BCR,kappa
+'4JB9_H_heavy,BCR,heavy
+'4JB9_L_light,BCR,kappa
+'4JKP_H_heavy,BCR,heavy
+'4JKP_L_light,BCR,kappa
+'3U7Y_H_heavy,BCR,heavy
+'3U7Y_L_light,BCR,kappa
+'4LAJ_H_heavy,BCR,heavy
+'4LSP_H_heavy,BCR,heavy
+'4LSP_L_light,BCR,kappa
+'4LSQ_H_heavy,BCR,heavy
+'4LSQ_L_light,BCR,kappa
+'4LSR_H_heavy,BCR,heavy
+'4LSR_L_light,BCR,kappa
+'4LSU_H_heavy,BCR,heavy
+'4LSU_L_light,BCR,lambda
+'3SE8_H_heavy,BCR,heavy
+'3SE8_L_light,BCR,kappa
+'4H8W_H_heavy,BCR,heavy
+'4H8W_L_light,BCR,lambda
+'4OLV_H_heavy,BCR,heavy
+'4OLV_L_light,BCR,kappa
+'4OLW_H_heavy,BCR,heavy
+'4OLW_L_light,BCR,kappa
+'4OLX_H_heavy,BCR,heavy
+'4OLX_L_light,BCR,kappa
+'4OLZ_H_heavy,BCR,heavy
+'4OLZ_L_light,BCR,kappa
+'4OLY_H_heavy,BCR,heavy
+'4OLY_L_light,BCR,kappa
+'4OM0_H_heavy,BCR,heavy
+'4OM0_L_light,BCR,kappa
+'4OLU_H_heavy,BCR,heavy
+'4OLU_L_light,BCR,kappa
+'4OM1_H_heavy,BCR,heavy
+'4OM1_L_light,BCR,kappa
+'4S1Q_H_heavy,BCR,heavy
+'4S1Q_L_light,BCR,kappa
+'4S1R_H_heavy,BCR,heavy
+'4S1R_L_light,BCR,kappa
+'4S1S_H_heavy,BCR,heavy
+'4S1S_L_light,BCR,kappa
+'4XNZ_H_heavy,BCR,heavy
+'4XNZ_L_light,BCR,kappa
+'4XVS_H_heavy,BCR,heavy
+'4XVS_L_light,BCR,kappa
+'4XVT_H_heavy,BCR,heavy
+'4XVT_L_light,BCR,kappa
+'4YDK_H_heavy,BCR,heavy
+'4YDK_L_light,BCR,kappa
+'4YDL_H_heavy,BCR,heavy
+'4YDL_L_light,BCR,kappa
+'4YFL_H_heavy,BCR,heavy
+'4YFL_L_light,BCR,lambda
+'4RWY_H_heavy,BCR,heavy
+'4RWY_L_light,BCR,kappa
+'5F9W_H_heavy,BCR,heavy
+'5F9W_L_light,BCR,kappa
+'5F9O_H_heavy,BCR,heavy
+'5F9O_L_light,BCR,kappa
+'5F96_H_heavy,BCR,heavy
+'5F96_L_light,BCR,kappa
+'5FEC_A_heavy,BCR,heavy
+'5FEC_B_light,BCR,kappa
+'5TE6_H_heavy,BCR,heavy
+'5TE6_L_light,BCR,kappa
+'5TE7_H_heavy,BCR,heavy
+'5TE7_L_light,BCR,kappa
+'3O2D_H_heavy,BCR,heavy
+'3O2D_L_light,BCR,kappa
+'1XIW_D_heavy,BCR,heavy
+'1XIW_C_light,BCR,kappa
+'1SY6_H_heavy,BCR,heavy
+'1SY6_L_light,BCR,kappa
+'2R4S_H_heavy,BCR,heavy
+'2R4S_L_light,BCR,kappa
+'2R4R_H_heavy,BCR,heavy
+'2R4R_L_light,BCR,kappa
+'5D1Z_D_heavy,BCR,heavy
+'5D1Z_C_light,BCR,kappa
+'5D1Z_B_heavy,BCR,heavy
+'5D1Z_A_light,BCR,kappa
+'4FQI_H_heavy,BCR,heavy
+'4FQI_L_light,BCR,lambda
+'3FKU_Y_heavy,BCR,scFv
+'3FKU_nan_light,BCR,scFv
+'5A3I_C_heavy,BCR,heavy
+'5A3I_D_light,BCR,kappa
+'4XNM_H_heavy,BCR,heavy
+'4XNM_L_light,BCR,lambda
+'4XNQ_H_heavy,BCR,heavy
+'4XNQ_L_light,BCR,lambda
+'4XRC_H_heavy,BCR,heavy
+'4XRC_L_light,BCR,lambda
+'5DUM_H_heavy,BCR,heavy
+'5DUM_L_light,BCR,kappa
+'5DUP_H_heavy,BCR,heavy
+'5DUP_L_light,BCR,lambda
+'5DUR_H_heavy,BCR,heavy
+'5DUR_L_light,BCR,lambda
+'3GBM_H_heavy,BCR,heavy
+'3GBM_L_light,BCR,lambda
+'3HB3_C_heavy,BCR,heavy
+'3HB3_D_light,BCR,kappa
+'1AR1_C_heavy,BCR,heavy
+'1AR1_D_light,BCR,kappa
+'3EHB_C_heavy,BCR,heavy
+'3EHB_D_light,BCR,kappa
+'1QLE_H_heavy,BCR,heavy
+'1QLE_L_light,BCR,kappa
+'2EXY_C_heavy,BCR,heavy
+'2EXY_D_light,BCR,kappa
+'2FED_C_heavy,BCR,heavy
+'2FED_D_light,BCR,kappa
+'2FEE_I_heavy,BCR,heavy
+'2FEE_L_light,BCR,kappa
+'2H2P_C_heavy,BCR,heavy
+'2H2P_D_light,BCR,kappa
+'2HTL_C_heavy,BCR,heavy
+'2HTL_D_light,BCR,kappa
+'4FG6_C_heavy,BCR,heavy
+'4FG6_D_light,BCR,kappa
+'4KJQ_C_heavy,BCR,heavy
+'4KJQ_D_light,BCR,kappa
+'4KJW_C_heavy,BCR,heavy
+'4KJW_D_light,BCR,kappa
+'4KK5_C_heavy,BCR,heavy
+'4KK5_D_light,BCR,kappa
+'4KK8_C_heavy,BCR,heavy
+'4KK8_D_light,BCR,kappa
+'1OTS_C_heavy,BCR,heavy
+'1OTS_D_light,BCR,kappa
+'4KKB_C_heavy,BCR,heavy
+'4KKB_D_light,BCR,kappa
+'4KKC_C_heavy,BCR,heavy
+'4KKC_D_light,BCR,kappa
+'4KKL_C_heavy,BCR,heavy
+'4KKL_D_light,BCR,kappa
+'2H2S_C_heavy,BCR,heavy
+'2H2S_D_light,BCR,kappa
+'3EJZ_C_heavy,BCR,heavy
+'3EJZ_D_light,BCR,kappa
+'3DET_C_heavy,BCR,heavy
+'3DET_D_light,BCR,kappa
+'1OTT_C_heavy,BCR,heavy
+'1OTT_D_light,BCR,kappa
+'1OTU_C_heavy,BCR,heavy
+'1OTU_D_light,BCR,kappa
+'2EXW_C_heavy,BCR,heavy
+'2EXW_D_light,BCR,kappa
+'4Y5X_A_heavy,BCR,heavy
+'4Y5X_B_light,BCR,lambda
+'1UJ3_B_heavy,BCR,heavy
+'1UJ3_A_light,BCR,kappa
+'5JZ7_H_heavy,BCR,heavy
+'5JZ7_L_light,BCR,lambda
+'2VWE_E_heavy,BCR,heavy
+'2VWE_C_light,BCR,kappa
+'5CZV_H_heavy,BCR,heavy
+'5CZV_L_light,BCR,kappa
+'5CZX_H_heavy,BCR,heavy
+'5CZX_L_light,BCR,kappa
+'4ENE_C_heavy,BCR,heavy
+'4ENE_D_light,BCR,kappa
+'4LOU_C_heavy,BCR,heavy
+'4LOU_D_light,BCR,kappa
+'5F93_C_heavy,BCR,heavy
+'5F97_G_heavy,BCR,heavy
+'4UTA_H_heavy,BCR,heavy
+'4UTA_L_light,BCR,kappa
+'5MES_H_heavy,BCR,heavy
+'5MES_L_light,BCR,lambda
+'5MEV_H_heavy,BCR,heavy
+'5MEV_L_light,BCR,lambda
+'3UZV_B_heavy,BCR,scFv
+'3UZV_B_light,BCR,scFv
+'3WLW_H_heavy,BCR,heavy
+'3WLW_L_light,BCR,lambda
+'3WSQ_H_heavy,BCR,heavy
+'3WSQ_L_light,BCR,lambda
+'1S78_F_heavy,BCR,heavy
+'1S78_E_light,BCR,kappa
+'4XPA_H_heavy,BCR,heavy
+'4XPA_L_light,BCR,kappa
+'4XPF_H_heavy,BCR,heavy
+'4XPF_L_light,BCR,kappa
+'4XPG_H_heavy,BCR,heavy
+'4XPG_L_light,BCR,kappa
+'4XPH_H_heavy,BCR,heavy
+'4XPH_L_light,BCR,kappa
+'4M48_H_heavy,BCR,heavy
+'4M48_L_light,BCR,kappa
+'4XNU_H_heavy,BCR,heavy
+'4XNU_L_light,BCR,kappa
+'4XNX_H_heavy,BCR,heavy
+'4XNX_L_light,BCR,kappa
+'4XP1_H_heavy,BCR,heavy
+'4XP1_L_light,BCR,kappa
+'4XP4_H_heavy,BCR,heavy
+'4XP4_L_light,BCR,kappa
+'4XP5_H_heavy,BCR,heavy
+'4XP5_L_light,BCR,kappa
+'4XP6_H_heavy,BCR,heavy
+'4XP6_L_light,BCR,kappa
+'4XP9_H_heavy,BCR,heavy
+'4XP9_L_light,BCR,kappa
+'2I60_H_heavy,BCR,heavy
+'2I60_L_light,BCR,kappa
+'1RZK_H_heavy,BCR,heavy
+'1RZK_L_light,BCR,kappa
+'1YYL_H_heavy,BCR,heavy
+'1YYL_L_light,BCR,kappa
+'1YYM_H_heavy,BCR,heavy
+'1YYM_L_light,BCR,kappa
+'2I5Y_H_heavy,BCR,heavy
+'2I5Y_L_light,BCR,kappa
+'1G9N_H_heavy,BCR,heavy
+'1G9N_L_light,BCR,kappa
+'2NY7_H_heavy,BCR,heavy
+'2NY7_L_light,BCR,kappa
+'5F7K_C_heavy,BCR,heavy
+'5F7N_C_heavy,BCR,heavy
+'5F7Y_C_heavy,BCR,heavy
+'5F8R_C_heavy,BCR,heavy
+'4C57_C_heavy,BCR,heavy
+'3QWO_H_heavy,BCR,heavy
+'3QWO_L_light,BCR,kappa
+'3QWO_H_heavy,BCR,heavy
+'3QWO_L_light,BCR,kappa
+'5DMJ_B_heavy,BCR,heavy
+'5IHL_B_heavy,BCR,heavy
+'3O0R_H_heavy,BCR,heavy
+'3O0R_L_light,BCR,kappa
+'4PS4_H_heavy,BCR,heavy
+'4PS4_L_light,BCR,kappa
+'3TYG_H_heavy,BCR,heavy
+'3TYG_L_light,BCR,lambda
+'1H0D_B_heavy,BCR,heavy
+'1H0D_A_light,BCR,kappa
+'5IMM_B_heavy,BCR,heavy
+'5IMO_B_heavy,BCR,heavy
+'5IMK_B_heavy,BCR,heavy
+'5IML_B_heavy,BCR,heavy
+'1OB1_B_heavy,BCR,heavy
+'1OB1_A_light,BCR,kappa
+'1OB1_E_heavy,BCR,heavy
+'1OB1_D_light,BCR,kappa
+'1FYT_D_alpha,TCR,alpha
+'1FYT_E_beta,TCR,beta
+'2VLJ_D_alpha,TCR,alpha
+'2VLJ_E_beta,TCR,beta
+'2VLK_D_alpha,TCR,alpha
+'2VLK_E_beta,TCR,beta
+'2VLR_D_alpha,TCR,alpha
+'2VLR_E_beta,TCR,beta
+'2PYE_D_alpha,TCR,alpha
+'2PYE_E_beta,TCR,beta
+'2P5E_D_alpha,TCR,alpha
+'2P5E_E_beta,TCR,beta
+'2P5W_D_alpha,TCR,alpha
+'2P5W_E_beta,TCR,beta
+'2GJ6_D_alpha,TCR,alpha
+'2GJ6_E_beta,TCR,beta
+'1D9K_A_alpha,TCR,alpha
+'1D9K_B_beta,TCR,beta
+'2ESV_D_alpha,TCR,alpha
+'2ESV_E_beta,TCR,beta
+'1U3H_A_alpha,TCR,alpha
+'1U3H_B_beta,TCR,beta
+'2IAN_D_alpha,TCR,alpha
+'2IAN_E_beta,TCR,beta
+'2IAM_C_alpha,TCR,alpha
+'2IAM_D_beta,TCR,beta
+'1G6R_A_alpha,TCR,alpha
+'1G6R_B_beta,TCR,beta
+'3C5Z_A_alpha,TCR,alpha
+'3C5Z_B_beta,TCR,beta
+'3C6L_A_alpha,TCR,alpha
+'3C6L_B_beta,TCR,beta
+'3C60_A_alpha,TCR,alpha
+'3C60_B_beta,TCR,beta
+'2Z31_A_alpha,TCR,alpha
+'2Z31_B_beta,TCR,beta
+'2PXY_A_alpha,TCR,alpha
+'2PXY_B_beta,TCR,beta
+'3DXA_D_alpha,TCR,alpha
+'3DXA_E_beta,TCR,beta
+'1AO7_D_alpha,TCR,alpha
+'1AO7_E_beta,TCR,beta
+'2CKB_A_alpha,TCR,alpha
+'2CKB_B_beta,TCR,beta
+'1KJ2_A_alpha,TCR,alpha
+'1KJ2_B_beta,TCR,beta
+'1MWA_A_alpha,TCR,alpha
+'1MWA_B_beta,TCR,beta
+'1LP9_E_alpha,TCR,alpha
+'1LP9_F_beta,TCR,beta
+'2BNR_D_alpha,TCR,alpha
+'2BNR_E_beta,TCR,beta
+'2BNQ_D_alpha,TCR,alpha
+'2BNQ_E_beta,TCR,beta
+'2UWE_E_alpha,TCR,alpha
+'2UWE_F_beta,TCR,beta
+'2JCC_E_alpha,TCR,alpha
+'2JCC_F_beta,TCR,beta
+'2J8U_E_alpha,TCR,alpha
+'2J8U_F_beta,TCR,beta
+'2F54_D_alpha,TCR,alpha
+'2F54_E_beta,TCR,beta
+'2F53_D_alpha,TCR,alpha
+'2F53_E_beta,TCR,beta
+'3E3Q_D_alpha,TCR,alpha
+'3E3Q_E_beta,TCR,beta
+'2AK4_D_alpha,TCR,alpha
+'2AK4_E_beta,TCR,beta
+'2AK4_T_alpha,TCR,alpha
+'2AK4_U_beta,TCR,beta
+'3GSN_A_alpha,TCR,alpha
+'3GSN_B_beta,TCR,beta
+'2F54_K_alpha,TCR,alpha
+'2F54_L_beta,TCR,beta
+'2OI9_B_alpha,TCR,alpha
+'2OI9_C_beta,TCR,beta
+'2E7L_A_alpha,TCR,alpha
+'2E7L_D_beta,TCR,beta
+'3MBE_C_alpha,TCR,alpha
+'3MBE_D_beta,TCR,beta
+'3KXF_D_alpha,TCR,alpha
+'3KXF_E_beta,TCR,beta
+'3O6F_C_alpha,TCR,alpha
+'3O6F_D_beta,TCR,beta
+'3O4L_D_alpha,TCR,alpha
+'3O4L_E_beta,TCR,beta
+'3PWP_D_alpha,TCR,alpha
+'3PWP_E_beta,TCR,beta
+'3H9S_D_alpha,TCR,alpha
+'3H9S_E_beta,TCR,beta
+'3PL6_C_alpha,TCR,alpha
+'3PL6_D_beta,TCR,beta
+'3QIB_C_alpha,TCR,alpha
+'3QIB_D_beta,TCR,beta
+'3QIU_C_alpha,TCR,alpha
+'3QIU_D_beta,TCR,beta
+'3QIW_C_alpha,TCR,alpha
+'3QIW_D_beta,TCR,beta
+'3HG1_D_alpha,TCR,alpha
+'3HG1_E_beta,TCR,beta
+'3UTT_D_alpha,TCR,alpha
+'3UTT_E_beta,TCR,beta
+'3SJV_D_alpha,TCR,alpha
+'3SJV_E_beta,TCR,beta
+'2WBJ_C_alpha,TCR,alpha
+'2WBJ_D_beta,TCR,beta
+'4GG6_G_alpha,TCR,alpha
+'4GG6_H_beta,TCR,beta
+'4H1L_I_alpha,TCR,alpha
+'4H1L_J_beta,TCR,beta
+'2YPL_D_alpha,TCR,alpha
+'2YPL_E_beta,TCR,beta
+'3D39_D_alpha,TCR,alpha
+'3D39_E_beta,TCR,beta
+'3D3V_D_alpha,TCR,alpha
+'3D3V_E_beta,TCR,beta
+'3QFJ_D_alpha,TCR,alpha
+'3QFJ_E_beta,TCR,beta
+'4JRX_D_alpha,TCR,alpha
+'4JRX_E_beta,TCR,beta
+'4JRY_D_alpha,TCR,alpha
+'4JRY_E_beta,TCR,beta
+'4JFF_D_alpha,TCR,alpha
+'4JFD_D_alpha,TCR,alpha
+'4JFE_D_alpha,TCR,alpha
+'4FTV_D_alpha,TCR,alpha
+'4FTV_E_beta,TCR,beta
+'3TF7_C_alpha,TCR,TscFv
+'3TF7_C_beta,TCR,TscFv
+'3TPU_C_alpha,TCR,alpha
+'3TPU_D_beta,TCR,beta
+'3TFK_C_alpha,TCR,alpha
+'3TFK_D_beta,TCR,beta
+'3TJH_C_alpha,TCR,alpha
+'3TJH_D_beta,TCR,beta
+'3VXR_D_alpha,TCR,alpha
+'3VXR_E_beta,TCR,beta
+'3W0W_D_alpha,TCR,alpha
+'3W0W_E_beta,TCR,beta
+'3VXS_D_alpha,TCR,alpha
+'3VXS_E_beta,TCR,beta
+'3VXU_D_alpha,TCR,alpha
+'3VXU_E_beta,TCR,beta
+'3VXM_D_alpha,TCR,alpha
+'3VXM_E_beta,TCR,beta
+'4MNQ_D_alpha,TCR,alpha
+'4MNQ_E_beta,TCR,beta
+'3MV7_D_alpha,TCR,alpha
+'3MV7_E_beta,TCR,beta
+'3MV8_D_alpha,TCR,alpha
+'3MV8_E_beta,TCR,beta
+'3MV9_D_alpha,TCR,alpha
+'3MV9_E_beta,TCR,beta
+'4OZI_G_alpha,TCR,alpha
+'4OZI_H_beta,TCR,beta
+'4OZH_G_alpha,TCR,alpha
+'4OZH_H_beta,TCR,beta
+'4OZG_G_alpha,TCR,alpha
+'4OZG_H_beta,TCR,beta
+'4OZF_G_alpha,TCR,alpha
+'4OZF_H_beta,TCR,beta
+'4MJI_D_alpha,TCR,alpha
+'4MJI_E_beta,TCR,beta
+'4P23_A_alpha,TCR,alpha
+'4P23_B_beta,TCR,beta
+'4P46_A_alpha,TCR,alpha
+'4P46_B_beta,TCR,beta
+'4P5T_A_alpha,TCR,alpha
+'4P5T_B_beta,TCR,beta
+'4PRH_D_alpha,TCR,alpha
+'4PRH_E_beta,TCR,beta
+'4PRP_D_alpha,TCR,alpha
+'4PRP_E_beta,TCR,beta
+'4PRI_D_alpha,TCR,alpha
+'4PRI_E_beta,TCR,beta
+'4P2O_C_alpha,TCR,alpha
+'4P2O_D_beta,TCR,beta
+'4P2R_D_alpha,TCR,alpha
+'4P2R_E_beta,TCR,beta
+'4P2Q_D_alpha,TCR,alpha
+'4P2Q_E_beta,TCR,beta
+'4P2O_C_alpha,TCR,alpha
+'4P2O_D_beta,TCR,beta
+'4P2R_D_alpha,TCR,alpha
+'4P2R_E_beta,TCR,beta
+'4P2Q_D_alpha,TCR,alpha
+'4P2Q_E_beta,TCR,beta
+'4P4K_C_alpha,TCR,alpha
+'4P4K_D_beta,TCR,beta
+'4L3E_D_alpha,TCR,alpha
+'4L3E_E_beta,TCR,beta
+'3QDM_D_alpha,TCR,alpha
+'3QDM_E_beta,TCR,beta
+'3QDG_D_alpha,TCR,alpha
+'3QDG_E_beta,TCR,beta
+'3QEQ_D_alpha,TCR,alpha
+'3QEQ_E_beta,TCR,beta
+'3QDJ_D_alpha,TCR,alpha
+'3QDJ_E_beta,TCR,beta
+'4QRP_D_alpha,TCR,alpha
+'4QRP_E_beta,TCR,beta
+'4QOK_D_alpha,TCR,alpha
+'4QOK_E_beta,TCR,beta
+'4QRR_E_beta,TCR,beta
+'4QRR_D_beta,TCR,beta
+'4GRL_C_alpha,TCR,alpha
+'4GRL_D_beta,TCR,beta
+'4MAY_C_alpha,TCR,alpha
+'4MAY_D_beta,TCR,beta
+'4Z7V_E_alpha,TCR,alpha
+'4Z7V_F_beta,TCR,beta
+'4Z7U_E_alpha,TCR,alpha
+'4Z7U_F_beta,TCR,beta
+'4Z7W_E_alpha,TCR,alpha
+'4Z7W_F_beta,TCR,beta
+'4Y19_D_alpha,TCR,alpha
+'4Y19_E_beta,TCR,beta
+'5BRZ_D_alpha,TCR,alpha
+'5BRZ_E_beta,TCR,beta
+'5BS0_D_alpha,TCR,alpha
+'5BS0_E_beta,TCR,beta
+'5EU6_D_alpha,TCR,alpha
+'5EU6_E_beta,TCR,beta
+'5E9D_D_alpha,TCR,alpha
+'5E9D_E_beta,TCR,beta
+'5C0A_D_alpha,TCR,alpha
+'5C0A_E_beta,TCR,beta
+'5C09_D_alpha,TCR,alpha
+'5C09_E_beta,TCR,beta
+'5HYJ_D_alpha,TCR,alpha
+'5HYJ_E_beta,TCR,beta
+'5C0C_I_alpha,TCR,alpha
+'5C0C_J_beta,TCR,beta
+'5C08_D_alpha,TCR,alpha
+'5C08_E_beta,TCR,beta
+'5C07_D_alpha,TCR,alpha
+'5C07_E_beta,TCR,beta
+'5C0B_D_alpha,TCR,alpha
+'5C0B_E_beta,TCR,beta
+'5KS9_G_alpha,TCR,alpha
+'5KS9_H_beta,TCR,beta
+'5KSA_C_alpha,TCR,alpha
+'5KSA_D_beta,TCR,beta
+'5KSB_G_alpha,TCR,alpha
+'5KSB_H_beta,TCR,beta
+'5MEN_D_alpha,TCR,alpha
+'5MEN_E_beta,TCR,beta
+'5HHO_D_alpha,TCR,alpha
+'5HHO_E_beta,TCR,beta
+'5HHM_D_alpha,TCR,alpha
+'5HHM_E_beta,TCR,beta
+'5EUO_E_alpha,TCR,alpha
+'5EUO_F_beta,TCR,beta
+'3QIW_C_alpha,TCR,alpha
+'3QIW_D_beta,TCR,beta
+'5WKF_D_alpha,TCR,alpha
+'5WKF_E_beta,TCR,beta
+'5WKH_D_alpha,TCR,alpha
+'5WKH_E_beta,TCR,beta

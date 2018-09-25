@@ -74,6 +74,7 @@ outfile.write('PDBID_ChainID,HMMscore\n')
 sequences = SeqIO.parse(args.infile, 'fasta')
 
 for record in sequences:
+  #print(record.description)
   # Return None if the HMM does not align to the sequence 
   score = is_MHC(record.seq,args.hmm) 
   if score != None and score >= score_threshold:
