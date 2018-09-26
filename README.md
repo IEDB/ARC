@@ -12,14 +12,16 @@
 
 ## How to use:
 ### Input  
-  A fasta format file with one or more protein sequences.  
-  e.g. ../data/all_mhcBcrTcr_IEDB.fasta file has one or more protien sequences in the fasta format.  
+-  A fasta format file with one or more protein sequences.  
   ```
   >1WBZ_A_alpha I H2-Kb
 MVPCTLLLLLAAALAPTQTRAGPHSLRYFVTAVSRPGLGEPRYMEVGYVDDTEFVRFDSDAENPRYEPRARWMEQEGPEYWERETQKAKGNEQSFRVDLRTLLGYYNQSKGGSHTIQVISGCEVGSDGRLLRGYQQYAYDGCDYIALNEDLKTWTAADMAALITKHKWEQAGEAERLRAYLEGTCVEWLRRYLKNGNATLLRTDSPKAHVTHHSRPEDKVTLRCWALGFYPADITLTWQLNGEELIQDMELVETRPAGDGTFQKWASVVVPLGKEQYYTCHVYHQGLPEPLTLRWEPPPSTVSNMATVAVLVVLGAAIVTGAVVAFVMKMRRRNTGGKGGDYALAPGSQTSDLSLPDCKVMVHDPHSLA
 >1WBZ_B_b2m I H2-Kb
 MARSVTLVFLVLVSLTGLYAIQKTPQIQVYSRHPPENGKPNILNCYVTQFHPPHIEIQMLKNGKKIPKVEMSDMSFSKDWSFYILAHTEFTPTETDTYACRVKHASMAEPKTVYWDRDM
   ```
+
+-  e.g. ../data/all_mhcBcrTcr_IEDB.fasta file has multiple protein sequences in the fasta format.  
+
   
 
 ### Command  
@@ -30,8 +32,11 @@ python run_SeqClassifier.py ../data/all_mhcBcrTcr_IEDB.fasta ../out/all_mhcBcrTc
 ```
 
 ### Output  
-  CSV file with 3 columns.  
-  e.g. ../out/all_mhcBcrTcr_IEDB.csv file is a output file name.
+-  CSV file with 3 columns.  
+-  First column named 'ID' is the description provoded in the fasta for each sequence.  
+-  Second column named 'class' is the assigned molecule class for each sequence e.g. MHC-I, MHC-II, BCR or TCR.  
+-  The third column named 'chain_type' is the assigned chain type for each sequence. e.g. alpha, beta, heavy, lambda, kappa, scFv, TscFv or construct.  
+-  e.g. ../out/all_mhcBcrTcr_IEDB.csv file is a output file name.
 
 |ID	| class	| chain_type |
 |--- |--- |--- |
