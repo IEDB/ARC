@@ -11,7 +11,7 @@
 	Python packages: Pandas, BioPython
 
 ## How to use:
-- Input  
+### Input  
   A fasta format file with one or more protein sequences.  
   e.g. ../data/all_mhcBcrTcr_IEDB.fasta file has one or more protien sequences in the fasta format.  
   ```
@@ -22,14 +22,14 @@ MARSVTLVFLVLVSLTGLYAIQKTPQIQVYSRHPPENGKPNILNCYVTQFHPPHIEIQMLKNGKKIPKVEMSDMSFSKDW
   ```
   
 
-- Command  
+### Command  
 ```shell
 cd dir_path/ClassifierTool
 cd code
 python run_SeqClassifier.py ../data/all_mhcBcrTcr_IEDB.fasta ../out/all_mhcBcrTcr_IEDB.csv
 ```
 
-- Output  
+### Output  
   CSV file with 3 columns.  
   e.g. ../out/all_mhcBcrTcr_IEDB.csv file is a output file name.
 
