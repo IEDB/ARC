@@ -6,9 +6,8 @@
 - HMMER3: http://hmmer.org/
 - ANARCI v1.1 : http://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/ANARCI.php#download  
   Dunbar J and Deane CM. ANARCI: Antigen receptor numbering and receptor classification. Bioinformatics (2016).  
-
 - Python 2.7
-	Python packages: Pandas, BioPython
+  - Python packages: Pandas, BioPython
 
 ## How to use:
 ### Input  
@@ -34,9 +33,11 @@ python run_SeqClassifier.py ../data/all_mhcBcrTcr_IEDB.fasta ../out/all_mhcBcrTc
 ### Output  
 -  CSV file with 3 columns.  
 -  First column named 'ID' is the description provoded in the fasta for each sequence.  
--  Second column named 'class' is the assigned molecule class for each sequence e.g. MHC-I, MHC-II, BCR or TCR.  
--  The third column named 'chain_type' is the assigned chain type for each sequence. e.g. alpha, beta, heavy, lambda, kappa, scFv, TscFv or construct.  
--  e.g. ../out/all_mhcBcrTcr_IEDB.csv file is a output file name.
+-  Second column named 'class' is the assigned molecule class for each sequence.
+   -  e.g. MHC-I, MHC-II, BCR or TCR.  
+-  The third column named 'chain_type' is the assigned chain type for each sequence.
+   -  e.g. alpha, beta, heavy, lambda, kappa, scFv, TscFv or construct.
+-  e.g. ../out/all_mhcBcrTcr_IEDB.csv file is an output file name.
 
 |ID	| class	| chain_type |
 |--- |--- |--- |
