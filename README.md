@@ -1,5 +1,5 @@
 # ClassifierTool: Classifies protein sequences into BCR/TCR/MHC chains.
-### @author: Swapnil Mahajan
+### @author: @Swapnil
 
 ## Requirements:
 - Linux OS
