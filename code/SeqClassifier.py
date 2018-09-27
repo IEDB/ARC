@@ -236,7 +236,8 @@ class SeqClassifier:
       chain_type=None
       c_type=None
       receptor=None
-      out.loc[cnt,'ID']="'"+str(seq.description)
+      out.loc[cnt,'ID']=str(seq.description)
+      #out.loc[cnt,'ID']='"'+str(seq.description)+'"'
       if self.check_seq(seq)==1:
         receptor, chain_type,c_type=self.get_chain_type(seq)
         #print(chain_type, str(c_type))
@@ -253,13 +254,15 @@ class SeqClassifier:
             out.loc[cnt,'class']='MHC-I'
             out.loc[cnt,'chain_type']='alpha'
           else:
+            mhc_II_alpha_score=None
             mhc_II_alpha_score=self.is_MHC(str(seq.seq), self.mhc_II_alpha_hmm)
-            if mhc_II_alpha_score >= self.hmm_score_threshold:
+            if mhc_II_alpha_score and mhc_II_alpha_score >= self.hmm_score_threshold:
               out.loc[cnt,'class']='MHC-II'
               out.loc[cnt,'chain_type']='alpha'
             else:
+              mhc_II_beta_score=None
               mhc_II_beta_score=self.is_MHC(str(seq.seq), self.mhc_II_beta_hmm)
-              if mhc_II_beta_score >= self.hmm_score_threshold:
+              if mhc_II_beta_score and mhc_II_beta_score >= self.hmm_score_threshold:
                 out.loc[cnt,'class']='MHC-II'
                 out.loc[cnt,'chain_type']='beta'
               else:
