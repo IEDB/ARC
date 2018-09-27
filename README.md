@@ -39,19 +39,19 @@ python run_SeqClassifier.py ../data/all_mhcBcrTcr_IEDB.fasta ../out/all_mhcBcrTc
    -  e.g. alpha, beta, heavy, lambda, kappa, scFv, TscFv or construct.
 -  e.g. ../out/all_mhcBcrTcr_IEDB.csv file is an output file name.
 
-|ID	| class	| chain_type |
-|--- |--- |--- |
-|1WBY_A_alpha I H2-Db |	MHC-I|	alpha|
-|1WBY_B_b2m I H2-Db	|	|
-|1HQR_A_alpha II HLA-DRA*01:01/DRB5*01:01|	MHC-II|	alpha|
-|1HQR_B_beta II HLA-DRA*01:01/DRB5*01:01|	MHC-II|	beta|
-|2CMR_H_heavy|	BCR	|heavy|
-|2CMR_L_light|	BCR	|kappa|
-|4RFO_L_light|	BCR	|lambda|
-|3UZE_A_heavy|	BCR	|scFv|
-|1FYT_D_alpha|	TCR	|alpha|
-|1FYT_E_beta	|TCR	|beta|
-|3TF7_C_alpha|	TCR|	TscFv|
+| ID	                                  | class  | chain_type |
+|---------------------------------------- |------- |----------- |
+| 1WBY_A_alpha I H2-Db                    |	MHC-I  | alpha      |
+| 1WBY_B_b2m I H2-Db	                  |	       |            |
+| 1HQR_A_alpha II HLA-DRA*01:01/DRB5*01:01|	MHC-II | alpha      |
+| 1HQR_B_beta II HLA-DRA*01:01/DRB5*01:01 |	MHC-II | beta       |
+| 2CMR_H_heavy                            |	BCR	   | heavy      |
+| 2CMR_L_light                            |	BCR	   | kappa      |
+| 4RFO_L_light                            |	BCR	   | lambda     |
+| 3UZE_A_heavy                            |	BCR	   | scFv       |
+| 1FYT_D_alpha                            |	TCR	   | alpha      |
+| 1FYT_E_beta                             | TCR	   | beta       |
+| 3TF7_C_alpha                            |	TCR    | TscFv      |
 
 ## How it works:
 - BCR and TCR chains are identified using ANARCI. ANARCI searches a given protein sequence against HMMs built using BCR and TCR chain sequences from IMGT. HMMER is used to align an input sequence to the HMMs.
