@@ -14,6 +14,9 @@ import os
 import sys
 import pandas as pd
 from Bio import SeqIO
+import urllib2
+import urllib
+import gzip
 #import random
 
 class SeqClassifier:
@@ -52,6 +55,53 @@ class SeqClassifier:
     
     return out
   
+  def geturl(self, url, outpath):
+    """
+    Retrieves file database from any url text file given.
+    Will save in output designated by second variable.  
+    """
+    try:
+      urllib.urlretrieve(url, outpath)
+      print("Data retrieved at: {}".format(outpath))
+    except:
+      print("Error in retrieving url {}, please check paths.".format(url))
+    urllib.urlcleanup()
+    return
+  
+  def get_pdb_seq_API(self):
+    """
+    PDB Restful API request to get a customized report
+    --------------------------------------------------
+    
+    Check for query fields: http://www.rcsb.org/pdb/results/reportField.do
+    
+    Get all the current PDB IDs in JSON format: http://www.rcsb.org/pdb/json/getCurrent
+    """
+    pdburl='http://www.rcsb.org/pdb/rest/customReport.csv'
+    query='pdbids=*&customReportColumns=structureId,releaseDate,pubmedId,publicationYear,sequence&entityMacromoleculeType=polypeptide&format=csv&service=wsfile'
+    req = urllib2.Request(pdburl, data=query)
+    f = urllib2.urlopen(req)
+    result = f.read()
+    if result:
+      print("Found number of PDB entries:", result.count('\n'))
+    else:
+      print("Failed to retrieve results")
+    return result
+  
+  def get_pdb_seq_ftp(self):
+    """
+    Get all the PDB chain sequences using FTP.
+    Return a SeqIO object.
+    """
+    
+    pdburl = "ftp://ftp.wwpdb.org/pub/pdb/derived_data/pdb_seqres.txt.gz"
+    outpdb = "../data/pdb_seqres.txt.gz"
+    self.geturl(pdburl, outpdb)
+    with gzip.open(outpdb, 'rb') as pdbfile:
+      pdbseq=SeqIO.read(pdbfile, 'fasta')
+    return pdbseq
+      
+    
   def run_anarci(self,seq_record, imgtfile):
     """
     Runs ANARCI on BCR/TCR chain sequence and write IMGT numbering file.
@@ -221,9 +271,38 @@ class SeqClassifier:
   
     return score
   
+  def assign_class(self, seq):
+    """
+    Returns BCR, TCR or MHC class and a chain type for an input sequence.
+    """
+    if self.check_seq(seq)==1:
+      receptor, chain_type,c_type=self.get_chain_type(seq)
+      #print(chain_type, str(c_type))
+      if chain_type:
+        return (receptor, str(chain_type))
+      else:
+        chain_type=None
+        mhc_I_score=None
+        mhc_I_score=self.is_MHC(str(seq.seq), self.mhc_I_hmm)
+        if mhc_I_score >= self.hmm_score_threshold:
+          return('MHC-I', 'alpha')
+        else:
+          mhc_II_alpha_score=None
+          mhc_II_alpha_score=self.is_MHC(str(seq.seq), self.mhc_II_alpha_hmm)
+          if mhc_II_alpha_score and mhc_II_alpha_score >= self.hmm_score_threshold:
+            return('MHC-II', 'alpha')
+          else:
+            mhc_II_beta_score=None
+            mhc_II_beta_score=self.is_MHC(str(seq.seq), self.mhc_II_beta_hmm)
+            if mhc_II_beta_score and mhc_II_beta_score >= self.hmm_score_threshold:
+              return('MHC-II', 'beta')
+            else:
+              return(None,None)
+  
   def classify(self):
     """
-    Classifies input sequence/s into BCR, TCR or MHC.
+    Returns a csv file with BCR, TCR or MHC class and chain type assignments to the 
+    sequences in the provided input fasta sequence file.
     """
     
     sequences = SeqIO.parse(self.seqfile, 'fasta')
@@ -234,40 +313,13 @@ class SeqClassifier:
       #print(seq.description)
       #print(seq.seq)
       chain_type=None
-      c_type=None
       receptor=None
       out.loc[cnt,'ID']=str(seq.description)
+      receptor, chain_type=self.assign_class(seq)
+      out.loc[cnt,'class']=receptor
+      out.loc[cnt,'chain_type']=str(chain_type)
+      
       #out.loc[cnt,'ID']='"'+str(seq.description)+'"'
-      if self.check_seq(seq)==1:
-        receptor, chain_type,c_type=self.get_chain_type(seq)
-        #print(chain_type, str(c_type))
-        if chain_type:
-          out.loc[cnt,'class']=receptor
-          out.loc[cnt,'chain_type']=str(chain_type)
-        else:
-          chain_type=None
-          c_type=None
-          mhc_I_score=None
-          
-          mhc_I_score=self.is_MHC(str(seq.seq), self.mhc_I_hmm)
-          if mhc_I_score >= self.hmm_score_threshold:
-            out.loc[cnt,'class']='MHC-I'
-            out.loc[cnt,'chain_type']='alpha'
-          else:
-            mhc_II_alpha_score=None
-            mhc_II_alpha_score=self.is_MHC(str(seq.seq), self.mhc_II_alpha_hmm)
-            if mhc_II_alpha_score and mhc_II_alpha_score >= self.hmm_score_threshold:
-              out.loc[cnt,'class']='MHC-II'
-              out.loc[cnt,'chain_type']='alpha'
-            else:
-              mhc_II_beta_score=None
-              mhc_II_beta_score=self.is_MHC(str(seq.seq), self.mhc_II_beta_hmm)
-              if mhc_II_beta_score and mhc_II_beta_score >= self.hmm_score_threshold:
-                out.loc[cnt,'class']='MHC-II'
-                out.loc[cnt,'chain_type']='beta'
-              else:
-                cnt+=1
-                continue
       cnt+=1
     out.to_csv(self.outfile, index=False)
       
