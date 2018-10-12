@@ -299,13 +299,13 @@ class SeqClassifier:
             else:
               return(None,None)
   
-  def classify(self):
+  def classify(self, sequences=None):
     """
     Returns a csv file with BCR, TCR or MHC class and chain type assignments to the 
     sequences in the provided input fasta sequence file.
     """
-    
-    sequences = SeqIO.parse(self.seqfile, 'fasta')
+    if not sequences:
+      sequences = SeqIO.parse(self.seqfile, 'fasta')
     out=pd.DataFrame()
     cnt=0
     
@@ -323,4 +323,7 @@ class SeqClassifier:
       cnt+=1
     out.to_csv(self.outfile, index=False)
       
-      
+    
+  def classify_pdb_chains(self):
+    pdbseq=self.get_pdb_seq_ftp()
+    self.classify(pdbseq)
