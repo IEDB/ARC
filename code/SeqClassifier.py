@@ -14,21 +14,25 @@ import os
 import sys
 import pandas as pd
 from Bio import SeqIO
+from Bio.Seq import Seq
+from Bio.SeqRecord import SeqRecord
+from Bio.Alphabet import IUPAC
 import urllib2
 import urllib
 import gzip
+import datetime
 #import random
 
 class SeqClassifier:
   
-  def __init__(self,seqfile, outfile='SeqClassifier_output.csv', hmm_score_threshold=25):
+  def __init__(self,seqfile=None, outfile='SeqClassifier_output.csv', hmm_score_threshold=25, length_threshold=50):
     """
     Classifies input sequence/s into BCR, TCR or MHC chains.
     """
     self.seqfile=seqfile
     self.outfile=outfile
     self.hmm_score_threshold=hmm_score_threshold
-    
+    self.length_threshold=length_threshold
     self.mhc_I_hmm='../data/Pfam_MHC_I.hmm'
     self.mhc_II_alpha_hmm='../data/Pfam_MHC_II_alpha.hmm'
     self.mhc_II_beta_hmm='../data/Pfam_MHC_II_beta.hmm'
@@ -55,6 +59,20 @@ class SeqClassifier:
     
     return out
   
+  def create_SeqRecord(self, pdb_api_file):
+    """
+    """
+    df=pd.read_csv(pdb_api_file)
+    sequences=[]
+    for i in range(df.shape[0]):
+      record=None
+      if df.loc[i,'sequence'] and not pd.isnull(df.loc[i,'sequence']) \
+      and len(df.loc[i,'sequence']) >=self.length_threshold:
+        record=SeqRecord(Seq(str(df.loc[i,'sequence']), IUPAC.protein), 
+                         id= str(df.loc[i,'structureId'])+'_'+str(df.loc[i,'entityId']),
+                         dbxref=df.loc[i,'pubmedId'])
+        sequences.append(record)
+    
   def geturl(self, url, outpath):
     """
     Retrieves file database from any url text file given.
@@ -77,16 +95,30 @@ class SeqClassifier:
     
     Get all the current PDB IDs in JSON format: http://www.rcsb.org/pdb/json/getCurrent
     """
-    pdburl='http://www.rcsb.org/pdb/rest/customReport.csv'
-    query='pdbids=*&customReportColumns=structureId,releaseDate,pubmedId,publicationYear,sequence&entityMacromoleculeType=polypeptide&format=csv&service=wsfile'
-    req = urllib2.Request(pdburl, data=query)
-    f = urllib2.urlopen(req)
-    result = f.read()
+    #import urllib2
+    #import datetime
+    #seqfile=None
+    import requests
+    
+    if not self.seqfile:
+      now=datetime.datetime.now()
+      self.seqfile='../data/PDB_'+now.strftime("%d%b%Y")+'.csv'
+    
+    pdburl="""http://www.rcsb.org/pdb/rest/customReport"""
+    query="""?pdbids=*&customReportColumns=structureId,releaseDate,pubmedId,publicationYear,entityMacromoleculeType,sequence&primaryOnly=1&format=csv&service=wsfile"""
+    result= requests.get(pdburl, data=query)
+    #f = urllib2.urlopen(req)
+    #result = f.read().decode('utf-8')
     if result:
       print("Found number of PDB entries:", result.count('\n'))
+      if os.path.exists(self.seqfile) and os.path.getsize(self.seqfile) >0:
+        raise Exception('The {} file already exists. Please delete or rename this file and run the script again.'.format(self.seqfile))
+      else:
+        with open(self.seqfile, 'wt') as out:
+          print(result, file=out)
     else:
       print("Failed to retrieve results")
-    return result
+    #return result
   
   def get_pdb_seq_ftp(self):
     """
@@ -305,7 +337,10 @@ class SeqClassifier:
     sequences in the provided input fasta sequence file.
     """
     if not sequences:
-      sequences = SeqIO.parse(self.seqfile, 'fasta')
+      if not self.seqfile:
+        raise Exception('Please provide a fasta formatted protein sequence file.')
+      else:
+        sequences = SeqIO.parse(self.seqfile, 'fasta')
     out=pd.DataFrame()
     cnt=0
     
