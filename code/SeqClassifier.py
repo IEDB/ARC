@@ -50,6 +50,8 @@ class SeqClassifier:
     if not self.outfile:
       self.outfile=os.path.abspath('../out/SeqClassifier_output_'+now.strftime("%d%b%Y")+'.csv')
     self.sql_results_file= os.path.abspath('../out/IEDB_PDBs_PubMed_IDs_'+now.strftime("%d%b%Y")+'.csv')
+    self.mro_gdomain_file= os.path.abspath('../out/MRO_Gdomain_'+now.strftime("%d%b%Y")+'.csv')
+    
   # returns 0 if unusual character in sequeunce
   def check_seq(self,seq_record):
     print(seq_record.id)
@@ -85,20 +87,23 @@ class SeqClassifier:
     urllib.urlcleanup()
     return
   
-  def create_SeqRecord(self, pdb_api_file):
+  def create_SeqRecord(self, pdb_api):
     """
     Create sequences in biopython format from PDB API CSV file.
     """
-    df=pd.read_csv(pdb_api_file)
+    print("### Getting PDB chain sequences for classification..")
     sequences=[]
-    for i in range(df.shape[0]):
-      record=None
-      if df.loc[i,'sequence'] and not pd.isnull(df.loc[i,'sequence']) \
-      and len(df.loc[i,'sequence']) >=self.length_threshold:
-        record=SeqRecord(Seq(str(df.loc[i,'sequence']), IUPAC.protein), 
-                         id= str(df.loc[i,'structureId'])+'_'+str(df.loc[i,'entityId']),
-                         dbxref=df.loc[i,'pubmedId'])
-        sequences.append(record)
+    for i in pdb_api.index:
+      if re.search(r'Polypeptide', str(pdb_api.loc[i,'entityMacromoleculeType']), re.IGNORECASE):
+        record=None
+        pdb_chain=str(pdb_api.loc[i,'structureId'])+'_'+str(pdb_api.loc[i,'chainId'])
+        if pdb_api.loc[i,'sequence'] and not pd.isnull(pdb_api.loc[i,'sequence']) \
+        and len(pdb_api.loc[i,'sequence']) >=self.length_threshold:
+          record=SeqRecord(Seq(str(pdb_api.loc[i,'sequence']), IUPAC.protein), 
+                           id= pdb_chain,
+                           description= pdb_chain,
+                           dbxrefs=[pdb_api.loc[i,'pubmedId']])
+          sequences.append(record)
     return sequences
   
   def get_pdb_seq_API(self):
@@ -114,11 +119,11 @@ class SeqClassifier:
     #import datetime
     #seqfile=None
     import requests
-    print('Getting sequences from PDB API..')
+    print('### Getting sequences from PDB API..')
     
     pdburl="""http://www.rcsb.org/pdb/rest/customReport"""
-    query="""?pdbids=*&customReportColumns=structureId,releaseDate,pubmedId,publicationYear,entityMacromoleculeType,sequence&primaryOnly=1&format=csv&service=wsfile"""
-    #query="""?pdbids=5JZI,1MCN,1FBI &customReportColumns=structureId,pubmedId,releaseDate,publicationYear,revisionDate,entityMacromoleculeType,sequence&primaryOnly=1&format=csv&service=wsfile"""
+    #query="""?pdbids=*&customReportColumns=structureId,releaseDate,pubmedId,publicationYear,entityMacromoleculeType,sequence&primaryOnly=1&format=csv&service=wsfile"""
+    query="""?pdbids=5JZI,1MCN,1FBI,2DXM &customReportColumns=structureId,pubmedId,releaseDate,publicationYear,revisionDate,entityMacromoleculeType,sequence&primaryOnly=1&format=csv&service=wsfile"""
     result= requests.get(pdburl, data=query)
     #f = urllib2.urlopen(req)
     #result = f.read().decode('utf-8')
@@ -138,31 +143,12 @@ class SeqClassifier:
       raise Exception("Failed to retrieve results from PDB API.")
     #return result
   
-  def get_revised_PDBs(self):
-    """
-    Returns a list of recently revised PDB structures. 
-    """
-    
-    url = 'http://www.rcsb.org/pdb/rest/search'
-    queryText = """
-    <orgPdbQuery>
-    <queryType>org.pdb.query.simple.ModifiedStructuresQuery</queryType>
-    </orgPdbQuery>
-    """
-    #print("query:", queryText)
-    print("Getting revised PDB structures...")
-    req = urllib2.Request(url, data=queryText)
-    f = urllib2.urlopen(req)
-    result = f.read()
-    revised_pdbs=result.split('\n')[:-1]
-    return revised_pdbs
-
   def get_pdb_seq_ftp(self):
     """
     Get all the PDB chain sequences using FTP.
     Return a SeqIO object.
     """
-    print('Getting sequences from PDB FTP..')
+    print('### Getting sequences from PDB FTP..')
     pdburl = "ftp://ftp.wwpdb.org/pub/pdb/derived_data/pdb_seqres.txt.gz"
     outpdb = "../data/pdb_seqres.txt.gz"
     self.geturl(pdburl, outpdb)
@@ -190,7 +176,7 @@ class SeqClassifier:
     mro_path=os.path.abspath('../data/MRO')
     wd=os.path.dirname(os.path.realpath(__file__))
     if os.path.exists(mro_path):
-      print('Updating MRO repository..')
+      print('### Updating MRO repository..')
       os.chdir(mro_path)
       self.run_cmd('git pull')
       os.chdir(wd)
@@ -206,7 +192,7 @@ class SeqClassifier:
     """
     Returns G doamins of the MRO chain sequences.
     """
-    print('Assigning G domains to the MRO chain sequences..')
+    print('### Assigning G domains to the MRO chain sequences..')
     mro = pd.read_csv(mro_TSVfile, sep='\t', skiprows=[1])
     #mro_header= list(mro.columns)
     mro_out= pd.DataFrame(columns= ['Label','Sequence', 'calc_mhc_class','ch_g_dom'])
@@ -218,13 +204,13 @@ class SeqClassifier:
       mro_out.loc[cnt, 'Sequence']= mro.loc[i,'Sequence']
       mro_out.loc[cnt, 'calc_mhc_class'], mro_out.loc[cnt, 'ch_g_dom'] = self.assign_Gdomain(mro.loc[i,'Sequence'], mro.loc[i,'Accession'])
       cnt+=1
-    #mro_out.to_csv(mro_gdom_file, index=False)
+    mro_out.to_csv(self.mro_gdomain_file, index=False)
     return mro_out
   
   def get_MRO_allele(self, mro_df, seq, seq_id=None):
     mhc_class, pdb_g_dom=self.assign_Gdomain(seq, seq_id)
     if pdb_g_dom:
-      mro_allele= str(list(mro_df[mro_df.fillna({'ch_g_dom' :''}).apply(lambda r : r['ch_g_dom']!='' and (pdb_g_dom in r['ch_g_dom'] or r['ch_g_dom'] in pdb_g_dom) , axis=1)]['Label'])).strip('[]')
+      mro_allele= str(list(mro_df[mro_df.fillna({'ch_g_dom' :''}).apply(lambda r : r['ch_g_dom']!='' and (pdb_g_dom in r['ch_g_dom'] or r['ch_g_dom'] in pdb_g_dom) , axis=1)]['Label'])).strip('[]').replace(',','#')
       return mro_allele
     else:
       #print('Unable to assign G domain to the {} chain sequence'.format(seq_id))
@@ -268,17 +254,17 @@ class SeqClassifier:
   
   def get_IEDB_PDBs(self):
     # BCR
-    print('Running BCR SQL query..')
+    print('### Running BCR SQL query..')
     bcell_query="""select b.bcell_id as assay_id, c.pdb_id, (select pubmed_id from article where reference_id=b.reference_id) as pubmed_id from bcell b, complex c where b.complex_id=c.complex_id and c.e_viewer_status='Y';
     """
     bcell_results, header=self.run_sql_query(bcell_query)
     # TCR
-    print('Running TCR SQL query..')
+    print('### Running TCR SQL query..')
     tcell_query="""select t.tcell_id as assay_id, c.pdb_id, (select pubmed_id from article where reference_id=t.reference_id) as pubmed_id from tcell t, complex c where t.complex_id=c.complex_id and c.e_viewer_status='Y';
     """
     tcell_results, header=self.run_sql_query(tcell_query)
     # MHC
-    print('Running MHC SQL query..')
+    print('### Running MHC SQL query..')
     mhc_query="""select m.mhc_bind_id as assay_id, c.pdb_id, (select pubmed_id from article where reference_id=m.reference_id) as pubmed_id from mhc_bind m, complex c where m.complex_id=c.complex_id and c.e_viewer_status='Y';
     """
     mhc_results, header=self.run_sql_query(mhc_query)
@@ -290,20 +276,93 @@ class SeqClassifier:
     inp = pd.DataFrame(sql_res, columns=header)
     inp.to_csv(self.sql_results_file, index=False, encoding='utf-8')
     return inp
- 
-  def get_PDBs_classication(self, iedb_pdbs, revised_pdbs, all_pdbs):
+  
+  def get_PDB_version(self, pdb_id):
+    """
+    Returns the current PDB version.
+    """
+    from Bio.PDB import PDBList
+    #from Bio.PDB import PDBIO
+    #from Bio.PDB import PDBParser
+    #from Bio.PDB.MMCIFParser import MMCIFParser
+    import Bio.PDB.MMCIF2Dict as MMCIF2Dict
+    
+    dir_path=os.path.abspath('../out/')
+    ciffile=dir_path+'/'+pdb_id+'.cif'
+    pdbl = PDBList()
+    try:
+      #tmp_file=pdbl.retrieve_pdb_file(pdb_id, pdir=dir_path, file_format='pdb')
+      tmp_ciffile=pdbl.retrieve_pdb_file(pdb_id, pdir=dir_path, file_format='mmCif')
+      #os.rename(tmp_file, pdbfile)
+      os.rename(tmp_ciffile, ciffile)
+    except:
+      pass
+      try:
+        #tmp_file=pdbl.retrieve_pdb_file(pdb_id, pdir=dir_path, file_format='pdb', obsolete=True)
+        tmp_ciffile=pdbl.retrieve_pdb_file(pdb_id, pdir=dir_path, file_format='mmCif', obsolete=True)
+        #os.rename(tmp_file, pdbfile)
+        os.rename(tmp_ciffile, ciffile)
+      except:
+        raise Exception('ERROR: '+pdb_id+' can not be downloaded')
+    #urllib.request.urlcleanup()
+    urllib.urlcleanup()
+    
+    mmcif_dict = MMCIF2Dict.MMCIF2Dict(ciffile)
+    major_version=[]
+    if '_pdbx_audit_revision_history.major_revision' in mmcif_dict:
+      major_version=mmcif_dict['_pdbx_audit_revision_history.major_revision']
+    
+    os.remove(ciffile)
+    if len(major_version) > 1:
+      if int(major_version[-1]) > int(major_version[-2]):
+        return int(major_version[-1])
+      else:
+        return
+    else:
+      return
+  
+  def get_revised_PDBs(self):
+    """
+    Returns a list of recently revised PDB structures. 
+    """
+    url = 'http://www.rcsb.org/pdb/rest/search'
+    queryText = """
+    <orgPdbQuery>
+    <queryType>org.pdb.query.simple.ModifiedStructuresQuery</queryType>
+    </orgPdbQuery>
+    """
+    #print("query:", queryText)
+    print("### Getting revised PDB structures...")
+    req = urllib2.Request(url, data=queryText)
+    f = urllib2.urlopen(req)
+    result = f.read()
+    revised_pdbs=result.split('\n')[:-1]
+    return set(revised_pdbs)
+  
+  def get_PDBs_classication(self, iedb_pdbs, all_pdbs, revised_pdbs=None):
     """
     Get a list of new or revised PDB IDs for classification. 
     All inputs are sets of PDB IDs.
     """
-    new_pdbs=[]
+    print('### Getting list of PDBs for curation or re-curation..')
+    #new_pdbs=set()
+    if not revised_pdbs:
+      revised_pdbs=self.get_revised_PDBs()
     all_nonIEDB_pdbs= all_pdbs-iedb_pdbs
     revised_iedb_pdbs= iedb_pdbs & revised_pdbs
     # Check for PDBs in the revised_iedb_pdbs with major revisions (version: 2, 3, ...)
     # Add these PDBs with major revisions to the all_nonIEDB_pdbs for further classification
+    if len(revised_iedb_pdbs) >0:
+      for pdb in revised_iedb_pdbs:
+        major_version=None
+        major_version=self.get_PDB_version(pdb)
+        if major_version:
+          all_nonIEDB_pdbs.add(pdb)
+        
+    # Check if the all_nonIEDB_pdbs have BCR, TCR or MHCs in the structure
+    #new_pdbs= self.get_classified_PDBs(all_nonIEDB_pdbs)
     
-    
-    return new_pdbs
+    return all_nonIEDB_pdbs
     
     
   def run_anarci(self,seq_record, imgtfile):
@@ -502,17 +561,24 @@ class SeqClassifier:
             else:
               return(None,None)
   
-  def classify(self, sequences=None, mro_df=None):
+  def classify(self, sequences=None, mro_df=None, pdb_api=None):
     """
     Returns a csv file with BCR, TCR or MHC class and chain type assignments to the 
     sequences in the provided input fasta sequence file.
     """
+    import numpy as np
+    
+    print('### Getting PDBs that include BCR, TCR or MHC sequences..')
     if not sequences:
       if not self.seqfile:
         raise Exception('Please provide a fasta formatted protein sequence file.')
       else:
         sequences = SeqIO.parse(self.seqfile, 'fasta')
-    out=pd.DataFrame()
+    header=[]
+    if type(pdb_api)!='NoneType':
+      header=list(pdb_api.columns)
+    #header.extend(['class', 'chain_type', 'calc_mhc_allele'])
+    out=pd.DataFrame(columns=header)
     cnt=0
     
     for seq in sequences:
@@ -520,30 +586,34 @@ class SeqClassifier:
       #print(seq.seq)
       chain_type=None
       receptor=None
-      out.loc[cnt,'ID']=str(seq.description)
+      pdb, chain=str(seq.id).split('_')
       receptor, chain_type=self.assign_class(seq)
-      out.loc[cnt,'class']=receptor
-      out.loc[cnt,'chain_type']=str(chain_type)
-      if mro_df and receptor in ('MHC-I', 'MHC-II'):
-        out.loc[cnt,'calc_mhc_allele']= self.get_MRO_allele(mro_df, str(seq.seq), str(seq.description))
-      #out.loc[cnt,'ID']='"'+str(seq.description)+'"'
-      cnt+=1
+      if receptor and chain_type:
+        out.loc[cnt,:]=pdb_api[np.logical_and(pdb_api['structureId']==pdb, pdb_api['chainId']==chain)]
+        out.loc[cnt,'class']=receptor
+        out.loc[cnt,'chain_type']=str(chain_type)
+        if mro_df and receptor in ('MHC-I', 'MHC-II'):
+          out.loc[cnt,'calc_mhc_allele']= self.get_MRO_allele(mro_df, str(seq.seq), str(seq.description))
+        cnt+=1
     out.to_csv(self.outfile, index=False)
       
     
   def classify_pdb_chains_FTP(self):
     pdbseq=self.get_pdb_seq_ftp()
     iedb_PDBs=self.get_IEDB_PDBs()
-    
     self.get_MRO()
     mro_out=self.get_MRO_Gdomains(self.mro_file)
+    
     self.classify(pdbseq, mro_out)
   
   def classify_pdb_chains_API(self):
     api_res=self.get_pdb_seq_API()
-    pdbseq=self.create_SeqRecord(self.seqfile)
+    #pdbseq=self.create_SeqRecord(api_res)
     iedb_PDBs=self.get_IEDB_PDBs()
-    
     self.get_MRO()
     mro_out=self.get_MRO_Gdomains(self.mro_file)
-    self.classify(pdbseq, mro_out)
+    
+    new_pdbs=self.get_PDBs_classication(set(iedb_PDBs['pdb_id']), set(api_res['structureId']))
+    pdb_api=api_res[api_res.structureId.isin(new_pdbs)]
+    pdbseq=self.create_SeqRecord(pdb_api)
+    self.classify(pdbseq, mro_out, pdb_api)

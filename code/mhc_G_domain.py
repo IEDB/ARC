@@ -40,7 +40,7 @@ class mhc_G_domain:
     if len(seq)>0 and not pattern.findall(seq):
       return 1
     else:
-      print('ERROR: sequence has non amino acid characters')
+      print('ERROR: {} sequence has non amino acid characters'.format(self.ch1_id))
       return 0
       
   def run_blast(self, seqfile, db, blastout, qcov=None, e_val=None):
@@ -102,7 +102,7 @@ class mhc_G_domain:
       hit_cover = (df.loc[i, 'send'] - df.loc[i, 'sstart'] + 1) / df.loc[i, 'slen']
       if hit_cover >= self.hit_coverage:
         return df.loc[i, 'qstart'], df.loc[i, 'qend']
-    print('WARNING: No hits found. May be seq is partial.')
+    print('WARNING: No hits found. May be {} seq is partial.'.format(self.ch1_id))
     return None
         
      
@@ -114,30 +114,30 @@ class mhc_G_domain:
     if os.path.getsize(alpha1_blout) >0:
       dom1_st_end = self.get_domain(alpha1_blout)
       if not dom1_st_end:
-        print('No alpha1 domain was found in seq.')
+        print('No alpha1 domain was found in seq {}.'.format(self.ch1_id))
         return None
       if os.path.getsize(alpha2_blout) >0:
         dom2_st_end = self.get_domain(alpha2_blout)
         if dom2_st_end:
           return 'I', [dom1_st_end[0], dom1_st_end[1], dom2_st_end[0], dom2_st_end[1]]
         else:
-          print('No alpha2 domain was found in seq.')
+          print('No alpha2 domain was found in seq {}.'.format(self.ch1_id))
           return None
       
     if os.path.getsize(alpha_blout) >0:
       dom1_st_end = self.get_domain(alpha_blout)
       if not dom1_st_end:
-        print('No alpha domain was found in seq.')
+        print('No alpha domain was found in seq {}.'.format(self.ch1_id))
         return None
       return 'IIa', dom1_st_end
     if os.path.getsize(beta_blout) >0:
       dom1_st_end = self.get_domain(beta_blout)
       if not dom1_st_end:
-        print('No beta domain was found in seq.')
+        print('No beta domain was found in seq {}.'.format(self.ch1_id))
         return None
       return 'IIb', dom1_st_end
     
-    print('ERROR: No G domain was not found.')
+    print('ERROR: No G domain was not found in {}.'.format(self.ch1_id))
     return None
   
   def check_b2m(self, seqfile):
@@ -216,7 +216,7 @@ class mhc_G_domain:
       os.remove(alpha2_blout)
       os.remove(alpha_blout)
       os.remove(beta_blout)
-      print('No domain was found in seq.')
+      print('No G domain was found in seq {}.'.format(self.ch1_id))
       return None
   
   def get_g_domain(self):
@@ -228,7 +228,7 @@ class mhc_G_domain:
     
     if self.chain1_seq:
       if self.check_seq(self.chain1_seq)==0:
-        print('ERROR: chain1_seq has non standard amino acids.')
+        print('ERROR: {} chain1_seq has non standard amino acids.'.format(self.ch1_id))
         return None
       res1= self.chain_g_domain(self.chain1_seq, self.ch1_id)
       if res1:
@@ -244,12 +244,12 @@ class mhc_G_domain:
           if not self.chain2_seq:
             return mhc_class1, dom1_seq
     else:
-      print('ERROR: chain1_seq has non standard amino acids.')
+      print('ERROR: {} chain1_seq has non standard amino acids.'.format(self.ch1_id))
       return None
     
     if self.chain2_seq:
       if self.check_seq(self.chain2_seq)==0:
-        print('ERROR: chain2_seq has non standard amino acids.')
+        print('ERROR: {} chain2_seq has non standard amino acids.'.format(self.ch2_id))
         return None
       res2= self.chain_g_domain(self.chain2_seq, self.ch2_id)
       if res2:
