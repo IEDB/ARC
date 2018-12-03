@@ -51,10 +51,11 @@ class SeqClassifier:
       self.outfile=os.path.abspath('../out/SeqClassifier_output_'+now.strftime("%d%b%Y")+'.csv')
     self.sql_results_file= os.path.abspath('../out/IEDB_PDBs_PubMed_IDs_'+now.strftime("%d%b%Y")+'.csv')
     self.mro_gdomain_file= os.path.abspath('../out/MRO_Gdomain_'+now.strftime("%d%b%Y")+'.csv')
+    self.previous_woImmuneRePDBs_file= os.path.abspath('../out/previous_ClassifiedPDBs_woImmuneReceptors.csv')
     
   # returns 0 if unusual character in sequeunce
   def check_seq(self,seq_record):
-    print(seq_record.id)
+    #print(seq_record.id)
     pattern=re.compile(r'[^A|C|D|E|F|G|H|I|K|L|M|N|P|Q|R|S|T|V|W|X|Y]', re.IGNORECASE)
     if len(str(seq_record.seq))>0 and not pattern.findall(str(seq_record.seq)):
       return 1
@@ -122,8 +123,8 @@ class SeqClassifier:
     print('### Getting sequences from PDB API..')
     
     pdburl="""http://www.rcsb.org/pdb/rest/customReport"""
-    #query="""?pdbids=*&customReportColumns=structureId,releaseDate,pubmedId,publicationYear,entityMacromoleculeType,sequence&primaryOnly=1&format=csv&service=wsfile"""
-    query="""?pdbids=5JZI,1MCN,1FBI,2DXM &customReportColumns=structureId,pubmedId,releaseDate,publicationYear,revisionDate,entityMacromoleculeType,sequence&primaryOnly=1&format=csv&service=wsfile"""
+    query="""?pdbids=*&customReportColumns=structureId,releaseDate,pubmedId,publicationYear,entityMacromoleculeType,sequence&primaryOnly=1&format=csv&service=wsfile"""
+    #query="""?pdbids=5JZI,1MCN,1FBI,2DXM &customReportColumns=structureId,pubmedId,releaseDate,publicationYear,revisionDate,entityMacromoleculeType,sequence&primaryOnly=1&format=csv&service=wsfile"""
     result= requests.get(pdburl, data=query)
     #f = urllib2.urlopen(req)
     #result = f.read().decode('utf-8')
@@ -375,7 +376,10 @@ class SeqClassifier:
     
     # Use chopped sequence for chain 1 for ANARCI
     #args=['ANARCI','-s', 'i', '--assign_germline', '--hmmerpath', hmmerpath,'-i', seqfile,'-o',imgtfile]
-    args=['ANARCI','-s', 'i', '-i', str(seq_record.seq),'-o',imgtfile]
+    mod_seq= re.sub(r'[Xx]','',str(seq_record.seq))
+    if not mod_seq:
+      return
+    args=['ANARCI','-s', 'i', '-i', mod_seq,'-o',imgtfile]
     cmd = ' '.join(args)
     #print(cmd)
     self.run_cmd(cmd)
@@ -404,7 +408,7 @@ class SeqClassifier:
     imgtfile=str(seq_record.id)+'.imgt'
     imgt_out=self.run_anarci(seq_record, imgtfile)
     if not imgt_out:
-      return
+      return (receptor,chain_type,c_type)
     with open(imgtfile) as imgt_num:
       for line in imgt_num:
         if pattern.findall(line) and cnt_var_domain==0:
@@ -529,8 +533,7 @@ class SeqClassifier:
           break
     
     # close the file. When the file is closed it will be removed.
-    fp.close()  
-  
+    fp.close()
     return score
   
   def assign_class(self, seq):
@@ -540,7 +543,7 @@ class SeqClassifier:
     if self.check_seq(seq)==1:
       receptor, chain_type,c_type=self.get_chain_type(seq)
       #print(chain_type, str(c_type))
-      if chain_type:
+      if chain_type and pd.notnull(chain_type):
         return (receptor, str(chain_type))
       else:
         chain_type=None
@@ -560,6 +563,8 @@ class SeqClassifier:
               return('MHC-II', 'beta')
             else:
               return(None,None)
+    else:
+      return(None, None)
   
   def classify(self, sequences=None, mro_df=None, pdb_api=None):
     """
@@ -571,30 +576,44 @@ class SeqClassifier:
     print('### Getting PDBs that include BCR, TCR or MHC sequences..')
     if not sequences:
       if not self.seqfile:
-        raise Exception('Please provide a fasta formatted protein sequence file.')
+        raise Exception('Please provide a fasta formatted protein sequence file or use classify_pdb_chains_API method in the SeqClassifier class.')
       else:
         sequences = SeqIO.parse(self.seqfile, 'fasta')
+    if os.path.exists(self.previous_woImmuneRePDBs_file)  and os.path.getsize(self.previous_woImmuneRePDBs_file, os.R_OK) > 0:
+      previous_woImmuneRePDBs=pd.read_csv(self.previous_woImmuneRePDBs_file)
+      prev_idx= previous_woImmuneRePDBs.index[-1] + 1
+    else:
+      previous_woImmuneRePDBs=pd.DataFrame(columns=['pdb_chain'])
+      prev_idx=0
+    
     header=[]
     if type(pdb_api)!='NoneType':
-      header=list(pdb_api.columns)
+      header=list(pdb_api.columns)[:-1] # excluding sequence
     #header.extend(['class', 'chain_type', 'calc_mhc_allele'])
     out=pd.DataFrame(columns=header)
     cnt=0
     
     for seq in sequences:
-      #print(seq.description)
+      print(seq.description)
       #print(seq.seq)
       chain_type=None
       receptor=None
+      if str(seq.id) in previous_woImmuneRePDBs.pdb_chain.unique():
+        continue
       pdb, chain=str(seq.id).split('_')
       receptor, chain_type=self.assign_class(seq)
       if receptor and chain_type:
-        out.loc[cnt,:]=pdb_api[np.logical_and(pdb_api['structureId']==pdb, pdb_api['chainId']==chain)]
+        if type(pdb_api)!='NoneType':
+          out.loc[cnt,0:len(header)]=list(pdb_api[np.logical_and(pdb_api['structureId']==pdb, pdb_api['chainId']==chain)].values[0][:-1])
         out.loc[cnt,'class']=receptor
         out.loc[cnt,'chain_type']=str(chain_type)
-        if mro_df and receptor in ('MHC-I', 'MHC-II'):
+        if type(mro_df)!='NoneType' and receptor in ('MHC-I', 'MHC-II'):
           out.loc[cnt,'calc_mhc_allele']= self.get_MRO_allele(mro_df, str(seq.seq), str(seq.description))
         cnt+=1
+      else:
+        previous_woImmuneRePDBs.loc[prev_idx, 'pdb_chain']=str(seq.id)
+        prev_idx+=1
+    previous_woImmuneRePDBs.to_csv(self.previous_woImmuneRePDBs_file, index=False)
     out.to_csv(self.outfile, index=False)
       
     
