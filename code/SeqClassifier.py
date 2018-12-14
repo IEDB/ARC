@@ -107,7 +107,7 @@ class SeqClassifier:
           sequences.append(record)
     return sequences
   
-  def get_pdb_seq_API(self):
+  def get_pdb_seq_API(self,pdb_list=None):
     """
     PDB Restful API request to get a customized report
     --------------------------------------------------
@@ -120,10 +120,14 @@ class SeqClassifier:
     #import datetime
     #seqfile=None
     import requests
+    if not pdb_list:
+      pdb_list='*'
+    else:
+      pdb_list=re.sub(r"[\'\"]","",str(list(pdb_list)).strip('[]'))
     print('### Getting sequences from PDB API..')
     
     pdburl="""http://www.rcsb.org/pdb/rest/customReport"""
-    query="""?pdbids=*&customReportColumns=structureId,releaseDate,pubmedId,publicationYear,entityMacromoleculeType,sequence&primaryOnly=1&format=csv&service=wsfile"""
+    query="""?pdbids=*&customReportColumns=structureId,releaseDate,pubmedId,publicationYear,revisionDate,entityMacromoleculeType,sequence&primaryOnly=1&format=csv&service=wsfile"""
     #query="""?pdbids=5JZI,1MCN,1FBI,2DXM &customReportColumns=structureId,pubmedId,releaseDate,publicationYear,revisionDate,entityMacromoleculeType,sequence&primaryOnly=1&format=csv&service=wsfile"""
     result= requests.get(pdburl, data=query)
     #f = urllib2.urlopen(req)
@@ -322,6 +326,24 @@ class SeqClassifier:
     else:
       return
   
+  def get_latest_released_PDBs(self):
+    """
+    Returns a list of recently released PDB structures. 
+    """
+    url = 'http://www.rcsb.org/pdb/rest/search'
+    queryText = """
+    <orgPdbQuery>
+    <queryType>org.pdb.query.simple.LastLoadQuery</queryType>
+    </orgPdbQuery>
+    """
+    #print("query:", queryText)
+    print("### Getting latest released PDB structures...")
+    req = urllib2.Request(url, data=queryText)
+    f = urllib2.urlopen(req)
+    result = f.read()
+    released_pdbs=result.split('\n')[:-1]
+    return set(released_pdbs)
+    
   def get_revised_PDBs(self):
     """
     Returns a list of recently revised PDB structures. 
@@ -579,7 +601,7 @@ class SeqClassifier:
         raise Exception('Please provide a fasta formatted protein sequence file or use classify_pdb_chains_API method in the SeqClassifier class.')
       else:
         sequences = SeqIO.parse(self.seqfile, 'fasta')
-    if os.path.exists(self.previous_woImmuneRePDBs_file)  and os.path.getsize(self.previous_woImmuneRePDBs_file, os.R_OK) > 0:
+    if os.path.exists(self.previous_woImmuneRePDBs_file)  and os.path.getsize(self.previous_woImmuneRePDBs_file) > 0:
       previous_woImmuneRePDBs=pd.read_csv(self.previous_woImmuneRePDBs_file)
       prev_idx= previous_woImmuneRePDBs.index[-1] + 1
     else:
@@ -626,6 +648,9 @@ class SeqClassifier:
     self.classify(pdbseq, mro_out)
   
   def classify_pdb_chains_API(self):
+    # get latest released PDBs
+    #pdb_list= self.get_latest_released_PDBs()
+    #api_res=self.get_pdb_seq_API(pdb_list)
     api_res=self.get_pdb_seq_API()
     #pdbseq=self.create_SeqRecord(api_res)
     iedb_PDBs=self.get_IEDB_PDBs()

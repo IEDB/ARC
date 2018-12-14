@@ -14,11 +14,14 @@ parser = argparse.ArgumentParser()
 parser.add_argument('infile', help = '')
 parser.add_argument('outfile', help = '')
 args = parser.parse_args()
-
-classification=SeqClassifier(args.infile, args.outfile)
-classification.classify()
 """
 
+#"""
+classification=SeqClassifier()
+classification.classify_pdb_chains_API()
+#"""
+
+"""
 cl=SeqClassifier()
 #pdbs=cl.classify_pdb_chains_API()
 #api_res=cl.get_pdb_seq_API()
@@ -33,3 +36,4 @@ new_pdbs=cl.get_PDBs_classication(set(iedb_PDBs['pdb_id']), set(api_res['structu
 pdb_api=api_res[api_res.structureId.isin(new_pdbs)]
 pdbseq=cl.create_SeqRecord(pdb_api)
 cl.classify(pdbseq, mro_out, pdb_api)
+"""
