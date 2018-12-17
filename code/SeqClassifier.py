@@ -50,7 +50,7 @@ class SeqClassifier:
     if not self.outfile:
       self.outfile=os.path.abspath('../out/SeqClassifier_output_'+now.strftime("%d%b%Y")+'.csv')
     self.sql_results_file= os.path.abspath('../out/IEDB_PDBs_PubMed_IDs_'+now.strftime("%d%b%Y")+'.csv')
-    self.mro_gdomain_file= os.path.abspath('../out/MRO_Gdomain_'+now.strftime("%d%b%Y")+'.csv')
+    self.mro_gdomain_file= os.path.abspath('../out/MRO_Gdomain.csv')
     self.previous_woImmuneRePDBs_file= os.path.abspath('../out/previous_ClassifiedPDBs_woImmuneReceptors.csv')
     
   # returns 0 if unusual character in sequeunce
@@ -200,10 +200,16 @@ class SeqClassifier:
     print('### Assigning G domains to the MRO chain sequences..')
     mro = pd.read_csv(mro_TSVfile, sep='\t', skiprows=[1])
     #mro_header= list(mro.columns)
-    mro_out= pd.DataFrame(columns= ['Label','Sequence', 'calc_mhc_class','ch_g_dom'])
-    cnt=0
+    if os.path.exists(self.mro_gdomain_file)  and os.path.getsize(self.mro_gdomain_file) > 0:
+      mro_out=pd.read_csv(self.mro_gdomain_file)
+      cnt=mro_out.Label.index[-1]+1
+    else:
+      mro_out= pd.DataFrame(columns= ['Label','Sequence', 'calc_mhc_class','ch_g_dom'])
+      cnt=0
     for i in list(range(mro.shape[0])):
       if pd.isnull(mro.loc[i, 'Sequence']):
+        continue
+      if mro.loc[i, 'Label'] in list(mro_out['Label']) and mro.loc[i, 'Sequence'] in list(mro_out['Sequence']):
         continue
       mro_out.loc[cnt, 'Label']= mro.loc[i,'Label']
       mro_out.loc[cnt, 'Sequence']= mro.loc[i,'Sequence']
