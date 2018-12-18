@@ -6,8 +6,9 @@ Created on Mon Sep 24 16:10:17 2018
 """
 
 from SeqClassifier import SeqClassifier 
-import pandas as pd
-import argparse
+from datetime import datetime
+#import pandas as pd
+#import argparse
 
 """
 parser = argparse.ArgumentParser()
@@ -17,8 +18,10 @@ args = parser.parse_args()
 """
 
 #"""
+startTime = datetime.now()
 classification=SeqClassifier()
 classification.classify_pdb_chains_API()
+print(datetime.now() - startTime)
 #"""
 
 """

@@ -39,11 +39,14 @@ class SeqClassifier:
     self.outfile=outfile
     self.hmm_score_threshold=hmm_score_threshold
     self.length_threshold=length_threshold
+    
+    #Input files
     self.mro_file=os.path.abspath('../data/MRO/ontology/chain-sequence.tsv')
     self.mhc_I_hmm='../data/Pfam_MHC_I.hmm'
     self.mhc_II_alpha_hmm='../data/Pfam_MHC_II_alpha.hmm'
     self.mhc_II_beta_hmm='../data/Pfam_MHC_II_beta.hmm'
     
+    #Output files
     now=datetime.datetime.now()
     if not self.seqfile:
       self.seqfile=os.path.abspath('../out/PDB_'+now.strftime("%d%b%Y")+'.csv')
@@ -123,11 +126,11 @@ class SeqClassifier:
     if not pdb_list:
       pdb_list='*'
     else:
-      pdb_list=re.sub(r"[\'\"]","",str(list(pdb_list)).strip('[]'))
+      pdb_list=re.sub(r"[\'\"]","",str(pdb_list).strip('[]'))
     print('### Getting sequences from PDB API..')
     
     pdburl="""http://www.rcsb.org/pdb/rest/customReport"""
-    query="""?pdbids=*&customReportColumns=structureId,releaseDate,pubmedId,publicationYear,revisionDate,entityMacromoleculeType,sequence&primaryOnly=1&format=csv&service=wsfile"""
+    query="?pdbids={}&customReportColumns=structureId,releaseDate,pubmedId,publicationYear,revisionDate,entityMacromoleculeType,sequence&primaryOnly=1&format=csv&service=wsfile".format(pdb_list)
     #query="""?pdbids=5JZI,1MCN,1FBI,2DXM &customReportColumns=structureId,pubmedId,releaseDate,publicationYear,revisionDate,entityMacromoleculeType,sequence&primaryOnly=1&format=csv&service=wsfile"""
     result= requests.get(pdburl, data=query)
     #f = urllib2.urlopen(req)
@@ -348,7 +351,9 @@ class SeqClassifier:
     f = urllib2.urlopen(req)
     result = f.read()
     released_pdbs=result.split('\n')[:-1]
-    return set(released_pdbs)
+    released_pdbs=list(set(released_pdbs))
+    print('A total of {} new released PDBs were found.'.format(len(released_pdbs)))
+    return released_pdbs
     
   def get_revised_PDBs(self):
     """
@@ -655,9 +660,9 @@ class SeqClassifier:
   
   def classify_pdb_chains_API(self):
     # get latest released PDBs
-    #pdb_list= self.get_latest_released_PDBs()
-    #api_res=self.get_pdb_seq_API(pdb_list)
-    api_res=self.get_pdb_seq_API()
+    pdb_list= self.get_latest_released_PDBs()
+    api_res=self.get_pdb_seq_API(pdb_list)
+    #api_res=self.get_pdb_seq_API()
     #pdbseq=self.create_SeqRecord(api_res)
     iedb_PDBs=self.get_IEDB_PDBs()
     self.get_MRO()
