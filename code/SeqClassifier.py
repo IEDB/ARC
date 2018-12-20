@@ -55,6 +55,7 @@ class SeqClassifier:
     self.sql_results_file= os.path.abspath('../out/IEDB_PDBs_PubMed_IDs_'+now.strftime("%d%b%Y")+'.csv')
     self.mro_gdomain_file= os.path.abspath('../out/MRO_Gdomain.csv')
     self.previous_woImmuneRePDBs_file= os.path.abspath('../out/previous_ClassifiedPDBs_woImmuneReceptors.csv')
+    self.previous_ClassifiedPDBs_woPubMedIDs= os.path.abspath('../out/previous_ClassifiedPDBs_woPubMedIDs.csv')
     
   # returns 0 if unusual character in sequeunce
   def check_seq(self,seq_record):
@@ -110,7 +111,7 @@ class SeqClassifier:
           sequences.append(record)
     return sequences
   
-  def get_pdb_seq_API(self,pdb_list=None):
+  def get_pdb_seq_API(self,pdb_list=None, write_file=True):
     """
     PDB Restful API request to get a customized report
     --------------------------------------------------
@@ -143,9 +144,12 @@ class SeqClassifier:
         with open(self.seqfile, 'wt') as out:
           print(result, file=out)
       """
-      with open(self.seqfile, 'wt') as out:
-        print(result.text, file=out)
-      res_df = pd.read_csv(self.seqfile)
+      if write_file:
+        with open(self.seqfile, 'wt') as out:
+          print(result.text, file=out)
+        res_df = pd.read_csv(self.seqfile)
+      else:
+        res_df = pd.read_csv(pd.compat.StringIO(str(result.text)))
       return (res_df)
     else:
       raise Exception("Failed to retrieve results from PDB API.")
@@ -352,6 +356,8 @@ class SeqClassifier:
     result = f.read()
     released_pdbs=result.split('\n')[:-1]
     released_pdbs=list(set(released_pdbs))
+    if len(released_pdbs)==0:
+      raise Exception('No latest relased PDBs were found.')
     print('A total of {} new released PDBs were found.'.format(len(released_pdbs)))
     return released_pdbs
     
@@ -375,7 +381,7 @@ class SeqClassifier:
   
   def get_PDBs_classication(self, iedb_pdbs, all_pdbs, revised_pdbs=None):
     """
-    Get a list of new or revised PDB IDs for classification. 
+    Add revised PDBs from the IEDB for classification. Returns a list of new or revised PDB IDs for classification. 
     All inputs are sets of PDB IDs.
     """
     print('### Getting list of PDBs for curation or re-curation..')
@@ -396,7 +402,7 @@ class SeqClassifier:
     # Check if the all_nonIEDB_pdbs have BCR, TCR or MHCs in the structure
     #new_pdbs= self.get_classified_PDBs(all_nonIEDB_pdbs)
     
-    return all_nonIEDB_pdbs
+    return list(all_nonIEDB_pdbs)
     
     
   def run_anarci(self,seq_record, imgtfile):
@@ -618,6 +624,13 @@ class SeqClassifier:
     else:
       previous_woImmuneRePDBs=pd.DataFrame(columns=['pdb_chain'])
       prev_idx=0
+    # Get PDBs without PMIDs
+    if os.path.exists(self.previous_ClassifiedPDBs_woPubMedIDs)  and os.path.getsize(self.previous_ClassifiedPDBs_woPubMedIDs) > 0:
+      previous_woPMIDs=pd.read_csv(self.previous_ClassifiedPDBs_woPubMedIDs)
+      pmid_idx= previous_woPMIDs.index[-1] + 1
+    else:
+      previous_woPMIDs=pd.DataFrame(columns=['pdb'])
+      pmid_idx=0
     
     header=[]
     if type(pdb_api)!='NoneType':
@@ -636,19 +649,45 @@ class SeqClassifier:
       pdb, chain=str(seq.id).split('_')
       receptor, chain_type=self.assign_class(seq)
       if receptor and chain_type:
-        if type(pdb_api)!='NoneType':
-          out.loc[cnt,0:len(header)]=list(pdb_api[np.logical_and(pdb_api['structureId']==pdb, pdb_api['chainId']==chain)].values[0][:-1])
-        out.loc[cnt,'class']=receptor
-        out.loc[cnt,'chain_type']=str(chain_type)
+        calc_mhc_allele=''
         if type(mro_df)!='NoneType' and receptor in ('MHC-I', 'MHC-II'):
-          out.loc[cnt,'calc_mhc_allele']= self.get_MRO_allele(mro_df, str(seq.seq), str(seq.description))
-        cnt+=1
+          calc_mhc_allele= self.get_MRO_allele(mro_df, str(seq.seq), str(seq.description))
+
+        if type(pdb_api)!='NoneType':
+          if len(pdb_api[(pdb_api['structureId']==pdb)]['pubmedId'].unique()) >0:
+            out.loc[cnt,0:len(header)]=list(pdb_api[np.logical_and(pdb_api['structureId']==pdb, pdb_api['chainId']==chain)].values[0][:-1])
+            out.loc[cnt,'class']=receptor
+            out.loc[cnt,'chain_type']=str(chain_type)
+            out.loc[cnt,'calc_mhc_allele']= calc_mhc_allele
+            cnt+=1
+          else:
+            previous_woPMIDs.loc[pmid_idx,'pdb']=pdb
+            pmid_idx+=1
+        else:
+          out.loc[cnt,'seq_id']=str(seq.description)
+          out.loc[cnt,'class']=receptor
+          out.loc[cnt,'chain_type']=str(chain_type)
+          out.loc[cnt,'calc_mhc_allele']= calc_mhc_allele
+          cnt+=1
       else:
         previous_woImmuneRePDBs.loc[prev_idx, 'pdb_chain']=str(seq.id)
         prev_idx+=1
     previous_woImmuneRePDBs.to_csv(self.previous_woImmuneRePDBs_file, index=False)
     out.to_csv(self.outfile, index=False)
+    previous_woPMIDs(self.previous_ClassifiedPDBs_woPubMedIDs, index=False)
       
+  def check_updated_PubMed_IDs(self, woPMID_file):
+    """
+    Check if the unpublished PDBs with immune receptors have been published now. 
+    Return a list of recently published PDBs which have immune receptors.
+    """
+    withPMID_PDBs=[]
+    previous_woPMIDs=pd.read_csv(woPMID_file)
+    woPMID_df=self.get_pdb_seq_API(list(previous_woPMIDs['pdb']), write_file=False)
+    withPMID_PDBs=list(woPMID_df[pd.notnull(woPMID_df['pubmedId'])]['pdb'])
+    previous_woPMIDs.drop(previous_woPMIDs[previous_woPMIDs.pdb.isin(withPMID_PDBs)].index, inplace=True)
+    previous_woPMIDs.to_csv(woPMID_file, index=False)
+    return withPMID_PDBs
     
   def classify_pdb_chains_FTP(self):
     pdbseq=self.get_pdb_seq_ftp()
@@ -658,17 +697,34 @@ class SeqClassifier:
     
     self.classify(pdbseq, mro_out)
   
-  def classify_pdb_chains_API(self):
-    # get latest released PDBs
-    pdb_list= self.get_latest_released_PDBs()
-    api_res=self.get_pdb_seq_API(pdb_list)
-    #api_res=self.get_pdb_seq_API()
-    #pdbseq=self.create_SeqRecord(api_res)
+  def classify_all_current_pdb_chains_API(self):
+    api_res=self.get_pdb_seq_API()
     iedb_PDBs=self.get_IEDB_PDBs()
     self.get_MRO()
     mro_out=self.get_MRO_Gdomains(self.mro_file)
-    
     new_pdbs=self.get_PDBs_classication(set(iedb_PDBs['pdb_id']), set(api_res['structureId']))
     pdb_api=api_res[api_res.structureId.isin(new_pdbs)]
     pdbseq=self.create_SeqRecord(pdb_api)
+    self.classify(pdbseq, mro_out, pdb_api)
+    
+  def classify_latest_released_pdb_chains_API(self):
+    # get latest released PDBs
+    pdb_list= self.get_latest_released_PDBs()
+    # get previously classified PDBs without PubMed IDs
+    # Check if the previously classified PDBs without PubMed IDs have a PubMed ID this week
+    withPMID_PDBs=self.check_updated_PubMed_IDs(self.previous_ClassifiedPDBs_woPubMedIDs)
+    pdb_list.extend(withPMID_PDBs)
+    # Get a list of all PDBs in the IEDB
+    iedb_PDBs=self.get_IEDB_PDBs()
+    # Get/update MRO repository
+    self.get_MRO()
+    # Assign G domains to MRO chains
+    mro_out=self.get_MRO_Gdomains(self.mro_file)
+    # Add revised PDBs from the IEDB for classification.
+    new_pdbs=self.get_PDBs_classication(set(iedb_PDBs['pdb_id']), set(pdb_list))
+    # Get all info (seq, pubDate, revDate, relDate) on PDBs in pdb_list
+    pdb_api=self.get_pdb_seq_API(new_pdbs)
+    # Get only sequences for classification
+    pdbseq=self.create_SeqRecord(pdb_api)
+    # Classify PDB chain sequences
     self.classify(pdbseq, mro_out, pdb_api)

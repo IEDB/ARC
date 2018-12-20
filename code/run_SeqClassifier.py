@@ -8,21 +8,21 @@ Created on Mon Sep 24 16:10:17 2018
 from SeqClassifier import SeqClassifier 
 from datetime import datetime
 #import pandas as pd
-#import argparse
 
-"""
-parser = argparse.ArgumentParser()
-parser.add_argument('infile', help = '')
-parser.add_argument('outfile', help = '')
-args = parser.parse_args()
-"""
 
-#"""
 startTime = datetime.now()
 classification=SeqClassifier()
-classification.classify_pdb_chains_API()
+
+# =============================================================================
+# To classify all the current PDB sequences
+# classification.classify_all_current_pdb_chains_API()
+# =============================================================================
+
+# To classify latest released and revised PDB seqeuences
+classification.classify_latest_released_pdb_chains_API()
+
 print(datetime.now() - startTime)
-#"""
+
 
 """
 cl=SeqClassifier()
