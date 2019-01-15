@@ -611,6 +611,39 @@ class SeqClassifier:
     else:
       return(None, None)
   
+  def classify_seqfile(self,sequences=None):
+    """
+    Assigns BCR, TCR and MHC classes to proteins in a fasta file.
+    """
+    
+    if not sequences:
+      if not self.seqfile:
+        raise Exception('Please provide a fasta formatted protein sequence file or use classify_pdb_chains_API method in the SeqClassifier class.')
+      else:
+        sequences = SeqIO.parse(self.seqfile, 'fasta')
+    self.get_MRO()
+    mro_df=self.get_MRO_Gdomains(self.mro_file)
+    out=pd.DataFrame()
+    cnt=0
+    for seq in sequences:
+      print(seq.description)
+      #print(seq.seq)
+      chain_type=None
+      receptor=None
+      receptor, chain_type=self.assign_class(seq)
+      if receptor and chain_type:
+        calc_mhc_allele=''
+        if type(mro_df)!=type(None) and receptor in ('MHC-I', 'MHC-II'):
+          calc_mhc_allele= self.get_MRO_allele(mro_df, str(seq.seq), str(seq.description))
+        out.loc[cnt,'seq_id']=str(seq.description)
+        out.loc[cnt,'class']=receptor
+        out.loc[cnt,'chain_type']=str(chain_type)
+        out.loc[cnt,'calc_mhc_allele']= calc_mhc_allele
+        cnt+=1
+    writer = pd.ExcelWriter(self.outfile, engine='openpyxl')
+    out.to_excel(writer, index=False)
+    writer.save()
+          
   def classify(self, sequences=None, mro_df=None, pdb_api=None):
     """
     Returns a csv file with BCR, TCR or MHC class and chain type assignments to the 
