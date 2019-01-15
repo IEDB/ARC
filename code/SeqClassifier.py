@@ -25,7 +25,7 @@ import datetime
 
 class SeqClassifier:
   
-  def __init__(self,seqfile=None, outfile=None, hmm_score_threshold=25, length_threshold=50):
+  def __init__(self,seqfile=None, outfile=None, hmm_score_threshold=25, lower_length_threshold=50, upper_length_threshold=1500):
     """
     Classifies input sequence/s into BCR, TCR or MHC chains.
     
@@ -45,6 +45,7 @@ class SeqClassifier:
     self.outfile=outfile
     self.hmm_score_threshold=hmm_score_threshold
     self.length_threshold=length_threshold
+    self.upper_length_threshold=upper_length_threshold
     
     #Input files
     self.mro_file=os.path.abspath('../data/MRO/ontology/chain-sequence.tsv')
@@ -628,6 +629,10 @@ class SeqClassifier:
     for seq in sequences:
       print(seq.description)
       #print(seq.seq)
+      len_seq=len(str(seq.seq))
+      if len_seq>self.upper_length_threshold:
+        print('Too long (>{}) seq. Len:{}'.format(self.upper_length_threshold,len_seq))
+        continue
       chain_type=None
       receptor=None
       receptor, chain_type=self.assign_class(seq)
@@ -687,6 +692,10 @@ class SeqClassifier:
     for seq in sequences:
       print(seq.description)
       #print(seq.seq)
+      len_seq=len(str(seq.seq))
+      if len_seq>self.upper_length_threshold:
+        print('Too long (>{}) seq. Len:{}'.format(self.upper_length_threshold,len_seq))
+        continue
       chain_type=None
       receptor=None
       if str(seq.id) in previous_woImmuneRePDBs.pdb_chain.unique():
