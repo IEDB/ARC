@@ -34,6 +34,12 @@ class SeqClassifier:
     
     seqfile: Fasta formatted sequence file (Optional: Name is not needed for PDB sequence classification).
     
+    outfile: Output file in excel format (extension must be .xls or .xlsx)
+      default: SeqClassifier_output_[date].xlsx
+    
+    
+          
+    
     """
     self.seqfile=seqfile
     self.outfile=outfile
@@ -51,7 +57,7 @@ class SeqClassifier:
     if not self.seqfile:
       self.seqfile=os.path.abspath('../out/PDB_'+now.strftime("%d%b%Y")+'.csv')
     if not self.outfile:
-      self.outfile=os.path.abspath('../out/SeqClassifier_output_'+now.strftime("%d%b%Y")+'.csv')
+      self.outfile=os.path.abspath('../out/SeqClassifier_output_'+now.strftime("%d%b%Y")+'.xlsx')
     self.sql_results_file= os.path.abspath('../out/IEDB_PDBs_PubMed_IDs_'+now.strftime("%d%b%Y")+'.csv')
     self.mro_gdomain_file= os.path.abspath('../out/MRO_Gdomain.csv')
     self.previous_woImmuneRePDBs_file= os.path.abspath('../out/previous_ClassifiedPDBs_woImmuneReceptors.csv')
@@ -620,20 +626,26 @@ class SeqClassifier:
         sequences = SeqIO.parse(self.seqfile, 'fasta')
     if os.path.exists(self.previous_woImmuneRePDBs_file)  and os.path.getsize(self.previous_woImmuneRePDBs_file) > 0:
       previous_woImmuneRePDBs=pd.read_csv(self.previous_woImmuneRePDBs_file)
-      prev_idx= previous_woImmuneRePDBs.index[-1] + 1
+      if previous_woImmuneRePDBs.shape[0]==0:
+        prev_idx=0
+      else:
+        prev_idx= previous_woImmuneRePDBs.index[-1] + 1
     else:
       previous_woImmuneRePDBs=pd.DataFrame(columns=['pdb_chain'])
       prev_idx=0
     # Get PDBs without PMIDs
     if os.path.exists(self.previous_ClassifiedPDBs_woPubMedIDs)  and os.path.getsize(self.previous_ClassifiedPDBs_woPubMedIDs) > 0:
       previous_woPMIDs=pd.read_csv(self.previous_ClassifiedPDBs_woPubMedIDs)
-      pmid_idx= previous_woPMIDs.index[-1] + 1
+      if previous_woPMIDs.shape[0]==0:
+        pmid_idx=0
+      else:
+        pmid_idx= previous_woPMIDs.index[-1] + 1
     else:
       previous_woPMIDs=pd.DataFrame(columns=['pdb'])
       pmid_idx=0
     
     header=[]
-    if type(pdb_api)!='NoneType':
+    if type(pdb_api)!=type(None):
       header=list(pdb_api.columns)[:-1] # excluding sequence
     #header.extend(['class', 'chain_type', 'calc_mhc_allele'])
     out=pd.DataFrame(columns=header)
@@ -646,21 +658,24 @@ class SeqClassifier:
       receptor=None
       if str(seq.id) in previous_woImmuneRePDBs.pdb_chain.unique():
         continue
+      pdb='' 
+      chain=''
       pdb, chain=str(seq.id).split('_')
       receptor, chain_type=self.assign_class(seq)
       if receptor and chain_type:
         calc_mhc_allele=''
-        if type(mro_df)!='NoneType' and receptor in ('MHC-I', 'MHC-II'):
+        if type(mro_df)!=type(None) and receptor in ('MHC-I', 'MHC-II'):
           calc_mhc_allele= self.get_MRO_allele(mro_df, str(seq.seq), str(seq.description))
 
-        if type(pdb_api)!='NoneType':
-          if len(pdb_api[(pdb_api['structureId']==pdb)]['pubmedId'].unique()) >0:
+        if type(pdb_api)!=type(None):
+          if (len(pdb_api[(pdb_api['structureId']==pdb)]['pubmedId'].unique()) >0) or (len(pdb_api[(pdb_api['structureId']==pdb)]['publicationYear'].unique()) >0):
             out.loc[cnt,0:len(header)]=list(pdb_api[np.logical_and(pdb_api['structureId']==pdb, pdb_api['chainId']==chain)].values[0][:-1])
             out.loc[cnt,'class']=receptor
             out.loc[cnt,'chain_type']=str(chain_type)
             out.loc[cnt,'calc_mhc_allele']= calc_mhc_allele
             cnt+=1
           else:
+            print('In Without PubMed_ID')
             previous_woPMIDs.loc[pmid_idx,'pdb']=pdb
             pmid_idx+=1
         else:
@@ -673,14 +688,21 @@ class SeqClassifier:
         previous_woImmuneRePDBs.loc[prev_idx, 'pdb_chain']=str(seq.id)
         prev_idx+=1
     previous_woImmuneRePDBs.to_csv(self.previous_woImmuneRePDBs_file, index=False)
-    out.to_csv(self.outfile, index=False)
-    previous_woPMIDs(self.previous_ClassifiedPDBs_woPubMedIDs, index=False)
+    previous_woPMIDs.to_csv(self.previous_ClassifiedPDBs_woPubMedIDs, index=False)
+    writer = pd.ExcelWriter(self.outfile, engine='openpyxl')
+    out.to_excel(writer, index=False)
+    writer.save()
+    #out.to_csv(self.outfile, index=False)
       
   def check_updated_PubMed_IDs(self, woPMID_file):
     """
     Check if the unpublished PDBs with immune receptors have been published now. 
     Return a list of recently published PDBs which have immune receptors.
     """
+    if not woPMID_file:
+      woPMID_file=self.previous_ClassifiedPDBs_woPubMedIDs
+    if not os.path.exists(woPMID_file):
+      raise Exception('Run classify_all_current_pdb_chains_API() method first to generate {} file.'.format(woPMID_file))
     withPMID_PDBs=[]
     previous_woPMIDs=pd.read_csv(woPMID_file)
     woPMID_df=self.get_pdb_seq_API(list(previous_woPMIDs['pdb']), write_file=False)
@@ -688,14 +710,23 @@ class SeqClassifier:
     previous_woPMIDs.drop(previous_woPMIDs[previous_woPMIDs.pdb.isin(withPMID_PDBs)].index, inplace=True)
     previous_woPMIDs.to_csv(woPMID_file, index=False)
     return withPMID_PDBs
+  
+  def cleanup(self):
+    """
+    Removes unnecessary intermediate files
+    """
+    print("### Removing unnecessary intermediate files..")
+    os.remove(self.sql_results_file)
+    os.remove(self.seqfile)
     
   def classify_pdb_chains_FTP(self):
     pdbseq=self.get_pdb_seq_ftp()
     iedb_PDBs=self.get_IEDB_PDBs()
     self.get_MRO()
     mro_out=self.get_MRO_Gdomains(self.mro_file)
-    
     self.classify(pdbseq, mro_out)
+    # Cleanup files
+    #self.cleanup()
   
   def classify_all_current_pdb_chains_API(self):
     api_res=self.get_pdb_seq_API()
@@ -706,6 +737,7 @@ class SeqClassifier:
     pdb_api=api_res[api_res.structureId.isin(new_pdbs)]
     pdbseq=self.create_SeqRecord(pdb_api)
     self.classify(pdbseq, mro_out, pdb_api)
+    #self.cleanup()
     
   def classify_latest_released_pdb_chains_API(self):
     # get latest released PDBs
@@ -728,3 +760,5 @@ class SeqClassifier:
     pdbseq=self.create_SeqRecord(pdb_api)
     # Classify PDB chain sequences
     self.classify(pdbseq, mro_out, pdb_api)
+    # Cleanup files
+    #self.cleanup()

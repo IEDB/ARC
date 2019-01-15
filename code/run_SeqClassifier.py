@@ -15,11 +15,11 @@ classification=SeqClassifier()
 
 # =============================================================================
 # To classify all the current PDB sequences
-# classification.classify_all_current_pdb_chains_API()
+classification.classify_all_current_pdb_chains_API()
 # =============================================================================
 
 # To classify latest released and revised PDB seqeuences
-classification.classify_latest_released_pdb_chains_API()
+#classification.classify_latest_released_pdb_chains_API()
 
 print(datetime.now() - startTime)
 
