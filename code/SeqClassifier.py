@@ -44,7 +44,7 @@ class SeqClassifier:
     self.seqfile=seqfile
     self.outfile=outfile
     self.hmm_score_threshold=hmm_score_threshold
-    self.length_threshold=length_threshold
+    self.lower_length_threshold=lower_length_threshold
     self.upper_length_threshold=upper_length_threshold
     
     #Input files
@@ -110,7 +110,7 @@ class SeqClassifier:
         record=None
         pdb_chain=str(pdb_api.loc[i,'structureId'])+'_'+str(pdb_api.loc[i,'chainId'])
         if pdb_api.loc[i,'sequence'] and not pd.isnull(pdb_api.loc[i,'sequence']) \
-        and len(pdb_api.loc[i,'sequence']) >=self.length_threshold:
+        and len(pdb_api.loc[i,'sequence']) >=self.lower_length_threshold:
           record=SeqRecord(Seq(str(pdb_api.loc[i,'sequence']), IUPAC.protein), 
                            id= pdb_chain,
                            description= pdb_chain,
