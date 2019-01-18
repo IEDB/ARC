@@ -716,10 +716,12 @@ class SeqClassifier:
             out.loc[cnt,'chain_type']=str(chain_type)
             out.loc[cnt,'calc_mhc_allele']= calc_mhc_allele
             cnt+=1
+          """
           else:
             print('In Without PubMed_ID')
             previous_woPMIDs.loc[pmid_idx,'pdb']=pdb
             pmid_idx+=1
+          """
         else:
           out.loc[cnt,'seq_id']=str(seq.description)
           out.loc[cnt,'class']=receptor
@@ -730,6 +732,9 @@ class SeqClassifier:
         previous_woImmuneRePDBs.loc[prev_idx, 'pdb_chain']=str(seq.id)
         prev_idx+=1
     previous_woImmuneRePDBs.to_csv(self.previous_woImmuneRePDBs_file, index=False)
+    woPMID=out[(pd.isnull(out.pubmedId)) & (pd.isnull(out.publicationYear))].copy(deep=True)
+    previous_woPMIDs=previous_woPMIDs.append(pd.DataFrame(woPMID.structureId.unique(), columns=['pdb']), ignore_index=True)
+    out.drop(woPMID.index, inplace=True)
     previous_woPMIDs.to_csv(self.previous_ClassifiedPDBs_woPubMedIDs, index=False)
     writer = pd.ExcelWriter(self.outfile, engine='openpyxl')
     out.to_excel(writer, index=False)
