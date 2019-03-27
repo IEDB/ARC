@@ -25,7 +25,7 @@ import datetime
 
 class SeqClassifier:
   
-  def __init__(self,seqfile=None, outfile=None, hmm_score_threshold=25, lower_length_threshold=50, upper_length_threshold=1500):
+  def __init__(self,seqfile=None, outfile=None, hmm_score_threshold=25, lower_length_threshold=20, upper_length_threshold=1500):
     """
     Classifies input sequence/s into BCR, TCR or MHC chains.
     
@@ -48,21 +48,21 @@ class SeqClassifier:
     self.upper_length_threshold=upper_length_threshold
     
     #Input files
-    self.mro_file=os.path.abspath('../data/MRO/ontology/chain-sequence.tsv')
-    self.mhc_I_hmm='../data/Pfam_MHC_I.hmm'
-    self.mhc_II_alpha_hmm='../data/Pfam_MHC_II_alpha.hmm'
-    self.mhc_II_beta_hmm='../data/Pfam_MHC_II_beta.hmm'
-    
+    self.mro_file=os.path.join(os.path.dirname(__file__),'../data/MRO/ontology/chain-sequence.tsv')
+    self.mhc_I_hmm=os.path.join(os.path.dirname(__file__),'../data/Pfam_MHC_I.hmm')
+    self.mhc_II_alpha_hmm=os.path.join(os.path.dirname(__file__),'../data/Pfam_MHC_II_alpha.hmm')
+    self.mhc_II_beta_hmm=os.path.join(os.path.dirname(__file__),'../data/Pfam_MHC_II_beta.hmm')
+    self.C1_hmm=os.path.join(os.path.dirname(__file__),'../data/Pfam_C1_set.hmm')
     #Output files
     now=datetime.datetime.now()
     if not self.seqfile:
-      self.seqfile=os.path.abspath('../out/PDB_'+now.strftime("%d%b%Y")+'.csv')
+      self.seqfile=os.path.join(os.path.dirname(__file__),'../out/PDB_'+now.strftime("%d%b%Y")+'.csv')
     if not self.outfile:
-      self.outfile=os.path.abspath('../out/SeqClassifier_output_'+now.strftime("%d%b%Y")+'.xlsx')
-    self.sql_results_file= os.path.abspath('../out/IEDB_PDBs_PubMed_IDs_'+now.strftime("%d%b%Y")+'.csv')
-    self.mro_gdomain_file= os.path.abspath('../out/MRO_Gdomain.csv')
-    self.previous_woImmuneRePDBs_file= os.path.abspath('../out/previous_ClassifiedPDBs_woImmuneReceptors.csv')
-    self.previous_ClassifiedPDBs_woPubMedIDs= os.path.abspath('../out/previous_ClassifiedPDBs_woPubMedIDs.csv')
+      self.outfile=os.path.join(os.path.dirname(__file__),'../out/SeqClassifier_output_'+now.strftime("%d%b%Y")+'.xlsx')
+    self.sql_results_file= os.path.join(os.path.dirname(__file__),'../out/IEDB_PDBs_PubMed_IDs_'+now.strftime("%d%b%Y")+'.csv')
+    self.mro_gdomain_file= os.path.join(os.path.dirname(__file__),'../out/MRO_Gdomain.csv')
+    self.previous_woImmuneRePDBs_file= os.path.join(os.path.dirname(__file__),'../out/previous_ClassifiedPDBs_woImmuneReceptors.csv')
+    self.previous_ClassifiedPDBs_woPubMedIDs= os.path.join(os.path.dirname(__file__),'../out/previous_ClassifiedPDBs_woPubMedIDs.csv')
     
   # returns 0 if unusual character in sequeunce
   def check_seq(self,seq_record):
@@ -169,7 +169,7 @@ class SeqClassifier:
     """
     print('### Getting sequences from PDB FTP..')
     pdburl = "ftp://ftp.wwpdb.org/pub/pdb/derived_data/pdb_seqres.txt.gz"
-    outpdb = "../data/pdb_seqres.txt.gz"
+    outpdb = os.path.join(os.path.dirname(__file__),"../data/pdb_seqres.txt.gz")
     self.geturl(pdburl, outpdb)
     with gzip.open(outpdb, 'rb') as pdbfile:
       pdbseq=SeqIO.read(pdbfile, 'fasta')
@@ -180,7 +180,7 @@ class SeqClassifier:
     Returns G domain of a MHC sequence.
     """
     from mhc_G_domain import mhc_G_domain
-    gd=mhc_G_domain(chain1_seq=seq, ch1_id=seq_id)
+    gd=mhc_G_domain(chain1_seq=seq, ch1_id=re.sub(r'[^\w|\.]','',seq_id))
     res= gd.get_g_domain()
     if res:
       return res
@@ -192,7 +192,7 @@ class SeqClassifier:
     """
     Clone or pull MRO GitHub repository.
     """
-    mro_path=os.path.abspath('../data/MRO')
+    mro_path=os.path.join(os.path.dirname(__file__),'../data/MRO')
     wd=os.path.dirname(os.path.realpath(__file__))
     if os.path.exists(mro_path):
       print('### Updating MRO repository..')
@@ -202,7 +202,7 @@ class SeqClassifier:
       return
     else:
       print('Getting MRO repository..')
-      os.chdir(os.path.abspath('../data'))
+      os.chdir(os.path.join(os.path.dirname(__file__),'../data'))
       self.run_cmd('git clone https://github.com/IEDB/MRO.git')
       os.chdir(wd)
       return
@@ -312,7 +312,7 @@ class SeqClassifier:
     #from Bio.PDB.MMCIFParser import MMCIFParser
     import Bio.PDB.MMCIF2Dict as MMCIF2Dict
     
-    dir_path=os.path.abspath('../out/')
+    dir_path=os.path.join(os.path.dirname(__file__),'../out/')
     ciffile=dir_path+'/'+pdb_id+'.cif'
     pdbl = PDBList()
     try:
@@ -425,7 +425,7 @@ class SeqClassifier:
     mod_seq= re.sub(r'[Xx]','',str(seq_record.seq))
     if not mod_seq:
       return
-    args=['ANARCI','-s', 'i', '-i', mod_seq,'-o',imgtfile]
+    args=['ANARCI1.3','-s', 'i', '-i', mod_seq,'-o',imgtfile]
     cmd = ' '.join(args)
     #print(cmd)
     self.run_cmd(cmd)
@@ -451,7 +451,7 @@ class SeqClassifier:
     pattern=re.compile(r'\#\|species\|chain_type')
     #pattern_germline=re.compile(r'\#\|species\|v_gene')
   
-    imgtfile=str(seq_record.id)+'.imgt'
+    imgtfile=re.sub(r'[^\w|\.]','', str(seq_record.id))+'.imgt'
     imgt_out=self.run_anarci(seq_record, imgtfile)
     if not imgt_out:
       return (receptor,chain_type,c_type)
