@@ -11,6 +11,7 @@ import os
 from Bio import SearchIO
 from Bio import SeqIO
 import datetime
+import subprocess
 
 class SeqClassifier:
   def __init__(self, seqfile=None, outfile=None, hmm_score_threshold=100):
@@ -46,24 +47,25 @@ class SeqClassifier:
     """
     Run the cmd with input_string as stdin and return output.
     """
-
+    print("input string is " + input_string)
     p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stdin=subprocess.PIPE,
                stderr=subprocess.PIPE, universal_newlines=True, close_fds=True,
                env=dict(os.environ, my_env_prop='value'), shell=True)
     out, stderr = p.communicate(input=input_string)
     if p.returncode:
-      raise Exception('Cmd {} failed: {}'.format(cmd[0], stderr))
+      raise Exception('Cmd {} failed: {}'.format(cmd, stderr))
 
     return out
   
   def run_hmmscan(self, seq_record):
-      hmm_out = seq_record.description + ".txt"
+      hmm_out = seq_record.id + ".txt"
       if not seq_record.seq:
           print('ERROR: ID: {} sequence was not found'.format(seq_record.description))
           return 0 
-      args = ['hmmscan','-o', hmm_out, hmm_file, '-'+seq_record.seq]
+      args = ['hmmscan','-o', hmm_out, "/home/austin/classifier_tool/data/constant_sequences/hmms/ALL_with_constant.hmm", '-']
       cmd = (' ').join(args)
-      self.run_cmd(cmd)
+      print("CMD is " + cmd)
+      self.run_cmd(cmd, str(seq_record.seq))
 
       if not(os.path.exists(hmm_out) and os.access(hmm_out, os.R_OK)):
           print('ERROR: ID {} hmmer out is not found or is not readable.'.format(seq_record.description))
@@ -83,7 +85,7 @@ class SeqClassifier:
     hmm_out = self.run_hmmscan(seq_record)
     if not hmm_out:
         return (receptor, chain_type)
-    scan_results = list(SearchIO.parse((seq_record.description+'.txt', 'hmmer3-text')))
+    scan_results = list(SearchIO.parse((seq_record.id+'.txt', 'hmmer3-text')))
     sig_hits = set()
     for x in scan_results:
         for hit in x.hits:
