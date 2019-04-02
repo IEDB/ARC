@@ -47,28 +47,28 @@ class SeqClassifier:
     """
     Run the cmd with input_string as stdin and return output.
     """
-    print("input string is " + input_string)
     p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stdin=subprocess.PIPE,
                stderr=subprocess.PIPE, universal_newlines=True, close_fds=True,
                env=dict(os.environ, my_env_prop='value'), shell=True)
+    
     out, stderr = p.communicate(input=input_string)
     if p.returncode:
-      raise Exception('Cmd {} failed: {}'.format(cmd, stderr))
-
+        raise Exception('Cmd {} failed: {}'.format(cmd, stderr))
+    
     return out
   
   def run_hmmscan(self, seq_record):
+      SeqIO.write(seq_record, seq_record.id+".fa", "fasta")
       hmm_out = seq_record.id + ".txt"
       if not seq_record.seq:
           print('ERROR: ID: {} sequence was not found'.format(seq_record.description))
           return 0 
-      args = ['hmmscan','-o', hmm_out, "/home/austin/classifier_tool/data/constant_sequences/hmms/ALL_with_constant.hmm", '-']
+      args = ['hmmscan','-o', hmm_out, "/home/austin/classifier_tool/data/constant_sequences/hmms/ALL_with_constant.hmm", seq_record.id+".fa"]
       cmd = (' ').join(args)
-      print("CMD is " + cmd)
       self.run_cmd(cmd, str(seq_record.seq))
 
       if not(os.path.exists(hmm_out) and os.access(hmm_out, os.R_OK)):
-          print('ERROR: ID {} hmmer out is not found or is not readable.'.format(seq_record.description))
+          print('ERROR: ID {} hmmer out is not found or is not readable.'.format(seq_record.id))
           return 0
       if os.path.getsize(hmm_out) == 0:
           print('ERROR: ID {} hmmer out is empty. Please add path to hmmer to your environment variables'.format(seq_record.description))
@@ -85,12 +85,12 @@ class SeqClassifier:
     hmm_out = self.run_hmmscan(seq_record)
     if not hmm_out:
         return (receptor, chain_type)
-    scan_results = list(SearchIO.parse((seq_record.id+'.txt', 'hmmer3-text')))
+    scan_results = list(SearchIO.parse(seq_record.id+'.txt', 'hmmer3-text'))
     sig_hits = set()
     for x in scan_results:
         for hit in x.hits:
-            if hit.bitscore > hmm_score_threshold:
-                sig_hits.append(hit.description.split("_")[1])
+            if hit.bitscore > self.hmm_score_threshold:
+                sig_hits.add(hit.id.split("_")[1])
 
     return sig_hits
 
@@ -100,8 +100,4 @@ class SeqClassifier:
     """
     if self.check_seq(seq) == 1:
         sig_hits = self.get_chain_type(seq)
-    
-    if chain_type:
-        return sig_hits
-    else:
-        return (None, None)
+        print(sig_hits) 
