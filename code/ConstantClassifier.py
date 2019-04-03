@@ -19,23 +19,20 @@ class SeqClassifier:
     Classifies input sequence/s into BCR, TCR or MHC chains, including
     constant regions.
 
-    Parameters
-    ----------
-    seqfile: FASTA formatted sequence file
-
-    outfile: Output file in .csv format
+    @param seqfile: Input sequence file in FASTA format
+    @param outfile: Name of output file
+    @param hmm_score_threshold: Minimum score for a hit against HMM to be significant
     """
     self.seqfile = seqfile
     self.outfile = outfile
     self.hmm_score_threshold = hmm_score_threshold
 
-    self.hmm_file = os.path.join(os.path.dirname(__file__),'../data/constant_sequences/hmms/ALL_with_constant.hmm')
-    now = datetime.datetime.now()
-    if not self.outfile:
-      self.outfile = os.path.join(os.path.dirname(__file__),'../out/SeqClassifier_output_'+now.strftime("%d%b%Y")+'.csv')
-
-  # returns 0 if unusual character in sequeunce
   def check_seq(self, seq_record):
+    """
+    Checks validity of an amino acid sequence
+
+    @param seq_record: A biopython sequence record object
+    """
     pattern = re.compile(r'[^A|C|D|E|F|G|H|I|K|L|M|N|P|Q|R|S|T|V|W|X|Y]', re.IGNORECASE)
     if len(str(seq_record.seq))>0 and not pattern.findall(str(seq_record.seq)):
       return 1
@@ -46,6 +43,9 @@ class SeqClassifier:
   def run_cmd(self, cmd, input_string=''):
     """
     Run the cmd with input_string as stdin and return output.
+
+    @param cmd: The shell command to run
+    @param input_string: String to pass in via stdin
     """
     p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stdin=subprocess.PIPE,
                stderr=subprocess.PIPE, universal_newlines=True, close_fds=True,
@@ -58,46 +58,97 @@ class SeqClassifier:
     return out
   
   def run_hmmscan(self, seq_record):
-      SeqIO.write(seq_record, seq_record.id+".fa", "fasta")
-      hmm_out = seq_record.id + ".txt"
-      if not seq_record.seq:
-          print('ERROR: ID: {} sequence was not found'.format(seq_record.description))
-          return 0 
-      args = ['hmmscan','-o', hmm_out, "/home/austin/classifier_tool/data/constant_sequences/hmms/ALL_with_constant.hmm", seq_record.id+".fa"]
-      cmd = (' ').join(args)
-      self.run_cmd(cmd, str(seq_record.seq))
-
-      if not(os.path.exists(hmm_out) and os.access(hmm_out, os.R_OK)):
-          print('ERROR: ID {} hmmer out is not found or is not readable.'.format(seq_record.id))
-          return 0
-      if os.path.getsize(hmm_out) == 0:
-          print('ERROR: ID {} hmmer out is empty. Please add path to hmmer to your environment variables'.format(seq_record.description))
-          return 0
-      return 1
-
-  def get_chain_type(self, seq_record):
     """
-    Returns BCR or TCR chain types
+    Runs hmmscan from the HMMER3 software suite
+    Note: writes temporary output files
+
+    @param seq_record: A biopython sequence record object
     """
-    receptor = None
-    chain_type = None
+    temp_out = seq_record.id + ".fa"
+    hmm_out = seq_record.id + ".txt"
+    if not seq_record.seq:
+        print('ERROR: ID: {} sequence was not found'.format(seq_record.description))
+        return False
+    SeqIO.write(seq_record, temp_out, "fasta")
     
-    hmm_out = self.run_hmmscan(seq_record)
-    if not hmm_out:
-        return (receptor, chain_type)
-    scan_results = list(SearchIO.parse(seq_record.id+'.txt', 'hmmer3-text'))
-    sig_hits = set()
-    for x in scan_results:
-        for hit in x.hits:
-            if hit.bitscore > self.hmm_score_threshold:
-                sig_hits.add(hit.id.split("_")[1])
+    args = ['hmmscan','-o', hmm_out, "../data/constant_sequences/hmms/ALL_with_constant.hmm", seq_record.id+".fa"]
+    cmd = (' ').join(args)
+    self.run_cmd(cmd, str(seq_record.seq))
 
-    return sig_hits
+    if not(os.path.exists(hmm_out) and os.access(hmm_out, os.R_OK)):
+        print('ERROR: ID {} hmmer out is not found or is not readable.'.format(seq_record.id))
+        return False
+    if os.path.getsize(hmm_out) == 0:
+        print('ERROR: ID {} hmmer out is empty. Please add path to hmmer to your environment variables'.format(seq_record.description))
+        return False
+    return True
 
-  def assign_class(self, seq):
+  def domains_are_same(self, dom1, dom2):
+    """
+    Check to see if two domains are overlapping.
+
+    @param dom1:
+    @param dom2:
+
+    @return: True or False
+    """
+    dom1, dom2 = sorted([dom1, dom2], key=lambda x: x.query_start)
+    if dom2.query_start >= dom1.query_end:
+      return False
+    return True
+
+  def parse_hmmer_query(self, query, bit_score_threshold=100):
+    """
+    
+    @param query: hmmer query object from Biopython
+    @param bit_score_threshold: the threshold for which to consider a hit a hit. 
+    
+    The function will identify multiple domains if they have been found and provide the details for the best alignment for each domain.
+    This allows the ability to identify single chain fvs and engineered antibody sequences as well as the capability in the future for identifying constant domains. 
+
+    """
+    hit_table = [ ['id', 'description', 'evalue', 'bitscore', 'bias', 
+                    'query_start', 'query_end' ] ]
+
+    # Find the best hit for each domain in the sequence.
+
+    top_descriptions, domains,state_vectors = [], [], []
+
+    if query.hsps: # We have some hits
+        for hsp in sorted(query.hsps, key=lambda x: x.evalue): # Iterate over the matches of the domains in order of their e-value (most significant first)
+            new=True
+            if hsp.bitscore >= bit_score_threshold: # Only look at those with hits that are over the threshold bit-score.
+                for i in range( len(domains) ): # Check to see if we already have seen the domain
+                    if self.domains_are_same( domains[i], hsp ):
+                        new = False
+                        break      
+                hit_table.append( [ hsp.hit_id, hsp.hit_description, hsp.evalue, hsp.bitscore, hsp.bias, hsp.query_start, hsp.query_end] )
+                if new: # It is a new domain and this is the best hit. Add it for further processing.
+                    domains.append( hsp )
+                    top_descriptions.append(  dict( zip(hit_table[0], hit_table[-1]) ) ) # Add the last added to the descriptions list. 
+
+        # Reorder the domains according to the order they appear in the sequence.         
+        ordering = sorted( range(len(domains)), key=lambda x: domains[x].query_start)
+        domains = [ domains[_] for _ in ordering ]
+        top_descriptions = [ top_descriptions[_] for _ in ordering ]         
+   
+    ndomains = len( domains )
+    for i in range(ndomains): # If any significant hits were identified parse and align them to the reference state.
+        domains[i].order = i
+        species, chain = top_descriptions[i]["id"].split("_")
+        top_descriptions[i][ "species"] = species # Reparse
+        top_descriptions[i][ "chain_type"] = chain
+
+    return hit_table, top_descriptions
+
+  def assign_class(self, seq_record):
     """
     Returns BCR, TCR or MHC class and chain type for an input sequence
+
+    @param seq_recored: A biopython sequence record object
     """
-    if self.check_seq(seq) == 1:
-        sig_hits = self.get_chain_type(seq)
-        print(sig_hits) 
+    if self.check_seq(seq_record) == 1:
+        self.run_hmmscan(seq_record)
+        hmmer_query = SearchIO.read(seq_record.id+'.txt', 'hmmer3-text')
+        hit_table, top_descriptions = self.parse_hmmer_query(hmmer_query)
+        print(hit_table) 
