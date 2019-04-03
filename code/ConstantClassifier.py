@@ -12,6 +12,7 @@ from Bio import SearchIO
 from Bio import SeqIO
 import datetime
 import subprocess
+import tempfile
 
 class SeqClassifier:
   def __init__(self, seqfile=None, outfile=None, hmm_score_threshold=100):
@@ -57,31 +58,31 @@ class SeqClassifier:
     
     return out
   
-  def run_hmmscan(self, seq_record):
+  def run_hmmscan(self, seq_record, hmm_out):
     """
     Runs hmmscan from the HMMER3 software suite
     Note: writes temporary output files
 
     @param seq_record: A biopython sequence record object
+    @param hmm_out: tempfile object for hmm output
     """
-    temp_out = seq_record.id + ".fa"
-    hmm_out = seq_record.id + ".txt"
-    if not seq_record.seq:
-        print('ERROR: ID: {} sequence was not found'.format(seq_record.description))
-        return False
-    SeqIO.write(seq_record, temp_out, "fasta")
-    
-    args = ['hmmscan','-o', hmm_out, "../data/constant_sequences/hmms/ALL_with_constant.hmm", seq_record.id+".fa"]
-    cmd = (' ').join(args)
-    self.run_cmd(cmd, str(seq_record.seq))
+    with tempfile.NamedTemporaryFile(mode="w") as temp_out:
+        if not seq_record.seq:
+            print('ERROR: ID: {} sequence was not found'.format(seq_record.description))
+            return False
+        SeqIO.write(seq_record, temp_out.name, "fasta")
+        
+        args = ['hmmscan','-o', hmm_out.name, "../data/constant_sequences/hmms/ALL_with_constant.hmm", temp_out.name]
+        cmd = (' ').join(args)
+        self.run_cmd(cmd, str(seq_record.seq))
 
-    if not(os.path.exists(hmm_out) and os.access(hmm_out, os.R_OK)):
-        print('ERROR: ID {} hmmer out is not found or is not readable.'.format(seq_record.id))
-        return False
-    if os.path.getsize(hmm_out) == 0:
-        print('ERROR: ID {} hmmer out is empty. Please add path to hmmer to your environment variables'.format(seq_record.description))
-        return False
-    return True
+        if not(os.path.exists(hmm_out.name) and os.access(hmm_out.name, os.R_OK)):
+            print('ERROR: ID {} hmmer out is not found or is not readable.'.format(seq_record.id))
+            return False
+        if os.path.getsize(hmm_out.name) == 0:
+            print('ERROR: ID {} hmmer out is empty. Please add path to hmmer to your environment variables'.format(seq_record.description))
+            return False
+        return True
 
   def domains_are_same(self, dom1, dom2):
     """
@@ -99,12 +100,11 @@ class SeqClassifier:
 
   def parse_hmmer_query(self, query, bit_score_threshold=100):
     """
+    The function will identify multiple domains if they have been found and provide the details for the best alignment for each domain.
+    This allows the ability to identify single chain fvs and engineered antibody sequences as well as the capability in the future for identifying constant domains. 
     
     @param query: hmmer query object from Biopython
     @param bit_score_threshold: the threshold for which to consider a hit a hit. 
-    
-    The function will identify multiple domains if they have been found and provide the details for the best alignment for each domain.
-    This allows the ability to identify single chain fvs and engineered antibody sequences as well as the capability in the future for identifying constant domains. 
 
     """
     hit_table = [ ['id', 'description', 'evalue', 'bitscore', 'bias', 
@@ -141,6 +141,20 @@ class SeqClassifier:
 
     return hit_table, top_descriptions
 
+
+  def get_chain_type(self, top_hits):
+    """
+    Returns the chain type from the list of top hits
+
+    @param top_hits: the highest scoring hits per domain of a query
+    """
+    if len(top_hits) == 1: #Only one domain present in query
+      print("")
+    #Check if it is just variable and constant case
+
+    #Check for scFV case
+
+
   def assign_class(self, seq_record):
     """
     Returns BCR, TCR or MHC class and chain type for an input sequence
@@ -148,7 +162,8 @@ class SeqClassifier:
     @param seq_recored: A biopython sequence record object
     """
     if self.check_seq(seq_record) == 1:
-        self.run_hmmscan(seq_record)
-        hmmer_query = SearchIO.read(seq_record.id+'.txt', 'hmmer3-text')
-        hit_table, top_descriptions = self.parse_hmmer_query(hmmer_query)
-        print(hit_table) 
+        with tempfile.NamedTemporaryFile(mode="w") as hmm_out:
+            self.run_hmmscan(seq_record, hmm_out)
+            hmmer_query = SearchIO.read(hmm_out.name, 'hmmer3-text')
+            hit_table, top_descriptions = self.parse_hmmer_query(hmmer_query)
+
