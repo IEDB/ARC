@@ -1,13 +1,14 @@
 """
 Created on Mon Apr 1 2019
 
-@author: Austin Crinklaw
+@author: Austin Crinklaw, Swapnil Mahajan
 
 Classifies input sequences into BCR, TCR, or MHC.
 Specifies chain type including constant regions
 """
 import re
 import os
+from mhc_G_domain import mhc_G_domain
 from Bio import SearchIO
 from Bio import SeqIO
 import datetime
@@ -27,6 +28,10 @@ class SeqClassifier:
     self.seqfile = seqfile
     self.outfile = outfile
     self.hmm_score_threshold = hmm_score_threshold
+    self.mhc_I_hmm = os.path.join(os.path.dirname(__file__),'../data/Pfam_MHC_I.hmm')
+    self.mhc_II_alpha_hmm = os.path.join(os.path.dirname(__file__),'../data/Pfam_MHC_II_alpha.hmm')
+    self.mhc_II_beta_hmm = os.path.join(os.path.dirname(__file__),'../data/Pfam_MHC_II_beta.hmm')
+
 
   def check_seq(self, seq_record):
     """
@@ -72,7 +77,7 @@ class SeqClassifier:
             return False
         SeqIO.write(seq_record, temp_out.name, "fasta")
         
-        args = ['hmmscan','-o', hmm_out.name, "../data/constant_sequences/hmms/ALL_with_constant.hmm", temp_out.name]
+        args = ['hmmscan','-o', hmm_out.name, "../data/constant_sequences/hmms/ALL_AND_C.hmm", temp_out.name]
         cmd = (' ').join(args)
         self.run_cmd(cmd, str(seq_record.seq))
 
@@ -148,12 +153,98 @@ class SeqClassifier:
 
     @param top_hits: the highest scoring hits per domain of a query
     """
-    if len(top_hits) == 1: #Only one domain present in query
-      print("")
-    #Check if it is just variable and constant case
+    ndomains = len(top_hits)
+    top_domains = { x["id"].split("_")[1] for x in top_hits }
+    
+    #These sets simplify checking for various conditions
+    bcr_constant = {"KCC": "kappa constant", "LCC": "light constant", 
+    "HCC": "heavy constant", "HC1": "heavy constant domain 1", 
+    "HC2": "heavy constant domain 2", "HC3":"heavy constant domain 3"}
+    tcr_constant = {"TRAC": "alpha constant", "TRBC": "beta constant", "TRDC": "delta constant", "TRGC": "gamma constant"}
+    tcr_var = {"A": "alpha var", "B": "beta var", "G": "gamma var", "D": "delta var"} 
+    bcr_var = {"H": "heavy var", "K": "kappa var", "L": "lambda var"}
 
-    #Check for scFV case
+    #We have no hits
+    if ndomains == 0:
+        return None, None
+    
+    if ndomains == 1:
+        #Check for single constant domains
+        if top_domains.issubset(bcr_constant):
+            #sets don't support indexing so this gets messy
+            return ("bcr", bcr_constant[next(iter(top_domains))])
+        if top_domains.issubset(tcr_constant):
+            return ("tcr", tcr_constant[next(iter(top_domains))])
 
+        #Check for single variable domains
+        if top_domains.issubset(tcr_var.keys()):
+            return ("tcr", tcr_var[next(iter(top_domains))])
+        if top_domains.issubset(bcr_var.keys()):
+            return ("bcr", bcr_var[next(iter(top_domains))])
+
+    #Check if the construct is artificial scfv
+    if ndomains > 1 and top_domains.issubset(tcr_var.keys()):
+        return ("tcr", "Tscfv")
+    if ndomains > 1 and top_domains.issubset(bcr_var.keys()):
+        return ("bcr", "scfv")
+
+    #Handle variable with constant
+    ###TODO: Change to output the domain, not totally necessary though
+    if any(x in iter(tcr_constant) for x in iter(top_domains)):
+        for x in iter(top_domains):
+            if x in tcr_var:
+                return "tcr", tcr_var[x] + " + constant"
+    if any(x in iter(bcr_constant) for x in iter(top_domains)):
+        for x in iter(top_domains):
+            if x in bcr_var:
+                return "bcr", bcr_var[x] + " + constant"
+
+    return None, None
+
+  def assign_Gdomain(self, seq, seq_id=None):
+    """
+    Returns G domain of a MHC sequence.
+    """
+    gd = mhc_G_domain(chain1_seq=seq, ch1_id=re.sub(r'[^\w|\.]','',seq_id))
+    res = gd.get_g_domain()
+    if res:
+      return res
+    else:
+      return None, None
+
+  def is_MHC(self, sequence, hmm):
+    """
+    Input: protein sequence and HMM file
+    Output: HMM bit score
+    """
+    score = 0
+    # create a temporary file
+    fp = tempfile.NamedTemporaryFile(mode="w")
+    fp.write('>seq\n')
+    fp.write('{}'.format(sequence))
+    fp.flush() 
+  
+    #Find MHC sequences
+    args = ['hmmscan', hmm, fp.name ]
+    cmd = ' '.join(args)
+    output = self.run_cmd(cmd)
+    aln = [ line.split() for line in output.splitlines() ]
+  
+    # Search for score to see if there is a match
+    for i, line in enumerate(aln):
+      if line[0:3] == ['E-value', 'score', 'bias'] and aln[i+2]:
+        try:
+          E_value = float(aln[i+2][0])
+          score = float(aln[i+2][1])
+          break
+        except ValueError:
+          E_value = float(aln[i+3][0])
+          score = float(aln[i+3][1])
+          break
+    
+    # close the file. When the file is closed it will be removed.
+    fp.close()
+    return score
 
   def assign_class(self, seq_record):
     """
@@ -163,7 +254,36 @@ class SeqClassifier:
     """
     if self.check_seq(seq_record) == 1:
         with tempfile.NamedTemporaryFile(mode="w") as hmm_out:
+            receptor, chain_type = None, None
             self.run_hmmscan(seq_record, hmm_out)
             hmmer_query = SearchIO.read(hmm_out.name, 'hmmer3-text')
             hit_table, top_descriptions = self.parse_hmmer_query(hmmer_query)
+            receptor, chain_type = self.get_chain_type(top_descriptions)
 
+            #We have no hits so now we check for MHC, avoid excessive computations this way
+            if not receptor or not chain_type:
+                mhc_I_score = None
+                mhc_I_score = self.is_MHC(str(seq_record.seq), self.mhc_I_hmm)
+                if mhc_I_score >= self.hmm_score_threshold:
+                  return('MHC-I', 'alpha')
+                else:
+                  mhc_II_alpha_score = None
+                  mhc_II_alpha_score = self.is_MHC(str(seq_record.seq), self.mhc_II_alpha_hmm)
+                  if mhc_II_alpha_score and mhc_II_alpha_score >= self.hmm_score_threshold:
+                    return('MHC-II', 'alpha')
+                  else:
+                    mhc_II_beta_score = None
+                    mhc_II_beta_score = self.is_MHC(str(seq_record.seq), self.mhc_II_beta_hmm)
+                    if mhc_II_beta_score and mhc_II_beta_score >= self.hmm_score_threshold:
+                      return('MHC-II', 'beta')
+                    else:
+                      return(None, None)
+            else:
+              return(receptor, chain_type)
+
+  def classify(self, seq_record):
+    receptor, chain_type = self.assign_class(seq_record)
+    if receptor == "MHC-I" or "MHC-II":
+        print(self.assign_Gdomain(str(seq_record.seq), seq_record.id))
+
+    return receptor, chain_type
