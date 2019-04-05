@@ -4,7 +4,8 @@ Created on Mon Apr 1 2019
 @author: Austin Crinklaw, Swapnil Mahajan
 
 Classifies input sequences into BCR, TCR, or MHC.
-Specifies chain type including constant regions
+Specifies chain type including constant regions.
+Contains code from ANARCI and SeqClassifier.
 """
 import re
 import os
@@ -161,12 +162,12 @@ class SeqClassifier:
     top_domains = { x["id"].split("_")[1] for x in top_hits }
     
     #These sets simplify checking for various conditions
-    bcr_constant = {"KCC": "kappa constant", "LCC": "light constant", 
-    "HCC": "heavy constant", "HC1": "heavy constant domain 1", 
-    "HC2": "heavy constant domain 2", "HC3":"heavy constant domain 3"}
-    tcr_constant = {"TRAC": "alpha constant", "TRBC": "beta constant", "TRDC": "delta constant", "TRGC": "gamma constant"}
-    tcr_var = {"A": "alpha var", "B": "beta var", "G": "gamma var", "D": "delta var"} 
-    bcr_var = {"H": "heavy var", "K": "kappa var", "L": "lambda var"}
+    bcr_constant = {"KCC": "kappa C region", "LCC": "lambda C region", 
+    "HCC": "heavy C region", "HC1": "heavy C domain 1", 
+    "HC2": "heavy C domain 2", "HC3":"heavy C domain 3"}
+    tcr_constant = {"TRAC": "alpha C", "TRBC": "beta C", "TRDC": "delta C", "TRGC": "gamma C"}
+    tcr_var = {"A": "alpha V", "B": "beta V", "G": "gamma V", "D": "delta V"} 
+    bcr_var = {"H": "heavy V", "K": "kappa V", "L": "lambda V"}
 
     #We have no hits
     if ndomains == 0:
@@ -176,32 +177,31 @@ class SeqClassifier:
         #Check for single constant domains
         if top_domains.issubset(bcr_constant):
             #sets don't support indexing so this gets messy
-            return ("bcr", bcr_constant[next(iter(top_domains))])
+            return ("BCR", bcr_constant[next(iter(top_domains))])
         if top_domains.issubset(tcr_constant):
-            return ("tcr", tcr_constant[next(iter(top_domains))])
+            return ("TCR", tcr_constant[next(iter(top_domains))])
 
         #Check for single variable domains
         if top_domains.issubset(tcr_var.keys()):
-            return ("tcr", tcr_var[next(iter(top_domains))])
+            return ("TCR", tcr_var[next(iter(top_domains))])
         if top_domains.issubset(bcr_var.keys()):
-            return ("bcr", bcr_var[next(iter(top_domains))])
+            return ("BCR", bcr_var[next(iter(top_domains))])
 
     #Check if the construct is artificial scfv
     if ndomains > 1 and top_domains.issubset(tcr_var.keys()):
-        return ("tcr", "Tscfv")
+        return ("TCR", "TscFv")
     if ndomains > 1 and top_domains.issubset(bcr_var.keys()):
-        return ("bcr", "scfv")
+        return ("BCR", "scFv")
 
     #Handle variable with constant
-    ###TODO: Change to output the domain, not totally necessary though
     if any(x in iter(tcr_constant) for x in iter(top_domains)):
         for x in iter(top_domains):
             if x in tcr_var:
-                return "tcr", tcr_var[x] + " + constant"
+                return "TCR", tcr_var[x] + " + C"
     if any(x in iter(bcr_constant) for x in iter(top_domains)):
         for x in iter(top_domains):
             if x in bcr_var:
-                return "bcr", bcr_var[x] + " + constant"
+                return "BCR", bcr_var[x] + " + C"
 
     return None, None
 
@@ -239,9 +239,7 @@ class SeqClassifier:
     """
     Returns G doamins of the MRO chain sequences.
     """
-    #print('### Assigning G domains to the MRO chain sequences..')
     mro = pd.read_csv(mro_TSVfile, sep='\t', skiprows=[1])
-    #mro_header= list(mro.columns)
     if os.path.exists(self.mro_gdomain_file)  and os.path.getsize(self.mro_gdomain_file) > 0:
       mro_out=pd.read_csv(self.mro_gdomain_file)
       cnt=mro_out.Label.index[-1]+1
@@ -339,12 +337,18 @@ class SeqClassifier:
               return(receptor, chain_type)
 
   def classify(self, seq_record, mro_df = None):
+    """
+    Returns BCR, TCR or MHC class and chain type for an input sequence.
+    If sequence is MHC, finds its g-domain and returns its corresponding
+    allele
+
+    @param seq_record: a biopython sequence record object
+    @param mro_df: dataframe containing the MRO data for allele assignment from g-domain
+    """
     g_domain = ""
     calc_mhc_allele = ""
     receptor, chain_type = self.assign_class(seq_record)
-    #print(receptor, chain_type)
     if receptor == "MHC-I" or receptor == "MHC-II":
-        #print("called g domain")
         g_domain = self.assign_Gdomain(str(seq_record.seq), seq_record.id)
         if mro_df.empty:
             mro_df = self.get_MRO_Gdomains(self.mro_file)
@@ -353,12 +357,17 @@ class SeqClassifier:
     return receptor, chain_type, calc_mhc_allele
 
   def classify_seqfile(self, seq_file):
+    """
+    Takes a file of sequences in FASTA format and writes a CSV with their
+    receptor type and chain classification
+
+    @param seq_file: the name of a FASTA file of sequences
+    """
     seq_records = list(SeqIO.parse(seq_file, "fasta"))
     out = pd.DataFrame(columns=["id", "class", "chain_type", "calc_mhc_allele"])
     cnt = 0
     mro_df = self.get_MRO_Gdomains(self.mro_file)
     for seq in seq_records:
-        #print(seq.id)
         receptor, chain_type, calc_mhc_allele = self.classify(seq, mro_df)
         out.loc[cnt,'id'] = seq.id
         out.loc[cnt, 'class'] = receptor
