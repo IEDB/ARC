@@ -9,6 +9,8 @@ Specifies chain type including constant regions
 import re
 import os
 from mhc_G_domain import mhc_G_domain
+import numpy as np
+import pandas as pd
 from Bio import SearchIO
 from Bio import SeqIO
 import datetime
@@ -31,6 +33,8 @@ class SeqClassifier:
     self.mhc_I_hmm = os.path.join(os.path.dirname(__file__),'../data/Pfam_MHC_I.hmm')
     self.mhc_II_alpha_hmm = os.path.join(os.path.dirname(__file__),'../data/Pfam_MHC_II_alpha.hmm')
     self.mhc_II_beta_hmm = os.path.join(os.path.dirname(__file__),'../data/Pfam_MHC_II_beta.hmm')
+    self.mro_file=os.path.join(os.path.dirname(__file__),'../data/MRO/ontology/chain-sequence.tsv')
+    self.mro_gdomain_file= os.path.join(os.path.dirname(__file__),'../out/MRO_Gdomain.csv')
 
 
   def check_seq(self, seq_record):
@@ -211,7 +215,60 @@ class SeqClassifier:
       return res
     else:
       return None, None
-
+  
+  def get_MRO(self):
+    """
+    Clone or pull MRO GitHub repository.
+    """
+    mro_path=os.path.join(os.path.dirname(__file__),'../data/MRO')
+    wd=os.path.dirname(os.path.realpath(__file__))
+    if os.path.exists(mro_path):
+      print('### Updating MRO repository..')
+      os.chdir(mro_path)
+      self.run_cmd('git pull')
+      os.chdir(wd)
+      return
+    else:
+      print('Getting MRO repository..')
+      os.chdir(os.path.join(os.path.dirname(__file__),'../data'))
+      self.run_cmd('git clone https://github.com/IEDB/MRO.git')
+      os.chdir(wd)
+      return
+  
+  def get_MRO_Gdomains(self, mro_TSVfile):
+    """
+    Returns G doamins of the MRO chain sequences.
+    """
+    #print('### Assigning G domains to the MRO chain sequences..')
+    mro = pd.read_csv(mro_TSVfile, sep='\t', skiprows=[1])
+    #mro_header= list(mro.columns)
+    if os.path.exists(self.mro_gdomain_file)  and os.path.getsize(self.mro_gdomain_file) > 0:
+      mro_out=pd.read_csv(self.mro_gdomain_file)
+      cnt=mro_out.Label.index[-1]+1
+    else:
+      mro_out= pd.DataFrame(columns= ['Label','Sequence', 'calc_mhc_class','ch_g_dom'])
+      cnt=0
+    for i in list(range(mro.shape[0])):
+      if pd.isnull(mro.loc[i, 'Sequence']):
+        continue
+      if mro.loc[i, 'Label'] in list(mro_out['Label']) and mro.loc[i, 'Sequence'] in list(mro_out['Sequence']):
+        continue
+      mro_out.loc[cnt, 'Label']= mro.loc[i,'Label']
+      mro_out.loc[cnt, 'Sequence']= mro.loc[i,'Sequence']
+      mro_out.loc[cnt, 'calc_mhc_class'], mro_out.loc[cnt, 'ch_g_dom'] = self.assign_Gdomain(mro.loc[i,'Sequence'], mro.loc[i,'Accession'])
+      cnt+=1
+    mro_out.to_csv(self.mro_gdomain_file, index=False)
+    return mro_out
+  
+  def get_MRO_allele(self, mro_df, seq, seq_id=None):
+    mhc_class, pdb_g_dom=self.assign_Gdomain(seq, seq_id)
+    if pdb_g_dom:
+      mro_allele= str(list(mro_df[mro_df.fillna({'ch_g_dom' :''}).apply(lambda r : r['ch_g_dom']!='' and (pdb_g_dom in r['ch_g_dom'] or r['ch_g_dom'] in pdb_g_dom) , axis=1)]['Label'])).strip('[]').replace(',','#')
+      return mro_allele
+    else:
+      #print('Unable to assign G domain to the {} chain sequence'.format(seq_id))
+      return
+  
   def is_MHC(self, sequence, hmm):
     """
     Input: protein sequence and HMM file
@@ -281,9 +338,32 @@ class SeqClassifier:
             else:
               return(receptor, chain_type)
 
-  def classify(self, seq_record):
+  def classify(self, seq_record, mro_df = None):
+    g_domain = ""
+    calc_mhc_allele = ""
     receptor, chain_type = self.assign_class(seq_record)
-    if receptor == "MHC-I" or "MHC-II":
-        print(self.assign_Gdomain(str(seq_record.seq), seq_record.id))
+    #print(receptor, chain_type)
+    if receptor == "MHC-I" or receptor == "MHC-II":
+        #print("called g domain")
+        g_domain = self.assign_Gdomain(str(seq_record.seq), seq_record.id)
+        if mro_df.empty:
+            mro_df = self.get_MRO_Gdomains(self.mro_file)
+        calc_mhc_allele= self.get_MRO_allele(mro_df, str(seq_record.seq), str(seq_record.description))
 
-    return receptor, chain_type
+    return receptor, chain_type, calc_mhc_allele
+
+  def classify_seqfile(self, seq_file):
+    seq_records = list(SeqIO.parse(seq_file, "fasta"))
+    out = pd.DataFrame(columns=["id", "class", "chain_type", "calc_mhc_allele"])
+    cnt = 0
+    mro_df = self.get_MRO_Gdomains(self.mro_file)
+    for seq in seq_records:
+        #print(seq.id)
+        receptor, chain_type, calc_mhc_allele = self.classify(seq, mro_df)
+        out.loc[cnt,'id'] = seq.id
+        out.loc[cnt, 'class'] = receptor
+        out.loc[cnt, 'chain_type'] = chain_type
+        out.loc[cnt, 'calc_mhc_allele'] = calc_mhc_allele
+        cnt += 1
+
+    out.to_csv("test_out.csv", index=False)

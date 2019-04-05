@@ -5,9 +5,7 @@ import time
 start = time.time()
 records = list(SeqIO.parse("../data/all_mhcBcrTcr_IEDB.fasta", "fasta"))
 sc = SeqClassifier()
-for seq in records:
-    print(seq.id)
-    print(sc.classify(seq))
+sc.classify_seqfile("../data/all_mhcBcrTcr_IEDB.fasta")
 set_size = str(len(records))
 end = time.time()
 
