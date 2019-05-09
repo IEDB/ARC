@@ -1,17 +1,10 @@
 # ClassifierTool: Classifies protein sequences into BCR/TCR/MHC chains.
-### @author: @Swapnil
+### @author: @Swapnil @acrinklaw
 
 ## Requirements:
 - Linux OS
 - HMMER3: http://hmmer.org/
-- ANARCI v1.3 : http://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/ANARCI.php#download  
-  - Dunbar J and Deane CM. ANARCI: Antigen receptor numbering and receptor classification. Bioinformatics (2016).  
-  - Modified setup.py to create ANARCI1.3 executable instead of ANARCI to keep different versions.
-  - Update the ANARCI_LOC variable in setup.py for correct installation.
-- Python 2.7
-  - Python packages: Pandas, BioPython
-  - 
-- Git
+- Python 2.7 + BioPython
 
 ## How to use:
 ### Input  
