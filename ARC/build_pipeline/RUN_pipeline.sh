@@ -1,8 +1,8 @@
 # Run the pipeline to get the sequences, format them and build the databases
 
-DIR="."
+DIR="./ARC/build_pipeline"
 
-rm -rf ../data/HMMs
+rm -rf $DIR/../data/HMMs
 
 # Rip the sequences from the imgt website. HTML may change in the future. 
 mkdir -p $DIR/IMGT_sequence_files/htmlfiles
@@ -24,7 +24,7 @@ hmmbuild --hand $DIR/HMMs/ALL_AND_C.hmm $DIR/curated_alignments/ALL_AND_C.stockh
 hmmpress -f $DIR/HMMs/ALL.hmm 
 hmmpress -f $DIR/HMMs/ALL_AND_C.hmm
 
-mv HMMs ../../data/HMMs
-rm -rf curated_alignments
-rm -rf IMGT_sequence_files
-rm -rf muscle_alignments
+mv $DIR/HMMs $DIR/../../data/HMMs
+rm -rf $DIR/curated_alignments
+rm -rf $DIR/IMGT_sequence_files
+rm -rf $DIR/muscle_alignments
