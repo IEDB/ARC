@@ -28,14 +28,14 @@ class SeqClassifier:
     @param outfile: Name of output file
     @param hmm_score_threshold: Minimum score for a hit against HMM to be significant
     """
-    self.seqfile = seqfile
-    self.outfile = outfile
+    self.seqfile=seqfile
+    self.outfile=outfile
     self.hmm_score_threshold = hmm_score_threshold
     self.mhc_I_hmm = os.path.join(os.path.dirname(__file__),'../data/Pfam_MHC_I.hmm')
     self.mhc_II_alpha_hmm = os.path.join(os.path.dirname(__file__),'../data/Pfam_MHC_II_alpha.hmm')
-    self.mhc_II_beta_hmm = os.path.join(os.path.dirname(__file__),'../data/Pfam_MHC_II_beta.hmm')
-    self.mro_file=os.path.join(os.path.dirname(__file__),'../data/MRO/ontology/chain-sequence.tsv')
-    self.mro_gdomain_file= os.path.join(os.path.dirname(__file__),'../out/MRO_Gdomain.csv')
+    self.mhc_II_beta_hmm = os.path.join(os.path.dirname(__file__), '../data/Pfam_MHC_II_beta.hmm')
+    self.mro_file = os.path.join(os.path.dirname(__file__),'../data/MRO/ontology/chain-sequence.tsv')
+    self.mro_gdomain_file = os.path.join(os.path.dirname(__file__),'../data/MRO_Gdomain.csv')
 
 
   def check_seq(self, seq_record):
@@ -82,7 +82,7 @@ class SeqClassifier:
             return False
         SeqIO.write(seq_record, temp_out.name, "fasta")
         
-        args = ['hmmscan','-o', hmm_out.name, "../data/constant_sequences/hmms/ALL_AND_C.hmm", temp_out.name]
+        args = ['hmmscan','-o', hmm_out.name, "/home/austin/ARC/data/HMMs/ALL_AND_C.hmm", temp_out.name]
         cmd = (' ').join(args)
         self.run_cmd(cmd, str(seq_record.seq))
 
@@ -220,7 +220,7 @@ class SeqClassifier:
     """
     Clone or pull MRO GitHub repository.
     """
-    mro_path=os.path.join(os.path.dirname(__file__),'../data/MRO')
+    mro_path='../data/MRO'
     wd=os.path.dirname(os.path.realpath(__file__))
     if os.path.exists(mro_path):
       print('### Updating MRO repository..')
@@ -230,7 +230,7 @@ class SeqClassifier:
       return
     else:
       print('Getting MRO repository..')
-      os.chdir(os.path.join(os.path.dirname(__file__),'../data'))
+      os.chdir('../data/')
       self.run_cmd('git clone https://github.com/IEDB/MRO.git')
       os.chdir(wd)
       return
@@ -239,6 +239,7 @@ class SeqClassifier:
     """
     Returns G doamins of the MRO chain sequences.
     """
+    #self.get_MRO()
     mro = pd.read_csv(mro_TSVfile, sep='\t', skiprows=[1])
     if os.path.exists(self.mro_gdomain_file)  and os.path.getsize(self.mro_gdomain_file) > 0:
       mro_out=pd.read_csv(self.mro_gdomain_file)
@@ -375,4 +376,4 @@ class SeqClassifier:
         out.loc[cnt, 'calc_mhc_allele'] = calc_mhc_allele
         cnt += 1
 
-    out.to_csv("test_out.csv", index=False)
+    out.to_csv(self.outfile, index=False)

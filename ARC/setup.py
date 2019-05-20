@@ -1,5 +1,6 @@
 import subprocess
 import os
+from datetime import date
 
 def _run_cmd(cmd, input_string=''):
         """
@@ -18,3 +19,15 @@ def install(quiet):
         _run_cmd("sh ARC/build_pipeline/RUN_pipeline.sh")
     else:
         print(_run_cmd("sh ARC/build_pipeline/RUN_pipeline.sh"))
+
+def update(archive):
+    if archive:
+        today = date.today()
+        folder_name = today.strftime("%d_%m_%Y_HMMs")
+        abs_path = os.path.join(os.path.dirname(__file__),'../data')
+        if not os.path.exists("%s/HMM_archive" % abs_path):
+            print(_run_cmd(("mkdir %s/HMM_archive" % abs_path)))
+        print(_run_cmd(("mv %s/HMMs %s/HMM_archive/%s") % (abs_path, abs_path, folder_name)))
+        print(_run_cmd(("sh %s/build_pipeline/RUN_pipeline.sh") % os.path.dirname(__file__)))
+    else:
+        print(_run_cmd(("sh %s/build_pipeline/RUN_pipeline.sh") % os.path.dirname(__file__)))
