@@ -28,13 +28,13 @@ class SeqClassifier:
     @param outfile: Name of output file
     @param hmm_score_threshold: Minimum score for a hit against HMM to be significant
     """
-    self.seqfile=seqfile
-    self.outfile=outfile
+    self.seqfile = seqfile
+    self.outfile = outfile
     self.hmm_score_threshold = hmm_score_threshold
-    self.mhc_I_hmm = os.path.join(os.path.dirname(__file__),'../data/Pfam_MHC_I.hmm')
-    self.mhc_II_alpha_hmm = os.path.join(os.path.dirname(__file__),'../data/Pfam_MHC_II_alpha.hmm')
-    self.mhc_II_beta_hmm = os.path.join(os.path.dirname(__file__), '../data/Pfam_MHC_II_beta.hmm')
-    self.mro_file = os.path.join(os.path.dirname(__file__),'../data/MRO/ontology/chain-sequence.tsv')
+    self.mhc_I_hmm = os.path.join(os.path.dirname(__file__),'../data/MHC_HMMs/Pfam_MHC_I.hmm')
+    self.mhc_II_alpha_hmm = os.path.join(os.path.dirname(__file__),'../data/MHC_HMMs/Pfam_MHC_II_alpha.hmm')
+    self.mhc_II_beta_hmm = os.path.join(os.path.dirname(__file__), '../data/MHC_HMMs/Pfam_MHC_II_beta.hmm')
+    self.mro_file = os.path.join(os.path.dirname(__file__),'../data/MRO/ontology/chain-sequence.tsv') 
     self.mro_gdomain_file = os.path.join(os.path.dirname(__file__),'../data/MRO_Gdomain.csv')
 
 
@@ -189,7 +189,7 @@ class SeqClassifier:
 
     #Check if the construct is artificial scfv
     if ndomains == 2 and top_domains.issubset(bcr_var.keys()):
-        return ("TCR", "TscFv")
+        return ("BCR", "TscFv")
     if ndomains == 4 and top_domains.issubset(bcr_var.keys()):
         return ("BCR", "scFv")
 
@@ -220,26 +220,26 @@ class SeqClassifier:
     """
     Clone or pull MRO GitHub repository.
     """
-    mro_path='../data/MRO'
-    wd=os.path.dirname(os.path.realpath(__file__))
+    mro_path = os.path.join(os.path.dirname(__file__),'../data/MRO')
+    wd = os.path.dirname(os.getcwd())
     if os.path.exists(mro_path):
-      print('### Updating MRO repository..')
+      print('Updating MRO repository..')
       os.chdir(mro_path)
       self.run_cmd('git pull')
-      os.chdir(wd)
+      os.chdir(wd + "/ARC")
       return
     else:
       print('Getting MRO repository..')
-      os.chdir('../data/')
+      os.chdir(os.path.join(os.path.dirname(__file__),'../data/'))
       self.run_cmd('git clone https://github.com/IEDB/MRO.git')
-      os.chdir(wd)
+      os.chdir(wd + "/ARC")
       return
   
   def get_MRO_Gdomains(self, mro_TSVfile):
     """
     Returns G doamins of the MRO chain sequences.
     """
-    #self.get_MRO()
+    self.get_MRO()
     mro = pd.read_csv(mro_TSVfile, sep='\t', skiprows=[1])
     if os.path.exists(self.mro_gdomain_file)  and os.path.getsize(self.mro_gdomain_file) > 0:
       mro_out=pd.read_csv(self.mro_gdomain_file)

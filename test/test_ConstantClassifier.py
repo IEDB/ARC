@@ -1,3 +1,7 @@
+"""
+Unit testing skeleton
+"""
+
 import unittest
 from ConstantClassifier import SeqClassifier
 from Bio import SeqIO
