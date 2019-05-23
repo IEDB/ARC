@@ -187,11 +187,17 @@ class SeqClassifier:
         if top_domains.issubset(bcr_var.keys()):
             return ("BCR", bcr_var[next(iter(top_domains))])
 
-    #Check if the construct is artificial scfv
+    #Check if the construct is artificial scfv BCR
     if ndomains == 2 and top_domains.issubset(bcr_var.keys()):
-        return ("BCR", "TscFv")
-    if ndomains == 4 and top_domains.issubset(bcr_var.keys()):
         return ("BCR", "scFv")
+    if ndomains == 4 and top_domains.issubset(bcr_var.keys()):
+        return ("BCR", "tscFv")
+
+    #Check if the construct is artificial scfv TCR 
+    if ndomains == 2 and top_domains.issubset(tcr_var.keys()):
+        return ("TCR", "scFv")
+    if ndomains == 4 and top_domains.issubset(tcr_var.keys()):
+        return ("TCR", "tscFv")
 
     #Handle variable with constant
     if any(x in iter(tcr_constant) for x in iter(top_domains)):
