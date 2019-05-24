@@ -160,7 +160,6 @@ class SeqClassifier:
     """
     ndomains = len(top_hits)
     top_domains = { x["id"].split("_")[1] for x in top_hits }
-    print(top_domains)
     
     #These sets simplify checking for various conditions
     bcr_constant = {"KCC": "kappa C region", "LCC": "lambda C region", 
@@ -241,15 +240,13 @@ class SeqClassifier:
     wd = os.path.dirname(os.getcwd())
     if os.path.exists(mro_path):
       print('Updating MRO repository..')
-      os.chdir(mro_path)
-      self.run_cmd('git pull')
-      os.chdir(wd + "/ARC")
+      self.run_cmd('git -C %s pull' % mro_path)
       return
     else:
       print('Getting MRO repository..')
-      os.chdir(os.path.join(os.path.dirname(__file__),'../data/'))
-      self.run_cmd('git clone https://github.com/IEDB/MRO.git')
-      os.chdir(wd + "/ARC")
+  #    os.chdir(os.path.join(os.path.dirname(__file__),'../data/'))
+      self.run_cmd('git clone /https://github.com/IEDB/MRO.git %s' % mro_path)
+ #     os.chdir(wd + "/ARC")
       return
   
   def get_MRO_Gdomains(self, mro_TSVfile):
