@@ -34,7 +34,7 @@ class SeqClassifier:
     self.mhc_I_hmm = os.path.join(os.path.dirname(__file__),'../data/MHC_HMMs/Pfam_MHC_I.hmm')
     self.mhc_II_alpha_hmm = os.path.join(os.path.dirname(__file__),'../data/MHC_HMMs/Pfam_MHC_II_alpha.hmm')
     self.mhc_II_beta_hmm = os.path.join(os.path.dirname(__file__), '../data/MHC_HMMs/Pfam_MHC_II_beta.hmm')
-    self.mro_file = os.path.join(os.path.dirname(__file__),'../data/MRO/ontology/chain-sequence.tsv') 
+    self.mro_file = '/data/MRO/ontology/chain-sequence.tsv'
     self.mro_gdomain_file = os.path.join(os.path.dirname(__file__),'../data/MRO_Gdomain.csv')
 
 
@@ -237,16 +237,13 @@ class SeqClassifier:
     Clone or pull MRO GitHub repository.
     """
     mro_path = os.path.join(os.path.dirname(__file__),'../data/MRO')
-    wd = os.path.dirname(os.getcwd())
     if os.path.exists(mro_path):
       print('Updating MRO repository..')
       self.run_cmd('git -C %s pull' % mro_path)
       return
     else:
       print('Getting MRO repository..')
-  #    os.chdir(os.path.join(os.path.dirname(__file__),'../data/'))
-      self.run_cmd('git clone /https://github.com/IEDB/MRO.git %s' % mro_path)
- #     os.chdir(wd + "/ARC")
+      self.run_cmd('git clone https://github.com/IEDB/MRO.git %s' % mro_path)
       return
   
   def get_MRO_Gdomains(self, mro_TSVfile):
@@ -254,7 +251,7 @@ class SeqClassifier:
     Returns G doamins of the MRO chain sequences.
     """
     self.get_MRO()
-    mro = pd.read_csv(mro_TSVfile, sep='\t', skiprows=[1])
+    mro = pd.read_csv(os.getcwd() + mro_TSVfile, sep='\t', skiprows=[1])
     if os.path.exists(self.mro_gdomain_file)  and os.path.getsize(self.mro_gdomain_file) > 0:
       mro_out=pd.read_csv(self.mro_gdomain_file)
       cnt=mro_out.Label.index[-1]+1
