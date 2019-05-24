@@ -160,11 +160,12 @@ class SeqClassifier:
     """
     ndomains = len(top_hits)
     top_domains = { x["id"].split("_")[1] for x in top_hits }
+    print(top_domains)
     
     #These sets simplify checking for various conditions
     bcr_constant = {"KCC": "kappa C region", "LCC": "lambda C region", 
-    "HCC": "heavy C region", "HC1": "heavy C domain 1", 
-    "HC2": "heavy C domain 2", "HC3":"heavy C domain 3"}
+                    "HCC": "heavy C region", "HC1": "heavy C domain 1", 
+                    "HC2": "heavy C domain 2", "HC3":"heavy C domain 3"}
     tcr_constant = {"TRAC": "alpha C", "TRBC": "beta C", "TRDC": "delta C", "TRGC": "gamma C"}
     tcr_var = {"A": "alpha V", "B": "beta V", "G": "gamma V", "D": "delta V"} 
     bcr_var = {"H": "heavy V", "K": "kappa V", "L": "lambda V"}
@@ -189,21 +190,31 @@ class SeqClassifier:
 
     #Check if the construct is artificial scfv BCR
     if ndomains == 2 and top_domains.issubset(bcr_var.keys()):
-        return ("BCR", "scFv")
-    if ndomains == 4 and top_domains.issubset(bcr_var.keys()):
-        return ("BCR", "tscFv")
+        domain_1 = next(iter(top_domains))
+        domain_2 = next(iter(top_domains))
+        if domain_1 == "H" and domain_2 == "L":
+            return ("BCR", "scFv")
+        elif domain_1 == "L" and domain_2 == "H":
+            return ("BCR", "scFv")
+        else:
+            return ("BCR", "construct")
 
     #Check if the construct is artificial scfv TCR 
     if ndomains == 2 and top_domains.issubset(tcr_var.keys()):
-        return ("TCR", "scFv")
-    if ndomains == 4 and top_domains.issubset(tcr_var.keys()):
-        return ("TCR", "tscFv")
+        return ("TCR", "TscFv")
+
+    #Check for tandem scfv's and other 3+ domain constructs
+    if ndomains >= 3 and top_domains.issubset(tcr_var.keys()):
+        return ("TCR", "construct")
+    if ndomains >= 3 and top_domains.issubset(bcr_var.keys()):
+        return ("BCR", "construct")
 
     #Handle variable with constant
     if any(x in iter(tcr_constant) for x in iter(top_domains)):
         for x in iter(top_domains):
             if x in tcr_var:
                 return "TCR", tcr_var[x] + " + C"
+    
     if any(x in iter(bcr_constant) for x in iter(top_domains)):
         for x in iter(top_domains):
             if x in bcr_var:
@@ -376,7 +387,7 @@ class SeqClassifier:
     mro_df = self.get_MRO_Gdomains(self.mro_file)
     for seq in seq_records:
         receptor, chain_type, calc_mhc_allele = self.classify(seq, mro_df)
-        out.loc[cnt,'id'] = seq.id
+        out.loc[cnt,'id'] = seq.description
         out.loc[cnt, 'class'] = receptor
         out.loc[cnt, 'chain_type'] = chain_type
         out.loc[cnt, 'calc_mhc_allele'] = calc_mhc_allele
