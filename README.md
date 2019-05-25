@@ -3,12 +3,23 @@
 
 ## Requirements:
 - Linux OS
-- HMMER3: http://hmmer.org/
-- Python 2.7 + Python 3
+- [HMMER3](http://hmmer.org/)
+- Python 2.7 (to update HMMs) + Python 3 (to classify)
   - Python packages: Pandas, BioPython
 - Git
 
 ## How to use:
+
+### Installation:
+The easiest way to use the software is to download and utilize the Dockerfile.
+Otherwise, download the package by cloning the repository and execute commands while in the primary ARC folder.
+Examples can be found below.
+Required python dependencies can be installed by using:
+```
+shell
+pip install -r requirements.txt
+```
+
 ### Input  
 -  A fasta format file with one or more protein sequences.  
   ```
@@ -42,7 +53,7 @@ Note: Archive is an optional parameter that will create an archive folder with H
 python ARC -i ../test/all_mhc_BcrTcr_IEDB.fasta -o /path/to/output.csv
 ```
 ### Output  
--  Output excel file has 4 columns. 
+-  Output file has 4 columns. in CSV format. 
 -  First column named 'ID' is the description provoded in the fasta for each sequence.  
 -  Second column named 'class' is the assigned molecule class for each sequence.
    -  e.g. MHC-I, MHC-II, BCR or TCR.  
@@ -68,3 +79,8 @@ python ARC -i ../test/all_mhc_BcrTcr_IEDB.fasta -o /path/to/output.csv
 - BCR and TCR chains are identified using HMMs. A given protein sequence is searched against HMMs built using BCR and TCR chain sequences from IMGT. HMMER is used to align an input sequence to the HMMs.
 - MHC class I (alpha1-alpha2 domains) and MHC class I alpha and beta chain HMMs are downloaded from Pfam website. An input protein sequence is searched against these HMMs. A HMMER bit score threshold of 25 was used to identify MHC chain sequences. DTU uses 250 as a score cutoff which can exclude MHC like molecules such as Human and Mouse CD1d molecules.
 -To identify MHC alleles, MRO repository is downloaded every time the script is run. Groove domains (G-domains) are assigned to new MRO allles and stored in the file `ARC/data/MRO_Gdomain.csv`. If this file is not in the out directory then G-domains are assigned to all the MRO alleles (which may slow down the script).
+
+## References:
+Several pieces of code, including the IMGT ripping / HMM generation, was sourced from ANARCI.
+
+[Dunbar J and Deane CM. ANARCI: Antigen receptor numbering and receptor classification. Bioinformatics (2016)](https://academic.oup.com/bioinformatics/article/32/2/298/1743894)

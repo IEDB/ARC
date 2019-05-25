@@ -202,7 +202,7 @@ class SeqClassifier:
     if ndomains == 2 and top_domains.issubset(tcr_var.keys()):
         return ("TCR", "TscFv")
 
-    #Check for tandem scfv's and other 3+ domain constructs
+    #Check for tandem scfv's and other rare 3+ domain constructs
     if ndomains >= 3 and top_domains.issubset(tcr_var.keys()):
         return ("TCR", "construct")
     if ndomains >= 3 and top_domains.issubset(bcr_var.keys()):
@@ -213,7 +213,6 @@ class SeqClassifier:
         for x in iter(top_domains):
             if x in tcr_var:
                 return "TCR", tcr_var[x] + " + C"
-    
     if any(x in iter(bcr_constant) for x in iter(top_domains)):
         for x in iter(top_domains):
             if x in bcr_var:
