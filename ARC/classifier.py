@@ -162,12 +162,12 @@ class SeqClassifier:
     top_domains = { x["id"].split("_")[1] for x in top_hits }
     
     #These sets simplify checking for various conditions
-    bcr_constant = {"KCC": "kappa C region", "LCC": "lambda C region", 
-                    "HCC": "heavy C region", "HC1": "heavy C domain 1", 
-                    "HC2": "heavy C domain 2", "HC3":"heavy C domain 3"}
-    tcr_constant = {"TRAC": "alpha C", "TRBC": "beta C", "TRDC": "delta C", "TRGC": "gamma C"}
-    tcr_var = {"A": "alpha V", "B": "beta V", "G": "gamma V", "D": "delta V"} 
-    bcr_var = {"H": "heavy V", "K": "kappa V", "L": "lambda V"}
+    bcr_constant = {"KCC": "IGKC", "LCC": "IGLC", 
+                    "HCC": "IGHC", "HC1": "IGHC domain 1", 
+                    "HC2": "IGHC domain 2", "HC3":"IGHC domain 3"}
+    tcr_constant = {"TRAC": "TRAC", "TRBC": "TRBC", "TRDC": "TRDC", "TRGC": "TRGC"}
+    tcr_var = {"A": "TRAV", "B": "TRBV", "G": "TRGV", "D": "TRDV"} 
+    bcr_var = {"H": "IGHV", "K": "IGKV", "L": "IGLV"}
 
     #We have no hits
     if ndomains == 0:
@@ -212,11 +212,14 @@ class SeqClassifier:
     if any(x in iter(tcr_constant) for x in iter(top_domains)):
         for x in iter(top_domains):
             if x in tcr_var:
-                return "TCR", tcr_var[x] + " + C"
+                top_domains.remove(x)
+                return "TCR", tcr_var[x] + " ," + tcr_constant[next(iter(top_domains))]
+    
     if any(x in iter(bcr_constant) for x in iter(top_domains)):
         for x in iter(top_domains):
             if x in bcr_var:
-                return "BCR", bcr_var[x] + " + C"
+                top_domains.remove(x)
+                return "BCR", bcr_var[x] + " ," + bcr_constant[next(iter(top_domains))]
 
     return None, None
 
