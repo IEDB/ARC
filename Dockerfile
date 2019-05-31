@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 MAINTAINER acrinklaw@lji.org
 
-ENV PACKAGES python2.7-dev python3-dev python3-pip hmmer git
+ENV PACKAGES python3-dev python3-pip hmmer ncbi-blast+ git
 
 RUN apt-get update && \
     apt-get install -y ${PACKAGES} && \

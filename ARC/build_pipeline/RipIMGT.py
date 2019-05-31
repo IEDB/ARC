@@ -6,9 +6,10 @@ Ripped from here:
 http://www.imgt.org/vquest/refseqh.html     
 """
 
-from HTMLParser import HTMLParser
-from htmlentitydefs import name2codepoint
-import urllib, os, sys
+from html.parser import HTMLParser
+from html.entities import name2codepoint
+import urllib.request
+import os, sys
 
 
 # Set globals
@@ -20,9 +21,6 @@ fasta_outpath = os.path.join( file_path, "IMGT_sequence_files", "fastafiles" )
 # We have heavy, kappa, lambda, alpha, beta, gamma and delta chains.
 # Both the v genes (imgt gapped amino acids) and the j genes (amino acids, are not gapped) 
 
-#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-#Try adding camelid and shark (IgNAR)
-#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # Urls as of 04-12-14
 urls = { "HV": "http://www.imgt.org/IMGT_GENE-DB/GENElect?query=7.3+IGHV&species=%s",
          "HJ": "http://www.imgt.org/IMGT_GENE-DB/GENElect?query=7.6+IGHJ&species=%s",
@@ -42,7 +40,6 @@ urls = { "HV": "http://www.imgt.org/IMGT_GENE-DB/GENElect?query=7.3+IGHV&species
          "KC": "http://www.imgt.org/IMGT_GENE-DB/GENElect?query=7.3+IGKC&species=%s",
          "LC": "http://www.imgt.org/IMGT_GENE-DB/GENElect?query=7.3+IGLC&species=%s",
        }
-
 
 
 # Species as of 04-12-14
@@ -97,7 +94,7 @@ class GENEDBParser(HTMLParser):
                 if name and sequence:
                     self._data.append( (name, sequence) )
             else: # Otherwise it will be done entry by entry
-                print "1"
+                print("1")
                 try:
                     name = split[0]
                 except IndexError:
@@ -136,7 +133,7 @@ def get_html(species, gene_type, force = True):
     # If html file exists already
     if os.path.isfile(filename):
         return filename
-    if urllib.urlretrieve( urls[gene_type]%species,  filename ):
+    if urllib.request.urlretrieve( urls[gene_type]%species,  filename ):
         return filename
     else:
         return False
@@ -148,8 +145,8 @@ def write_fasta( sequences, species, gene_type ):
     filename = os.path.join(fasta_outpath,"%s_%s.fasta"%(species.replace("+", "_"), gene_type) )
     with open(filename, "w") as outfile:
         for name, sequence in sequences:
-            print >> outfile, ">%s"%name
-            print >> outfile, sequence
+            print("%s" % name, file=outfile)
+            print(sequence, file=outfile)
 
 def ripfasta(species, gene_type, force = True):
     """ 
@@ -162,10 +159,10 @@ def ripfasta(species, gene_type, force = True):
         if sequences:
             write_fasta(sequences, species, gene_type )
         else:
-            print >> sys.stderr, "Bad parse",
+            print("Bad parse")
             return 1
     else:
-        print >> sys.stderr, "Bad Url",
+        print("Bad Url")
         return 1
 
 def main():
@@ -177,8 +174,8 @@ def main():
             if gene_type[0] in "ABGD" and species not in all_tr_species: continue # we don't want TCRs for all organisms
             if gene_type[0] in "KL" and species == "Vicugna+pacos": continue # alpacas don't have light chains
             if ripfasta(species, gene_type, force = False):
-                print >> sys.stderr, "Failed to retrieve %s %s"%(species, gene_type)
+                print("Failed to retrieve %s %s" % (species, gene_type))
             else:
-                print "Parsed and saved %s %s"%(species, gene_type)
+                print("Parsed and saved %s %s" % (species, gene_type))
          
 main()

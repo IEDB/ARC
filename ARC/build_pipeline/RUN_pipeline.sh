@@ -7,12 +7,12 @@ rm -rf $DIR/../data/HMMs
 # Rip the sequences from the imgt website. HTML may change in the future. 
 mkdir -p $DIR/IMGT_sequence_files/htmlfiles
 mkdir -p $DIR/IMGT_sequence_files/fastafiles
-python2.7 $DIR/RipIMGT.py
+python3 $DIR/RipIMGT.py
 
 # Format the alignments and handle imgt oddities to put into a consistent alignment format
 mkdir -p $DIR/curated_alignments
 mkdir -p $DIR/muscle_alignments
-python2.7 $DIR/FormatAlignments.py
+python3 $DIR/FormatAlignments.py
 
 # Build the hmms for each species and chain.
 # --hand option required otherwise it will delete columns that are mainly gaps. We want 128 columns otherwise ARNACI will fall over.
@@ -24,7 +24,7 @@ hmmbuild --hand $DIR/HMMs/ALL_AND_C.hmm $DIR/curated_alignments/ALL_AND_C.stockh
 hmmpress -f $DIR/HMMs/ALL.hmm 
 hmmpress -f $DIR/HMMs/ALL_AND_C.hmm
 
-mv $DIR/HMMs $DIR/../../data/HMMs
+mv $DIR/HMMs $DIR/../../data/
 rm -rf $DIR/curated_alignments
 rm -rf $DIR/IMGT_sequence_files
 rm -rf $DIR/muscle_alignments

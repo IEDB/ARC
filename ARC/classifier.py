@@ -158,9 +158,10 @@ class SeqClassifier:
 
     @param top_hits: the highest scoring hits per domain of a query
     """
+
     ndomains = len(top_hits)
     top_domains = { x["id"].split("_")[1] for x in top_hits }
-    
+    print(top_domains)
     #These sets simplify checking for various conditions
     bcr_constant = {"KCC": "IGKC", "LCC": "IGLC", 
                     "HCC": "IGHC", "HC1": "IGHC domain 1", 
@@ -321,34 +322,34 @@ class SeqClassifier:
 
     @param seq_recored: A biopython sequence record object
     """
-    if self.check_seq(seq_record) == 1:
-        with tempfile.NamedTemporaryFile(mode="w") as hmm_out:
-            receptor, chain_type = None, None
-            self.run_hmmscan(seq_record, hmm_out)
-            hmmer_query = SearchIO.read(hmm_out.name, 'hmmer3-text')
-            hit_table, top_descriptions = self.parse_hmmer_query(hmmer_query)
-            receptor, chain_type = self.get_chain_type(top_descriptions)
+#    if self.check_seq(seq_record) == 1:
+    with tempfile.NamedTemporaryFile(mode="w") as hmm_out:
+        receptor, chain_type = None, None
+        self.run_hmmscan(seq_record, hmm_out)
+        hmmer_query = SearchIO.read(hmm_out.name, 'hmmer3-text')
+        hit_table, top_descriptions = self.parse_hmmer_query(hmmer_query)
+        receptor, chain_type = self.get_chain_type(top_descriptions)
 
-            #We have no hits so now we check for MHC, avoid excessive computations this way
-            if not receptor or not chain_type:
-                mhc_I_score = None
-                mhc_I_score = self.is_MHC(str(seq_record.seq), self.mhc_I_hmm)
-                if mhc_I_score >= self.hmm_score_threshold:
-                  return('MHC-I', 'alpha')
-                else:
-                  mhc_II_alpha_score = None
-                  mhc_II_alpha_score = self.is_MHC(str(seq_record.seq), self.mhc_II_alpha_hmm)
-                  if mhc_II_alpha_score and mhc_II_alpha_score >= self.hmm_score_threshold:
-                    return('MHC-II', 'alpha')
-                  else:
-                    mhc_II_beta_score = None
-                    mhc_II_beta_score = self.is_MHC(str(seq_record.seq), self.mhc_II_beta_hmm)
-                    if mhc_II_beta_score and mhc_II_beta_score >= self.hmm_score_threshold:
-                      return('MHC-II', 'beta')
-                    else:
-                      return(None, None)
+        #We have no hits so now we check for MHC, avoid excessive computations this way
+        if not receptor or not chain_type:
+            mhc_I_score = None
+            mhc_I_score = self.is_MHC(str(seq_record.seq), self.mhc_I_hmm)
+            if mhc_I_score >= self.hmm_score_threshold:
+              return('MHC-I', 'alpha')
             else:
-              return(receptor, chain_type)
+              mhc_II_alpha_score = None
+              mhc_II_alpha_score = self.is_MHC(str(seq_record.seq), self.mhc_II_alpha_hmm)
+              if mhc_II_alpha_score and mhc_II_alpha_score >= self.hmm_score_threshold:
+                return('MHC-II', 'alpha')
+              else:
+                mhc_II_beta_score = None
+                mhc_II_beta_score = self.is_MHC(str(seq_record.seq), self.mhc_II_beta_hmm)
+                if mhc_II_beta_score and mhc_II_beta_score >= self.hmm_score_threshold:
+                  return('MHC-II', 'beta')
+                else:
+                  return(None, None)
+        else:
+          return(receptor, chain_type)
 
   def classify(self, seq_record, mro_df = None):
     """
@@ -382,6 +383,7 @@ class SeqClassifier:
     cnt = 0
     mro_df = self.get_MRO_Gdomains(self.mro_file)
     for seq in seq_records:
+        print(seq.description)
         receptor, chain_type, calc_mhc_allele = self.classify(seq, mro_df)
         out.loc[cnt,'id'] = seq.description
         out.loc[cnt, 'class'] = receptor

@@ -1,10 +1,11 @@
 # ARC (Antigen Receptor Classifier)
-### @author: Swapnil Mahajan, Austin Crinklaw
+### @authors: Swapnil Mahajan, Austin Crinklaw
 
 ## Requirements:
 - Linux OS
 - [HMMER3](http://hmmer.org/)
-- Python 2.7 (to update HMMs) + Python 3 (to classify)
+- NCBI Blast+
+- Python 3+
   - Python packages: Pandas, BioPython
 - Git
 
@@ -15,8 +16,7 @@ The easiest way to use the software is to download and utilize the Dockerfile.
 Otherwise, download the package by cloning the repository and execute commands while in the primary ARC folder.
 Examples can be found below.
 Required python dependencies can be installed by using:
-```
-shell
+```shell
 pip install -r requirements.txt
 ```
 

@@ -80,7 +80,7 @@ def read_alignment(input_file, read_all=False, region_name=""):
     try:
         handle = open(input_file, "rU")
     except IOError:
-        print 'Warning file', input_file, 'could not be found'
+        print('Warning file', input_file, 'could not be found')
         return records
 
     region=""
@@ -112,7 +112,7 @@ def read_alignment(input_file, read_all=False, region_name=""):
                 region=fields["region"]
                 records[ (fields["species"], fields[ "allele" ] ) ] = sequence
         except KeyError:
-            print "Something wrong with the file %s"%input_file
+            print("Something wrong with the file %s"%input_file)
             continue
             
     handle.close()
@@ -135,8 +135,8 @@ def write_fasta( sequences ):
     with open( filename, "w" ) as outfile:
         for al in sequences:
             for s in sequences[al]:
-                print >> outfile, ">%s|%s|%s|%s"%tuple( list(al)+list(s) )
-                print >> outfile, sequences[al][s]
+                print(">%s|%s|%s|%s"%tuple( list(al)+list(s) ), file=outfile)
+                print(sequences[al][s], file=outfile)
     return filename
 
 
@@ -156,7 +156,7 @@ def format_c_genes(calignments, gene_name=""):
             #tttt = sequence[:132].ljust( 132 ).replace(" ",".")
             tttt = sequence[:149].ljust( 149 ).replace(" ",".")
             if tttt[104] != "C" or tttt[33] != "C": 
-                print "Something wrong with ", entry, gene_name, sequence
+                print("Something wrong with ", entry, gene_name, sequence)
                 continue
 
             max_length = 149
@@ -287,7 +287,7 @@ def write_germlines(vsequences, jsequences):
     all_gene_alignments = {"J":{},"V":{}}
 
     for species, chain_type in vsequences:
-        for ((_,gene), seq) in vsequences[ (species, chain_type) ].iteritems():
+        for ((_,gene), seq) in vsequences[ (species, chain_type) ].items():
             assert len(seq)==108, species+_+gene+chain_type+_+seq+str(len(seq))
             try:
                 all_gene_alignments["V"][ chain_type ][ translations[species] ][ gene ] = seq.replace(".","-") + "-"*20
@@ -300,7 +300,7 @@ def write_germlines(vsequences, jsequences):
                     except KeyError:
                         all_gene_alignments["V"] = { chain_type : { translations[species] : { gene : seq.replace(".","-") + "-"*20 } } }
 
-        for ((_,gene), seq) in jsequences.get((species, chain_type),{} ).iteritems():
+        for ((_,gene), seq) in jsequences.get((species, chain_type),{} ).items():
             assert len(seq)==20
             try:
                 all_gene_alignments["J"][ chain_type ][ translations[species] ][ gene ] = "-"*108 + seq.replace(".","-")
@@ -324,17 +324,17 @@ def output_python_lookup(all_gene_alignments, path=None):
         path = curated_path
     filename = os.path.join( path, "germlines.py")
     with open(filename,'w') as outfile:
-        print >> outfile, "all_germlines = "+repr(all_gene_alignments)
+        print("all_germlines = "+repr(all_gene_alignments), file=outfile)
 
 def write_stockholm( sequences, ID, outfile):
-        print >> outfile, "# STOCKHOLM 1.0"
-        print >> outfile, "#=GF ID %s"%ID
+        print("# STOCKHOLM 1.0", file=outfile)
+        print("#=GF ID %s"%ID, file=outfile)
         
         pad_length = max(map(len, sequences.keys()))+1
         for s in sequences:
-            print >> outfile, s.replace(" ", "_").ljust(pad_length), sequences[s].replace(".","-")
-        print >> outfile,  "#=GC RF".ljust(pad_length), "x"*len(sequences[s])
-        print >> outfile, "//"
+            print(s.replace(" ", "_").ljust(pad_length), sequences[s].replace(".","-"), file=outfile)
+        print("#=GC RF".ljust(pad_length), "x"*len(sequences[s]), file=outfile)
+        print("//", file=outfile)
 
 
 def output_C_alignments(alignments, c_name):
@@ -355,7 +355,7 @@ def output_stockholm_all_and_C(all_sequences, all_C_alignments, path=None):
     with open( filename, "w") as outfile:
         for species, chain_type in all_sequences:
             sequences = all_sequences[(species, chain_type)]
-            l = len(sequences.values()[0])
+            l = len(list(sequences.values())[0])
             assert all( [1 if l == len(sequences[s]) else 0 for s in sequences]), "Not all sequences in alignment are the same length"
             write_stockholm( sequences, "%s_%s"%(translations[species], chain_type), outfile)
 
@@ -376,7 +376,7 @@ def output_stockholm_all(all_sequences, path=None):
     with open( filename, "w") as outfile:
         for species, chain_type in all_sequences:
             sequences = all_sequences[(species, chain_type)]
-            l = len(sequences.values()[0])
+            l = len(list(sequences.values())[0])
             assert all( [1 if l == len(sequences[s]) else 0 for s in sequences]), "Not all sequences in alignment are the same length"
             write_stockholm( sequences, "%s_%s"%(translations[species], chain_type), outfile)
 
@@ -390,7 +390,7 @@ def output_stockholm(sequences, name, path=None):
         path = curated_path
 
     filename = os.path.join( path, "%s.stockholm"%name)
-    l = len(sequences.values()[0])
+    l = len(list(sequences.values())[0])
     
     assert all( [1 if l == len(sequences[s]) else 0 for s in sequences]), "Not all sequences in alignment are the same length"
     
@@ -405,18 +405,18 @@ def main():
     Read in the raw v and j alignments
     Format them and combine the sequences
     """
-    print "\nFormatting alignments\n"
+    print("\nFormatting alignments\n")
     valignments, jalignments = {},{}
     all_valignments, all_jalignments = {},{}
     ccalignments, c1alignments, c2alignments, c3alignments = {}, {}, {}, {}
 
-    print "IGs"
+    print("IGs")
     for species in all_species:
         for chain_type in "HKL":
             if not os.path.isfile( os.path.join( fasta_path, "%s_%sV.fasta" % (species,chain_type)) ):
                 continue
 
-            print species, chain_type
+            print(species, chain_type)
             valignments[ (species, chain_type) ]  = read_alignment( os.path.join( fasta_path , "%s_%sV.fasta"%(species, chain_type) ), region_name= "V-REGION" )
             jalignments[ (species, chain_type) ]  = read_alignment( os.path.join( fasta_path , "%s_%sJ.fasta"%(species, chain_type) ), region_name= "J-REGION") 
 
@@ -431,13 +431,13 @@ def main():
             all_valignments[ (species, chain_type) ]  = read_alignment( os.path.join( fasta_path , "%s_%sV.fasta"%(species, chain_type) ), region_name= "V-REGION", read_all=True)
             all_jalignments[ (species, chain_type) ]  = read_alignment( os.path.join( fasta_path , "%s_%sJ.fasta"%(species, chain_type) ), region_name= "J-REGION", read_all=True) 
 
-    print "\nTRs"
+    print("\nTRs")
     for species in all_tr_species:
         for chain_type in "ABGD":
             if not os.path.isfile( os.path.join( fasta_path, "%s_%sV.fasta" % (species,chain_type)) ):
                 continue
 
-            print species, chain_type
+            print(species, chain_type)
             valignments[ (species, chain_type) ]   = read_alignment( os.path.join( fasta_path , "%s_%sV.fasta"%(species, chain_type) ))
             jalignments[ (species, chain_type) ]   = read_alignment( os.path.join( fasta_path , "%s_%sJ.fasta"%(species, chain_type) )) 
             all_valignments[ (species, chain_type) ]  = read_alignment( os.path.join( fasta_path , "%s_%sV.fasta"%(species, chain_type) ), read_all=True)
