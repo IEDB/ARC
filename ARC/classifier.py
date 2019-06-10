@@ -9,7 +9,7 @@ Contains code from ANARCI and SeqClassifier.
 """
 import re
 import os
-from mhc_G_domain import mhc_G_domain
+from ARC.mhc_G_domain import mhc_G_domain
 import numpy as np
 import pandas as pd
 from Bio import SearchIO
@@ -28,14 +28,15 @@ class SeqClassifier:
     @param outfile: Name of output file
     @param hmm_score_threshold: Minimum score for a hit against HMM to be significant
     """
+    self.package_directory = os.path.dirname(os.path.abspath(__file__))
     self.seqfile = seqfile
     self.outfile = outfile
     self.hmm_score_threshold = hmm_score_threshold
-    self.mhc_I_hmm = os.path.join(os.path.dirname(__file__),'../data/MHC_HMMs/Pfam_MHC_I.hmm')
-    self.mhc_II_alpha_hmm = os.path.join(os.path.dirname(__file__),'../data/MHC_HMMs/Pfam_MHC_II_alpha.hmm')
-    self.mhc_II_beta_hmm = os.path.join(os.path.dirname(__file__), '../data/MHC_HMMs/Pfam_MHC_II_beta.hmm')
-    self.mro_file = '/data/MRO/ontology/chain-sequence.tsv'
-    self.mro_gdomain_file = os.path.join(os.path.dirname(__file__),'../data/MRO_Gdomain.csv')
+    self.mhc_I_hmm = os.path.join(self.package_directory,'data/MHC_HMMs/Pfam_MHC_I.hmm')
+    self.mhc_II_alpha_hmm = os.path.join(self.package_directory,'data/MHC_HMMs/Pfam_MHC_II_alpha.hmm')
+    self.mhc_II_beta_hmm = os.path.join(self.package_directory, 'data/MHC_HMMs/Pfam_MHC_II_beta.hmm')
+    self.mro_file = os.path.join(self.package_directory,'data/MRO/ontology/chain-sequence.tsv')
+    self.mro_gdomain_file = os.path.join(self.package_directory,'data/MRO_Gdomain.csv')
 
 
   def check_seq(self, seq_record):
@@ -82,7 +83,7 @@ class SeqClassifier:
             return False
         SeqIO.write(seq_record, temp_out.name, "fasta")
         
-        args = ['hmmscan','-o', hmm_out.name, "/home/austin/ARC/data/HMMs/ALL_AND_C.hmm", temp_out.name]
+        args = ['hmmscan','-o', hmm_out.name, os.path.join(self.package_directory, "data/HMMs/ALL_AND_C.hmm"), temp_out.name]
         cmd = (' ').join(args)
         self.run_cmd(cmd, str(seq_record.seq))
 
@@ -161,7 +162,6 @@ class SeqClassifier:
 
     ndomains = len(top_hits)
     top_domains = { x["id"].split("_")[1] for x in top_hits }
-    print(top_domains)
     #These sets simplify checking for various conditions
     bcr_constant = {"KCC": "IGKC", "LCC": "IGLC", 
                     "HCC": "IGHC", "HC1": "IGHC domain 1", 
@@ -239,7 +239,7 @@ class SeqClassifier:
     """
     Clone or pull MRO GitHub repository.
     """
-    mro_path = os.path.join(os.path.dirname(__file__),'../data/MRO')
+    mro_path = os.path.join(self.package_directory,'data/MRO')
     if os.path.exists(mro_path):
       print('Updating MRO repository..')
       self.run_cmd('git -C %s pull' % mro_path)
@@ -254,7 +254,7 @@ class SeqClassifier:
     Returns G doamins of the MRO chain sequences.
     """
     self.get_MRO()
-    mro = pd.read_csv(os.getcwd() + mro_TSVfile, sep='\t', skiprows=[1])
+    mro = pd.read_csv(mro_TSVfile, sep='\t', skiprows=[1])
     if os.path.exists(self.mro_gdomain_file)  and os.path.getsize(self.mro_gdomain_file) > 0:
       mro_out=pd.read_csv(self.mro_gdomain_file)
       cnt=mro_out.Label.index[-1]+1
@@ -383,7 +383,6 @@ class SeqClassifier:
     cnt = 0
     mro_df = self.get_MRO_Gdomains(self.mro_file)
     for seq in seq_records:
-        print(seq.description)
         receptor, chain_type, calc_mhc_allele = self.classify(seq, mro_df)
         out.loc[cnt,'id'] = seq.description
         out.loc[cnt, 'class'] = receptor

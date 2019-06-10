@@ -1,7 +1,7 @@
 import argparse
 import sys
-from setup import install, update
-from classifier import SeqClassifier
+from ARC.build_pipeline import build
+from ARC.classifier import SeqClassifier
 
 tasks = ["classify", "install", "update"]
 if len(sys.argv) < 2 or (sys.argv[1] not in tasks):
@@ -44,7 +44,7 @@ elif sys.argv[1] == "install":
 					action='store_true', default=False)
 	args = prsr.parse_args(sys.argv[2:])
 
-	install(args.quiet)
+	build.install(args.quiet)
 
 elif sys.argv[1] == "update":
 	prsr = argparse.ArgumentParser(prog='update',
@@ -53,4 +53,4 @@ elif sys.argv[1] == "update":
 					action='store_true', default=False)
 	args = prsr.parse_args(sys.argv[2:])
 
-	update(args.archive)
+	build.update(args.archive)

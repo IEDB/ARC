@@ -24,7 +24,7 @@ hmmbuild --hand $DIR/HMMs/ALL_AND_C.hmm $DIR/curated_alignments/ALL_AND_C.stockh
 hmmpress -f $DIR/HMMs/ALL.hmm 
 hmmpress -f $DIR/HMMs/ALL_AND_C.hmm
 
-mv $DIR/HMMs $DIR/../../data/
+mv $DIR/HMMs $DIR/../data/
 rm -rf $DIR/curated_alignments
 rm -rf $DIR/IMGT_sequence_files
 rm -rf $DIR/muscle_alignments
