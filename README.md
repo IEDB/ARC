@@ -39,7 +39,7 @@ python -m ARC -h
 ```shell
 python -m ARC <command> -h
 ```
-- HMMs come by default but can be updated. If they are missing they can be added via an install command
+- HMMs come by default but can be updated. If they are missing for some they can be added via the install command
 ```shell
 python -m ARC update -archive
 ```
@@ -75,7 +75,7 @@ python -m ARC classify -i /path/to/input.fasta -o /path/to/output.csv
 ## How it works:
 - BCR and TCR chains are identified using HMMs. A given protein sequence is searched against HMMs built using BCR and TCR chain sequences from IMGT. HMMER is used to align an input sequence to the HMMs.
 - MHC class I (alpha1-alpha2 domains) and MHC class I alpha and beta chain HMMs are downloaded from Pfam website. An input protein sequence is searched against these HMMs. A HMMER bit score threshold of 250 was used to identify MHC chain sequences. DTU uses 250 as a score cutoff which can exclude MHC like molecules such as Human and Mouse CD1d molecules.
--To identify MHC alleles, MRO repository is downloaded every time the script is run. Groove domains (G-domains) are assigned to new MRO allles and stored in the file `ARC/data/MRO_Gdomain.csv`. If this file is not in the out directory then G-domains are assigned to all the MRO alleles (which may slow down the script).
+-To identify MHC alleles, MRO repository is downloaded every time the script is run. Groove domains (G-domains) are assigned to new MRO allles and stored in a CSV file. If this file does not exist then G-domains are assigned to all the MRO alleles (which may slow down the script).
 
 ## References:
 Several pieces of code, including the IMGT ripping / HMM generation, was sourced from ANARCI.

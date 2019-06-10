@@ -18,9 +18,9 @@ def _run_cmd(cmd, input_string=''):
 
 def install(quiet):
     if quiet:
-        _run_cmd("sh ARC/build_pipeline/RUN_pipeline.sh")
+        _run_cmd(("sh %s/RUN_pipeline.sh") % package_directory)
     else:
-        print(_run_cmd("sh ARC/build_pipeline/RUN_pipeline.sh"))
+        print(_run_cmd(("sh %s/RUN_pipeline.sh") % package_directory))
 
 def update(archive):
     if archive:
