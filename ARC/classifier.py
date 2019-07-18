@@ -7,17 +7,18 @@ Classifies input sequences into BCR, TCR, or MHC.
 Specifies chain type including constant regions.
 Contains code from ANARCI and SeqClassifier.
 """
-import re
-import os
+from Bio.Blast.Applications import NcbiblastpCommandline
 from ARC.mhc_G_domain import mhc_G_domain
-import numpy as np
-import pandas as pd
+from Bio.Blast import NCBIXML
 from Bio import SearchIO
 from Bio import SeqIO
+import numpy as np
+import pandas as pd
 import datetime
 import subprocess
 import tempfile
-
+import re
+import os
 
 class SeqClassifier:
     def __init__(self, seqfile=None, outfile=None, hmm_score_threshold=100):
@@ -43,6 +44,8 @@ class SeqClassifier:
             self.package_directory, 'data/MRO/ontology/chain-sequence.tsv')
         self.mro_gdomain_file = os.path.join(
             self.package_directory, 'data/MRO_Gdomain.csv')
+        self.ignar_db = os.path.join(
+          self.package_directory, 'data/IgNAR/IgNAR')
 
     def check_seq(self, seq_record):
         """
@@ -336,6 +339,23 @@ class SeqClassifier:
         fp.close()
         return score
 
+    def is_ignar(self, sequence):
+      hit_coverage = '75'
+      hit_perc_id = 0.50
+      with tempfile.NamedTemporaryFile(mode="w") as temp_in:
+        SeqIO.write(sequence, temp_in.name, "fasta")
+        blast_cmd = ['blastp', '-db', self.ignar_db, '-query', temp_in.name, '-evalue', '10e-4', '-qcov_hsp_perc', hit_coverage, '-outfmt', '5', '>', '/tmp/ignar_out.xml']
+        self.run_cmd((' '.join(blast_cmd)))
+        with open('ignar_out.xml', 'r') as outfile:
+          res = NCBIXML.read(outfile).alignments
+          for alignment in res:
+            for hsp in alignment.hsps:
+              if float(hsp.identities) / float(hsp.align_length) > hit_perc_id:
+                self.run_cmd(('rm /tmp/ignar_out.xml'))
+                return True
+        self.run_cmd(('rm /tmp/ignar_out.xml'))
+        return False
+
     def assign_class(self, seq_record):
         """
         Returns BCR, TCR or MHC class and chain type for an input sequence
@@ -351,6 +371,8 @@ class SeqClassifier:
 
             # We have no hits so now we check for MHC, avoid excessive computations this way
             if not receptor or not chain_type:
+                if self.is_ignar(seq_record):
+                  return("BCR", "IgNAR")
                 mhc_I_score = None
                 mhc_I_score = self.is_MHC(str(seq_record.seq), self.mhc_I_hmm)
                 if mhc_I_score >= self.hmm_score_threshold:
