@@ -21,7 +21,7 @@ class mhc_G_domain:
     
     External softwares needed: BLAST
     """
-    
+    self.package_directory = os.path.dirname(os.path.abspath(__file__))
     self.chain1_seq= chain1_seq
     self.chain2_seq=chain2_seq
     self.ch1_id= ch1_id
@@ -73,14 +73,14 @@ class mhc_G_domain:
     """
     Runs blast for a given seq file against all G domains (alpha1, alpha2, alpha, beta).
     """
-    g_alpha1_db= '../data/blastdb/G_ALPHA1.fasta'
-    g_alpha1_db=os.path.join(os.path.dirname(__file__),  g_alpha1_db)
-    g_alpha2_db= '../data/blastdb/G_ALPHA2.fasta'
-    g_alpha2_db=os.path.join(os.path.dirname(__file__),  g_alpha2_db)
-    g_alpha_db= '../data/blastdb/G_ALPHA.fasta'
-    g_alpha_db=os.path.join(os.path.dirname(__file__),  g_alpha_db)
-    g_beta_db= '../data/blastdb/G_BETA.fasta'
-    g_beta_db=os.path.join(os.path.dirname(__file__),  g_beta_db)
+    g_alpha1_db= 'data/blastdb/G_ALPHA1.fasta'
+    g_alpha1_db=os.path.join(self.package_directory,  g_alpha1_db)
+    g_alpha2_db= 'data/blastdb/G_ALPHA2.fasta'
+    g_alpha2_db=os.path.join(self.package_directory,  g_alpha2_db)
+    g_alpha_db= 'data/blastdb/G_ALPHA.fasta'
+    g_alpha_db=os.path.join(self.package_directory,  g_alpha_db)
+    g_beta_db= 'data/blastdb/G_BETA.fasta'
+    g_beta_db=os.path.join(self.package_directory,  g_beta_db)
     
     seq_id= str(seqfile.split('.')[0])
     alpha1_blout= self.run_blast(seqfile, g_alpha1_db, seq_id+'_alpha1'+self.rand+'.out')
@@ -114,30 +114,30 @@ class mhc_G_domain:
     if os.path.getsize(alpha1_blout) >0:
       dom1_st_end = self.get_domain(alpha1_blout)
       if not dom1_st_end:
-        print('No alpha1 domain was found in seq {}.'.format(self.ch1_id))
+        #print('No alpha1 domain was found in seq {}.'.format(self.ch1_id))
         return None
       if os.path.getsize(alpha2_blout) >0:
         dom2_st_end = self.get_domain(alpha2_blout)
         if dom2_st_end:
           return 'I', [dom1_st_end[0], dom1_st_end[1], dom2_st_end[0], dom2_st_end[1]]
         else:
-          print('No alpha2 domain was found in seq {}.'.format(self.ch1_id))
+          #print('No alpha2 domain was found in seq {}.'.format(self.ch1_id))
           return None
       
     if os.path.getsize(alpha_blout) >0:
       dom1_st_end = self.get_domain(alpha_blout)
       if not dom1_st_end:
-        print('No alpha domain was found in seq {}.'.format(self.ch1_id))
+        #print('No alpha domain was found in seq {}.'.format(self.ch1_id))
         return None
       return 'IIa', dom1_st_end
     if os.path.getsize(beta_blout) >0:
       dom1_st_end = self.get_domain(beta_blout)
       if not dom1_st_end:
-        print('No beta domain was found in seq {}.'.format(self.ch1_id))
+        #print('No beta domain was found in seq {}.'.format(self.ch1_id))
         return None
       return 'IIb', dom1_st_end
     
-    print('ERROR: No G domain was not found in {}.'.format(self.ch1_id))
+    #print('ERROR: No G domain was not found in {}.'.format(self.ch1_id))
     return None
   
   def check_b2m(self, seqfile):
@@ -146,8 +146,8 @@ class mhc_G_domain:
     """
     #g_dom_db= '../data/blastdb/IMGT_G_domain_Species.fasta'
     #g_dom_db=os.path.join(os.path.dirname(__file__),  g_dom_db)
-    b2m_db= '../data/blastdb/b2m.fasta'
-    b2m_db=os.path.join(os.path.dirname(__file__),  b2m_db)
+    b2m_db= 'data/blastdb/b2m.fasta'
+    b2m_db=os.path.join(self.package_directory,  b2m_db)
     
     #blout= self.run_blast(seqfile, g_dom_db, 'b2m_'+self.rand+'.out')
     blout= self.run_blast(seqfile, b2m_db, 'b2m_'+self.rand+'.out', '90', pow(10,-50))
@@ -216,7 +216,7 @@ class mhc_G_domain:
       os.remove(alpha2_blout)
       os.remove(alpha_blout)
       os.remove(beta_blout)
-      print('No G domain was found in seq {}.'.format(self.ch1_id))
+      #print('No G domain was found in seq {}.'.format(self.ch1_id))
       return None
   
   def get_g_domain(self):
