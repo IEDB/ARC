@@ -73,19 +73,20 @@ class mhc_G_domain:
         proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                 env=dict(os.environ, my_env_prop='value'), shell=True)
         out, err = proc.communicate()
+        print(err)
         return blastout
 
     def blast_all(self, seqfile):
         """
         Runs blast for a given seq file against all G domains (alpha1, alpha2, alpha, beta).
         """
-        g_alpha1_db = '../data/blastdb/G_ALPHA1.fasta'
+        g_alpha1_db = 'data/blastdb/G_ALPHA1.fasta'
         g_alpha1_db = os.path.join(os.path.dirname(__file__),  g_alpha1_db)
-        g_alpha2_db = '../data/blastdb/G_ALPHA2.fasta'
+        g_alpha2_db = 'data/blastdb/G_ALPHA2.fasta'
         g_alpha2_db = os.path.join(os.path.dirname(__file__),  g_alpha2_db)
-        g_alpha_db = '../data/blastdb/G_ALPHA.fasta'
+        g_alpha_db = 'data/blastdb/G_ALPHA.fasta'
         g_alpha_db = os.path.join(os.path.dirname(__file__),  g_alpha_db)
-        g_beta_db = '../data/blastdb/G_BETA.fasta'
+        g_beta_db = 'data/blastdb/G_BETA.fasta'
         g_beta_db = os.path.join(os.path.dirname(__file__),  g_beta_db)
 
         seq_id = str(seqfile.split('.')[0])
@@ -157,7 +158,7 @@ class mhc_G_domain:
         """
         #g_dom_db= '../data/blastdb/IMGT_G_domain_Species.fasta'
         #g_dom_db=os.path.join(os.path.dirname(__file__),  g_dom_db)
-        b2m_db = '../data/blastdb/b2m.fasta'
+        b2m_db = 'data/blastdb/b2m.fasta'
         b2m_db = os.path.join(os.path.dirname(__file__),  b2m_db)
 
         #blout= self.run_blast(seqfile, g_dom_db, 'b2m_'+self.rand+'.out')

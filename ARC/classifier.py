@@ -302,7 +302,7 @@ class SeqClassifier:
                 pdb_g_dom in r['ch_g_dom'] or r['ch_g_dom'] in pdb_g_dom), axis=1)]['Label'])).strip('[]').replace(',', '#')
             return mro_allele
         else:
-            #print('Unable to assign G domain to the {} chain sequence'.format(seq_id))
+            print('Unable to assign G domain to the {} chain sequence'.format(seq_id))
             return
 
     def is_MHC(self, sequence, hmm):
@@ -412,7 +412,7 @@ class SeqClassifier:
                 mro_df = self.get_MRO_Gdomains(self.mro_file)
             calc_mhc_allele = self.get_MRO_allele(mro_df, str(
                 seq_record.seq), str(seq_record.description))
-
+        #print(calc_mhc_allele + " is calc mhc allele")
         return receptor, chain_type, calc_mhc_allele
 
     def classify_seqfile(self, seq_file):
