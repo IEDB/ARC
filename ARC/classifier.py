@@ -41,7 +41,7 @@ class SeqClassifier:
         self.mhc_II_beta_hmm = os.path.join(
             self.package_directory, 'data/MHC_HMMs/Pfam_MHC_II_beta.hmm')
         self.mro_file = os.path.join(
-            self.package_directory, 'data/MRO/ontology/chain-sequence.tsv')
+            self.package_directory, 'data/chain-sequence.tsv')
         self.mro_gdomain_file = os.path.join(
             self.package_directory, 'data/MRO_Gdomain.csv')
         self.ignar_db = os.path.join(
@@ -253,10 +253,10 @@ class SeqClassifier:
             return res
         else:
             return None, None
-
+"""
     def get_MRO(self):
         """
-        Clone or pull MRO GitHub repository.
+        #Clone or pull MRO GitHub repository.
         """
         mro_path = os.path.join(self.package_directory, 'data/MRO')
         if os.path.exists(mro_path):
@@ -268,12 +268,12 @@ class SeqClassifier:
             self.run_cmd(
                 'git clone https://github.com/IEDB/MRO.git %s' % mro_path)
             return
-
+"""
     def get_MRO_Gdomains(self, mro_TSVfile):
         """
         Returns G doamins of the MRO chain sequences.
         """
-        self.get_MRO()
+        #self.get_MRO()
         mro = pd.read_csv(mro_TSVfile, sep='\t', skiprows=[1])
         if os.path.exists(self.mro_gdomain_file) and os.path.getsize(self.mro_gdomain_file) > 0:
             mro_out = pd.read_csv(self.mro_gdomain_file)

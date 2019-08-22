@@ -73,7 +73,7 @@ class mhc_G_domain:
         proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                 env=dict(os.environ, my_env_prop='value'), shell=True)
         out, err = proc.communicate()
-        print(err)
+        # print(err)
         return blastout
 
     def blast_all(self, seqfile):
