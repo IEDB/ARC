@@ -180,13 +180,13 @@ class SeqClassifier:
         ndomains = len(top_hits)
         top_domains = {x["id"].split("_")[1] for x in top_hits}
         # These sets simplify checking for various conditions
-        bcr_constant = {"KCC": "IGKC", "LCC": "IGLC",
-                        "HCC": "IGHC", "HC1": "IGHC domain 1",
-                        "HC2": "IGHC domain 2", "HC3": "IGHC domain 3"}
-        tcr_constant = {"TRAC": "TRAC", "TRBC": "TRBC",
-                        "TRDC": "TRDC", "TRGC": "TRGC"}
-        tcr_var = {"A": "TRAV", "B": "TRBV", "G": "TRGV", "D": "TRDV"}
-        bcr_var = {"H": "IGHV", "K": "IGKV", "L": "IGLV"}
+        bcr_constant = {"KCC": "Kappa C", "LCC": "Lambda C",
+                        "HCC": "Heavy C", "HC1": "Heavy C domain 1",
+                        "HC2": "Heavy C domain 2", "HC3": "Heavy C domain 3"}
+        tcr_constant = {"TRAC": "Alpha C", "TRBC": "Beta C",
+                        "TRDC": "Delta C", "TRGC": "Gamma C"}
+        tcr_var = {"A": "Alpha V", "B": "Beta V", "G": "Gamma V", "D": "Delta V"}
+        bcr_var = {"H": "Heavy V", "K": "Kappa V", "L": "Lambda V"}
 
         # We have no hits
         if ndomains == 0:
@@ -232,13 +232,13 @@ class SeqClassifier:
             for x in iter(top_domains):
                 if x in tcr_var:
                     top_domains.remove(x)
-                    return "TCR", tcr_var[x] + " ," + tcr_constant[next(iter(top_domains))]
+                    return "TCR", tcr_var[x] + ", " + tcr_constant[next(iter(top_domains))]
 
         if any(x in iter(bcr_constant) for x in iter(top_domains)):
             for x in iter(top_domains):
                 if x in bcr_var:
                     top_domains.remove(x)
-                    return "BCR", bcr_var[x] + " ," + bcr_constant[next(iter(top_domains))]
+                    return "BCR", bcr_var[x] + ", " + bcr_constant[next(iter(top_domains))]
 
         return None, None
 
@@ -432,4 +432,4 @@ class SeqClassifier:
             out.loc[cnt, 'calc_mhc_allele'] = calc_mhc_allele
             cnt += 1
 
-        out.to_csv(self.outfile, index=False)
+        out.to_csv(self.outfile, sep="\t", index=False)
