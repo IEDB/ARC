@@ -253,11 +253,8 @@ class SeqClassifier:
             return res
         else:
             return None, None
-"""
+    """
     def get_MRO(self):
-        """
-        #Clone or pull MRO GitHub repository.
-        """
         mro_path = os.path.join(self.package_directory, 'data/MRO')
         if os.path.exists(mro_path):
             #print('Updating MRO repository..')
@@ -268,7 +265,7 @@ class SeqClassifier:
             self.run_cmd(
                 'git clone https://github.com/IEDB/MRO.git %s' % mro_path)
             return
-"""
+    """
     def get_MRO_Gdomains(self, mro_TSVfile):
         """
         Returns G doamins of the MRO chain sequences.
