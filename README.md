@@ -1,5 +1,5 @@
 # ARC (Antigen Receptor Classifier)
-### @authors: Swapnil Mahajan, Austin Crinklaw
+### Authors: Austin Crinklaw, Swapnil Mahajan
 
 ## Requirements:
 - Linux OS
@@ -8,16 +8,14 @@
 - Python 3+
   - Python packages: Pandas, BioPython
 
-## How to use:
-
-### Installation:
-The easiest way to use the software is to download and utilize the Dockerfile.
+## Installation:
+We provide a Dockerfile for ease of use.
 
 ARC can also be downloaded through PyPI using the following pip command.
 ```shell
 pip install bio-arc
 ```
-
+## Usage:
 ### Input  
 -  A fasta format file with one or more protein sequences.  
   ```
@@ -30,20 +28,6 @@ MARSVTLVFLVLVSLTGLYAIQKTPQIQVYSRHPPENGKPNILNCYVTQFHPPHIEIQMLKNGKKIPKVEMSDMSFSKDW
   
 
 ### Commands
-- A list of commands can be found via the -h flag
-```shell
-python -m ARC -h
-```
-- Specific commands are explained in a similar manner
-```shell
-python -m ARC <command> -h
-```
-- HMMs come by default but can be updated. If they are missing for some they can be added via the install command
-```shell
-python -m ARC update -archive
-```
-Note: Archive is an optional parameter that will create an archive folder with HMMs stored by date. You will find this in the data folder wherever you have installed ARC.
-
 -  Using Fasta file as an input:
 ```shell
 python -m ARC classify -i /path/to/input.fasta -o /path/to/output.csv
@@ -54,21 +38,21 @@ python -m ARC classify -i /path/to/input.fasta -o /path/to/output.csv
 -  Second column named 'class' is the assigned molecule class for each sequence.
    -  e.g. MHC-I, MHC-II, BCR or TCR.  
 -  The third column named 'chain_type' is the assigned chain type for each sequence.
-   -  e.g. alpha, beta, heavy, lambda, kappa, scFv, TscFv or construct.
+   -  e.g. alpha, beta, heavy, lambda, kappa, scFv, TscFv or construct. These will also be labelled as V for variable domain or C for constant domain.
 -  The fourth column named 'calc_mhc_allele' is the MHC allele identified using groove domain similarity to MRO alleles.
 
 | ID	                                  | class  | chain_type | calc_mhc_allele|
 |---------------------------------------- |------- |----------- |---------------|
-| 1WBY_A_alpha I H2-Db                    |	MHC-I  | alpha      | |
+| 1WBY_A_alpha I H2-Db                    |	MHC-I  | alpha V     | |
 | 1WBY_B_b2m I H2-Db	                  |	       |            | |
-| 1HQR_A_alpha II HLA-DRA*01:01/DRB5*01:01|	MHC-II | alpha      | HLA-DRA*01:01 |
-| 1HQR_B_beta II HLA-DRA*01:01/DRB5*01:01 |	MHC-II | beta       | HLA-DRB5*01:01 |
-| 2CMR_H_heavy                            |	BCR	   | heavy      | |
-| 2CMR_L_light                            |	BCR	   | kappa      | |
-| 4RFO_L_light                            |	BCR	   | lambda     | |
+| 1HQR_A_alpha II HLA-DRA*01:01/DRB5*01:01|	MHC-II | alpha C     | HLA-DRA*01:01 |
+| 1HQR_B_beta II HLA-DRA*01:01/DRB5*01:01 |	MHC-II | beta C     | HLA-DRB5*01:01 |
+| 2CMR_H_heavy                            |	BCR	   | heavy V      | |
+| 2CMR_L_light                            |	BCR	   | kappa C     | |
+| 4RFO_L_light                            |	BCR	   | lambda V    | |
 | 3UZE_A_heavy                            |	BCR	   | scFv       | |
-| 1FYT_D_alpha                            |	TCR	   | alpha      | |
-| 1FYT_E_beta                             | TCR	   | beta       | |
+| 1FYT_D_alpha                            |	TCR	   | alpha V     | |
+| 1FYT_E_beta                             | TCR	   | beta C      | |
 | 3TF7_C_alpha                            |	TCR    | TscFv      | |
 
 ## How it works:
@@ -77,6 +61,6 @@ python -m ARC classify -i /path/to/input.fasta -o /path/to/output.csv
 -To identify MHC alleles, MRO repository is downloaded every time the script is run. Groove domains (G-domains) are assigned to new MRO allles and stored in a CSV file. If this file does not exist then G-domains are assigned to all the MRO alleles (which may slow down the script).
 
 ## References:
-Several pieces of code, including the IMGT ripping / HMM generation, was sourced from ANARCI.
+Several methods for HMMER result parsing were sourced from ANARCI.
 
 [Dunbar J and Deane CM. ANARCI: Antigen receptor numbering and receptor classification. Bioinformatics (2016)](https://academic.oup.com/bioinformatics/article/32/2/298/1743894)

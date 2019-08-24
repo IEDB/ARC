@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="bio-arc",
-    version="0.0.8",
+    version="0.0.9",
     author="Austin Crinklaw",
     author_email="acrinklaw@lji.org",
     description="Antigen Receptor Classifier",
@@ -13,10 +13,12 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/iedb/arc",
     packages=setuptools.find_packages(),
-    package_data={'ARC': ['data/IgNAR/*', 'data/HMMs/*', 'data/MHC_HMMs/*', 'data/MRO_Gdomain.csv', 'data/*', 'data/blastdb/*', 'build_pipeline/*']},
+    package_data={'ARC': ['data/*']},
+    test_suite = 'tests',
     install_requires=[
         'pandas',
-        'biopython',],
+        'biopython',
+    ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
