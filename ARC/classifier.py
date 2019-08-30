@@ -28,8 +28,11 @@ import subprocess
 import tempfile
 
 from ARC.mhc_G_domain import mhc_G_domain
+from Bio.Alphabet import IUPAC
 from Bio.Blast.Applications import NcbiblastpCommandline
 from Bio.Blast import NCBIXML
+from Bio.Seq import Seq
+from Bio.SeqRecord import SeqRecord
 from Bio import SearchIO
 from Bio import SeqIO
 
@@ -44,9 +47,11 @@ class SeqClassifier:
     """
     def __init__(self, seqfile=None, outfile=None, hmm_score_threshold=100):
         """Inits SeqClassifier with necessary members"""
+        # Relative paths and IO handling
         self.package_directory = os.path.dirname(os.path.abspath(__file__))
         self.seqfile = seqfile
         self.outfile = outfile
+        # HMM related scores and files
         self.hmm_score_threshold = hmm_score_threshold
         self.mhc_I_hmm = os.path.join(self.package_directory,
                                       'data/MHC_HMMs/Pfam_MHC_I.hmm')
@@ -54,6 +59,7 @@ class SeqClassifier:
             self.package_directory, 'data/MHC_HMMs/Pfam_MHC_II_alpha.hmm')
         self.mhc_II_beta_hmm = os.path.join(
             self.package_directory, 'data/MHC_HMMs/Pfam_MHC_II_beta.hmm')
+        # G domain assignment files and IgNAR database
         self.mro_file = os.path.join(self.package_directory,
                                      'data/chain-sequence.tsv')
         self.mro_gdomain_file = os.path.join(self.package_directory,
@@ -482,6 +488,33 @@ class SeqClassifier:
                             return (None, None)
             else:
                 return (receptor, chain_type)
+
+    def gen_classify(self, seq, seq_id, mro_df=None):
+        """Returns BCR, TCR, or MHC class and chain type for input sequence
+
+        This method is for the web-server version, accepting string as input
+        rather than a biopython sequence record object
+
+        Args:
+            seq: string containing protein sequence of interest
+            seq_id: id of sequence (> in FASTA)
+            mro_df: dataframe containing the MRO data for allele assignment
+
+        Returns:
+            Receptor, chain type, and calculated MHC allele if applicable
+        """
+        seq_record = SeqRecord(Seq(seq, IUPAC.protein), id=seq_id)
+        g_domain = ""
+        calc_mhc_allele = ""
+        receptor, chain_type = self.assign_class(seq_record)
+        if receptor == "MHC-I" or receptor == "MHC-II":
+            g_domain = self.assign_Gdomain(str(seq_record.seq), seq_record.id)
+            if mro_df.empty:
+                mro_df = self.get_MRO_Gdomains(self.mro_file)
+            calc_mhc_allele = self.get_MRO_allele(mro_df, str(seq_record.seq),
+                                                  str(seq_record.description)) name="HokC",
+                   description="toxic membrane protein, small"
+        return receptor, chain_type, calc_mhc_allele
 
     def classify(self, seq_record, mro_df=None):
         """Returns BCR, TCR or MHC class and chain type for an input sequence.

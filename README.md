@@ -15,6 +15,14 @@ ARC can also be downloaded through PyPI using the following pip command.
 ```shell
 pip install bio-arc
 ```
+
+### Testing Installation:
+A quick check for proper dependencies and successful installation can be performed by navigating to your pip package install directory (which can be located by executing ```pip show bio-arc```) and running the following command:
+```shell
+python3 -m arc_test
+```
+Passing all unit-tests means that your system is configured properly and ready to classify some protein sequences.
+
 ## Usage:
 ### Input  
 -  A fasta format file with one or more protein sequences.  
@@ -58,7 +66,8 @@ python -m ARC classify -i /path/to/input.fasta -o /path/to/output.csv
 ## How it works:
 - BCR and TCR chains are identified using HMMs. A given protein sequence is searched against HMMs built using BCR and TCR chain sequences from IMGT. HMMER is used to align an input sequence to the HMMs.
 - MHC class I (alpha1-alpha2 domains) and MHC class I alpha and beta chain HMMs are downloaded from Pfam website. An input protein sequence is searched against these HMMs. A HMMER bit score threshold of 25 was used to identify MHC chain sequences.
--To identify MHC alleles, MRO repository is downloaded every time the script is run. Groove domains (G-domains) are assigned to new MRO allles and stored in a CSV file. If this file does not exist then G-domains are assigned to all the MRO alleles (which may slow down the script).
+- To identify MHC alleles, groove domains (G-domains) are assigned based on the MRO repository. 
+- IgNAR sequences are identified through querying against a custom blast database.
 
 ## References:
 Several methods for HMMER result parsing were sourced from ANARCI.
