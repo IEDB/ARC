@@ -1,0 +1,13 @@
+language: python
+python:
+  - 3.6
+
+services:
+  - docker
+
+install:
+  - docker build -t arc .
+  - docker run -d -p 127.0.0.1:80:80
+
+script:
+  - docker run -it --workdir /usr/local/lib/python3.6/dist-packages/ARC/tests/ arc python3 -m arc_test
