@@ -6,4 +6,4 @@ RUN apt-get update && \
     apt-get install -y ${PACKAGES} && \
     apt-get clean
 
-RUN pip3 install bio-arc
+RUN pip3 install bio-arc==0.0.16
