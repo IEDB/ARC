@@ -465,7 +465,6 @@ class SeqClassifier:
             self.run_hmmscan(seq_record, hmm_out)
             hmmer_query = SearchIO.read(hmm_out.name, 'hmmer3-text')
             hit_table, top_descriptions = self.parse_hmmer_query(hmmer_query)
-            print(hit_table)
             try:
                 score = int(hit_table[1][3] - 100)
             except:
