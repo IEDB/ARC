@@ -45,7 +45,7 @@ class SeqClassifier:
         outfile: Name of output file
         hmm_score_threshold: Minimum score for a hit against HMM to be significant
     """
-    def __init__(self, seqfile=None, outfile=None, hmm_score_threshold=100):
+    def __init__(self, seqfile=None, outfile=None, hmm_score_threshold=25):
         """Inits SeqClassifier with necessary members"""
         # Relative paths and IO handling
         self.package_directory = os.path.dirname(os.path.abspath(__file__))
@@ -194,7 +194,11 @@ class SeqClassifier:
                         # Add the last added to the descriptions list.
                         top_descriptions.append(
                             dict(zip(hit_table[0], hit_table[-1])))
-
+                else:
+                    hit_table.append([
+                        hsp.hit_id, hsp.hit_description, hsp.evalue, hsp.bitscore, hsp.bias, hsp.query_start, hsp.query_end
+                    ])
+                    return hit_table, top_descriptions
             # Reorder the domains according to the order they appear in the sequence.
             ordering = sorted(range(len(domains)),
                               key=lambda x: domains[x].query_start)
@@ -461,33 +465,43 @@ class SeqClassifier:
             self.run_hmmscan(seq_record, hmm_out)
             hmmer_query = SearchIO.read(hmm_out.name, 'hmmer3-text')
             hit_table, top_descriptions = self.parse_hmmer_query(hmmer_query)
+            print(hit_table)
+            try:
+                score = int(hit_table[1][3] - 100)
+            except:
+                score = int(0-100)
             receptor, chain_type = self.get_chain_type(top_descriptions)
 
             # We have no hits so now we check for MHC and IgNAR
             # This avoids excessive computations
             if not receptor or not chain_type:
                 if self.is_ignar(seq_record):
-                    return ("BCR", "IgNAR")
+                    return ("BCR", "IgNAR", 0)
                 mhc_I_score = None
                 mhc_I_score = self.is_MHC(str(seq_record.seq), self.mhc_I_hmm)
                 if mhc_I_score >= self.hmm_score_threshold:
-                    return ('MHC-I', 'alpha')
+                    return ('MHC-I', 'alpha', int(mhc_I_score - self.hmm_score_threshold))
                 else:
                     mhc_II_alpha_score = None
                     mhc_II_alpha_score = self.is_MHC(str(seq_record.seq),
                                                      self.mhc_II_alpha_hmm)
                     if mhc_II_alpha_score and mhc_II_alpha_score >= self.hmm_score_threshold:
-                        return ('MHC-II', 'alpha')
+                        return ('MHC-II', 'alpha', mhc_II_alpha_score - self.hmm_score_threshold)
                     else:
                         mhc_II_beta_score = None
                         mhc_II_beta_score = self.is_MHC(
                             str(seq_record.seq), self.mhc_II_beta_hmm)
                         if mhc_II_beta_score and mhc_II_beta_score >= self.hmm_score_threshold:
-                            return ('MHC-II', 'beta')
+                            return ('MHC-II', 'beta', int(mhc_II_beta_score - self.hmm_score_threshold))
                         else:
-                            return (None, None)
+                            if mhc_II_alpha_score == 0 and mhc_II_beta_score == 0:
+                                return (None, None, score)
+                            if mhc_II_alpha_score >= mhc_II_beta_score:
+                                return (None, None, int(mhc_II_alpha_score - self.hmm_score_threshold))
+                            else:
+                                return (None, None, int(mhc_II_beta_score - self.hmm_score_threshold))
             else:
-                return (receptor, chain_type)
+                return (receptor, chain_type, score)
 
     def gen_classify(self, seq, seq_id, mro_df=None):
         """Returns BCR, TCR, or MHC class and chain type for input sequence
@@ -512,8 +526,7 @@ class SeqClassifier:
             if mro_df.empty:
                 mro_df = self.get_MRO_Gdomains(self.mro_file)
             calc_mhc_allele = self.get_MRO_allele(mro_df, str(seq_record.seq),
-                                                  str(seq_record.description)) name="HokC",
-                   description="toxic membrane protein, small"
+                                                  str(seq_record.description))
         return receptor, chain_type, calc_mhc_allele
 
     def classify(self, seq_record, mro_df=None):
@@ -531,14 +544,14 @@ class SeqClassifier:
         """
         g_domain = ""
         calc_mhc_allele = ""
-        receptor, chain_type = self.assign_class(seq_record)
+        receptor, chain_type, score = self.assign_class(seq_record)
         if receptor == "MHC-I" or receptor == "MHC-II":
             g_domain = self.assign_Gdomain(str(seq_record.seq), seq_record.id)
             if mro_df.empty:
                 mro_df = self.get_MRO_Gdomains(self.mro_file)
             calc_mhc_allele = self.get_MRO_allele(mro_df, str(seq_record.seq),
                                                   str(seq_record.description))
-        return receptor, chain_type, calc_mhc_allele
+        return receptor, chain_type, calc_mhc_allele, score
 
     def classify_seqfile(self, seq_file):
         """Classifies the sequences in a FASTA format file
@@ -560,7 +573,7 @@ class SeqClassifier:
                     'Some input sequence was blank. Please check file integrity'
                 )
             if self.check_seq(seq):
-                receptor, chain_type, calc_mhc_allele = self.classify(
+                receptor, chain_type, calc_mhc_allele, score = self.classify(
                     seq, mro_df)
             else:
                 receptor, chain_type, calc_mhc_allele = ("", "", "")
@@ -568,6 +581,7 @@ class SeqClassifier:
             out.loc[cnt, 'class'] = receptor
             out.loc[cnt, 'chain_type'] = chain_type
             out.loc[cnt, 'calc_mhc_allele'] = calc_mhc_allele
+            out.loc[cnt, 'score'] = score
             cnt += 1
 
         out.to_csv(self.outfile, sep="\t", index=False)
