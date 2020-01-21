@@ -27,7 +27,7 @@ import re
 import subprocess
 import sys
 import os
-
+import tempfile
 
 class mhc_G_domain:
     """Assigns mhci_G, mhcii_alpha or mhcii_beta domains to a sequence
@@ -124,15 +124,14 @@ class mhc_G_domain:
         g_beta_db = 'data/blastdb/G_BETA.fasta'
         g_beta_db = os.path.join(os.path.dirname(__file__), g_beta_db)
 
-        seq_id = str(seqfile.split('.')[0])
-        alpha1_blout = self.run_blast(seqfile, g_alpha1_db,
-                                      seq_id + '_alpha1' + self.rand + '.out')
-        alpha2_blout = self.run_blast(seqfile, g_alpha2_db,
-                                      seq_id + '_alpha2' + self.rand + '.out')
-        alpha_blout = self.run_blast(seqfile, g_alpha_db,
-                                     seq_id + '_alpha' + self.rand + '.out')
-        beta_blout = self.run_blast(seqfile, g_beta_db,
-                                    seq_id + '_beta' + self.rand + '.out')
+        alpha1_file = tempfile.NamedTemporaryFile(delete=False)
+        alpha2_file = tempfile.NamedTemporaryFile(delete=False)
+        alpha_file = tempfile.NamedTemporaryFile(delete=False)
+        beta_file = tempfile.NamedTemporaryFile(delete=False)
+        alpha1_blout = self.run_blast(seqfile, g_alpha1_db, alpha1_file.name)
+        alpha2_blout = self.run_blast(seqfile, g_alpha2_db, alpha2_file.name)
+        alpha_blout = self.run_blast(seqfile, g_alpha_db, alpha_file.name)
+        beta_blout = self.run_blast(seqfile, g_beta_db, beta_file.name)
 
         return alpha1_blout, alpha2_blout, alpha_blout, beta_blout
 
@@ -210,16 +209,16 @@ class mhc_G_domain:
         #g_dom_db=os.path.join(os.path.dirname(__file__),  g_dom_db)
         b2m_db = 'data/blastdb/b2m.fasta'
         b2m_db = os.path.join(os.path.dirname(__file__), b2m_db)
-
+        blout_file = tempfile.NamedTemporaryFile(delete=False)
         #blout= self.run_blast(seqfile, g_dom_db, 'b2m_'+self.rand+'.out')
-        blout = self.run_blast(seqfile, b2m_db, 'b2m_' + self.rand + '.out',
+        blout = self.run_blast(seqfile, b2m_db, blout_file.name,
                                '90', pow(10, -50))
         if os.path.getsize(blout) > 0:
-            os.remove(blout)
+            os.unlink(blout)
             # return 1
             return 0
         else:
-            os.remove(blout)
+            os.unlink(blout)
             return 1
 
     def get_subseq(self, seq, dom_st, dom_end):
@@ -241,25 +240,25 @@ class mhc_G_domain:
             seq: protein sequence to retrieve G domain for
             seq_id: the sequence identifier (>"identifier" in FASTA)
         """
+        inpfile = tempfile.NamedTemporaryFile(delete=False) 
         if not seq_id:
             seq_id = 'tmp_seq' + self.rand
 
         g_domain = ''
-        inpfile = os.path.join(os.path.dirname(__file__),
-                               str(seq_id) + '.fasta')
-        inp = open(inpfile, 'wt')
+        #inpfile = os.path.join(os.path.dirname(__file__),
+        #                       str(seq_id) + '.fasta')
+        inp = open(inpfile.name, 'wt')
         print('>' + str(seq_id), file=inp)
         print(seq, file=inp)
         inp.close()
 
         # check if seq is b2m or mhc chain
-        b2m = self.check_b2m(inpfile)
+        b2m = self.check_b2m(inpfile.name)
         if b2m == 0:
-            os.remove(inpfile)
             return None
 
         alpha1_blout, alpha2_blout, alpha_blout, beta_blout = self.blast_all(
-            inpfile)
+            inpfile.name)
         res = self.get_all_domains(alpha1_blout, alpha2_blout, alpha_blout,
                                    beta_blout)
         if res:
@@ -274,19 +273,18 @@ class mhc_G_domain:
                     g_domain = dom1 + dom2
                 else:
                     g_domain = self.get_subseq(seq, st_end[0], st_end[1])
-
-                os.remove(inpfile)
-                os.remove(alpha1_blout)
-                os.remove(alpha2_blout)
-                os.remove(alpha_blout)
-                os.remove(beta_blout)
+                os.unlink(inpfile.name)
+                os.unlink(alpha1_blout)
+                os.unlink(alpha2_blout)
+                os.unlink(alpha_blout)
+                os.unlink(beta_blout)
                 return mhc_class, g_domain
         else:
-            os.remove(inpfile)
-            os.remove(alpha1_blout)
-            os.remove(alpha2_blout)
-            os.remove(alpha_blout)
-            os.remove(beta_blout)
+            os.unlink(inpfile.name)
+            os.unlink(alpha1_blout)
+            os.unlink(alpha2_blout)
+            os.unlink(alpha_blout)
+            os.unlink(beta_blout)
             return None
 
     def get_g_domain(self):
