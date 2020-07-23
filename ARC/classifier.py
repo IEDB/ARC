@@ -126,9 +126,9 @@ class SeqClassifier:
             if not seq_record.seq:
                 return False
             SeqIO.write(seq_record, temp_out.name, "fasta")
-
+            hmmer = self.hmmer_path + 'hmmscan'
             args = [
-                self.hmmer_path, 'hmmscan', '-o', hmm_out.name,
+                hmmer, '-o', hmm_out.name,
                 os.path.join(self.package_directory,
                              "data/HMMs/ALL_AND_C.hmm"), temp_out.name
             ]
@@ -410,7 +410,8 @@ class SeqClassifier:
         fp.flush()
 
         # Find MHC sequences
-        args = [self.hmmer_path, 'hmmscan', hmm, fp.name]
+        hmmer = self.hmmer_path + 'hmmscan'
+        args = [hmmer, hmm, fp.name]
         cmd = ' '.join(args)
         output = self.run_cmd(cmd)
         aln = [line.split() for line in output.splitlines()]
