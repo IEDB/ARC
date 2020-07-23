@@ -28,6 +28,13 @@ elif sys.argv[1] == "classify":
     prsr = argparse.ArgumentParser(
         prog='classify', description='Classify protein sequences using HMMs')
     prsr.add_argument(
+        '-p',
+        help="the number of threads to use (default=1)",
+        type=int,
+        metavar='num_threads',
+        default=1
+    )
+    prsr.add_argument(
         '-i',
         help="input file containing protein sequences in FASTA sequence format",
         type=str,
@@ -39,35 +46,12 @@ elif sys.argv[1] == "classify":
         type=str,
         metavar='outfile_name',
         required=True)
+    prsr.add_argument(
+        '-hmmer',
+        help="Path to your local HMMer installation",
+        type=str,
+        metavar='hmmer_path',
+        required=False)
     args = prsr.parse_args(sys.argv[2:])
-
-    classifier = SeqClassifier(args.i, args.o)
+    classifier = SeqClassifier(args.i, args.o, args.p, args.hmmer)
     classifier.classify_seqfile(args.i)
-
-# Note: These arguments are currently deprecated due to low volume of IMGT-ligm updates
-"""
-elif sys.argv[1] == "install":
-    prsr = argparse.ArgumentParser(
-        prog='install',
-        description=
-        'Build HMMs used for classification by downloading sequences from IMGT'
-    )
-    prsr.add_argument('-quiet',
-                      help="Suppress installation output",
-                      action='store_true',
-                      default=False)
-    args = prsr.parse_args(sys.argv[2:])
-
-    build.install(args.quiet)
-
-elif sys.argv[1] == "update":
-    prsr = argparse.ArgumentParser(
-        prog='update', description='Update HMMs used for classification')
-    prsr.add_argument('-archive',
-                      help='Choose to archive old HMMs',
-                      action='store_true',
-                      default=False)
-    args = prsr.parse_args(sys.argv[2:])
-
-    build.update(args.archive)
-"""

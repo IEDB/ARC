@@ -26,6 +26,8 @@ import pandas as pd
 import re
 import subprocess
 import tempfile
+import multiprocessing as mp
+from functools import reduce
 
 from ARC.mhc_G_domain import mhc_G_domain
 from Bio.Alphabet import IUPAC
@@ -45,14 +47,14 @@ class SeqClassifier:
         outfile: Name of output file
         hmm_score_threshold: Minimum score for a hit against HMM to be significant
     """
-    def __init__(self, seqfile=None, outfile=None, hmm_score_threshold=25):
+    def __init__(self, seqfile=None, outfile=None, threads=1, hmmer_path=None):
         """Inits SeqClassifier with necessary members"""
         # Relative paths and IO handling
         self.package_directory = os.path.dirname(os.path.abspath(__file__))
         self.seqfile = seqfile
         self.outfile = outfile
         # HMM related scores and files
-        self.hmm_score_threshold = hmm_score_threshold
+        self.hmm_score_threshold = 25
         self.mhc_I_hmm = os.path.join(self.package_directory,
                                       'data/MHC_HMMs/Pfam_MHC_I.hmm')
         self.mhc_II_alpha_hmm = os.path.join(
@@ -66,6 +68,13 @@ class SeqClassifier:
                                              'data/MRO_Gdomain.csv')
         self.ignar_db = os.path.join(self.package_directory,
                                      'data/IgNAR/IgNAR')
+        self.b2m_db = os.path.join(self.package_directory,
+                                   'data/blastdb/b2m.fasta')
+        self.num_threads = threads
+        if hmmer_path == None:
+            self.hmmer_path = ""
+        else:
+            self.hmmer_path = hmmer_path
 
     def check_seq(self, seq_record):
         """Checks validity of an amino acid sequence
@@ -119,7 +128,7 @@ class SeqClassifier:
             SeqIO.write(seq_record, temp_out.name, "fasta")
 
             args = [
-                'hmmscan', '-o', hmm_out.name,
+                self.hmmer_path, 'hmmscan', '-o', hmm_out.name,
                 os.path.join(self.package_directory,
                              "data/HMMs/ALL_AND_C.hmm"), temp_out.name
             ]
@@ -227,6 +236,7 @@ class SeqClassifier:
 
         ndomains = len(top_hits)
         top_domains = {x["id"].split("_")[1] for x in top_hits}
+        #print(top_domains)
         # These sets simplify checking for various conditions
         bcr_constant = {
             "KCC": "Kappa C",
@@ -375,7 +385,7 @@ class SeqClassifier:
                     'ch_g_dom': ''
                 }).apply(
                     lambda r: r['ch_g_dom'] != '' and
-                    (pdb_g_dom in r['ch_g_dom'] or r['ch_g_dom'] in pdb_g_dom),
+                    (pdb_g_dom in r['ch_g_dom'] and seq in r['Sequence'] or r['ch_g_dom'] in pdb_g_dom and r['Sequence'] in seq),
                     axis=1)]['Label'])).strip('[]').replace(',', '#')
             return mro_allele
         else:
@@ -400,7 +410,7 @@ class SeqClassifier:
         fp.flush()
 
         # Find MHC sequences
-        args = ['hmmscan', hmm, fp.name]
+        args = [self.hmmer_path, 'hmmscan', hmm, fp.name]
         cmd = ' '.join(args)
         output = self.run_cmd(cmd)
         aln = [line.split() for line in output.splitlines()]
@@ -420,6 +430,34 @@ class SeqClassifier:
         # close the file. When the file is closed it will be removed.
         fp.close()
         return score
+
+    def is_b2m(self, sequence):
+        """Checks if sequence is b2m
+        Uses BLAST as method rather than HMMER
+
+        Args:
+            sequence: Sequence to query
+        Returns:
+            True if sequence is b2m, False if sequence is not
+        """
+        hit_coverage = '75'
+        hit_perc_id = 0.50
+        with tempfile.NamedTemporaryFile(mode="w") as temp_in:
+            with tempfile.NamedTemporaryFile(mode="r") as outfile:
+                SeqIO.write(sequence, temp_in.name, "fasta")
+                blast_cmd = [
+                    'blastp', '-db', self.b2m_db, '-query', temp_in.name,
+                    '-evalue', '10e-4', '-qcov_hsp_perc', hit_coverage,
+                    '-outfmt', '5', '>', outfile.name
+                ]
+                self.run_cmd((' '.join(blast_cmd)))
+                res = NCBIXML.read(outfile).alignments
+                for alignment in res:
+                    for hsp in alignment.hsps:
+                        if float(hsp.identities) / float(
+                                hsp.align_length) > hit_perc_id:
+                            return True
+                return False
 
     def is_ignar(self, sequence):
         """Checks if sequence is shark antibody (IgNAR)
@@ -474,6 +512,8 @@ class SeqClassifier:
             # We have no hits so now we check for MHC and IgNAR
             # This avoids excessive computations
             if not receptor or not chain_type:
+                if self.is_b2m(seq_record):
+                    return ("B2M", "-", 0)
                 if self.is_ignar(seq_record):
                     return ("BCR", "IgNAR", 0)
                 mhc_I_score = None
@@ -552,6 +592,32 @@ class SeqClassifier:
                                                   str(seq_record.description))
         return receptor, chain_type, calc_mhc_allele, score
 
+    def classify_multiproc(self, seq_list):
+        out = pd.DataFrame(
+            columns=["id", "class", "chain_type", "calc_mhc_allele"])
+        cnt = 0
+        mro_df = self.get_MRO_Gdomains(self.mro_file)
+        for seq in seq_list:
+            if seq.seq == "":
+                raise Exception(
+                    'Some input sequence was blank. Please check file integrity'
+                )
+            if self.check_seq(seq):
+                receptor, chain_type, calc_mhc_allele, score = self.classify(
+                    seq, mro_df)
+            else:
+                raise Exception(
+                    'Some input sequence is invalid. Please check file integrity'
+                )
+            out.loc[cnt, 'id'] = seq.description
+            out.loc[cnt, 'class'] = receptor
+            out.loc[cnt, 'chain_type'] = chain_type
+            out.loc[cnt, 'calc_mhc_allele'] = calc_mhc_allele
+            out.loc[cnt, 'score'] = score
+            cnt += 1
+
+        return out
+
     def classify_seqfile(self, seq_file):
         """Classifies the sequences in a FASTA format file
 
@@ -562,25 +628,10 @@ class SeqClassifier:
             seq_file: the name of a FASTA file of sequences
         """
         seq_records = list(SeqIO.parse(seq_file, "fasta"))
-        out = pd.DataFrame(
-            columns=["id", "class", "chain_type", "calc_mhc_allele"])
-        cnt = 0
-        mro_df = self.get_MRO_Gdomains(self.mro_file)
-        for seq in seq_records:
-            if seq.seq == "":
-                raise Exception(
-                    'Some input sequence was blank. Please check file integrity'
-                )
-            if self.check_seq(seq):
-                receptor, chain_type, calc_mhc_allele, score = self.classify(
-                    seq, mro_df)
-            else:
-                receptor, chain_type, calc_mhc_allele = ("", "", "")
-            out.loc[cnt, 'id'] = seq.description
-            out.loc[cnt, 'class'] = receptor
-            out.loc[cnt, 'chain_type'] = chain_type
-            out.loc[cnt, 'calc_mhc_allele'] = calc_mhc_allele
-            out.loc[cnt, 'score'] = score
-            cnt += 1
+        pool = mp.Pool(processes=self.num_threads)
+        results = list(pool.map(self.classify_multiproc, np.array_split(seq_records, self.num_threads)))
+        pool.close()
+        pool.join()
+        out = pd.concat(results)
 
         out.to_csv(self.outfile, sep="\t", index=False)

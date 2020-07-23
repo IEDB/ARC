@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="bio-arc",
-    version="0.0.18",
+    version="0.0.19",
     author="Austin Crinklaw",
     author_email="acrinklaw@lji.org",
     description="Antigen Receptor Classifier",
