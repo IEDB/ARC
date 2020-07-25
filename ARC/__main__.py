@@ -52,6 +52,12 @@ elif sys.argv[1] == "classify":
         type=str,
         metavar='hmmer_path',
         required=False)
+    prsr.add_argument(
+        '-blast',
+        help="Path to your local blast installation",
+        type=str,
+        metavar='blast_path',
+        required=False)
     args = prsr.parse_args(sys.argv[2:])
-    classifier = SeqClassifier(args.i, args.o, args.p, args.hmmer)
+    classifier = SeqClassifier(args.i, args.o, args.p, args.hmmer, args.blast)
     classifier.classify_seqfile(args.i)

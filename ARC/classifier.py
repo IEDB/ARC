@@ -47,7 +47,7 @@ class SeqClassifier:
         outfile: Name of output file
         hmm_score_threshold: Minimum score for a hit against HMM to be significant
     """
-    def __init__(self, seqfile=None, outfile=None, threads=1, hmmer_path=None):
+    def __init__(self, seqfile=None, outfile=None, threads=1, hmmer_path=None, blast_path=None):
         """Inits SeqClassifier with necessary members"""
         # Relative paths and IO handling
         self.package_directory = os.path.dirname(os.path.abspath(__file__))
@@ -75,6 +75,10 @@ class SeqClassifier:
             self.hmmer_path = ""
         else:
             self.hmmer_path = hmmer_path
+        if blast_path == None:
+            self.blast_path = ""
+        else:
+            self.blast_path = blast_path
 
     def check_seq(self, seq_record):
         """Checks validity of an amino acid sequence
@@ -441,13 +445,14 @@ class SeqClassifier:
         Returns:
             True if sequence is b2m, False if sequence is not
         """
+        blast = self.blast_path + "blastp"
         hit_coverage = '75'
         hit_perc_id = 0.50
         with tempfile.NamedTemporaryFile(mode="w") as temp_in:
             with tempfile.NamedTemporaryFile(mode="r") as outfile:
                 SeqIO.write(sequence, temp_in.name, "fasta")
                 blast_cmd = [
-                    'blastp', '-db', self.b2m_db, '-query', temp_in.name,
+                    blast, '-db', self.b2m_db, '-query', temp_in.name,
                     '-evalue', '10e-4', '-qcov_hsp_perc', hit_coverage,
                     '-outfmt', '5', '>', outfile.name
                 ]
@@ -471,13 +476,14 @@ class SeqClassifier:
         Returns:
             True if sequence is IgNAR, False if sequence is not IgNAR
         """
+        blast = self.blast_path + 'blastp'
         hit_coverage = '75'
         hit_perc_id = 0.50
         with tempfile.NamedTemporaryFile(mode="w") as temp_in:
             with tempfile.NamedTemporaryFile(mode="r") as outfile:
                 SeqIO.write(sequence, temp_in.name, "fasta")
                 blast_cmd = [
-                    'blastp', '-db', self.ignar_db, '-query', temp_in.name,
+                    blast, '-db', self.ignar_db, '-query', temp_in.name,
                     '-evalue', '10e-4', '-qcov_hsp_perc', hit_coverage,
                     '-outfmt', '5', '>', outfile.name
                 ]
