@@ -635,10 +635,13 @@ class SeqClassifier:
             seq_file: the name of a FASTA file of sequences
         """
         seq_records = list(SeqIO.parse(seq_file, "fasta"))
-        pool = mp.Pool(processes=self.num_threads)
-        results = list(pool.map(self.classify_multiproc, np.array_split(seq_records, self.num_threads)))
-        pool.close()
-        pool.join()
+        if len(seq_records) == 1:
+            results = self.classify_multiproc(seq_records)
+        else:
+            pool = mp.Pool(processes=self.num_threads)
+            results = list(pool.map(self.classify_multiproc, np.array_split(seq_records, self.num_threads)))
+            pool.close()
+            pool.join()
         out = pd.concat(results)
 
         out.to_csv(self.outfile, sep="\t", index=False)
