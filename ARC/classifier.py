@@ -636,12 +636,12 @@ class SeqClassifier:
         """
         seq_records = list(SeqIO.parse(seq_file, "fasta"))
         if len(seq_records) == 1:
-            results = self.classify_multiproc(seq_records)
+            out = self.classify_multiproc(seq_records)
         else:
             pool = mp.Pool(processes=self.num_threads)
             results = list(pool.map(self.classify_multiproc, np.array_split(seq_records, self.num_threads)))
             pool.close()
             pool.join()
-        out = pd.concat(results)
+            out = pd.concat(results)
 
         out.to_csv(self.outfile, sep="\t", index=False)
