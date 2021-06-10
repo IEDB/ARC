@@ -1,0 +1,93 @@
+id	class	chain_type	calc_mhc_allele	score
+4WEU_D_heavy	BCR	Heavy V		107.0
+3BE1_H_heavy	BCR	Heavy V		90.0
+3BE1_L_light	BCR	construct		150.0
+5E94_B_heavy	BCR	Heavy V		69.0
+5E94_A_light	BCR	construct		158.0
+3G6J_F_heavy	BCR	Heavy V		86.0
+3G6J_E_light	BCR	construct		158.0
+4Y5V_A_heavy	BCR	Heavy V		103.0
+4Y5V_B_light	BCR	Lambda V		70.0
+4ORZ_C_heavy	BCR	Heavy V		87.0
+2ZJS_H_heavy	BCR	Heavy V		85.0
+2ZJS_L_light	BCR	construct		150.0
+4OCM_C_heavy	BCR	Heavy V		95.0
+1RJL_B_heavy	BCR	Heavy V		82.0
+1RJL_A_light	BCR	construct		142.0
+4C59_B_heavy	BCR	Heavy V		38.0
+4OCL_C_heavy	BCR	Heavy V		95.0
+4YGA_B_heavy	BCR	Heavy V		75.0
+5IP4_A_heavy	BCR	Heavy V		59.0
+5E8E_B_heavy	BCR	Heavy V		59.0
+5E8E_A_light	BCR	construct		149.0
+4QO1_A_heavy	BCR	Heavy V		79.0
+4NP4_I_heavy	BCR	Heavy V		74.0
+4NP4_M_light	BCR	construct		150.0
+4NP4_H_heavy	BCR	Heavy V		74.0
+4NP4_L_light	BCR	construct		150.0
+3CX5_J_heavy	BCR	Heavy V		69.0
+3CX5_K_light	BCR	Kappa V		68.0
+1HXY_A_alpha II HLA-DRA*01:01/DRB1*01:01	MHC-II	alpha	'HLA-DRA*01:01 chain'	93.9
+1HXY_B_beta II HLA-DRA*01:01/DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+1P1Z_A_alpha I H2-Kb	MHC-I	alpha		285.0
+1P1Z_B_b2m I H2-Kb	B2M	-		0.0
+1P4L_A_alpha I H2-Kb	MHC-I	alpha		285.0
+1P4L_B_b2m I H2-Kb	B2M	-		0.0
+2BSR_A_alpha I HLA-B*27:05	MHC-I	alpha	'HLA-B*27:05 chain'	296.0
+2BSR_B_b2m I HLA-B*27:05	B2M	-		0.0
+2BSS_A_alpha I HLA-B*27:05	MHC-I	alpha	'HLA-B*27:05 chain'	296.0
+2BSS_B_b2m I HLA-B*27:05	B2M	-		0.0
+2BST_A_alpha I HLA-B*27:05	MHC-I	alpha	'HLA-B*27:05 chain'	296.0
+2BST_B_b2m I HLA-B*27:05	B2M	-		0.0
+2AK4_Q_alpha I HLA-B*35:08	MHC-I	alpha	'HLA-B*35:08 chain'	289.0
+2AK4_R_b2m I HLA-B*35:08	B2M	-		0.0
+2G9H_A_alpha II HLA-DRA*01:01/DRB1*01:01	MHC-II	alpha	'HLA-DRA*01:01 chain'	93.9
+2G9H_B_beta II HLA-DRA*01:01/DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+2F74_A_alpha I H2-Db	MHC-I	alpha		276.0
+2F74_B_b2m I H2-Db	B2M	-		0.0
+2VAA_A_alpha I H2-Kb	MHC-I	alpha		285.0
+2VAA_B_b2m I H2-Kb	B2M	-		0.0
+2VAB_A_alpha I H2-Kb	MHC-I	alpha		285.0
+2VAB_B_b2m I H2-Kb	B2M	-		0.0
+2VE6_A_alpha I H2-Db	MHC-I	alpha		276.0
+2VE6_B_b2m I H2-Db	B2M	-		0.0
+4JFE_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4JFE_B_b2m I HLA-A*02:01	B2M	-		0.0
+4JFO_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4JFO_B_b2m I HLA-A*02:01	B2M	-		0.0
+4JFQ_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4JFQ_B_b2m I HLA-A*02:01	B2M	-		0.0
+4JFF_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+AAA37006.1				-100.0
+AAA37004.1				-100.0
+P04273.1				-100.0
+ABL75504.1				-100.0
+B34759				-100.0
+AAD55792.2				-100.0
+P10410.2				-100.0
+P47906.1				-100.0
+ESW96117.1				-100.0
+WP_013455750.1				-100.0
+NP_064400.1				-100.0
+AAC52208.1				-100.0
+AAT36662.1	BCR	Heavy V		68.0
+AAH11467.1				-100.0
+CAA35908.1				-100.0
+AAA62638.1	BCR	Heavy V		81.0
+BAC33939.1				-100.0
+NP_694799.1				-100.0
+CAB94217.1				-100.0
+CAA31273.1				-100.0
+AAA37241.1				-100.0
+AAA39998.1				-100.0
+AAC52411.1				-100.0
+BAA02854.1				-90.0
+AAI08400.1				-100.0
+AAM53974.1				-100.0
+Q02566.2				-100.0
+AAU50686.1				-82.0
+P11672.1				-100.0
+XP_001472105.1				-100.0
+NP_034269.2				-100.0
+AAI19067.1				-100.0
+1714374A				-100.0
