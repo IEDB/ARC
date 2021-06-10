@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.com/IEDB/ARC.svg?branch=master)](https://travis-ci.com/IEDB/ARC)
 
 # ARC (Antigen Receptor Classifier)
 ### Authors: Austin Crinklaw, Swapnil Mahajan
