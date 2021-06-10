@@ -30,7 +30,6 @@ import multiprocessing as mp
 from functools import reduce
 
 from ARC.mhc_G_domain import mhc_G_domain
-from Bio.Alphabet import IUPAC
 from Bio.Blast.Applications import NcbiblastpCommandline
 from Bio.Blast import NCBIXML
 from Bio.Seq import Seq
@@ -66,6 +65,7 @@ class SeqClassifier:
                                      'data/chain-sequence.tsv')
         self.mro_gdomain_file = os.path.join(self.package_directory,
                                              'data/MRO_Gdomain.csv')
+        self.mro_df = self.get_MRO_Gdomains(self.mro_file)
         self.ignar_db = os.path.join(self.package_directory,
                                      'data/IgNAR/IgNAR')
         self.b2m_db = os.path.join(self.package_directory,
@@ -303,6 +303,9 @@ class SeqClassifier:
         if ndomains >= 3 and top_domains.issubset(bcr_var.keys()):
             return ("BCR", "construct")
 
+        if ndomains >=2:
+            return ("Unknown", "construct")
+
         # Handle variable with constant
         if any(x in iter(tcr_constant) for x in iter(top_domains)):
             for x in iter(top_domains):
@@ -340,7 +343,7 @@ class SeqClassifier:
 
     def get_MRO_Gdomains(self, mro_TSVfile):
         """
-        Returns G doamins of the MRO chain sequences.
+        Returns G domains of the MRO chain sequences.
 
         Args:
             mro_TSVfile: Contains MHC alleles and their Gdom seqs
@@ -547,9 +550,11 @@ class SeqClassifier:
                             else:
                                 return (None, None, int(mhc_II_beta_score - self.hmm_score_threshold))
             else:
+                if score < 0:
+                    score = 0
                 return (receptor, chain_type, score)
 
-    def gen_classify(self, seq, seq_id, mro_df=None):
+    def gen_classify(self, seq, seq_id):
         """Returns BCR, TCR, or MHC class and chain type for input sequence
 
         This method is for the web-server version, accepting string as input
@@ -558,24 +563,21 @@ class SeqClassifier:
         Args:
             seq: string containing protein sequence of interest
             seq_id: id of sequence (> in FASTA)
-            mro_df: dataframe containing the MRO data for allele assignment
 
         Returns:
             Receptor, chain type, and calculated MHC allele if applicable
         """
-        seq_record = SeqRecord(Seq(seq, IUPAC.protein), id=seq_id)
+        seq_record = SeqRecord(Seq(seq), id=seq_id)
         g_domain = ""
         calc_mhc_allele = ""
-        receptor, chain_type = self.assign_class(seq_record)
+        receptor, chain_type, score = self.assign_class(seq_record)
         if receptor == "MHC-I" or receptor == "MHC-II":
             g_domain = self.assign_Gdomain(str(seq_record.seq), seq_record.id)
-            if mro_df.empty:
-                mro_df = self.get_MRO_Gdomains(self.mro_file)
-            calc_mhc_allele = self.get_MRO_allele(mro_df, str(seq_record.seq),
+            calc_mhc_allele = self.get_MRO_allele(self.mro_df, str(seq_record.seq),
                                                   str(seq_record.description))
         return receptor, chain_type, calc_mhc_allele
 
-    def classify(self, seq_record, mro_df=None):
+    def classify(self, seq_record):
         """Returns BCR, TCR or MHC class and chain type for an input sequence.
        
         If sequence is MHC, finds its g-domain and returns its corresponding
@@ -583,7 +585,6 @@ class SeqClassifier:
 
         Args:
             seq_record: a biopython sequence record object
-            mro_df: dataframe containing the MRO data for allele assignment from g-domain
 
         Returns:
             The receptor, chain type, and calculated MHC allele, if applicable
@@ -593,9 +594,7 @@ class SeqClassifier:
         receptor, chain_type, score = self.assign_class(seq_record)
         if receptor == "MHC-I" or receptor == "MHC-II":
             g_domain = self.assign_Gdomain(str(seq_record.seq), seq_record.id)
-            if mro_df.empty:
-                mro_df = self.get_MRO_Gdomains(self.mro_file)
-            calc_mhc_allele = self.get_MRO_allele(mro_df, str(seq_record.seq),
+            calc_mhc_allele = self.get_MRO_allele(self.mro_df, str(seq_record.seq),
                                                   str(seq_record.description))
         return receptor, chain_type, calc_mhc_allele, score
 
@@ -603,7 +602,6 @@ class SeqClassifier:
         out = pd.DataFrame(
             columns=["id", "class", "chain_type", "calc_mhc_allele"])
         cnt = 0
-        mro_df = self.get_MRO_Gdomains(self.mro_file)
         for seq in seq_list:
             if seq.seq == "":
                 raise Exception(
@@ -611,10 +609,10 @@ class SeqClassifier:
                 )
             if self.check_seq(seq):
                 receptor, chain_type, calc_mhc_allele, score = self.classify(
-                    seq, mro_df)
+                    seq)
             else:
                 raise Exception(
-                    'Some input sequence is invalid. Please check file integrity'
+                    f'{seq} Some input sequence is invalid. Please check file integrity'
                 )
             out.loc[cnt, 'id'] = seq.description
             out.loc[cnt, 'class'] = receptor
@@ -634,6 +632,7 @@ class SeqClassifier:
         Args:
             seq_file: the name of a FASTA file of sequences
         """
+        np.warnings.filterwarnings('ignore', category=np.VisibleDeprecationWarning)
         seq_records = list(SeqIO.parse(seq_file, "fasta"))
         if len(seq_records) == 1:
             out = self.classify_multiproc(seq_records)
