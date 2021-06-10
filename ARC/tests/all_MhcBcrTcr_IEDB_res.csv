@@ -1,0 +1,3519 @@
+id	class	chain_type	calc_mhc_allele	score
+4FQX_B_beta II HLA-DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+4GBX_B_beta II HLA-DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+1S9V_D_alpha II HLA-DQA1*05:01/DQB1*02:01	MHC-II	alpha	'HLA-DQA1*05:01 chain'	84.6
+1S9V_E_beta II HLA-DQA1*05:01/DQB1*02:01	MHC-II	beta	'HLA-DQB1*02:01 chain'	98.0
+1WBY_A_alpha I H2-Db	MHC-I	alpha		276.0
+1WBY_B_b2m I H2-Db	B2M	-		0.0
+1WBX_A_alpha I H2-Db	MHC-I	alpha		276.0
+1WBX_B_b2m I H2-Db	B2M	-		0.0
+1WBZ_A_alpha I H2-Kb	MHC-I	alpha		285.0
+1WBZ_B_b2m I H2-Kb	B2M	-		0.0
+1YDP_A_non classical non classical HLA-G*01:01	MHC-I	alpha	'HLA-G*01:01 chain'	290.0
+1YDP_B_non classical non classical HLA-G*01:01	B2M	-		0.0
+1HQR_A_alpha II HLA-DRA*01:01/DRB5*01:01	MHC-II	alpha	'HLA-DRA*01:01 chain'	93.9
+1HQR_B_beta II HLA-DRA*01:01/DRB5*01:01	MHC-II	beta	'HLA-DRB5*01:01 chain'	99.0
+1HXY_A_alpha II HLA-DRA*01:01/DRB1*01:01	MHC-II	alpha	'HLA-DRA*01:01 chain'	93.9
+1HXY_B_beta II HLA-DRA*01:01/DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+1P1Z_A_alpha I H2-Kb	MHC-I	alpha		285.0
+1P1Z_B_b2m I H2-Kb	B2M	-		0.0
+1P4L_A_alpha I H2-Kb	MHC-I	alpha		285.0
+1P4L_B_b2m I H2-Kb	B2M	-		0.0
+2BSR_A_alpha I HLA-B*27:05	MHC-I	alpha	'HLA-B*27:05 chain'	296.0
+2BSR_B_b2m I HLA-B*27:05	B2M	-		0.0
+2BSS_A_alpha I HLA-B*27:05	MHC-I	alpha	'HLA-B*27:05 chain'	296.0
+2BSS_B_b2m I HLA-B*27:05	B2M	-		0.0
+2BST_A_alpha I HLA-B*27:05	MHC-I	alpha	'HLA-B*27:05 chain'	296.0
+2BST_B_b2m I HLA-B*27:05	B2M	-		0.0
+2AK4_Q_alpha I HLA-B*35:08	MHC-I	alpha	'HLA-B*35:08 chain'	289.0
+2AK4_R_b2m I HLA-B*35:08	B2M	-		0.0
+2G9H_A_alpha II HLA-DRA*01:01/DRB1*01:01	MHC-II	alpha	'HLA-DRA*01:01 chain'	93.9
+2G9H_B_beta II HLA-DRA*01:01/DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+2F74_A_alpha I H2-Db	MHC-I	alpha		276.0
+2F74_B_b2m I H2-Db	B2M	-		0.0
+2VAA_A_alpha I H2-Kb	MHC-I	alpha		285.0
+2VAA_B_b2m I H2-Kb	B2M	-		0.0
+2VAB_A_alpha I H2-Kb	MHC-I	alpha		285.0
+2VAB_B_b2m I H2-Kb	B2M	-		0.0
+2VE6_A_alpha I H2-Db	MHC-I	alpha		276.0
+2VE6_B_b2m I H2-Db	B2M	-		0.0
+4JFE_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4JFE_B_b2m I HLA-A*02:01	B2M	-		0.0
+4JFO_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4JFO_B_b2m I HLA-A*02:01	B2M	-		0.0
+4JFQ_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4JFQ_B_b2m I HLA-A*02:01	B2M	-		0.0
+4JFF_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4JFF_B_b2m I HLA-A*02:01	B2M	-		0.0
+4JFD_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4JFD_B_b2m I HLA-A*02:01	B2M	-		0.0
+4JFP_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4JFP_B_b2m I HLA-A*02:01	B2M	-		0.0
+3C5J_B_beta II HLA-DRB3*03:01	MHC-II	beta	'HLA-DRB3*03:01 chain'	103.0
+1I4F_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1I4F_B_b2m I HLA-A*02:01	B2M	-		0.0
+3CPL_A_alpha I H2-Db	MHC-I	alpha		276.0
+3CPL_B_b2m I H2-Db	B2M	-		0.0
+4Z78_A_alpha I H2-Kd	MHC-I	alpha		282.0
+4Z78_B_b2m I H2-Kd	B2M	-		0.0
+4WDI_A_alpha I H2-Kd	MHC-I	alpha		282.0
+4WDI_B_b2m I H2-Kd	B2M	-		0.0
+4Z76_A_alpha I H2-Kd	MHC-I	alpha		282.0
+4Z76_B_b2m I H2-Kd	B2M	-		0.0
+3WL9_A_alpha I HLA-A*24:02	MHC-I	alpha	'HLA-A*24:02 chain'	287.0
+3WL9_B_b2m I HLA-A*24:02	B2M	-		0.0
+3WLB_A_alpha I HLA-A*24:02	MHC-I	alpha	'HLA-A*24:02 chain'	287.0
+3WLB_B_b2m I HLA-A*24:02	B2M	-		0.0
+1A9E_A_alpha I HLA-B*35:01	MHC-I	alpha	'HLA-B*35:01 chain'	287.0
+1A9E_B_b2m I HLA-B*35:01	B2M	-		0.0
+1A9B_A_alpha I HLA-B*35:01	MHC-I	alpha	'HLA-B*35:01 chain'	287.0
+1A9B_B_b2m I HLA-B*35:01	B2M	-		0.0
+1N3N_A_alpha I H2-Db	MHC-I	alpha		276.0
+1N3N_B_b2m I H2-Db	B2M	-		0.0
+2FO4_A_alpha I H2-Kb	MHC-I	alpha		285.0
+2FO4_B_b2m I H2-Kb	B2M	-		0.0
+4NT6_A_alpha I HLA-C*08:01	MHC-I	alpha	'HLA-C*08:01 chain'	295.0
+4NT6_B_b2m I HLA-C*08:01	B2M	-		0.0
+3NWM_A_alpha I H2-Kd	MHC-I	alpha		282.0
+3NWM_nan_b2m I H2-Kd	B2M	-		0.0
+3LV3_A_alpha I HLA-B*27:05	MHC-I	alpha	'HLA-B*27:05 chain'	296.0
+3LV3_B_b2m I HLA-B*27:05	B2M	-		0.0
+3B3I_A_alpha I HLA-B*27:09	MHC-I	alpha	'HLA-B*27:09 chain'	297.0
+3B3I_B_b2m I HLA-B*27:09	B2M	-		0.0
+3B6S_A_alpha I HLA-B*27:05	MHC-I	alpha	'HLA-B*27:05 chain'	296.0
+3B6S_B_b2m I HLA-B*27:05	B2M	-		0.0
+2XPG_A_alpha I HLA-A*03:01	MHC-I	alpha	'HLA-A*03:01 chain'	291.0
+2XPG_B_b2m I HLA-A*03:01	B2M	-		0.0
+3P4M_A_alpha I H2-Kb	MHC-I	alpha		285.0
+3P4M_B_b2m I H2-Kb	B2M	-		0.0
+3P4N_A_alpha I H2-Kb	MHC-I	alpha		285.0
+3P4N_B_b2m I H2-Kb	B2M	-		0.0
+3P4O_A_alpha I H2-Kb	MHC-I	alpha		285.0
+3P4O_B_b2m I H2-Kb	B2M	-		0.0
+2FWO_A_alpha I H2-Kd	MHC-I	alpha		282.0
+2FWO_B_b2m I H2-Kd	B2M	-		0.0
+6BIR_B_beta II HLA-DRB1*04:04	MHC-II	beta	'HLA-DRB1*04:04 chain'	102.0
+6BIX_B_beta II HLA-DRB1*04:04	MHC-II	beta	'HLA-DRB1*04:04 chain'	102.0
+6BIZ_B_beta II HLA-DRB1*04:04	MHC-II	beta	'HLA-DRB1*04:04 chain'	102.0
+6BIN_B_beta II HLA-DRB1*04:01	MHC-II	beta	'HLA-DRB1*04:01 chain'	103.0
+5NME_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5NME_B_b2m I HLA-A*02:01	B2M	-		0.0
+5NMF_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5NMF_B_b2m I HLA-A*02:01	B2M	-		0.0
+5NMG_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5NMG_B_b2m I HLA-A*02:01	B2M	-		0.0
+5NMH_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5NMH_B_b2m I HLA-A*02:01	B2M	-		0.0
+5WJL_A_nan I HLA-A*11:01	MHC-I	alpha	'HLA-A*11:01 chain'	295.0
+5WJL_B_nan I HLA-A*11:01	B2M	-		0.0
+5WKF_A_nan I HLA-A*11:01	MHC-I	alpha	'HLA-A*11:01 chain'	295.0
+5WKF_B_nan I HLA-A*11:01	B2M	-		0.0
+5WJN_A_nan I HLA-A*11:01	MHC-I	alpha	'HLA-A*11:01 chain'	295.0
+5WJN_B_nan I HLA-A*11:01	B2M	-		0.0
+5JLZ_A_alpha II HLA-DRA*01:01/DRB1*04:01	MHC-II	alpha	'HLA-DRA*01:01 chain'	93.9
+5JLZ_B_beta II HLA-DRA*01:01/DRB1*04:01	MHC-II	beta	'HLA-DRB1*04:01 chain'	103.0
+3VH8_A_alpha I HLA-B*57:01	MHC-I	alpha	'HLA-B*57:01 chain'	286.0
+3VH8_B_b2m I HLA-B*57:01	B2M	-		0.0
+4HUW_A_alpha I H2-Db	MHC-I	alpha		276.0
+4HUW_B_b2m I H2-Db	B2M	-		0.0
+4HUV_A_alpha I H2-Db	MHC-I	alpha		276.0
+4HUV_B_b2m I H2-Db	B2M	-		0.0
+4HUU_A_alpha I H2-Db	MHC-I	alpha		276.0
+4HUU_B_b2m I H2-Db	B2M	-		0.0
+5WKH_A_nan I HLA-A*11:01	MHC-I	alpha	'HLA-A*11:01 chain'	295.0
+5WKH_B_nan I HLA-A*11:01	B2M	-		0.0
+2YPK_A_alpha I HLA-B*57:01	MHC-I	alpha	'HLA-B*57:01 chain'	286.0
+2YPK_B_b2m I HLA-B*57:01	B2M	-		0.0
+2YPL_A_alpha I HLA-B*57:03	MHC-I	alpha	'HLA-B*57:03 chain'	288.0
+2YPL_B_b2m I HLA-B*57:03	B2M	-		0.0
+4HKJ_A_alpha I H2-Kb	MHC-I	alpha		285.0
+4HKJ_B_b2m I H2-Kb	B2M	-		0.0
+5E8N_A_alpha I H2-Db	MHC-I	alpha		276.0
+5E8N_B_b2m I H2-Db	B2M	-		0.0
+5E8P_A_alpha I H2-Db	MHC-I	alpha		276.0
+5E8P_B_b2m I H2-Db	B2M	-		0.0
+5E8O_A_alpha I H2-Db	MHC-I	alpha		276.0
+5E8O_B_b2m I H2-Db	B2M	-		0.0
+1QO3_A_alpha I H2-Dd	MHC-I	alpha		291.0
+1QO3_B_b2m I H2-Dd	B2M	-		0.0
+1AKJ_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1AKJ_B_b2m I HLA-A*02:01	B2M	-		0.0
+1BII_A_alpha I H2-Dd	MHC-I	alpha		291.0
+1BII_B_b2m I H2-Dd	B2M	-		0.0
+1DDH_A_alpha I H2-Dd	MHC-I	alpha		291.0
+1DDH_B_b2m I H2-Dd	B2M	-		0.0
+1I1Y_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1I1Y_B_b2m I HLA-A*02:01	B2M	-		0.0
+1I1F_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1I1F_B_b2m I HLA-A*02:01	B2M	-		0.0
+1ZVS_A_alpha I Mamu-A1*001:01	MHC-I	alpha		283.0
+1ZVS_B_b2m I Mamu-A1*001:01	B2M	-		0.0
+5NMK_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5NMK_B_b2m I HLA-A*02:01	B2M	-		0.0
+1A1N_A_alpha I HLA-B*35:01	MHC-I	alpha	'HLA-B*35:01 chain'	287.0
+1A1N_B_b2m I HLA-B*35:01	B2M	-		0.0
+1IM9_A_alpha I HLA-C*04:01	MHC-I	alpha	'HLA-C*04:01 chain'	293.0
+1IM9_B_b2m I HLA-C*04:01	B2M	-		0.0
+3FOL_A_alpha I H2-Kwm7	MHC-I	alpha		276.0
+3FOL_B_b2m I H2-Kwm7	B2M	-		0.0
+3FOM_A_alpha I H2-Kwm7	MHC-I	alpha		276.0
+3FOM_B_b2m I H2-Kwm7	B2M	-		0.0
+3LQZ_A_alpha II HLA-DPA1*01:03/DPB1*02:01	MHC-II	alpha	'HLA-DPA1*01:03 chain'	94.1
+3LQZ_B_beta II HLA-DPA1*01:03/DPB1*02:01	MHC-II	beta	'HLA-DPB1*02:01 chain'	88.0
+4WUU_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4WUU_B_b2m I HLA-A*02:01	B2M	-		0.0
+3QXD_B_beta II HLA-DRA*01:01 F54C mutant/DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+3QXA_A_alpha II HLA-DRA*01:01/DRB1*01:01	MHC-II	alpha	'HLA-DRA*01:01 chain'	93.9
+3QXA_B_beta II HLA-DRA*01:01/DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+5TEZ_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5TEZ_B_b2m I HLA-A*02:01	B2M	-		0.0
+1AQD_G_alpha II HLA-DRA*01:01/DRB1*01:01	MHC-II	alpha	'HLA-DRA*01:01 chain'	93.9
+1AQD_H_beta II HLA-DRA*01:01/DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+4MJI_A_alpha I HLA-B*51:01	MHC-I	alpha	'HLA-B*51:01 chain'	287.0
+4MJI_B_b2m I HLA-B*51:01	B2M	-		0.0
+1JK8_B_beta II HLA-DQB1*03:02	MHC-II	beta	'HLA-DQB1*03:02 chain'	98.0
+2ICW_B_beta II HLA-DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+1ZSD_A_alpha I HLA-B*35:01	MHC-I	alpha	'HLA-B*35:01 chain'	287.0
+1ZSD_B_b2m I HLA-B*35:01	B2M	-		0.0
+4K7F_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4K7F_B_b2m I HLA-A*02:01	B2M	-		0.0
+4PG2_A_alpha I H2-Db	MHC-I	alpha		276.0
+4PG2_C_b2m I H2-Db	B2M	-		0.0
+5IM7_A_alpha I HLA-B*58:01	MHC-I	alpha	'HLA-B*58:01 chain'	285.0
+5IM7_B_b2m I HLA-B*58:01	B2M	-		0.0
+3BO8_A_alpha I HLA-A*01:01	MHC-I	alpha	'HLA-A*01:01 chain'	285.0
+3BO8_B_b2m I HLA-A*01:01	B2M	-		0.0
+3D25_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3D25_B_b2m I HLA-A*02:01	B2M	-		0.0
+1P7Q_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1P7Q_B_b2m I HLA-A*02:01	B2M	-		0.0
+3CDG_A_non classical non classical HLA-E*01:03	MHC-I	alpha	'HLA-E*01:03 chain'	287.0
+3CDG_B_non classical non classical HLA-E*01:03	B2M	-		0.0
+3ECB_A_alpha I H2-Dd	MHC-I	alpha		291.0
+3ECB_B_b2m I H2-Dd	B2M	-		0.0
+3DMM_A_alpha I H2-Dd	MHC-I	alpha		291.0
+3DMM_B_b2m I H2-Dd	B2M	-		0.0
+3C8K_A_alpha I H2-Kb	MHC-I	alpha		285.0
+3C8K_B_b2m I H2-Kb	B2M	-		0.0
+3KLA_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3KLA_B_b2m I HLA-A*02:01	B2M	-		0.0
+3KYO_A_non classical non classical HLA-G*01:01	MHC-I	alpha	'HLA-G*01:01 chain'	290.0
+3KYO_B_non classical non classical HLA-G*01:01	B2M	-		0.0
+3KYN_A_non classical non classical HLA-G*01:01	MHC-I	alpha	'HLA-G*01:01 chain'	290.0
+3KYN_B_non classical non classical HLA-G*01:01	B2M	-		0.0
+3LV3_A_alpha I HLA-B*27:05	MHC-I	alpha	'HLA-B*27:05 chain'	296.0
+3LV3_B_b2m I HLA-B*27:05	B2M	-		0.0
+4L8D_A_alpha I H2-Db	MHC-I	alpha		276.0
+4L8D_B_b2m I H2-Db	B2M	-		0.0
+4L8C_A_alpha I H2-Db	MHC-I	alpha		276.0
+4L8C_B_b2m I H2-Db	B2M	-		0.0
+1BZ9_A_alpha I H2-Db	MHC-I	alpha		276.0
+1BZ9_B_b2m I H2-Db	B2M	-		0.0
+1B0G_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1B0G_B_b2m I HLA-A*02:01	B2M	-		0.0
+1JGE_A_alpha I HLA-B*27:05	MHC-I	alpha	'HLA-B*27:05 chain'	296.0
+1JGE_B_b2m I HLA-B*27:05	B2M	-		0.0
+1K5N_A_alpha I HLA-B*27:09	MHC-I	alpha	'HLA-B*27:09 chain'	297.0
+1K5N_B_b2m I HLA-B*27:09	B2M	-		0.0
+2QRI_A_alpha I H2-Kb	MHC-I	alpha		285.0
+2QRI_nan_b2m I H2-Kb	B2M	-		0.0
+2IPK_A_alpha II HLA-DRA*01:01/DRB1*01:01	MHC-II	alpha	'HLA-DRA*01:01 chain'	93.9
+2IPK_B_beta II HLA-DRA*01:01/DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+1SYV_A_alpha I HLA-B*44:05	MHC-I	alpha	'HLA-B*44:05 chain'	288.0
+1SYV_B_b2m I HLA-B*44:05	B2M	-		0.0
+1SYS_A_alpha I HLA-B*44:03	MHC-I	alpha	'HLA-B*44:03 chain'	284.0
+1SYS_B_b2m I HLA-B*44:03	B2M	-		0.0
+1G6R_H_alpha I H2-Kb	MHC-I	alpha		285.0
+1G6R_L_b2m I H2-Kb	B2M	-		0.0
+4L3E_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4L3E_B_b2m I HLA-A*02:01	B2M	-		0.0
+1LP9_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1LP9_B_b2m I HLA-A*02:01	B2M	-		0.0
+3MRG_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3MRG_B_b2m I HLA-A*02:01	B2M	-		0.0
+3MRH_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3MRH_B_b2m I HLA-A*02:01	B2M	-		0.0
+3MRL_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3MRL_B_b2m I HLA-A*02:01	B2M	-		0.0
+3MRO_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3MRO_B_b2m I HLA-A*02:01	B2M	-		0.0
+3MRR_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3MRR_B_b2m I HLA-A*02:01	B2M	-		0.0
+3MRC_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3MRC_B_b2m I HLA-A*02:01	B2M	-		0.0
+3BUY_A_alpha I H2-Db	MHC-I	alpha		276.0
+3BUY_B_b2m I H2-Db	B2M	-		0.0
+1FV1_A_alpha II HLA-DRA*01:01/DRB5*01:01	MHC-II	alpha	'HLA-DRA*01:01 chain'	93.9
+1FV1_B_beta II HLA-DRA*01:01/DRB5*01:01	MHC-II	beta	'HLA-DRB5*01:01 chain'	99.0
+1JHT_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1JHT_B_b2m I HLA-A*02:01	B2M	-		0.0
+1JF1_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1JF1_B_b2m I HLA-A*02:01	B2M	-		0.0
+2BNR_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2BNR_B_b2m I HLA-A*02:01	B2M	-		0.0
+2BNQ_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2BNQ_B_b2m I HLA-A*02:01	B2M	-		0.0
+3PGD_B_beta II HLA-DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+3PGC_B_beta II HLA-DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+3PDO_B_beta II HLA-DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+1OSZ_A_alpha I H2-Kb	MHC-I	alpha		285.0
+1OSZ_B_b2m I H2-Kb	B2M	-		0.0
+2ZOK_A_alpha I H2-Db	MHC-I	alpha		276.0
+2ZOK_B_b2m I H2-Db	B2M	-		0.0
+2ZOL_A_alpha I H2-Db	MHC-I	alpha		276.0
+2ZOL_B_b2m I H2-Db	B2M	-		0.0
+4GG6_A_alpha II HLA-DQA1*03:01/DQB1*03:02	MHC-II	alpha	'HLA-DQA1*03:01 chain'	96.1
+4GG6_B_beta II HLA-DQA1*03:01/DQB1*03:02	MHC-II	beta	'HLA-DQB1*03:02 chain'	98.0
+1Q94_A_alpha I HLA-A*11:01	MHC-I	alpha	'HLA-A*11:01 chain'	295.0
+1Q94_B_b2m I HLA-A*11:01	B2M	-		0.0
+1QVO_A_alpha I HLA-A*11:01	MHC-I	alpha	'HLA-A*11:01 chain'	295.0
+1QVO_B_b2m I HLA-A*11:01	B2M	-		0.0
+2D31_A_non classical non classical HLA-G*01:01	MHC-I	alpha	'HLA-G*01:01 chain'	290.0
+2D31_B_non classical non classical HLA-G*01:01	B2M	-		0.0
+2CLR_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2CLR_B_b2m I HLA-A*02:01	B2M	-		0.0
+1YMM_B_beta II HLA-DRB1*15:01	MHC-II	beta	'HLA-DRB1*15:01 chain'	107.0
+1D9K_C_alpha II H2-IAk	MHC-II	alpha		96.5
+1D9K_D_beta II H2-IAk	MHC-II	beta		93.0
+1ZGL_A_alpha II HLA-DRA*01:01/DRB5*01:01	MHC-II	alpha	'HLA-DRA*01:01 chain'	93.9
+1ZGL_B_beta II HLA-DRA*01:01/DRB5*01:01	MHC-II	beta	'HLA-DRB5*01:01 chain'	99.0
+2FSE_A_alpha II HLA-DRA*01:01/DRB1*01:01	MHC-II	alpha	'HLA-DRA*01:01 chain'	93.9
+2FSE_B_beta II HLA-DRA*01:01/DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+2IAN_B_beta II HLA-DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+2IAM_B_beta II HLA-DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+1S8D_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1S8D_B_b2m I HLA-A*02:01	B2M	-		0.0
+1T21_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1T21_B_b2m I HLA-A*02:01	B2M	-		0.0
+1T22_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1T22_B_b2m I HLA-A*02:01	B2M	-		0.0
+1T20_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1T20_B_b2m I HLA-A*02:01	B2M	-		0.0
+1T1X_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1T1X_B_b2m I HLA-A*02:01	B2M	-		0.0
+1T1Y_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1T1Y_B_b2m I HLA-A*02:01	B2M	-		0.0
+1T1Z_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1T1Z_B_b2m I HLA-A*02:01	B2M	-		0.0
+1T1W_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1T1W_B_b2m I HLA-A*02:01	B2M	-		0.0
+2A83_A_alpha I HLA-B*27:05	MHC-I	alpha	'HLA-B*27:05 chain'	296.0
+2A83_B_b2m I HLA-B*27:05	B2M	-		0.0
+1RK1_A_alpha I H2-Kb	MHC-I	alpha		285.0
+1RK1_B_b2m I H2-Kb	B2M	-		0.0
+1RK0_A_alpha I H2-Kb	MHC-I	alpha		285.0
+1RK0_B_b2m I H2-Kb	B2M	-		0.0
+4L8B_A_alpha I H2-Db	MHC-I	alpha		276.0
+4L8B_B_b2m I H2-Db	B2M	-		0.0
+1H15_A_alpha II HLA-DRA*01:01/DRB5*01:01	MHC-II	alpha	'HLA-DRA*01:01 chain'	93.9
+1H15_B_beta II HLA-DRA*01:01/DRB5*01:01	MHC-II	beta	'HLA-DRB5*01:01 chain'	99.0
+1YN6_A_alpha I H2-Db	MHC-I	alpha		276.0
+1YN6_B_b2m I H2-Db	B2M	-		0.0
+1X7Q_A_alpha I HLA-A*11:01	MHC-I	alpha	'HLA-A*11:01 chain'	295.0
+1X7Q_B_b2m I HLA-A*11:01	B2M	-		0.0
+2HN7_A_alpha I HLA-A*11:01	MHC-I	alpha	'HLA-A*11:01 chain'	295.0
+2HN7_B_b2m I HLA-A*11:01	B2M	-		0.0
+1U3H_C_alpha II H2-IAu	MHC-II	alpha		94.8
+1U3H_D_beta II H2-IAu	MHC-II	beta		88.0
+4HX1_A_alpha I HLA-A*68:02	MHC-I	alpha	'HLA-A*68:02 chain'	291.0
+4HX1_B_b2m I HLA-A*68:02	B2M	-		0.0
+4HWZ_A_alpha I HLA-A*68:01	MHC-I	alpha	'HLA-A*68:01 chain'	289.0
+4HWZ_B_b2m I HLA-A*68:01	B2M	-		0.0
+4GKS_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4GKS_B_b2m I HLA-A*02:01	B2M	-		0.0
+4GKN_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4GKN_B_b2m I HLA-A*02:01	B2M	-		0.0
+4I48_A_alpha I HLA-A*68:02	MHC-I	alpha	'HLA-A*68:02 chain'	291.0
+4I48_B_b2m I HLA-A*68:02	B2M	-		0.0
+2XFX_A_alpha I BoLA-6*01301	MHC-I	alpha	'BoLA-6*01301 chain'	276.0
+2XFX_B_b2m I BoLA-6*01301	B2M	-		0.0
+1KBG_H_alpha I H2-Kb	MHC-I	alpha		285.0
+1KBG_L_b2m I H2-Kb	B2M	-		0.0
+1G7Q_A_alpha I H2-Kb	MHC-I	alpha		285.0
+1G7Q_B_b2m I H2-Kb	B2M	-		0.0
+4NQV_A_alpha I HLA-A*01:01	MHC-I	alpha	'HLA-A*01:01 chain'	285.0
+4NQV_B_b2m I HLA-A*01:01	B2M	-		0.0
+4NQX_A_alpha I HLA-A*01:01	MHC-I	alpha	'HLA-A*01:01 chain'	285.0
+4NQX_B_b2m I HLA-A*01:01	B2M	-		0.0
+4MNQ_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4MNQ_B_b2m I HLA-A*02:01	B2M	-		0.0
+1UXS_A_alpha I HLA-B*27:05	MHC-I	alpha	'HLA-B*27:05 chain'	296.0
+1UXS_B_b2m I HLA-B*27:05	B2M	-		0.0
+1UXW_A_alpha I HLA-B*27:09	MHC-I	alpha	'HLA-B*27:09 chain'	297.0
+1UXW_B_b2m I HLA-B*27:09	B2M	-		0.0
+3LN4_A_alpha I HLA-B*41:03	MHC-I	alpha	'HLA-B*41:03 chain'	293.0
+3LN4_B_b2m I HLA-B*41:03	B2M	-		0.0
+3LN5_A_alpha I HLA-B*41:04	MHC-I	alpha	'HLA-B*41:04 chain'	292.0
+3LN5_B_b2m I HLA-B*41:04	B2M	-		0.0
+3FON_A_alpha I H2-Kwm7	MHC-I	alpha		276.0
+3FON_B_b2m I H2-Kwm7	B2M	-		0.0
+2BCK_A_alpha I HLA-A*24:02	MHC-I	alpha	'HLA-A*24:02 chain'	287.0
+2BCK_B_b2m I HLA-A*24:02	B2M	-		0.0
+2ZSV_A_alpha I H2-Kb	MHC-I	alpha		285.0
+2ZSV_B_b2m I H2-Kb	B2M	-		0.0
+1LD9_A_alpha I H2-Ld	MHC-I	alpha		284.0
+1LD9_B_b2m I H2-Ld	B2M	-		0.0
+1VAC_A_alpha I H2-Kb	MHC-I	alpha		285.0
+1VAC_B_b2m I H2-Kb	B2M	-		0.0
+1VAD_A_alpha I H2-Kb	MHC-I	alpha		285.0
+1VAD_B_b2m I H2-Kb	B2M	-		0.0
+2Q6W_B_beta II HLA-DRB3*01:01	MHC-II	beta	'HLA-DRB3*01:01 chain'	100.0
+2Z31_C_alpha II H2-IAu	MHC-II	alpha		94.8
+2Z31_D_beta II H2-IAu	MHC-II	beta		88.0
+2PXY_C_alpha II H2-IAu	MHC-II	alpha		94.8
+2PXY_D_beta II H2-IAu	MHC-II	beta		88.0
+3TIE_A_alpha I H2-Kb	MHC-I	alpha		285.0
+3TIE_B_b2m I H2-Kb	B2M	-		0.0
+3TID_A_alpha I H2-Kb	MHC-I	alpha		285.0
+3TID_B_b2m I H2-Kb	B2M	-		0.0
+1ZHB_A_alpha I H2-Db	MHC-I	alpha		276.0
+1ZHB_B_b2m I H2-Db	B2M	-		0.0
+2AK4_A_alpha I HLA-B*35:08	MHC-I	alpha	'HLA-B*35:08 chain'	289.0
+2AK4_B_b2m I HLA-B*35:08	B2M	-		0.0
+5JWE_A_alpha I H2-Db	MHC-I	alpha		276.0
+5JWE_B_b2m I H2-Db	B2M	-		0.0
+5JWD_A_alpha I H2-Db	MHC-I	alpha		276.0
+5JWD_B_b2m I H2-Db	B2M	-		0.0
+5DEG_A_alpha I HLA-B*27:06	MHC-I	alpha	'HLA-B*27:06 chain'	297.0
+5DEG_B_b2m I HLA-B*27:06	B2M	-		0.0
+5EU6_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5EU6_B_b2m I HLA-A*02:01	B2M	-		0.0
+5EU3_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5EU3_B_b2m I HLA-A*02:01	B2M	-		0.0
+5EU4_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5EU4_B_b2m I HLA-A*02:01	B2M	-		0.0
+5EU5_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5EU5_B_b2m I HLA-A*02:01	B2M	-		0.0
+3P9L_A_alpha I H2-Kb	MHC-I	alpha		285.0
+3P9L_B_b2m I H2-Kb	B2M	-		0.0
+3PAB_A_alpha I H2-Kb	MHC-I	alpha		285.0
+3PAB_B_b2m I H2-Kb	B2M	-		0.0
+5IND_A_alpha I HLA-B*58:01	MHC-I	alpha	'HLA-B*58:01 chain'	285.0
+5IND_B_b2m I HLA-B*58:01	B2M	-		0.0
+5INC_A_alpha I HLA-B*58:01	MHC-I	alpha	'HLA-B*58:01 chain'	285.0
+5INC_B_b2m I HLA-B*58:01	B2M	-		0.0
+3P9M_A_alpha I H2-Kb	MHC-I	alpha		285.0
+3P9M_B_b2m I H2-Kb	B2M	-		0.0
+5V5L_A_alpha I HLA-B*58:01	MHC-I	alpha	'HLA-B*58:01 chain'	285.0
+5V5L_B_b2m I HLA-B*58:01	B2M	-		0.0
+5V5M_A_alpha I HLA-B*57:01	MHC-I	alpha	'HLA-B*57:01 chain'	286.0
+5V5M_B_b2m I HLA-B*57:01	B2M	-		0.0
+1FFP_A_alpha I H2-Db	MHC-I	alpha		276.0
+1FFP_B_b2m I H2-Db	B2M	-		0.0
+1FFN_A_alpha I H2-Db	MHC-I	alpha		276.0
+1FFN_B_b2m I H2-Db	B2M	-		0.0
+1FFO_A_alpha I H2-Db	MHC-I	alpha		276.0
+1FFO_B_b2m I H2-Db	B2M	-		0.0
+3BW9_A_alpha I HLA-B*35:08	MHC-I	alpha	'HLA-B*35:08 chain'	289.0
+3BW9_B_b2m I HLA-B*35:08	B2M	-		0.0
+3BWA_A_alpha I HLA-B*35:08	MHC-I	alpha	'HLA-B*35:08 chain'	289.0
+3BWA_B_b2m I HLA-B*35:08	B2M	-		0.0
+2BVP_A_alpha I HLA-B*57:03	MHC-I	alpha	'HLA-B*57:03 chain'	288.0
+2BVP_B_b2m I HLA-B*57:03	B2M	-		0.0
+2BVO_A_alpha I HLA-B*57:03	MHC-I	alpha	'HLA-B*57:03 chain'	288.0
+2BVO_B_b2m I HLA-B*57:03	B2M	-		0.0
+2BVQ_A_alpha I HLA-B*57:03	MHC-I	alpha	'HLA-B*57:03 chain'	288.0
+2BVQ_B_b2m I HLA-B*57:03	B2M	-		0.0
+2HJK_A_alpha I HLA-B*57:03	MHC-I	alpha	'HLA-B*57:03 chain'	288.0
+2HJK_B_b2m I HLA-B*57:03	B2M	-		0.0
+2HJL_A_alpha I HLA-B*57:03	MHC-I	alpha	'HLA-B*57:03 chain'	288.0
+2HJL_B_b2m I HLA-B*57:03	B2M	-		0.0
+1AGE_A_alpha I HLA-B*08:01	MHC-I	alpha	'HLA-B*08:01 chain'	294.0
+1AGE_B_b2m I HLA-B*08:01	B2M	-		0.0
+1AGC_A_alpha I HLA-B*08:01	MHC-I	alpha	'HLA-B*08:01 chain'	294.0
+1AGC_B_b2m I HLA-B*08:01	B2M	-		0.0
+1AGF_A_alpha I HLA-B*08:01	MHC-I	alpha	'HLA-B*08:01 chain'	294.0
+1AGF_B_b2m I HLA-B*08:01	B2M	-		0.0
+1AGB_A_alpha I HLA-B*08:01	MHC-I	alpha	'HLA-B*08:01 chain'	294.0
+1AGB_B_b2m I HLA-B*08:01	B2M	-		0.0
+1AGD_A_alpha I HLA-B*08:01	MHC-I	alpha	'HLA-B*08:01 chain'	294.0
+1AGD_B_b2m I HLA-B*08:01	B2M	-		0.0
+3BGM_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3BGM_B_b2m I HLA-A*02:01	B2M	-		0.0
+3BH8_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3BH8_B_b2m I HLA-A*02:01	B2M	-		0.0
+3BH9_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3BH9_B_b2m I HLA-A*02:01	B2M	-		0.0
+3BHB_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3BHB_B_b2m I HLA-A*02:01	B2M	-		0.0
+2H6P_A_alpha I HLA-B*35:01	MHC-I	alpha	'HLA-B*35:01 chain'	287.0
+2H6P_B_b2m I HLA-B*35:01	B2M	-		0.0
+2FYY_A_alpha I HLA-B*35:01	MHC-I	alpha	'HLA-B*35:01 chain'	287.0
+2FYY_B_b2m I HLA-B*35:01	B2M	-		0.0
+1EFX_A_alpha I HLA-C*03:04	MHC-I	alpha	'HLA-C*03:04 chain'	293.0
+1EFX_B_b2m I HLA-C*03:04	B2M	-		0.0
+3W39_A_alpha I HLA-B*52:01	MHC-I	alpha	'HLA-B*52:01 chain'	288.0
+3W39_B_b2m I HLA-B*52:01	B2M	-		0.0
+3MRD_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3MRD_B_b2m I HLA-A*02:01	B2M	-		0.0
+3MRE_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3MRE_B_b2m I HLA-A*02:01	B2M	-		0.0
+1LK2_A_alpha I H2-Kb	MHC-I	alpha		285.0
+1LK2_B_b2m I H2-Kb	B2M	-		0.0
+3HPJ_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3HPJ_B_b2m I HLA-A*02:01	B2M	-		0.0
+1S7V_A_alpha I H2-Db	MHC-I	alpha		276.0
+1S7V_B_b2m I H2-Db	B2M	-		0.0
+1S7R_A_alpha I H2-Kb	MHC-I	alpha		285.0
+1S7R_B_b2m I H2-Kb	B2M	-		0.0
+1S7W_A_alpha I H2-Db	MHC-I	alpha		276.0
+1S7W_B_b2m I H2-Db	B2M	-		0.0
+1S7T_A_alpha I H2-Kb	MHC-I	alpha		285.0
+1S7T_B_b2m I H2-Kb	B2M	-		0.0
+1S7S_A_alpha I H2-Kb	MHC-I	alpha		285.0
+1S7S_B_b2m I H2-Kb	B2M	-		0.0
+1S7Q_A_alpha I H2-Kb	MHC-I	alpha		285.0
+1S7Q_B_b2m I H2-Kb	B2M	-		0.0
+1S7U_A_alpha I H2-Db	MHC-I	alpha		276.0
+1S7U_B_b2m I H2-Db	B2M	-		0.0
+1S7X_A_alpha I H2-Db	MHC-I	alpha		276.0
+1S7X_D_b2m I H2-Db	B2M	-		0.0
+1I7R_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1I7R_B_b2m I HLA-A*02:01	B2M	-		0.0
+1I7U_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1I7U_B_b2m I HLA-A*02:01	B2M	-		0.0
+1I7T_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1I7T_B_b2m I HLA-A*02:01	B2M	-		0.0
+4NO2_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4NO2_B_b2m I HLA-A*02:01	B2M	-		0.0
+4NO0_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4NO0_B_b2m I HLA-A*02:01	B2M	-		0.0
+4NO3_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4NO3_B_b2m I HLA-A*02:01	B2M	-		0.0
+4NO5_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4NO5_B_b2m I HLA-A*02:01	B2M	-		0.0
+4NNX_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4NNX_B_b2m I HLA-A*02:01	B2M	-		0.0
+4NNY_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4NNY_B_b2m I HLA-A*02:01	B2M	-		0.0
+3TF7_A_alpha I H2-Ld	MHC-I	alpha		284.0
+3TF7_nan_b2m I H2-Ld	B2M	-		0.0
+3TPU_E_alpha I H2-Ld	MHC-I	alpha		284.0
+3TPU_nan_b2m I H2-Ld	B2M	-		0.0
+3TFK_A_alpha I H2-Ld	MHC-I	alpha		284.0
+3TFK_nan_b2m I H2-Ld	B2M	-		0.0
+3TJH_A_alpha I H2-Ld	MHC-I	alpha		284.0
+3TJH_nan_b2m I H2-Ld	B2M	-		0.0
+1JUF_A_alpha I H2-Db	MHC-I	alpha		276.0
+1JUF_B_b2m I H2-Db	B2M	-		0.0
+1M6O_A_alpha I HLA-B*44:02	MHC-I	alpha	'HLA-B*44:02 chain'	286.0
+1M6O_B_b2m I HLA-B*44:02	B2M	-		0.0
+1N2R_A_alpha I HLA-B*44:03	MHC-I	alpha	'HLA-B*44:03 chain'	284.0
+1N2R_B_b2m I HLA-B*44:03	B2M	-		0.0
+1W0V_A_alpha I HLA-B*27:05	MHC-I	alpha	'HLA-B*27:05 chain'	296.0
+1W0V_B_b2m I HLA-B*27:05	B2M	-		0.0
+1W0W_A_alpha I HLA-B*27:09	MHC-I	alpha	'HLA-B*27:09 chain'	297.0
+1W0W_B_b2m I HLA-B*27:09	B2M	-		0.0
+1B0R_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1B0R_B_b2m I HLA-A*02:01	B2M	-		0.0
+1YN7_A_alpha I H2-Db	MHC-I	alpha		276.0
+1YN7_B_b2m I H2-Db	B2M	-		0.0
+1OF2_A_alpha I HLA-B*27:09	MHC-I	alpha	'HLA-B*27:09 chain'	297.0
+1OF2_B_b2m I HLA-B*27:09	B2M	-		0.0
+1OGT_A_alpha I HLA-B*27:05	MHC-I	alpha	'HLA-B*27:05 chain'	296.0
+1OGT_B_b2m I HLA-B*27:05	B2M	-		0.0
+1UVQ_A_alpha II HLA-DQA1*01:02/DQB1*06:02	MHC-II	alpha	'HLA-DQA1*01:02 chain'	95.0
+1UVQ_B_beta II HLA-DQA1*01:02/DQB1*06:02	MHC-II	beta	'HLA-DQB1*06:02 chain'	98.0
+3LKN_A_alpha I HLA-B*35:01	MHC-I	alpha	'HLA-B*35:01 chain'	287.0
+3LKN_B_b2m I HLA-B*35:01	B2M	-		0.0
+3LKO_A_alpha I HLA-B*35:01	MHC-I	alpha	'HLA-B*35:01 chain'	287.0
+3LKO_B_b2m I HLA-B*35:01	B2M	-		0.0
+3LKP_A_alpha I HLA-B*35:01	MHC-I	alpha	'HLA-B*35:01 chain'	287.0
+3LKP_B_b2m I HLA-B*35:01	B2M	-		0.0
+3LKQ_A_alpha I HLA-B*35:01	MHC-I	alpha	'HLA-B*35:01 chain'	287.0
+3LKQ_B_b2m I HLA-B*35:01	B2M	-		0.0
+3LKS_A_alpha I HLA-B*35:01	MHC-I	alpha	'HLA-B*35:01 chain'	287.0
+3LKS_B_b2m I HLA-B*35:01	B2M	-		0.0
+3LKR_A_alpha I HLA-B*35:01	MHC-I	alpha	'HLA-B*35:01 chain'	287.0
+3LKR_B_b2m I HLA-B*35:01	B2M	-		0.0
+1A1O_A_alpha I HLA-B*53:01	MHC-I	alpha	'HLA-B*53:01 chain'	286.0
+1A1O_B_b2m I HLA-B*53:01	B2M	-		0.0
+1A1M_A_alpha I HLA-B*53:01	MHC-I	alpha	'HLA-B*53:01 chain'	286.0
+1A1M_B_b2m I HLA-B*53:01	B2M	-		0.0
+2RFX_A_alpha I HLA-B*57:01	MHC-I	alpha	'HLA-B*57:01 chain'	286.0
+2RFX_B_b2m I HLA-B*57:01	B2M	-		0.0
+4NO5_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4NO5_B_b2m I HLA-A*02:01	B2M	-		0.0
+4NNX_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4NNX_B_b2m I HLA-A*02:01	B2M	-		0.0
+4NNY_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4NNY_B_b2m I HLA-A*02:01	B2M	-		0.0
+4NO2_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4NO2_B_b2m I HLA-A*02:01	B2M	-		0.0
+4NO0_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4NO0_B_b2m I HLA-A*02:01	B2M	-		0.0
+4NO3_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4NO3_B_b2m I HLA-A*02:01	B2M	-		0.0
+5B38_A_alpha I HLA-B*57:01	MHC-I	alpha	'HLA-B*57:01 chain'	286.0
+5B38_B_b2m I HLA-B*57:01	B2M	-		0.0
+5B39_A_alpha I HLA-B*57:01	MHC-I	alpha	'HLA-B*57:01 chain'	286.0
+5B39_B_b2m I HLA-B*57:01	B2M	-		0.0
+3PQY_A_alpha I H2-Db	MHC-I	alpha		276.0
+3PQY_B_b2m I H2-Db	B2M	-		0.0
+5WET_A_alpha I H2-Dd	MHC-I	alpha		291.0
+5WET_B_b2m I H2-Dd	B2M	-		0.0
+5WEU_A_alpha I H2-Dd	MHC-I	alpha		291.0
+5WEU_B_b2m I H2-Dd	B2M	-		0.0
+1DLH_B_beta II HLA-DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+1K2D_A_alpha II H2-IAu	MHC-II	alpha		94.8
+1K2D_B_beta II H2-IAu	MHC-II	beta		88.0
+2OJE_B_beta II HLA-DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+4PV9_A_alpha I H2-Kb	MHC-I	alpha		285.0
+4PV9_B_b2m I H2-Kb	B2M	-		0.0
+4PV8_A_alpha I H2-Kb	MHC-I	alpha		285.0
+4PV8_B_b2m I H2-Kb	B2M	-		0.0
+1KPR_A_non classical non classical HLA-E*01:03	MHC-I	alpha	'HLA-E*01:03 chain'	287.0
+1KPR_B_non classical non classical HLA-E*01:03	B2M	-		0.0
+1KTL_A_non classical non classical HLA-E*01:03	MHC-I	alpha	'HLA-E*01:03 chain'	287.0
+1KTL_B_non classical non classical HLA-E*01:03	B2M	-		0.0
+1G7P_A_alpha I H2-Kb	MHC-I	alpha		285.0
+1G7P_B_b2m I H2-Kb	B2M	-		0.0
+2ZSW_A_alpha I H2-Kb	MHC-I	alpha		285.0
+2ZSW_H_b2m I H2-Kb	B2M	-		0.0
+3MGT_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3MGT_B_b2m I HLA-A*02:01	B2M	-		0.0
+1MUJ_A_alpha II H2-IAb	MHC-II	alpha		100.9
+1MUJ_B_beta II H2-IAb	MHC-II	beta		104.0
+4H1L_B_beta II HLA-DRB3*03:01	MHC-II	beta	'HLA-DRB3*03:01 chain'	103.0
+3I6G_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3I6G_B_b2m I HLA-A*02:01	B2M	-		0.0
+3I6K_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3I6K_B_b2m I HLA-A*02:01	B2M	-		0.0
+3VJ6_A_non classical non classical H2-Qa-1b	MHC-I	alpha	'H2-Qa-1b chain'	279.0
+2F53_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2F53_B_b2m I HLA-A*02:01	B2M	-		0.0
+2F54_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2F54_B_b2m I HLA-A*02:01	B2M	-		0.0
+2F54_F_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2F54_G_b2m I HLA-A*02:01	B2M	-		0.0
+4OZI_A_alpha II HLA-DQA1*05:01/DQB1*02:01	MHC-II	alpha	'HLA-DQA1*05:01 chain'	84.6
+4OZI_B_beta II HLA-DQA1*05:01/DQB1*02:01	MHC-II	beta	'HLA-DQB1*02:01 chain'	98.0
+4OZH_A_alpha II HLA-DQA1*05:01/DQB1*02:01	MHC-II	alpha	'HLA-DQA1*05:01 chain'	84.6
+4OZH_B_beta II HLA-DQA1*05:01/DQB1*02:01	MHC-II	beta	'HLA-DQB1*02:01 chain'	98.0
+4OZG_A_alpha II HLA-DQA1*05:01/DQB1*02:01	MHC-II	alpha	'HLA-DQA1*05:01 chain'	84.6
+4OZG_B_beta II HLA-DQA1*05:01/DQB1*02:01	MHC-II	beta	'HLA-DQB1*02:01 chain'	98.0
+2AXG_A_alpha I HLA-B*35:01	MHC-I	alpha	'HLA-B*35:01 chain'	287.0
+2AXG_B_b2m I HLA-B*35:01	B2M	-		0.0
+2AXF_A_alpha I HLA-B*35:08	MHC-I	alpha	'HLA-B*35:08 chain'	289.0
+2AXF_B_b2m I HLA-B*35:08	B2M	-		0.0
+3L6F_A_alpha II HLA-DRA*01:01/DRB1*01:01	MHC-II	alpha	'HLA-DRA*01:01 chain'	93.9
+3L6F_B_beta II HLA-DRA*01:01/DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+2VLL_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2VLL_B_b2m I HLA-A*02:01	B2M	-		0.0
+2VLJ_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2VLJ_B_b2m I HLA-A*02:01	B2M	-		0.0
+2VLK_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2VLK_B_b2m I HLA-A*02:01	B2M	-		0.0
+4F7M_A_alpha I HLA-A*24:02	MHC-I	alpha	'HLA-A*24:02 chain'	287.0
+4F7M_B_b2m I HLA-A*24:02	B2M	-		0.0
+4F7P_A_alpha I HLA-A*24:02	MHC-I	alpha	'HLA-A*24:02 chain'	287.0
+4F7P_B_b2m I HLA-A*24:02	B2M	-		0.0
+4F7T_A_alpha I HLA-A*24:02	MHC-I	alpha	'HLA-A*24:02 chain'	287.0
+4F7T_B_b2m I HLA-A*24:02	B2M	-		0.0
+5JZI_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5JZI_B_b2m I HLA-A*02:01	B2M	-		0.0
+5SWQ_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5SWQ_B_b2m I HLA-A*02:01	B2M	-		0.0
+2GTZ_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2GTZ_B_b2m I HLA-A*02:01	B2M	-		0.0
+2GUO_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2GUO_B_b2m I HLA-A*02:01	B2M	-		0.0
+2GTZ_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2GTZ_B_b2m I HLA-A*02:01	B2M	-		0.0
+2GTW_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2GTW_B_b2m I HLA-A*02:01	B2M	-		0.0
+2GT9_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2GT9_B_b2m I HLA-A*02:01	B2M	-		0.0
+2GUO_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2GUO_B_b2m I HLA-A*02:01	B2M	-		0.0
+1EEY_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1EEY_B_b2m I HLA-A*02:01	B2M	-		0.0
+1EEZ_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1EEZ_B_b2m I HLA-A*02:01	B2M	-		0.0
+1EEZ_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1EEZ_B_b2m I HLA-A*02:01	B2M	-		0.0
+3FQX_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3FQX_B_b2m I HLA-A*02:01	B2M	-		0.0
+3FQN_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3FQN_B_b2m I HLA-A*02:01	B2M	-		0.0
+3FQR_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3FQR_B_b2m I HLA-A*02:01	B2M	-		0.0
+3FQT_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3FQT_B_b2m I HLA-A*02:01	B2M	-		0.0
+3FQW_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3FQW_B_b2m I HLA-A*02:01	B2M	-		0.0
+3FQU_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3FQU_B_b2m I HLA-A*02:01	B2M	-		0.0
+5BRZ_A_alpha I HLA-A*01:01	MHC-I	alpha	'HLA-A*01:01 chain'	285.0
+5BRZ_B_b2m I HLA-A*01:01	B2M	-		0.0
+5BS0_A_alpha I HLA-A*01:01	MHC-I	alpha	'HLA-A*01:01 chain'	285.0
+5BS0_B_b2m I HLA-A*01:01	B2M	-		0.0
+2C7U_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2C7U_B_b2m I HLA-A*02:01	B2M	-		0.0
+5DEF_A_alpha I HLA-B*27:04	MHC-I	alpha	'HLA-B*27:04 chain'	296.0
+5DEF_B_b2m I HLA-B*27:04	B2M	-		0.0
+3QQ4_A_alpha I SLA-1*04:01	MHC-I	alpha		260.0
+3QQ4_B_b2m I SLA-1*04:01	B2M	-		0.0
+3QQ3_A_alpha I SLA-1*04:01	MHC-I	alpha		260.0
+3QQ3_B_b2m I SLA-1*04:01	B2M	-		0.0
+1IAO_A_alpha II H2-IAd	MHC-II	alpha		92.1
+1IAO_B_beta II H2-IAd	MHC-II	beta		103.0
+2IAD_A_alpha II H2-IAd	MHC-II	alpha		92.1
+2IAD_B_beta II H2-IAd	MHC-II	beta		103.0
+4ZUW_A_alpha I Eqca-N*00601	MHC-I	alpha		287.0
+2VLR_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2VLR_B_b2m I HLA-A*02:01	B2M	-		0.0
+3RGV_C_alpha I H2-Kb	MHC-I	alpha		285.0
+3RGV_D_b2m I H2-Kb	B2M	-		0.0
+3QFD_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3QFD_B_b2m I HLA-A*02:01	B2M	-		0.0
+3ERY_A_alpha I H2-Ld	MHC-I	alpha		284.0
+3ERY_nan_b2m I H2-Ld	B2M	-		0.0
+2X4T_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2X4T_B_b2m I HLA-A*02:01	B2M	-		0.0
+2V2X_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2V2X_B_b2m I HLA-A*02:01	B2M	-		0.0
+2V2W_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2V2W_B_b2m I HLA-A*02:01	B2M	-		0.0
+3ROL_A_alpha I H2-Kb	MHC-I	alpha		285.0
+3ROL_B_b2m I H2-Kb	B2M	-		0.0
+1S9X_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1S9X_B_b2m I HLA-A*02:01	B2M	-		0.0
+1S9W_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1S9W_B_b2m I HLA-A*02:01	B2M	-		0.0
+1S9Y_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1S9Y_B_b2m I HLA-A*02:01	B2M	-		0.0
+2WBJ_A_alpha II HLA-DRA*01:01/DRB1*15:01	MHC-II	alpha	'HLA-DRA*01:01 chain'	93.9
+2WBJ_B_beta II HLA-DRA*01:01/DRB1*15:01	MHC-II	beta	'HLA-DRB1*15:01 chain'	107.0
+3FTG_A_alpha I H2-Db	MHC-I	alpha		276.0
+3FTG_B_b2m I H2-Db	B2M	-		0.0
+3WEX_A_alpha II HLA-DPA1*02:02/DPB1*05:01	MHC-II	alpha	'HLA-DPA1*02:02 chain'	86.5
+3WEX_B_beta II HLA-DPA1*02:02/DPB1*05:01	MHC-II	beta	'HLA-DPB1*05:01 chain'	90.0
+3GSQ_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3GSQ_B_b2m I HLA-A*02:01	B2M	-		0.0
+3GSW_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3GSW_B_b2m I HLA-A*02:01	B2M	-		0.0
+3GSX_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3GSX_B_b2m I HLA-A*02:01	B2M	-		0.0
+3GSU_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3GSU_B_b2m I HLA-A*02:01	B2M	-		0.0
+3GSR_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3GSR_B_b2m I HLA-A*02:01	B2M	-		0.0
+3GSV_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3GSV_B_b2m I HLA-A*02:01	B2M	-		0.0
+3GSO_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3GSO_B_b2m I HLA-A*02:01	B2M	-		0.0
+4JRY_A_alpha I HLA-B*35:08	MHC-I	alpha	'HLA-B*35:08 chain'	289.0
+4JRY_B_b2m I HLA-B*35:08	B2M	-		0.0
+4JRX_A_alpha I HLA-B*35:08	MHC-I	alpha	'HLA-B*35:08 chain'	289.0
+4JRX_B_b2m I HLA-B*35:08	B2M	-		0.0
+1LO5_B_beta II HLA-DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+3UTQ_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3UTQ_B_b2m I HLA-A*02:01	B2M	-		0.0
+4I4W_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4I4W_B_b2m I HLA-A*02:01	B2M	-		0.0
+5VGE_A_alpha I HLA-C*07:02	MHC-I	alpha	'HLA-C*07:02 chain'	287.0
+5VGE_B_b2m I HLA-C*07:02	B2M	-		0.0
+5VGD_A_alpha I HLA-C*05:01	MHC-I	alpha	'HLA-C*05:01 chain'	297.0
+5VGD_B_b2m I HLA-C*05:01	B2M	-		0.0
+5XS3_A_alpha I HLA-C*06:02	MHC-I	alpha	'HLA-C*06:02 chain'	299.0
+5XS3_B_b2m I HLA-C*06:02	B2M	-		0.0
+5V4M_F_beta II HLA-DRB1*15:01	MHC-II	beta	'HLA-DRB1*15:01 chain'	107.0
+5V4N_D_alpha II HLA-DRA*01:01/DRB1*01:01	MHC-II	alpha	'HLA-DRA*01:01 chain'	93.9
+5V4N_F_beta II HLA-DRA*01:01/DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+5ISZ_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5ISZ_B_b2m I HLA-A*02:01	B2M	-		0.0
+5JHD_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5JHD_B_b2m I HLA-A*02:01	B2M	-		0.0
+5GSV_A_alpha I H2-Kd	MHC-I	alpha		282.0
+5GSV_B_b2m I H2-Kd	B2M	-		0.0
+5GSB_A_alpha I H2-Kd	MHC-I	alpha		282.0
+5GSB_B_b2m I H2-Kd	B2M	-		0.0
+5GSX_A_alpha I H2-Kd	MHC-I	alpha		282.0
+5GSX_B_b2m I H2-Kd	B2M	-		0.0
+5GR7_A_alpha I H2-Kd	MHC-I	alpha		282.0
+5GR7_B_b2m I H2-Kd	B2M	-		0.0
+5GSR_A_alpha I H2-Kd	MHC-I	alpha		282.0
+5GSR_B_b2m I H2-Kd	B2M	-		0.0
+5ENW_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5ENW_B_b2m I HLA-A*02:01	B2M	-		0.0
+5F7D_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5F7D_B_b2m I HLA-A*02:01	B2M	-		0.0
+5FA3_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5FA3_B_b2m I HLA-A*02:01	B2M	-		0.0
+5EOT_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5EOT_B_b2m I HLA-A*02:01	B2M	-		0.0
+5F9J_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5F9J_B_b2m I HLA-A*02:01	B2M	-		0.0
+5FDW_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5FDW_B_b2m I HLA-A*02:01	B2M	-		0.0
+5FA4_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5FA4_B_b2m I HLA-A*02:01	B2M	-		0.0
+5EUO_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5EUO_B_b2m I HLA-A*02:01	B2M	-		0.0
+5KSU_A_alpha II HLA-DQA1*05:01/DQB1*02:01	MHC-II	alpha	'HLA-DQA1*05:01 chain'	84.6
+5KSU_B_beta II HLA-DQA1*05:01/DQB1*02:01	MHC-II	beta	'HLA-DQB1*02:01 chain'	98.0
+5KSV_A_alpha II HLA-DQA1*05:01/DQB1*02:01	MHC-II	alpha	'HLA-DQA1*05:01 chain'	84.6
+5KSV_B_beta II HLA-DQA1*05:01/DQB1*02:01	MHC-II	beta	'HLA-DQB1*02:01 chain'	98.0
+5KSA_A_alpha II HLA-DQA1*05:01/DQB1*03:02	MHC-II	alpha	'HLA-DQA1*05:01 chain'	84.6
+5KSA_B_beta II HLA-DQA1*05:01/DQB1*03:02	MHC-II	beta	'HLA-DQB1*03:02 chain'	98.0
+5LAX_A_alpha II HLA-DRA*01:01/DRB1*04:01	MHC-II	alpha	'HLA-DRA*01:01 chain'	93.9
+5LAX_B_beta II HLA-DRA*01:01/DRB1*04:01	MHC-II	beta	'HLA-DRB1*04:01 chain'	103.0
+5KSB_A_alpha II HLA-DQA1*05:01/DQB1*03:02	MHC-II	alpha	'HLA-DQA1*05:01 chain'	84.6
+5KSB_B_beta II HLA-DQA1*05:01/DQB1*03:02	MHC-II	beta	'HLA-DQB1*03:02 chain'	98.0
+5KS9_A_alpha II HLA-DQA1*03:01/DQB1*03:02	MHC-II	alpha	'HLA-DQA1*03:01 chain'	96.1
+5KS9_B_beta II HLA-DQA1*03:01/DQB1*03:02	MHC-II	beta	'HLA-DQB1*03:02 chain'	98.0
+5HHP_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5HHP_B_b2m I HLA-A*02:01	B2M	-		0.0
+5HHQ_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5HHQ_B_b2m I HLA-A*02:01	B2M	-		0.0
+5HHN_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5HHN_B_b2m I HLA-A*02:01	B2M	-		0.0
+5HHO_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5HHO_B_b2m I HLA-A*02:01	B2M	-		0.0
+5HHM_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5HHM_B_b2m I HLA-A*02:01	B2M	-		0.0
+4Y19_B_beta II HLA-DRB1*04:01	MHC-II	beta	'HLA-DRB1*04:01 chain'	103.0
+3ROO_A_alpha I H2-Kb	MHC-I	alpha		285.0
+3ROO_B_b2m I H2-Kb	B2M	-		0.0
+3QUK_A_alpha I H2-Db	MHC-I	alpha		276.0
+3QUK_B_b2m I H2-Db	B2M	-		0.0
+3QUL_A_alpha I H2-Db	MHC-I	alpha		276.0
+3QUL_B_b2m I H2-Db	B2M	-		0.0
+3WS6_A_alpha I H2-Db	MHC-I	alpha		276.0
+3WS6_B_b2m I H2-Db	B2M	-		0.0
+3WS3_A_alpha I H2-Db	MHC-I	alpha		276.0
+3WS3_B_b2m I H2-Db	B2M	-		0.0
+4L29_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4L29_B_b2m I HLA-A*02:01	B2M	-		0.0
+4L3C_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4L3C_B_b2m I HLA-A*02:01	B2M	-		0.0
+4WJ5_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4WJ5_B_b2m I HLA-A*02:01	B2M	-		0.0
+3L3H_A_alpha I H2-Db	MHC-I	alpha		276.0
+3L3H_B_b2m I H2-Db	B2M	-		0.0
+3L3D_A_alpha I HLA-B*44:02	MHC-I	alpha	'HLA-B*44:02 chain'	286.0
+3L3D_B_b2m I HLA-B*44:02	B2M	-		0.0
+3L3G_A_alpha I HLA-B*44:02	MHC-I	alpha	'HLA-B*44:02 chain'	286.0
+3L3G_B_b2m I HLA-B*44:02	B2M	-		0.0
+3L3I_A_alpha I HLA-B*44:02	MHC-I	alpha	'HLA-B*44:02 chain'	286.0
+3L3I_B_b2m I HLA-B*44:02	B2M	-		0.0
+3L3J_A_alpha I HLA-B*44:02	MHC-I	alpha	'HLA-B*44:02 chain'	286.0
+3L3J_B_b2m I HLA-B*44:02	B2M	-		0.0
+3L3K_A_alpha I HLA-B*44:02	MHC-I	alpha	'HLA-B*44:02 chain'	286.0
+3L3K_B_b2m I HLA-B*44:02	B2M	-		0.0
+1SJE_A_alpha II HLA-DRA*01:01/DRB1*01:01	MHC-II	alpha	'HLA-DRA*01:01 chain'	93.9
+1SJE_B_beta II HLA-DRA*01:01/DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+1SJH_A_alpha II HLA-DRA*01:01/DRB1*01:01	MHC-II	alpha	'HLA-DRA*01:01 chain'	93.9
+1SJH_B_beta II HLA-DRA*01:01/DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+3BXN_A_alpha I HLA-B*14:02	MHC-I	alpha	'HLA-B*14:02 chain'	299.0
+3BXN_B_b2m I HLA-B*14:02	B2M	-		0.0
+3BP4_A_alpha I HLA-B*27:05	MHC-I	alpha	'HLA-B*27:05 chain'	296.0
+3BP4_B_b2m I HLA-B*27:05	B2M	-		0.0
+3BP7_A_alpha I HLA-B*27:09	MHC-I	alpha	'HLA-B*27:09 chain'	297.0
+3BP7_B_b2m I HLA-B*27:09	B2M	-		0.0
+5MEO_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5MEO_B_b2m I HLA-A*02:01	B2M	-		0.0
+5MEP_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5MEP_B_b2m I HLA-A*02:01	B2M	-		0.0
+5MEQ_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5MEQ_B_b2m I HLA-A*02:01	B2M	-		0.0
+5MER_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5MER_B_b2m I HLA-A*02:01	B2M	-		0.0
+5MEN_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5MEN_B_b2m I HLA-A*02:01	B2M	-		0.0
+4U6X_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4U6X_B_b2m I HLA-A*02:01	B2M	-		0.0
+4U6Y_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4U6Y_B_b2m I HLA-A*02:01	B2M	-		0.0
+4P2O_A_alpha II H2-IEk	MHC-II	alpha		88.4
+4P2O_B_beta II H2-IEk	MHC-II	beta		103.0
+4P2R_A_alpha II H2-IEk	MHC-II	alpha		88.4
+4P2R_B_beta II H2-IEk	MHC-II	beta		103.0
+4P2Q_A_alpha II H2-IEk	MHC-II	alpha		88.4
+4P2Q_B_beta II H2-IEk	MHC-II	beta		103.0
+1ZT7_A_alpha I H2-Kk	MHC-I	alpha		281.0
+1ZT7_B_b2m I H2-Kk	B2M	-		0.0
+1ZT1_A_alpha I H2-Kk	MHC-I	alpha		281.0
+1ZT1_B_b2m I H2-Kk	B2M	-		0.0
+4OV5_A_alpha II HLA-DRA*01:01/DRB1*01:01	MHC-II	alpha	'HLA-DRA*01:01 chain'	93.9
+4OV5_B_beta II HLA-DRA*01:01/DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+4UQ2_A_alpha I HLA-A*11:01	MHC-I	alpha	'HLA-A*11:01 chain'	295.0
+4UQ2_B_b2m I HLA-A*11:01	B2M	-		0.0
+4UQ3_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4UQ3_B_b2m I HLA-A*02:01	B2M	-		0.0
+1JGD_A_alpha I HLA-B*27:09	MHC-I	alpha	'HLA-B*27:09 chain'	297.0
+1JGD_B_b2m I HLA-B*27:09	B2M	-		0.0
+4OZF_A_alpha II HLA-DQA1*05:01/DQB1*02:01	MHC-II	alpha	'HLA-DQA1*05:01 chain'	84.6
+4OZF_B_beta II HLA-DQA1*05:01/DQB1*02:01	MHC-II	beta	'HLA-DQB1*02:01 chain'	98.0
+3VFR_A_alpha I HLA-B*35:08	MHC-I	alpha	'HLA-B*35:08 chain'	289.0
+3VFR_B_b2m I HLA-B*35:08	B2M	-		0.0
+3VFS_A_alpha I HLA-B*35:08	MHC-I	alpha	'HLA-B*35:08 chain'	289.0
+3VFS_B_b2m I HLA-B*35:08	B2M	-		0.0
+3VFT_A_alpha I HLA-B*35:08	MHC-I	alpha	'HLA-B*35:08 chain'	289.0
+3VFT_B_b2m I HLA-B*35:08	B2M	-		0.0
+3VFU_A_alpha I HLA-B*35:08	MHC-I	alpha	'HLA-B*35:08 chain'	289.0
+3VFU_B_b2m I HLA-B*35:08	B2M	-		0.0
+3VFV_A_alpha I HLA-B*35:08	MHC-I	alpha	'HLA-B*35:08 chain'	289.0
+3VFV_B_b2m I HLA-B*35:08	B2M	-		0.0
+3VFW_A_alpha I HLA-B*35:08	MHC-I	alpha	'HLA-B*35:08 chain'	289.0
+3VFW_B_b2m I HLA-B*35:08	B2M	-		0.0
+3VFN_A_alpha I HLA-B*35:08	MHC-I	alpha	'HLA-B*35:08 chain'	289.0
+3VFN_B_b2m I HLA-B*35:08	B2M	-		0.0
+3VFM_A_alpha I HLA-B*35:08	MHC-I	alpha	'HLA-B*35:08 chain'	289.0
+3VFM_B_b2m I HLA-B*35:08	B2M	-		0.0
+3VFO_A_alpha I HLA-B*35:08	MHC-I	alpha	'HLA-B*35:08 chain'	289.0
+3VFO_B_b2m I HLA-B*35:08	B2M	-		0.0
+3VFP_A_alpha I HLA-B*35:08	MHC-I	alpha	'HLA-B*35:08 chain'	289.0
+3VFP_B_b2m I HLA-B*35:08	B2M	-		0.0
+1HHJ_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1HHJ_B_b2m I HLA-A*02:01	B2M	-		0.0
+1HHI_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1HHI_B_b2m I HLA-A*02:01	B2M	-		0.0
+1HHG_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1HHG_B_b2m I HLA-A*02:01	B2M	-		0.0
+1HHH_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1HHH_B_b2m I HLA-A*02:01	B2M	-		0.0
+1HHK_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1HHK_B_b2m I HLA-A*02:01	B2M	-		0.0
+1R5I_B_beta II HLA-DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+1INQ_A_alpha I H2-Db	MHC-I	alpha		276.0
+1INQ_B_b2m I H2-Db	B2M	-		0.0
+1LDP_H_alpha I H2-Ld	MHC-I	alpha		284.0
+1LDP_L_b2m I H2-Ld	B2M	-		0.0
+1LDP_H_alpha I H2-Ld	MHC-I	alpha		284.0
+1LDP_L_b2m I H2-Ld	B2M	-		0.0
+4PG9_A_alpha I H2-Kb	MHC-I	alpha		285.0
+4PG9_B_b2m I H2-Kb	B2M	-		0.0
+4PGB_A_alpha I H2-Kb	MHC-I	alpha		285.0
+4PGB_B_b2m I H2-Kb	B2M	-		0.0
+4PGC_A_alpha I H2-Kb	MHC-I	alpha		285.0
+4PGC_B_b2m I H2-Kb	B2M	-		0.0
+4PGD_A_alpha I H2-Kb	MHC-I	alpha		285.0
+4PGD_B_b2m I H2-Kb	B2M	-		0.0
+4PGE_A_alpha I H2-Kb	MHC-I	alpha		285.0
+4PGE_B_b2m I H2-Kb	B2M	-		0.0
+2E7L_E_alpha I H2-Ld	MHC-I	alpha		284.0
+2E7L_nan_b2m I H2-Ld	B2M	-		0.0
+2OI9_A_alpha I H2-Ld	MHC-I	alpha		284.0
+2OI9_nan_b2m I H2-Ld	B2M	-		0.0
+5XOV_A_alpha I HLA-A*24:02	MHC-I	alpha	'HLA-A*24:02 chain'	287.0
+5XOV_B_b2m I HLA-A*24:02	B2M	-		0.0
+5XOT_A_alpha I HLA-B*35:01	MHC-I	alpha	'HLA-B*35:01 chain'	287.0
+5XOT_B_b2m I HLA-B*35:01	B2M	-		0.0
+5XOS_A_alpha I HLA-B*35:01	MHC-I	alpha	'HLA-B*35:01 chain'	287.0
+5XOS_B_b2m I HLA-B*35:01	B2M	-		0.0
+4X5W_B_beta II HLA-DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+3MGO_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3MGO_B_b2m I HLA-A*02:01	B2M	-		0.0
+3PWV_A_alpha I BoLA-2*01801	MHC-I	alpha	'BoLA-2*01801 chain'	281.0
+3PWV_B_b2m I BoLA-2*01801	B2M	-		0.0
+3PWU_A_alpha I BoLA-2*01801	MHC-I	alpha	'BoLA-2*01801 chain'	281.0
+3PWU_B_b2m I BoLA-2*01801	B2M	-		0.0
+3FT2_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3FT2_B_b2m I HLA-A*02:01	B2M	-		0.0
+4N8V_A_alpha I HLA-A*11:01	MHC-I	alpha	'HLA-A*11:01 chain'	295.0
+4N8V_B_b2m I HLA-A*11:01	B2M	-		0.0
+3FT3_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3FT3_B_b2m I HLA-A*02:01	B2M	-		0.0
+3FT4_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3FT4_B_b2m I HLA-A*02:01	B2M	-		0.0
+3O4L_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3O4L_B_b2m I HLA-A*02:01	B2M	-		0.0
+2NW3_A_alpha I HLA-B*35:08	MHC-I	alpha	'HLA-B*35:08 chain'	289.0
+2NW3_B_b2m I HLA-B*35:08	B2M	-		0.0
+2NX5_A_alpha I HLA-B*35:01	MHC-I	alpha	'HLA-B*35:01 chain'	287.0
+2NX5_B_b2m I HLA-B*35:01	B2M	-		0.0
+2FZ3_A_alpha I HLA-B*35:08	MHC-I	alpha	'HLA-B*35:08 chain'	289.0
+2FZ3_B_b2m I HLA-B*35:08	B2M	-		0.0
+4JQX_A_alpha I HLA-B*44:03	MHC-I	alpha	'HLA-B*44:03 chain'	284.0
+4JQX_C_b2m I HLA-B*44:03	B2M	-		0.0
+4JQV_A_alpha I HLA-B*18:01	MHC-I	alpha	'HLA-B*18:01 chain'	287.0
+4JQV_C_b2m I HLA-B*18:01	B2M	-		0.0
+3DX8_A_alpha I HLA-B*44:05	MHC-I	alpha	'HLA-B*44:05 chain'	288.0
+3DX8_B_b2m I HLA-B*44:05	B2M	-		0.0
+3DX6_A_alpha I HLA-B*44:02	MHC-I	alpha	'HLA-B*44:02 chain'	286.0
+3DX6_B_b2m I HLA-B*44:02	B2M	-		0.0
+3DX7_A_alpha I HLA-B*44:03	MHC-I	alpha	'HLA-B*44:03 chain'	284.0
+3DX7_B_b2m I HLA-B*44:03	B2M	-		0.0
+3DXA_A_alpha I HLA-B*44:05	MHC-I	alpha	'HLA-B*44:05 chain'	288.0
+3DXA_B_b2m I HLA-B*44:05	B2M	-		0.0
+1MHC_A_non classical non classical H2-M3	MHC-I	alpha		224.0
+1MHC_B_non classical non classical H2-M3	B2M	-		0.0
+2PYE_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2PYE_B_b2m I HLA-A*02:01	B2M	-		0.0
+2P5E_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2P5E_B_b2m I HLA-A*02:01	B2M	-		0.0
+2P5W_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2P5W_B_b2m I HLA-A*02:01	B2M	-		0.0
+1IAK_A_alpha II H2-IAk	MHC-II	alpha		96.5
+1IAK_B_beta II H2-IAk	MHC-II	beta		93.0
+1IEA_A_alpha II H2-IEk	MHC-II	alpha		88.4
+1IEA_B_beta II H2-IEk	MHC-II	beta		103.0
+1IEB_A_alpha II H2-IEk	MHC-II	alpha		88.4
+1IEB_B_beta II H2-IEk	MHC-II	beta		103.0
+1LNU_A_alpha II H2-IAb	MHC-II	alpha		100.9
+1LNU_B_beta II H2-IAb	MHC-II	beta		104.0
+4O2E_A_alpha I HLA-B*39:01	MHC-I	alpha	'HLA-B*39:01 chain'	293.0
+4O2E_B_b2m I HLA-B*39:01	B2M	-		0.0
+4O2C_A_alpha I HLA-B*39:01	MHC-I	alpha	'HLA-B*39:01 chain'	293.0
+4O2C_B_b2m I HLA-B*39:01	B2M	-		0.0
+4O2F_A_alpha I HLA-B*39:01	MHC-I	alpha	'HLA-B*39:01 chain'	293.0
+4O2F_B_b2m I HLA-B*39:01	B2M	-		0.0
+4QRU_A_alpha I HLA-B*08:01	MHC-I	alpha	'HLA-B*08:01 chain'	294.0
+4QRU_B_b2m I HLA-B*08:01	B2M	-		0.0
+4QRS_A_alpha I HLA-B*08:01	MHC-I	alpha	'HLA-B*08:01 chain'	294.0
+4QRS_B_b2m I HLA-B*08:01	B2M	-		0.0
+4QRT_A_alpha I HLA-B*08:01	MHC-I	alpha	'HLA-B*08:01 chain'	294.0
+4QRT_B_b2m I HLA-B*08:01	B2M	-		0.0
+5DDH_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5DDH_B_b2m I HLA-A*02:01	B2M	-		0.0
+5D9S_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5D9S_B_b2m I HLA-A*02:01	B2M	-		0.0
+4AEN_A_alpha II HLA-DRA*01:01/DRB1*01:01	MHC-II	alpha	'HLA-DRA*01:01 chain'	93.9
+4AEN_B_beta II HLA-DRA*01:01/DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+5UJT_A_alpha II HLA-DQA1*03:01/DQB1*02:01	MHC-II	alpha	'HLA-DQA1*03:01 chain'	96.1
+5UJT_B_beta II HLA-DQA1*03:01/DQB1*02:01	MHC-II	beta	'HLA-DQB1*02:01 chain'	98.0
+1T5W_B_beta II HLA-DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+1T5X_B_beta II HLA-DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+1E27_A_alpha I HLA-B*51:01	MHC-I	alpha	'HLA-B*51:01 chain'	287.0
+1E27_B_b2m I HLA-B*51:01	B2M	-		0.0
+1E28_A_alpha I HLA-B*51:01	MHC-I	alpha	'HLA-B*51:01 chain'	287.0
+1E28_B_b2m I HLA-B*51:01	B2M	-		0.0
+3E6H_A_alpha I H2-Dd	MHC-I	alpha		291.0
+3E6H_B_b2m I H2-Dd	B2M	-		0.0
+3E6F_A_alpha I H2-Dd	MHC-I	alpha		291.0
+3E6F_B_b2m I H2-Dd	B2M	-		0.0
+4XXC_A_alpha I HLA-B*18:01	MHC-I	alpha	'HLA-B*18:01 chain'	287.0
+4XXC_C_b2m I HLA-B*18:01	B2M	-		0.0
+5EO0_A_alpha I HLA-B*07:02	MHC-I	alpha	'HLA-B*07:02 chain'	296.0
+5EO0_B_b2m I HLA-B*07:02	B2M	-		0.0
+5EO1_A_alpha I HLA-B*07:02	MHC-I	alpha	'HLA-B*07:02 chain'	296.0
+5EO1_B_b2m I HLA-B*07:02	B2M	-		0.0
+3C9N_A_alpha I HLA-B*15:01	MHC-I	alpha	'HLA-B*15:01 chain'	294.0
+3C9N_B_b2m I HLA-B*15:01	B2M	-		0.0
+1PYW_B_beta II HLA-DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+1FNE_A_alpha II H2-IEk	MHC-II	alpha		88.4
+1FNE_B_beta II H2-IEk	MHC-II	beta		103.0
+1KJ3_H_alpha I H2-Kb	MHC-I	alpha		285.0
+1KJ3_L_b2m I H2-Kb	B2M	-		0.0
+1KJ2_H_alpha I H2-Kb	MHC-I	alpha		285.0
+1KJ2_L_b2m I H2-Kb	B2M	-		0.0
+1LEG_A_alpha I H2-Kb	MHC-I	alpha		285.0
+1LEG_B_b2m I H2-Kb	B2M	-		0.0
+2CKB_H_alpha I H2-Kb	MHC-I	alpha		285.0
+2CKB_L_b2m I H2-Kb	B2M	-		0.0
+2MHA_A_alpha I H2-Kb	MHC-I	alpha		285.0
+2MHA_B_b2m I H2-Kb	B2M	-		0.0
+1KT2_A_alpha II H2-IEk	MHC-II	alpha		88.4
+1KT2_B_beta II H2-IEk	MHC-II	beta		103.0
+1KTD_A_alpha II H2-IEk	MHC-II	alpha		88.4
+1KTD_B_beta II H2-IEk	MHC-II	beta		103.0
+3C5Z_C_alpha II H2-IAb	MHC-II	alpha		100.9
+3C5Z_D_beta II H2-IAb	MHC-II	beta		104.0
+3C6L_C_alpha II H2-IAb	MHC-II	alpha		100.9
+3C6L_D_beta II H2-IAb	MHC-II	beta		104.0
+3C60_C_alpha II H2-IAb	MHC-II	alpha		100.9
+3C60_D_beta II H2-IAb	MHC-II	beta		104.0
+1ZHK_A_alpha I HLA-B*35:01	MHC-I	alpha	'HLA-B*35:01 chain'	287.0
+1ZHK_B_b2m I HLA-B*35:01	B2M	-		0.0
+1ZHL_A_alpha I HLA-B*35:08	MHC-I	alpha	'HLA-B*35:08 chain'	289.0
+1ZHL_B_b2m I HLA-B*35:08	B2M	-		0.0
+1TVH_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1TVH_B_b2m I HLA-A*02:01	B2M	-		0.0
+1TVB_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1TVB_B_b2m I HLA-A*02:01	B2M	-		0.0
+3BZE_A_non classical non classical HLA-E*01:01	MHC-I	alpha	'HLA-E*01:01 chain'	286.0
+3BZE_B_non classical non classical HLA-E*01:01	B2M	-		0.0
+3BZF_A_non classical non classical HLA-E*01:01	MHC-I	alpha	'HLA-E*01:01 chain'	286.0
+3BZF_B_non classical non classical HLA-E*01:01	B2M	-		0.0
+1QR1_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1QR1_B_b2m I HLA-A*02:01	B2M	-		0.0
+3GIV_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3GIV_B_b2m I HLA-A*02:01	B2M	-		0.0
+3CH1_A_alpha I H2-Db	MHC-I	alpha		276.0
+3CH1_B_b2m I H2-Db	B2M	-		0.0
+3CCH_A_alpha I H2-Db	MHC-I	alpha		276.0
+3CCH_B_b2m I H2-Db	B2M	-		0.0
+3CC5_A_alpha I H2-Db	MHC-I	alpha		276.0
+3CC5_B_b2m I H2-Db	B2M	-		0.0
+1KLG_B_beta II HLA-DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+1KLU_B_beta II HLA-DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+1OGA_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1OGA_B_b2m I HLA-A*02:01	B2M	-		0.0
+1FYT_B_beta II HLA-DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+1J8H_B_beta II HLA-DRB1*04:01	MHC-II	beta	'HLA-DRB1*04:01 chain'	103.0
+2NNA_B_beta II HLA-DQB1*03:02	MHC-II	beta	'HLA-DQB1*03:02 chain'	98.0
+1JWS_B_beta II HLA-DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+1JWU_B_beta II HLA-DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+1JWM_B_beta II HLA-DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+1A6A_B_beta II HLA-DRB1*03:01	MHC-II	beta	'HLA-DRB1*03:01 chain'	103.0
+3OX8_A_alpha I HLA-A*02:03	MHC-I	alpha	'HLA-A*02:03 chain'	282.0
+3OX8_B_b2m I HLA-A*02:03	B2M	-		0.0
+3OXR_A_alpha I HLA-A*02:06	MHC-I	alpha	'HLA-A*02:06 chain'	283.0
+3OXR_B_b2m I HLA-A*02:06	B2M	-		0.0
+3OXS_A_alpha I HLA-A*02:07	MHC-I	alpha	'HLA-A*02:07 chain'	280.0
+3OXS_B_b2m I HLA-A*02:07	B2M	-		0.0
+2X4Q_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2X4Q_B_b2m I HLA-A*02:01	B2M	-		0.0
+2X4P_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2X4P_B_b2m I HLA-A*02:01	B2M	-		0.0
+2X4N_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2X4N_B_b2m I HLA-A*02:01	B2M	-		0.0
+2X4U_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2X4U_B_b2m I HLA-A*02:01	B2M	-		0.0
+2X4R_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2X4R_B_b2m I HLA-A*02:01	B2M	-		0.0
+2X4S_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2X4S_B_b2m I HLA-A*02:01	B2M	-		0.0
+2X70_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2X70_B_b2m I HLA-A*02:01	B2M	-		0.0
+2X4O_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2X4O_B_b2m I HLA-A*02:01	B2M	-		0.0
+4IS6_B_beta II HLA-DRB1*04:01	MHC-II	beta	'HLA-DRB1*04:01 chain'	103.0
+4MDJ_B_beta II HLA-DRB1*04:02	MHC-II	beta	'HLA-DRB1*04:02 chain'	100.0
+4MCY_B_beta II HLA-DRB1*04:01	MHC-II	beta	'HLA-DRB1*04:01 chain'	103.0
+4MDI_B_beta II HLA-DRB1*04:02	MHC-II	beta	'HLA-DRB1*04:02 chain'	100.0
+4MD5_B_beta II HLA-DRB1*04:04	MHC-II	beta	'HLA-DRB1*04:04 chain'	102.0
+4MCZ_B_beta II HLA-DRB1*04:01	MHC-II	beta	'HLA-DRB1*04:01 chain'	103.0
+4MD0_B_beta II HLA-DRB1*04:01	MHC-II	beta	'HLA-DRB1*04:01 chain'	103.0
+4MD4_B_beta II HLA-DRB1*04:01	MHC-II	beta	'HLA-DRB1*04:01 chain'	103.0
+4MJ5_A_alpha I HLA-A*11:01	MHC-I	alpha	'HLA-A*11:01 chain'	295.0
+4MJ5_B_b2m I HLA-A*11:01	B2M	-		0.0
+4MJ6_A_alpha I HLA-A*11:01	MHC-I	alpha	'HLA-A*11:01 chain'	295.0
+4MJ6_B_b2m I HLA-A*11:01	B2M	-		0.0
+4U1I_A_alpha I HLA-B*81:01	MHC-I	alpha	'HLA-B*81:01 chain'	289.0
+4U1I_B_b2m I HLA-B*81:01	B2M	-		0.0
+4U1H_A_alpha I HLA-B*07:02	MHC-I	alpha	'HLA-B*07:02 chain'	296.0
+4U1H_B_b2m I HLA-B*07:02	B2M	-		0.0
+4U1J_A_alpha I HLA-B*42:01	MHC-I	alpha	'HLA-B*42:01 chain'	296.0
+4U1J_B_b2m I HLA-B*42:01	B2M	-		0.0
+4U1K_A_alpha I HLA-B*07:02	MHC-I	alpha	'HLA-B*07:02 chain'	296.0
+4U1K_B_b2m I HLA-B*07:02	B2M	-		0.0
+4U1L_A_alpha I HLA-B*81:01	MHC-I	alpha	'HLA-B*81:01 chain'	289.0
+4U1L_B_b2m I HLA-B*81:01	B2M	-		0.0
+4U1M_A_alpha I HLA-B*42:01	MHC-I	alpha	'HLA-B*42:01 chain'	296.0
+4U1M_B_b2m I HLA-B*42:01	B2M	-		0.0
+4U1N_A_alpha I HLA-B*42:02	MHC-I	alpha	'HLA-B*42:02 chain'	296.0
+4U1N_B_b2m I HLA-B*42:02	B2M	-		0.0
+4U1S_A_alpha I HLA-B*81:01	MHC-I	alpha	'HLA-B*81:01 chain'	289.0
+4U1S_B_b2m I HLA-B*81:01	B2M	-		0.0
+1T0M_A_alpha I H2-Kb	MHC-I	alpha		285.0
+1T0M_B_b2m I H2-Kb	B2M	-		0.0
+4I5B_A_alpha II HLA-DRA*01:01/DRB1*01:01	MHC-II	alpha	'HLA-DRA*01:01 chain'	93.9
+4I5B_B_beta II HLA-DRA*01:01/DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+1XH3_A_alpha I HLA-B*35:01	MHC-I	alpha	'HLA-B*35:01 chain'	287.0
+1XH3_B_b2m I HLA-B*35:01	B2M	-		0.0
+2SEB_A_alpha II HLA-DRA*01:01/DRB1*04:01	MHC-II	alpha	'HLA-DRA*01:01 chain'	93.9
+2SEB_B_beta II HLA-DRA*01:01/DRB1*04:01	MHC-II	beta	'HLA-DRB1*04:01 chain'	103.0
+1SEB_B_beta II HLA-DRB1*01:01	MHC-II	beta	'HLA-DRB1*01:01 chain'	103.0
+1D5M_B_beta II HLA-DRB1*04:01	MHC-II	beta	'HLA-DRB1*04:01 chain'	103.0
+1D5Z_B_beta II HLA-DRB1*04:01	MHC-II	beta	'HLA-DRB1*04:01 chain'	103.0
+1D5X_B_beta II HLA-DRB1*04:01	MHC-II	beta	'HLA-DRB1*04:01 chain'	103.0
+1D6E_B_beta II HLA-DRB1*04:01	MHC-II	beta	'HLA-DRB1*04:01 chain'	103.0
+1HOC_A_alpha I H2-Db	MHC-I	alpha		276.0
+1HOC_B_b2m I H2-Db	B2M	-		0.0
+6AT5_A_alpha I HLA-B*07:02	MHC-I	alpha	'HLA-B*07:02 chain'	296.0
+6AT5_B_b2m I HLA-B*07:02	B2M	-		0.0
+6AVF_H_alpha I HLA-B*07:02	MHC-I	alpha	'HLA-B*07:02 chain'	296.0
+6AVF_M_b2m I HLA-B*07:02	B2M	-		0.0
+6AVG_G_alpha I HLA-B*07:02	MHC-I	alpha	'HLA-B*07:02 chain'	296.0
+6AVG_H_b2m I HLA-B*07:02	B2M	-		0.0
+3I6L_D_alpha I HLA-A*24:02	MHC-I	alpha	'HLA-A*24:02 chain'	287.0
+3I6L_E_b2m I HLA-A*24:02	B2M	-		0.0
+4QRR_A_alpha I HLA-B*35:01	MHC-I	alpha	'HLA-B*35:01 chain'	287.0
+4QRR_B_b2m I HLA-B*35:01	B2M	-		0.0
+1QLF_A_alpha I H2-Db	MHC-I	alpha		276.0
+1QLF_B_b2m I H2-Db	B2M	-		0.0
+1CE6_A_alpha I H2-Db	MHC-I	alpha		276.0
+1CE6_B_b2m I H2-Db	B2M	-		0.0
+3REW_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3REW_B_b2m I HLA-A*02:01	B2M	-		0.0
+3VCL_A_alpha I HLA-B*07:02	MHC-I	alpha	'HLA-B*07:02 chain'	296.0
+3VCL_B_b2m I HLA-B*07:02	B2M	-		0.0
+3SKM_A_alpha I HLA-B*08:01	MHC-I	alpha	'HLA-B*08:01 chain'	294.0
+3SKM_B_b2m I HLA-B*08:01	B2M	-		0.0
+3SJV_A_alpha I HLA-B*08:01	MHC-I	alpha	'HLA-B*08:01 chain'	294.0
+3SJV_B_b2m I HLA-B*08:01	B2M	-		0.0
+4GRL_A_alpha II HLA-DQA1*01:02/DQB1*05:02	MHC-II	alpha	'HLA-DQA1*01:02 chain'	95.0
+4GRL_B_beta II HLA-DQA1*01:02/DQB1*05:02	MHC-II	beta	'HLA-DQB1*05:02 chain'	93.0
+4MAY_A_alpha II HLA-DQA1*01:02/DQB1*05:02	MHC-II	alpha	'HLA-DQA1*01:02 chain'	95.0
+4MAY_B_beta II HLA-DQA1*01:02/DQB1*05:02	MHC-II	beta	'HLA-DQB1*05:02 chain'	93.0
+5C0J_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5C0J_B_b2m I HLA-A*02:01	B2M	-		0.0
+5C0F_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5C0F_B_b2m I HLA-A*02:01	B2M	-		0.0
+5C0E_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5C0E_B_b2m I HLA-A*02:01	B2M	-		0.0
+5C0I_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5C0I_B_b2m I HLA-A*02:01	B2M	-		0.0
+5C0G_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5C0G_B_b2m I HLA-A*02:01	B2M	-		0.0
+5C0D_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5C0D_B_b2m I HLA-A*02:01	B2M	-		0.0
+5N1Y_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5N1Y_B_b2m I HLA-A*02:01	B2M	-		0.0
+5C0A_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5C0A_B_b2m I HLA-A*02:01	B2M	-		0.0
+5C09_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5C09_B_b2m I HLA-A*02:01	B2M	-		0.0
+5HYJ_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5HYJ_B_b2m I HLA-A*02:01	B2M	-		0.0
+5C0C_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5C0C_B_b2m I HLA-A*02:01	B2M	-		0.0
+5C08_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5C08_B_b2m I HLA-A*02:01	B2M	-		0.0
+5C07_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5C07_B_b2m I HLA-A*02:01	B2M	-		0.0
+5C0B_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5C0B_B_b2m I HLA-A*02:01	B2M	-		0.0
+5IEK_A_alpha I HLA-B*40:02	MHC-I	alpha	'HLA-B*40:02 chain'	291.0
+5IEK_B_b2m I HLA-B*40:02	B2M	-		0.0
+5W1W_A_non classical non classical HLA-E*01:03	MHC-I	alpha	'HLA-E*01:03 chain'	287.0
+5W1W_B_non classical non classical HLA-E*01:03	B2M	-		0.0
+5W1V_A_non classical non classical HLA-E*01:03	MHC-I	alpha	'HLA-E*01:03 chain'	287.0
+5W1V_B_non classical non classical HLA-E*01:03	B2M	-		0.0
+5IVX_A_alpha I H2-Db	MHC-I	alpha		276.0
+5IVX_B_b2m I H2-Db	B2M	-		0.0
+5T70_A_alpha I HLA-B*57:01	MHC-I	alpha	'HLA-B*57:01 chain'	286.0
+5T70_B_b2m I HLA-B*57:01	B2M	-		0.0
+5T6X_A_alpha I HLA-B*57:01	MHC-I	alpha	'HLA-B*57:01 chain'	286.0
+5T6X_B_b2m I HLA-B*57:01	B2M	-		0.0
+5T6W_A_alpha I HLA-B*57:01	MHC-I	alpha	'HLA-B*57:01 chain'	286.0
+5T6W_B_b2m I HLA-B*57:01	B2M	-		0.0
+5T6Z_A_alpha I HLA-B*57:01	MHC-I	alpha	'HLA-B*57:01 chain'	286.0
+5T6Z_B_b2m I HLA-B*57:01	B2M	-		0.0
+5T6Y_A_alpha I HLA-B*57:01	MHC-I	alpha	'HLA-B*57:01 chain'	286.0
+5T6Y_B_b2m I HLA-B*57:01	B2M	-		0.0
+5IEH_A_alpha I HLA-B*40:02	MHC-I	alpha	'HLA-B*40:02 chain'	291.0
+5IEH_B_b2m I HLA-B*40:02	B2M	-		0.0
+5WES_A_alpha I H2-Dd	MHC-I	alpha		291.0
+5WES_B_b2m I H2-Dd	B2M	-		0.0
+6ATZ_B_beta II HLA-DRB1*14:02	MHC-II	beta	'HLA-DRB1*14:02 chain'	104.0
+6ATF_B_beta II HLA-DRB1*14:02	MHC-II	beta	'HLA-DRB1*14:02 chain'	104.0
+6ATI_B_beta II HLA-DRB1*14:02	MHC-II	beta	'HLA-DRB1*14:02 chain'	104.0
+5GJY_A_alpha I Anpl-UAA*01	MHC-I	alpha	'Anpl-UAA*01 chain'	212.0
+5GJX_A_alpha I Anpl-UAA*01	MHC-I	alpha	'Anpl-UAA*01 chain'	212.0
+5GSD_A_alpha I HLA-A*11:01	MHC-I	alpha	'HLA-A*11:01 chain'	295.0
+5GSD_B_b2m I HLA-A*11:01	B2M	-		0.0
+5GRD_A_alpha I HLA-A*11:01	MHC-I	alpha	'HLA-A*11:01 chain'	295.0
+5GRD_B_b2m I HLA-A*11:01	B2M	-		0.0
+1QQD_A_alpha I HLA-C*04:01	MHC-I	alpha	'HLA-C*04:01 chain'	293.0
+1QQD_B_b2m I HLA-C*04:01	B2M	-		0.0
+2CII_A_alpha I H2-Db	MHC-I	alpha		276.0
+2CII_B_b2m I H2-Db	B2M	-		0.0
+2CIK_A_alpha I HLA-B*35:01	MHC-I	alpha	'HLA-B*35:01 chain'	287.0
+2CIK_B_b2m I HLA-B*35:01	B2M	-		0.0
+1XR9_A_alpha I HLA-B*15:01	MHC-I	alpha	'HLA-B*15:01 chain'	294.0
+1XR9_B_b2m I HLA-B*15:01	B2M	-		0.0
+1XR8_A_alpha I HLA-B*15:01	MHC-I	alpha	'HLA-B*15:01 chain'	294.0
+1XR8_B_b2m I HLA-B*15:01	B2M	-		0.0
+1R5V_A_alpha II H2-IEk	MHC-II	alpha		88.4
+1R5V_B_beta II H2-IEk	MHC-II	beta		103.0
+1R5W_A_alpha II H2-IEk	MHC-II	alpha		88.4
+1R5W_B_beta II H2-IEk	MHC-II	beta		103.0
+6BIY_B_beta II HLA-DRB1*04:04	MHC-II	beta	'HLA-DRB1*04:04 chain'	102.0
+6BIL_B_beta II HLA-DRB1*04:01	MHC-II	beta	'HLA-DRB1*04:01 chain'	103.0
+6BIJ_B_beta II HLA-DRB1*04:01	MHC-II	beta	'HLA-DRB1*04:01 chain'	103.0
+6BIV_B_beta II HLA-DRB1*04:01	MHC-II	beta	'HLA-DRB1*04:01 chain'	103.0
+1JPG_A_alpha I H2-Db	MHC-I	alpha		276.0
+1JPG_B_b2m I H2-Db	B2M	-		0.0
+1JPF_A_alpha I H2-Db	MHC-I	alpha		276.0
+1JPF_B_b2m I H2-Db	B2M	-		0.0
+1FG2_A_alpha I H2-Db	MHC-I	alpha		276.0
+1FG2_B_b2m I H2-Db	B2M	-		0.0
+5W67_A_alpha I HLA-C*06:02	MHC-I	alpha	'HLA-C*06:02 chain'	299.0
+5W67_B_b2m I HLA-C*06:02	B2M	-		0.0
+5W6A_A_alpha I HLA-C*06:02	MHC-I	alpha	'HLA-C*06:02 chain'	299.0
+5W6A_B_b2m I HLA-C*06:02	B2M	-		0.0
+5W69_A_alpha I HLA-C*06:02	MHC-I	alpha	'HLA-C*06:02 chain'	299.0
+5W69_B_b2m I HLA-C*06:02	B2M	-		0.0
+5OQF_A_alpha I H2-Kb	MHC-I	alpha		285.0
+5OQF_nan_b2m I H2-Kb	B2M	-		0.0
+5U98_A_alpha I HLA-B*57:01	MHC-I	alpha	'HLA-B*57:01 chain'	286.0
+5U98_A_b2m I HLA-B*57:01	B2M	-		0.0
+1N5A_A_alpha I H2-Db	MHC-I	alpha		276.0
+1N5A_B_b2m I H2-Db	B2M	-		0.0
+1N59_A_alpha I H2-Kb	MHC-I	alpha		285.0
+1N59_B_b2m I H2-Kb	B2M	-		0.0
+4P4K_B_beta II HLA-DPB1*02:01	MHC-II	beta	'HLA-DPB1*02:01 chain'	88.0
+4P5M_B_beta II HLA-DPB1*02:01	MHC-II	beta	'HLA-DPB1*02:01 chain'	88.0
+4P5K_B_beta II HLA-DPB1*02:01	MHC-II	beta	'HLA-DPB1*02:01 chain'	88.0
+4P4R_B_beta II HLA-DPB1*02:01	MHC-II	beta	'HLA-DPB1*02:01 chain'	88.0
+5FKP_A_non classical non classical mouse CD1d	MHC-I	alpha		3.0
+5FKP_B_non classical non classical mouse CD1d	B2M	-		0.0
+5EFI_A_non classical non classical mouse CD1d	MHC-I	alpha		3.0
+5EFI_B_non classical non classical mouse CD1d	B2M	-		0.0
+3UPR_A_alpha I HLA-B*57:01	MHC-I	alpha	'HLA-B*57:01 chain'	286.0
+3UPR_B_b2m I HLA-B*57:01	B2M	-		0.0
+2ESV_A_non classical non classical HLA-E*01:01	MHC-I	alpha	'HLA-E*01:01 chain'	286.0
+2ESV_B_non classical non classical HLA-E*01:01	B2M	-		0.0
+1MI5_A_alpha I HLA-B*08:01	MHC-I	alpha	'HLA-B*08:01 chain'	294.0
+1MI5_B_b2m I HLA-B*08:01	B2M	-		0.0
+1M05_A_alpha I HLA-B*08:01	MHC-I	alpha	'HLA-B*08:01 chain'	294.0
+1M05_B_b2m I HLA-B*08:01	B2M	-		0.0
+1MHE_A_non classical non classical HLA-E*01:01	MHC-I	alpha	'HLA-E*01:01 chain'	286.0
+1MHE_B_non classical non classical HLA-E*01:01	B2M	-		0.0
+1HSA_A_alpha I HLA-B*27:05	MHC-I	alpha	'HLA-B*27:05 chain'	296.0
+1HSA_B_b2m I HLA-B*27:05	B2M	-		0.0
+1TMC_A_alpha I HLA-A*68:01	MHC-I	alpha	'HLA-A*68:01 chain'	289.0
+1TMC_B_b2m I HLA-A*68:01	B2M	-		0.0
+5KD7_A_alpha I H2-Dd	MHC-I	alpha		291.0
+5KD7_B_b2m I H2-Dd	B2M	-		0.0
+5KD4_A_alpha I H2-Dd	MHC-I	alpha		291.0
+5KD4_B_b2m I H2-Dd	B2M	-		0.0
+5T7G_A_alpha I H2-Dd	MHC-I	alpha		291.0
+5T7G_B_b2m I H2-Dd	B2M	-		0.0
+1NAN_H_alpha I H2-Kb	MHC-I	alpha		285.0
+1NAN_P_b2m I H2-Kb	B2M	-		0.0
+1NAM_H_alpha I H2-Kb	MHC-I	alpha		285.0
+1NAM_L_b2m I H2-Kb	B2M	-		0.0
+3E3Q_A_alpha I H2-Ld	MHC-I	alpha		284.0
+3E3Q_nan_b2m I H2-Ld	B2M	-		0.0
+1FO0_H_alpha I H2-Kb	MHC-I	alpha		285.0
+1FO0_L_b2m I H2-Kb	B2M	-		0.0
+3FFC_A_alpha I HLA-B*08:01	MHC-I	alpha	'HLA-B*08:01 chain'	294.0
+3FFC_B_b2m I HLA-B*08:01	B2M	-		0.0
+3KPN_A_alpha I HLA-B*44:03	MHC-I	alpha	'HLA-B*44:03 chain'	284.0
+3KPN_B_b2m I HLA-B*44:03	B2M	-		0.0
+3KPL_A_alpha I HLA-B*44:02	MHC-I	alpha	'HLA-B*44:02 chain'	286.0
+3KPL_B_b2m I HLA-B*44:02	B2M	-		0.0
+3KPP_A_alpha I HLA-B*44:05	MHC-I	alpha	'HLA-B*44:05 chain'	288.0
+3KPP_B_b2m I HLA-B*44:05	B2M	-		0.0
+3KPM_A_alpha I HLA-B*44:02	MHC-I	alpha	'HLA-B*44:02 chain'	286.0
+3KPM_B_b2m I HLA-B*44:02	B2M	-		0.0
+3KPQ_A_alpha I HLA-B*44:05	MHC-I	alpha	'HLA-B*44:05 chain'	288.0
+3KPQ_B_b2m I HLA-B*44:05	B2M	-		0.0
+3KPO_A_alpha I HLA-B*44:03	MHC-I	alpha	'HLA-B*44:03 chain'	284.0
+3KPO_B_b2m I HLA-B*44:03	B2M	-		0.0
+3HG1_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3HG1_B_b2m I HLA-A*02:01	B2M	-		0.0
+3MV7_A_alpha I HLA-B*35:01	MHC-I	alpha	'HLA-B*35:01 chain'	287.0
+3MV7_B_b2m I HLA-B*35:01	B2M	-		0.0
+3MV8_A_alpha I HLA-B*35:01	MHC-I	alpha	'HLA-B*35:01 chain'	287.0
+3MV8_B_b2m I HLA-B*35:01	B2M	-		0.0
+3MV9_A_alpha I HLA-B*35:01	MHC-I	alpha	'HLA-B*35:01 chain'	287.0
+3MV9_B_b2m I HLA-B*35:01	B2M	-		0.0
+3O6F_A_alpha II HLA-DRA*01:01/DRB1*04:01	MHC-II	alpha	'HLA-DRA*01:01 chain'	93.9
+3O6F_B_beta II HLA-DRA*01:01/DRB1*04:01	MHC-II	beta	'HLA-DRB1*04:01 chain'	103.0
+3QIU_A_alpha II H2-IEk	MHC-II	alpha		88.4
+3QIU_B_beta II H2-IEk	MHC-II	beta		103.0
+3QIW_A_alpha II H2-IEk	MHC-II	alpha		88.4
+3QIW_B_beta II H2-IEk	MHC-II	beta		103.0
+3QIB_A_alpha II H2-IEk	MHC-II	alpha		88.4
+3QIB_B_beta II H2-IEk	MHC-II	beta		103.0
+4G9D_A_alpha I HLA-B*27:05	MHC-I	alpha	'HLA-B*27:05 chain'	296.0
+4G9D_B_b2m I HLA-B*27:05	B2M	-		0.0
+4G8I_A_alpha I HLA-B*27:05	MHC-I	alpha	'HLA-B*27:05 chain'	296.0
+4G8I_B_b2m I HLA-B*27:05	B2M	-		0.0
+3VXN_A_alpha I HLA-A*24:02	MHC-I	alpha	'HLA-A*24:02 chain'	287.0
+3VXN_B_b2m I HLA-A*24:02	B2M	-		0.0
+3VXO_A_alpha I HLA-A*24:02	MHC-I	alpha	'HLA-A*24:02 chain'	287.0
+3VXO_B_b2m I HLA-A*24:02	B2M	-		0.0
+3VXP_A_alpha I HLA-A*24:02	MHC-I	alpha	'HLA-A*24:02 chain'	287.0
+3VXP_B_b2m I HLA-A*24:02	B2M	-		0.0
+4P23_C_alpha II H2-IAb	MHC-II	alpha		100.9
+4P23_D_beta II H2-IAb	MHC-II	beta		104.0
+4P46_C_alpha II H2-IAb	MHC-II	alpha		100.9
+4P46_D_beta II H2-IAb	MHC-II	beta		104.0
+4P5T_C_alpha II H2-IAb	MHC-II	alpha		100.9
+4P5T_D_beta II H2-IAb	MHC-II	beta		104.0
+4PRI_A_alpha I HLA-B*35:08	MHC-I	alpha	'HLA-B*35:08 chain'	289.0
+4PRI_B_b2m I HLA-B*35:08	B2M	-		0.0
+4PRB_A_alpha I HLA-B*35:08	MHC-I	alpha	'HLA-B*35:08 chain'	289.0
+4PRB_B_b2m I HLA-B*35:08	B2M	-		0.0
+4PR5_A_alpha I HLA-B*35:01	MHC-I	alpha	'HLA-B*35:01 chain'	287.0
+4PR5_B_b2m I HLA-B*35:01	B2M	-		0.0
+4PRN_A_alpha I HLA-B*35:01	MHC-I	alpha	'HLA-B*35:01 chain'	287.0
+4PRN_B_b2m I HLA-B*35:01	B2M	-		0.0
+4PRD_A_alpha I HLA-B*35:08	MHC-I	alpha	'HLA-B*35:08 chain'	289.0
+4PRD_B_b2m I HLA-B*35:08	B2M	-		0.0
+4PRA_A_alpha I HLA-B*35:01	MHC-I	alpha	'HLA-B*35:01 chain'	287.0
+4PRA_B_b2m I HLA-B*35:01	B2M	-		0.0
+4PRE_A_alpha I HLA-B*35:08	MHC-I	alpha	'HLA-B*35:08 chain'	289.0
+4PRE_B_b2m I HLA-B*35:08	B2M	-		0.0
+4PRH_A_alpha I HLA-B*35:08	MHC-I	alpha	'HLA-B*35:08 chain'	289.0
+4PRH_B_b2m I HLA-B*35:08	B2M	-		0.0
+4PRP_A_alpha I HLA-B*35:01	MHC-I	alpha	'HLA-B*35:01 chain'	287.0
+4PRP_B_b2m I HLA-B*35:01	B2M	-		0.0
+3QDM_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3QDM_B_b2m I HLA-A*02:01	B2M	-		0.0
+3QDG_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3QDG_B_b2m I HLA-A*02:01	B2M	-		0.0
+3QEQ_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3QEQ_B_b2m I HLA-A*02:01	B2M	-		0.0
+3QDJ_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3QDJ_B_b2m I HLA-A*02:01	B2M	-		0.0
+4QRQ_A_alpha I HLA-B*08:01	MHC-I	alpha	'HLA-B*08:01 chain'	294.0
+4QRQ_B_b2m I HLA-B*08:01	B2M	-		0.0
+4QRP_A_alpha I HLA-B*08:01	MHC-I	alpha	'HLA-B*08:01 chain'	294.0
+4QRP_B_b2m I HLA-B*08:01	B2M	-		0.0
+4QOK_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4QOK_B_b2m I HLA-A*02:01	B2M	-		0.0
+4Z7V_C_alpha II HLA-DQA1*03:01/DQB1*03:02	MHC-II	alpha	'HLA-DQA1*03:01 chain'	96.1
+4Z7V_D_beta II HLA-DQA1*03:01/DQB1*03:02	MHC-II	beta	'HLA-DQB1*03:02 chain'	98.0
+4Z7U_C_alpha II HLA-DQA1*03:01/DQB1*03:02	MHC-II	alpha	'HLA-DQA1*03:01 chain'	96.1
+4Z7U_D_beta II HLA-DQA1*03:01/DQB1*03:02	MHC-II	beta	'HLA-DQB1*03:02 chain'	98.0
+4Z7W_C_alpha II HLA-DQA1*03:01/DQB1*03:02	MHC-II	alpha	'HLA-DQA1*03:01 chain'	96.1
+4Z7W_D_beta II HLA-DQA1*03:01/DQB1*03:02	MHC-II	beta	'HLA-DQB1*03:02 chain'	98.0
+5D2N_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5D2N_B_b2m I HLA-A*02:01	B2M	-		0.0
+5WLI_A_alpha I H2-Db	MHC-I	alpha		276.0
+5WLI_B_b2m I H2-Db	B2M	-		0.0
+5WLG_A_alpha I H2-Db	MHC-I	alpha		276.0
+5WLG_B_b2m I H2-Db	B2M	-		0.0
+3VRJ_A_alpha I HLA-B*57:01	MHC-I	alpha	'HLA-B*57:01 chain'	286.0
+3VRJ_B_b2m I HLA-B*57:01	B2M	-		0.0
+3VRI_A_alpha I HLA-B*57:01	MHC-I	alpha	'HLA-B*57:01 chain'	286.0
+3VRI_B_b2m I HLA-B*57:01	B2M	-		0.0
+5MZM_A_alpha I H2-Db	MHC-I	alpha		276.0
+5MZM_B_b2m I H2-Db	B2M	-		0.0
+1QSE_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1QSE_B_b2m I HLA-A*02:01	B2M	-		0.0
+1QRN_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1QRN_B_b2m I HLA-A*02:01	B2M	-		0.0
+1QSF_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1QSF_B_b2m I HLA-A*02:01	B2M	-		0.0
+1BD2_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1BD2_B_b2m I HLA-A*02:01	B2M	-		0.0
+2GIT_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2GIT_B_b2m I HLA-A*02:01	B2M	-		0.0
+2GJ6_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+2GJ6_B_b2m I HLA-A*02:01	B2M	-		0.0
+1IM3_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1IM3_B_b2m I HLA-A*02:01	B2M	-		0.0
+1AO7_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1AO7_B_b2m I HLA-A*02:01	B2M	-		0.0
+1DUY_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1DUY_B_b2m I HLA-A*02:01	B2M	-		0.0
+1DUZ_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+1DUZ_B_b2m I HLA-A*02:01	B2M	-		0.0
+3D39_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3D39_B_b2m I HLA-A*02:01	B2M	-		0.0
+3D3V_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3D3V_B_b2m I HLA-A*02:01	B2M	-		0.0
+3H7B_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3H7B_B_b2m I HLA-A*02:01	B2M	-		0.0
+3H9S_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3H9S_B_b2m I HLA-A*02:01	B2M	-		0.0
+3PWN_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3PWN_B_b2m I HLA-A*02:01	B2M	-		0.0
+3PWL_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3PWL_B_b2m I HLA-A*02:01	B2M	-		0.0
+3PWJ_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3PWJ_B_b2m I HLA-A*02:01	B2M	-		0.0
+3PWP_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3PWP_B_b2m I HLA-A*02:01	B2M	-		0.0
+3QFJ_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+3QFJ_B_b2m I HLA-A*02:01	B2M	-		0.0
+4E5X_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4E5X_B_b2m I HLA-A*02:01	B2M	-		0.0
+4FTV_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+4FTV_B_b2m I HLA-A*02:01	B2M	-		0.0
+5E9D_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5E9D_B_b2m I HLA-A*02:01	B2M	-		0.0
+5IRO_A_alpha I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5IRO_C_b2m I HLA-A*02:01	B2M	-		0.0
+5N6B_A_nan I HLA-A*02:01	MHC-I	alpha	'HLA-A*02:01 chain'	282.0
+5N6B_B_nan I HLA-A*02:01	B2M	-		0.0
+5TXS_A_alpha I HLA-B*15:01	MHC-I	alpha	'HLA-B*15:01 chain'	294.0
+5TXS_B_b2m I HLA-B*15:01	B2M	-		0.0
+5VZ5_A_alpha I HLA-B*15:01	MHC-I	alpha	'HLA-B*15:01 chain'	294.0
+5VZ5_B_b2m I HLA-B*15:01	B2M	-		0.0
+6AT9_A_alpha I HLA-A*01:01	MHC-I	alpha	'HLA-A*01:01 chain'	285.0
+6AT9_B_b2m I HLA-A*01:01	B2M	-		0.0
+6BXP_A_alpha I HLA-B*57:01	MHC-I	alpha	'HLA-B*57:01 chain'	286.0
+6BXP_B_b2m I HLA-B*57:01	B2M	-		0.0
+6BXQ_B_alpha I HLA-B*57:01	MHC-I	alpha	'HLA-B*57:01 chain'	286.0
+6BXQ_C_b2m I HLA-B*57:01	B2M	-		0.0
+4YC2_H_heavy	BCR	Heavy V		71.0
+4YC2_L_light	BCR	construct		132.0
+2CMR_H_heavy	BCR	Heavy V		67.0
+2CMR_L_light	BCR	construct		138.0
+3R1G_H_heavy	BCR	Heavy V		96.0
+3R1G_L_light	BCR	construct		158.0
+3S88_H_heavy	BCR	Heavy V		79.0
+3S88_L_light	BCR	construct		142.0
+3VE0_A_heavy	BCR	Heavy V		79.0
+3VE0_B_light	BCR	construct		142.0
+3CSY_A_heavy	BCR	Heavy V		84.0
+3CSY_B_light	BCR	construct		144.0
+1WEJ_H_heavy	BCR	Heavy V		83.0
+1WEJ_L_light	BCR	construct		150.0
+3RVW_D_heavy	BCR	Heavy V		68.0
+3RVW_C_light	BCR	Kappa V		139.0
+3RVV_D_heavy	BCR	Heavy V		68.0
+3RVV_C_light	BCR	Kappa V		139.0
+3RVX_D_heavy	BCR	Heavy V		68.0
+3RVX_C_light	BCR	Kappa V		139.0
+4PP2_B_heavy	BCR	Heavy V		54.0
+4PP2_A_light	BCR	construct		139.0
+4PP1_D_heavy	BCR	Heavy V		63.0
+4PP1_C_light	BCR	construct		139.0
+3VI3_F_heavy	BCR	Heavy V		82.0
+3VI3_E_light	BCR	Kappa V		150.0
+4MQS_B_heavy	BCR	Heavy V		84.0
+3KJ6_H_heavy	BCR	Heavy V		73.0
+3KJ6_L_light	BCR	Kappa V		150.0
+3PGF_H_heavy	BCR	Heavy V		92.0
+3PGF_L_light	BCR	construct		155.0
+3LD8_C_heavy	BCR	Heavy V		66.0
+3LD8_B_light	BCR	construct		91.0
+3LDB_C_heavy	BCR	Heavy V		66.0
+3LDB_B_light	BCR	construct		91.0
+3SN6_N_heavy	BCR	Heavy V		93.0
+3SN6_N_heavy	BCR	Heavy V		93.0
+3ZTJ_G_heavy	BCR	Heavy V		100.0
+3ZTJ_H_light	BCR	Kappa V		78.0
+1EO8_H_heavy	BCR	Heavy V		75.0
+1EO8_L_light	BCR	construct		136.0
+1QFU_H_heavy	BCR	Heavy V		79.0
+1QFU_L_light	BCR	construct		136.0
+1QFU_H_heavy	BCR	Heavy V		79.0
+1QFU_L_light	BCR	construct		136.0
+2VIS_B_heavy	BCR	Heavy V		68.0
+2VIS_A_light	BCR	Lambda V		102.0
+2VIT_B_heavy	BCR	Heavy V		68.0
+2VIT_A_light	BCR	Lambda V		102.0
+2VIR_B_heavy	BCR	Heavy V		68.0
+2VIR_A_light	BCR	Lambda V		102.0
+2VIR_B_heavy	BCR	Heavy V		68.0
+2VIR_A_light	BCR	Lambda V		102.0
+3SDY_H_heavy	BCR	Heavy V		71.0
+3SDY_L_light	BCR	construct		158.0
+4FP8_H_heavy	BCR	Heavy V		68.0
+4FP8_L_light	BCR	construct		153.0
+4GMS_H_heavy	BCR	Heavy V		77.0
+4GMS_L_light	BCR	construct		139.0
+4KVN_H_heavy	BCR	Heavy V		89.0
+4KVN_L_light	BCR	construct		150.0
+1KEN_H_heavy	BCR	Heavy V		67.0
+1KEN_L_light	BCR	construct		136.0
+4O58_H_heavy	BCR	Heavy V		53.0
+4O58_L_light	BCR	construct		133.0
+5K9K_H_heavy	BCR	Heavy V		66.0
+5K9K_L_light	BCR	construct		158.0
+5K9Q_H_heavy	BCR	Heavy V		69.0
+5K9Q_L_light	BCR	construct		158.0
+5KAN_H_heavy	BCR	Heavy V		53.0
+5KAN_L_light	BCR	construct		153.0
+4EJ1_D_heavy	BCR	Heavy V		95.0
+4EIZ_D_heavy	BCR	Heavy V		98.0
+4FHB_D_heavy	BCR	Heavy V		96.0
+4EIG_B_heavy	BCR	Heavy V		79.0
+3K74_B_heavy	BCR	Heavy V		91.0
+2VC2_H_heavy	BCR	Heavy V		83.0
+2VC2_L_light	BCR	construct		150.0
+2VDP_H_heavy	BCR	Heavy V		83.0
+2VDP_L_light	BCR	construct		150.0
+2VDQ_H_heavy	BCR	Heavy V		83.0
+2VDQ_L_light	BCR	construct		150.0
+2VDR_H_heavy	BCR	Heavy V		83.0
+2VDR_L_light	BCR	construct		150.0
+3NID_H_heavy	BCR	Heavy V		83.0
+3NID_L_light	BCR	construct		150.0
+3NIF_H_heavy	BCR	Heavy V		83.0
+3NIF_L_light	BCR	construct		150.0
+3NIG_H_heavy	BCR	Heavy V		83.0
+3NIG_L_light	BCR	construct		150.0
+3T3M_H_heavy	BCR	Heavy V		83.0
+3T3M_L_light	BCR	construct		150.0
+3ZDZ_E_heavy	BCR	Heavy V		83.0
+3ZDZ_F_light	BCR	construct		150.0
+3T3P_H_heavy	BCR	Heavy V		83.0
+3T3P_L_light	BCR	construct		150.0
+3ZDX_H_heavy	BCR	Heavy V		83.0
+3ZDX_L_light	BCR	construct		150.0
+3ZDY_H_heavy	BCR	Heavy V		83.0
+3ZDY_L_light	BCR	construct		150.0
+3ZE0_E_heavy	BCR	Heavy V		83.0
+3ZE0_F_light	BCR	construct		150.0
+4Z7Q_H_heavy	BCR	Heavy V		83.0
+4Z7Q_L_light	BCR	construct		150.0
+3ZE1_E_heavy	BCR	Heavy V		83.0
+3ZE1_F_light	BCR	construct		150.0
+3ZE2_H_heavy	BCR	Heavy V		83.0
+3ZE2_L_light	BCR	construct		150.0
+5HDB_H_heavy	BCR	Heavy V		83.0
+5HDB_L_light	BCR	construct		150.0
+2VDK_H_heavy	BCR	Heavy V		83.0
+2VDK_L_light	BCR	construct		150.0
+2VDK_H_heavy	BCR	Heavy V		83.0
+2VDK_L_light	BCR	construct		150.0
+2VDL_H_heavy	BCR	Heavy V		83.0
+2VDL_L_light	BCR	construct		150.0
+2VDM_H_heavy	BCR	Heavy V		83.0
+2VDM_L_light	BCR	construct		150.0
+4Z7N_H_heavy	BCR	Heavy V		83.0
+4Z7N_L_light	BCR	construct		150.0
+4Z7O_H_heavy	BCR	Heavy V		83.0
+4Z7O_L_light	BCR	construct		150.0
+2VDN_H_heavy	BCR	Heavy V		83.0
+2VDN_L_light	BCR	construct		150.0
+2VDP_H_heavy	BCR	Heavy V		83.0
+2VDP_L_light	BCR	construct		150.0
+4LSS_H_heavy	BCR	Heavy V		34.0
+4MWF_Blight	BCR	construct		153.0
+4F9L_Dlight	BCR	construct		79.0
+4F9L_nan_heavy	BCR	construct		80.0
+4NBY_C_heavy	BCR	Heavy V		97.0
+4NC1_C_heavy	BCR	Heavy V		97.0
+4NBX_B_heavy	BCR	Heavy V		97.0
+4NBY_B_heavy	BCR	Heavy V		97.0
+4NBZ_B_heavy	BCR	Heavy V		83.0
+4NC0_B_heavy	BCR	Heavy V		83.0
+4NC1_E_heavy	BCR	Heavy V		83.0
+4HEM_G_heavy	BCR	Heavy V		97.0
+4HEP_G_heavy	BCR	Heavy V		77.0
+5JMO_C_heavy	BCR	Heavy V		88.0
+4AEI_H_heavy	BCR	Heavy V		86.0
+4AEI_L_light	BCR	construct		144.0
+5ANM_H_heavy	BCR	Heavy V		67.0
+5ANM_L_light	BCR	construct		133.0
+5HYS_A_heavy	BCR	Heavy V		100.0
+5HYS_B_light	BCR	construct		153.0
+4AG4_H_heavy	BCR	Heavy V		78.0
+4AG4_L_light	BCR	construct		142.0
+5C1M_B_heavy	BCR	Heavy V		67.0
+5FYJ_H_heavy	BCR	Heavy V		27.0
+5FYJ_L_light	BCR	construct		128.0
+5FYJ_D_heavy	BCR	Heavy V		13.0
+5FYJ_E_light	BCR	construct		129.0
+4S10_A_heavy	BCR	Heavy V		86.0
+2XQY_G_heavy	BCR	Heavy V		86.0
+2XQY_L_light	BCR	construct		149.0
+2XQY_J_heavy	BCR	Heavy V		86.0
+2XQY_K_light	BCR	construct		149.0
+4DAG_H_heavy	BCR	Heavy V		77.0
+4DAG_L_light	BCR	construct		143.0
+5TLJ_B_heavy	BCR	Heavy V		89.0
+5TLJ_A_light	BCR	construct		147.0
+5TLK_B_heavy	BCR	Heavy V		89.0
+5TLK_A_light	BCR	construct		147.0
+5TLJ_D_heavy	BCR	Heavy V		92.0
+5TLJ_C_light	BCR	construct		147.0
+5TLK_D_heavy	BCR	Heavy V		103.0
+5TLK_C_light	BCR	construct		147.0
+3LZF_H_heavy	BCR	Heavy V		65.0
+3LZF_L_light	BCR	construct		129.0
+3ZTN_H_heavy	BCR	Heavy V		98.0
+3ZTN_L_light	BCR	Kappa V		87.0
+4GXU_M_heavy	BCR	Heavy V		88.0
+4GXU_N_light	BCR	construct		133.0
+4F15_B_heavy	BCR	Heavy V		65.0
+4F15_C_light	BCR	construct		136.0
+4M5Z_H_heavy	BCR	Heavy V		70.0
+4M5Z_L_light	BCR	construct		135.0
+4LVH_H_heavy	BCR	Heavy V		79.0
+4LVH_I_light	BCR	construct		116.0
+4PY8_I_heavy	BCR	Heavy V		92.0
+4PY8_J_light	BCR	construct		150.0
+5GJT_H_heavy	BCR	Heavy V		64.0
+5GJT_L_light	BCR	construct		150.0
+5K9O_H_heavy	BCR	Heavy V		83.0
+5K9O_L_light	BCR	construct		155.0
+3GBN_H_heavy	BCR	Heavy V		62.0
+3GBN_L_light	BCR	construct		67.0
+5IBL_H_heavy	BCR	Heavy V		71.0
+5IBL_L_light	BCR	construct		158.0
+3K2U_H_heavy	BCR	Heavy V		94.0
+3K2U_L_light	BCR	construct		158.0
+5GGV_H_heavy	BCR	Heavy V		99.0
+5GGV_L_light	BCR	construct		153.0
+2NXY_D_heavy	BCR	Heavy V		54.0
+2NXY_C_light	BCR	construct		151.0
+2NXZ_D_heavy	BCR	Heavy V		54.0
+2NXZ_C_light	BCR	construct		151.0
+2NY0_D_heavy	BCR	Heavy V		54.0
+2NY0_C_light	BCR	construct		151.0
+2NY1_D_heavy	BCR	Heavy V		54.0
+2NY1_C_light	BCR	construct		151.0
+2NY2_D_heavy	BCR	Heavy V		54.0
+2NY2_C_light	BCR	construct		151.0
+2NY3_D_heavy	BCR	Heavy V		54.0
+2NY3_C_light	BCR	construct		151.0
+2NY4_D_heavy	BCR	Heavy V		54.0
+2NY4_C_light	BCR	construct		151.0
+2NY5_H_heavy	BCR	Heavy V		54.0
+2NY5_L_light	BCR	construct		151.0
+2NY6_D_heavy	BCR	Heavy V		54.0
+2NY6_C_light	BCR	construct		151.0
+1GC1_H_heavy	BCR	Heavy V		50.0
+1GC1_L_light	BCR	construct		147.0
+1RZJ_H_heavy	BCR	Heavy V		54.0
+1RZJ_L_light	BCR	construct		151.0
+1G9M_H_heavy	BCR	Heavy V		50.0
+1G9M_L_light	BCR	construct		147.0
+3IDX_H_heavy	BCR	Heavy V		90.0
+3IDX_L_light	BCR	construct		150.0
+3IDY_H_heavy	BCR	Heavy V		90.0
+3IDY_L_light	BCR	construct		150.0
+4IOF_C_heavy	BCR	Heavy V		85.0
+4IOF_D_light	BCR	construct		144.0
+4KHT_H_heavy	BCR	Heavy V		74.0
+4KHT_L_light	BCR	construct		132.0
+4KHX_H_heavy	BCR	Heavy V		69.0
+4KHX_L_light	BCR	construct		127.0
+5KZC_H_heavy	BCR	Heavy V		34.0
+5KZC_L_light	BCR	construct		144.0
+4JPK_H_heavy	BCR	Heavy V		87.0
+4JPK_L_light	BCR	construct		142.0
+5IES_H_heavy	BCR	Heavy V		88.0
+5IES_L_light	BCR	construct		148.0
+5IF0_H_heavy	BCR	Heavy V		88.0
+5IF0_L_light	BCR	construct		148.0
+4IDJ_H_heavy	BCR	Heavy V		67.0
+4IDJ_L_light	BCR	construct		144.0
+4X7E_C_heavy	BCR	Heavy V		93.0
+3Q3G_B_heavy	BCR	Heavy V		80.0
+3Q3G_A_light	BCR	construct		150.0
+3QA3_B_heavy	BCR	Heavy V		80.0
+3QA3_A_light	BCR	construct		150.0
+5IKC_B_heavy	BCR	Heavy V		72.0
+5IKC_A_light	BCR	construct		141.0
+3ZKX_B_heavy	BCR	Heavy V		84.0
+3ZKX_C_heavy	BCR	Heavy V		51.0
+4X7D_D_heavy	BCR	Heavy V		93.0
+4X7C_C_heavy	BCR	Heavy V		91.0
+3UBX_H_heavy	BCR	Heavy V		58.0
+3UBX_L_light	BCR	construct		150.0
+4QTI_H_heavy	BCR	Heavy V		72.0
+4QTI_L_light	BCR	Kappa V		142.0
+4ZS6_H_heavy	BCR	Heavy V		84.0
+4ZS6_L_light	BCR	construct		147.0
+5DO2_C_heavy	BCR	Heavy V		90.0
+5DO2_D_light	BCR	construct		150.0
+4ZPT_H_heavy	BCR	Heavy V		89.0
+4ZPT_L_light	BCR	Kappa V		142.0
+4ZPV_H_heavy	BCR	Heavy V		89.0
+4ZPV_L_light	BCR	Kappa V		142.0
+4XAK_D_heavy	BCR	Heavy V		76.0
+4XAK_E_light	BCR	construct		147.0
+3CVH_H_heavy	BCR	Heavy V		76.0
+3CVH_L_light	BCR	construct		136.0
+3CVH_H_heavy	BCR	Heavy V		76.0
+3CVH_L_light	BCR	construct		136.0
+3GJF_H_heavy	BCR	Heavy V		105.0
+3GJF_L_light	BCR	construct		127.0
+3GJF_H_heavy	BCR	Heavy V		105.0
+3GJF_L_light	BCR	construct		127.0
+3HAE_H_heavy	BCR	Heavy V		102.0
+3HAE_L_light	BCR	construct		126.0
+3HAE_H_heavy	BCR	Heavy V		102.0
+3HAE_L_light	BCR	construct		126.0
+4KDT_A_heavy	BCR	Heavy V		78.0
+2ZCH_H_heavy	BCR	Heavy V		75.0
+2ZCH_L_light	BCR	construct		139.0
+2ZCK_H_heavy	BCR	Heavy V		75.0
+2ZCK_L_light	BCR	construct		150.0
+2ZCL_H_heavy	BCR	Heavy V		75.0
+2ZCL_L_light	BCR	construct		150.0
+3QUM_H_heavy	BCR	Heavy V		85.0
+3QUM_L_light	BCR	construct		149.0
+3QUM_B_heavy	BCR	Heavy V		83.0
+3QUM_A_light	BCR	construct		150.0
+4I3R_H_heavy	BCR	Heavy V		21.0
+4I3R_L_light	BCR	construct		159.0
+4I3S_H_heavy	BCR	Heavy V		21.0
+4I3S_L_light	BCR	construct		159.0
+2R56_H_heavy	BCR	Heavy V		78.0
+2R56_L_light	BCR	construct		147.0
+2X7L_H_heavy	BCR	Heavy V		65.0
+2X7L_L_light	BCR	construct		159.0
+5DHV_H_heavy	BCR	Heavy V		68.0
+5DHV_L_light	BCR	Kappa V		84.0
+5DHX_B_light	BCR	construct		80.0
+5DHX_nan_heavy	BCR	construct		80.0
+5DHY_H_heavy	BCR	Heavy V		68.0
+5DHY_L_light	BCR	Kappa V		84.0
+4NC2_B_heavy	BCR	Heavy V		103.0
+5T5B_H_heavy	BCR	Heavy V		49.0
+5T5B_L_light	BCR	construct		132.0
+5TPN_H_heavy	BCR	Heavy V		83.0
+5TPN_L_light	BCR	Kappa V		158.0
+5TOJ_D_heavy	BCR	Heavy V		102.0
+4RFO_H_heavy	BCR	Heavy V		77.0
+4RFO_L_light	BCR	construct		132.0
+3BQU_D_heavy	BCR	Heavy V		78.0
+3BQU_C_light	BCR	Kappa V		133.0
+4KFZ_C_heavy	BCR	Heavy V		102.0
+3UZE_A_heavy	BCR	construct		69.0
+3UZE_A_light	BCR	construct		69.0
+4IOS_E_heavy	BCR	Heavy V		91.0
+3B9K_H_heavy	BCR	Heavy V		66.0
+3B9K_L_light	BCR	construct		128.0
+5TE4_H_heavy	BCR	Heavy V		32.0
+5TE4_L_light	BCR	Kappa V		158.0
+1G6V_K_heavy	BCR	Heavy V		76.0
+4D9Q_H_heavy	BCR	Heavy V		74.0
+4D9Q_L_light	BCR	construct		153.0
+4D9R_H_heavy	BCR	Heavy V		74.0
+4D9R_L_light	BCR	construct		158.0
+4OT1_H_heavy	BCR	Heavy V		64.0
+4OT1_L_light	BCR	construct		140.0
+4LMQ_H_heavy	BCR	Heavy V		87.0
+4LMQ_L_light	BCR	construct		158.0
+4YBQ_D_heavy	BCR	Heavy V		80.0
+4YBQ_C_light	BCR	Kappa V		87.0
+4EDW_H_heavy	BCR	Heavy V		74.0
+4EDW_L_light	BCR	construct		158.0
+5KJR_H_heavy	BCR	Heavy V		77.0
+5KJR_L_light	BCR	construct		132.0
+2NYY_D_heavy	BCR	Heavy V		94.0
+2NYY_C_light	BCR	construct		150.0
+3K81_A_heavy	BCR	Heavy V		73.0
+3STB_B_heavy	BCR	Heavy V		103.0
+3STB_A_heavy	BCR	Heavy V		101.0
+2AEQ_H_heavy	BCR	Heavy V		62.0
+2AEQ_L_light	BCR	Kappa V		65.0
+3MJ9_H_heavy	BCR	Heavy V		70.0
+3MJ9_L_light	BCR	construct		65.0
+5JXE_D_heavy	BCR	Heavy V		75.0
+5JXE_C_light	BCR	construct		147.0
+3BGF_H_heavy	BCR	Heavy V		70.0
+3BGF_L_light	BCR	construct		142.0
+2DD8_H_heavy	BCR	Heavy V		76.0
+2DD8_L_light	BCR	construct		134.0
+2GHW_B_heavy	BCR	construct		104.0
+2GHW_B_light	BCR	construct		104.0
+3W2D_H_heavy	BCR	Heavy V		73.0
+3W2D_L_light	BCR	construct		150.0
+4RGO_H_heavy	BCR	Heavy V		61.0
+4RGO_L_light	BCR	Kappa V		142.0
+4JRE_H_heavy	BCR	Heavy V		75.0
+4JRE_L_light	BCR	construct		139.0
+4G6J_H_heavy	BCR	Heavy V		98.0
+4G6J_L_light	BCR	construct		150.0
+5BVP_H_heavy	BCR	Heavy V		99.0
+5BVP_L_light	BCR	construct		153.0
+4G6M_H_heavy	BCR	Heavy V		67.0
+4G6M_L_light	BCR	construct		153.0
+3LEV_H_heavy	BCR	Heavy V		35.0
+3LEV_L_light	BCR	Kappa V		158.0
+1FNS_H_heavy	BCR	Heavy V		71.0
+1FNS_L_light	BCR	construct		150.0
+1OAK_H_heavy	BCR	Heavy V		69.0
+1OAK_L_light	BCR	construct		142.0
+2YBR_A_heavy	BCR	Heavy V		88.0
+2YBR_B_light	BCR	Kappa V		76.0
+2YC1_A_heavy	BCR	Heavy V		90.0
+2YC1_B_light	BCR	Kappa V		77.0
+4V1D_A_heavy	BCR	Heavy V		90.0
+4V1D_B_light	BCR	Kappa V		77.0
+4V1D_D_heavy	BCR	Heavy V		104.0
+4V1D_E_light	BCR	Lambda V		54.0
+1HYS_D_heavy	BCR	Heavy V		52.0
+1HYS_C_light	BCR	construct		113.0
+1J5O_H_heavy	BCR	Heavy V		52.0
+1J5O_L_light	BCR	construct		116.0
+1N5Y_H_heavy	BCR	Heavy V		52.0
+1N5Y_L_light	BCR	construct		139.0
+1N6Q_H_heavy	BCR	Heavy V		52.0
+1N6Q_L_light	BCR	construct		139.0
+1R0A_H_heavy	BCR	Heavy V		52.0
+1R0A_L_light	BCR	construct		139.0
+1T03_H_heavy	BCR	Heavy V		52.0
+1T03_L_light	BCR	construct		139.0
+2HMI_D_heavy	BCR	Heavy V		52.0
+2HMI_C_light	BCR	construct		116.0
+3KLH_D_heavy	BCR	Heavy V		52.0
+3KLH_C_light	BCR	construct		139.0
+3T2N_H_heavy	BCR	Heavy V		76.0
+3T2N_L_light	BCR	Lambda V		132.0
+5DA0_B_heavy	BCR	Heavy V		88.0
+5BO1_H_heavy	BCR	Heavy V		93.0
+5BO1_L_light	BCR	construct		158.0
+4RDQ_G_heavy	BCR	Heavy V		85.0
+4RDQ_F_light	BCR	construct		142.0
+5T5N_I_heavy	BCR	Heavy V		85.0
+5T5N_H_light	BCR	construct		142.0
+3UX9_B_light	BCR	construct		119.0
+3UX9_nan_heavy	BCR	construct		119.0
+4RGM_C_heavy	BCR	Heavy V		53.0
+4RGM_B_light	BCR	construct		145.0
+3HI1_H_heavy	BCR	Heavy V		70.0
+3HI1_L_light	BCR	construct		158.0
+4YPG_B_heavy	BCR	Heavy V		77.0
+4YPG_A_light	BCR	construct		158.0
+4IRZ_H_heavy	BCR	Heavy V		74.0
+4IRZ_L_light	BCR	construct		147.0
+3LHP_H_heavy	BCR	Heavy V		65.0
+3LHP_L_light	BCR	Kappa V		75.0
+2JIX_D_heavy	BCR	Heavy V		76.0
+2JIX_G_light	BCR	construct		158.0
+2JIX_F_heavy	BCR	Heavy V		76.0
+2JIX_A_light	BCR	construct		158.0
+5F3B_A_heavy	BCR	Heavy V		93.0
+5F3B_B_light	BCR	construct		153.0
+5F3H_A_heavy	BCR	Heavy V		95.0
+5F3H_B_light	BCR	construct		153.0
+5D1Q_B_heavy	BCR	Heavy V		73.0
+5D1Q_A_light	BCR	construct		158.0
+5D1X_B_heavy	BCR	Heavy V		47.0
+5D1X_A_light	BCR	Kappa V		153.0
+5D1Q_C_heavy	BCR	Heavy V		62.0
+5D1Q_D_light	BCR	construct		151.0
+5D1X_C_heavy	BCR	Heavy V		53.0
+5D1X_D_light	BCR	construct		133.0
+5FYL_H_heavy	BCR	Heavy V		27.0
+5FYL_L_light	BCR	construct		128.0
+5CEZ_D_heavy	BCR	Heavy V		13.0
+5CEZ_E_light	BCR	construct		129.0
+5FYL_D_heavy	BCR	Heavy V		13.0
+5FYL_E_light	BCR	construct		129.0
+5T3Z_H_heavy	BCR	Heavy V		54.0
+5T3Z_L_light	BCR	construct		140.0
+5T3Z_D_heavy	BCR	Heavy V		59.0
+5T3Z_E_light	BCR	construct		133.0
+3Q1S_H_heavy	BCR	Heavy V		49.0
+3Q1S_L_light	BCR	construct		147.0
+4GFT_B_heavy	BCR	Heavy V		78.0
+4JQI_H_heavy	BCR	Heavy V		90.0
+4JQI_L_light	BCR	construct		85.0
+2ZUQ_C_heavy	BCR	Heavy V		100.0
+2ZUQ_B_light	BCR	construct		150.0
+1ZA3_H_heavy	BCR	Heavy V		76.0
+1ZA3_L_light	BCR	construct		158.0
+2H9G_H_heavy	BCR	Heavy V		93.0
+2H9G_L_light	BCR	construct		147.0
+4OD2_B_heavy	BCR	Heavy V		99.0
+4OD2_A_light	BCR	construct		129.0
+4N90_H_heavy	BCR	Heavy V		78.0
+4N90_I_light	BCR	construct		153.0
+3GRW_H_heavy	BCR	Heavy V		89.0
+3GRW_L_light	BCR	construct		158.0
+4WV1_E_heavy	BCR	Heavy V		87.0
+4WV1_D_light	BCR	construct		158.0
+5MI0_B_heavy	BCR	Heavy V		66.0
+5MI0_C_light	BCR	construct		144.0
+3WXV_H_heavy	BCR	Heavy V		75.0
+3WXV_L_light	BCR	Kappa V		66.0
+3WXW_H_heavy	BCR	Heavy V		75.0
+3WXW_L_light	BCR	Kappa V		66.0
+1E6J_H_heavy	BCR	Heavy V		86.0
+1E6J_L_light	BCR	construct		142.0
+1I9R_H_heavy	BCR	Heavy V		79.0
+1I9R_L_light	BCR	construct		147.0
+4DTG_H_heavy	BCR	Heavy V		91.0
+4DTG_L_light	BCR	construct		158.0
+4G7V_H_heavy	BCR	Heavy V		88.0
+4G7V_L_light	BCR	construct		145.0
+4G7Y_H_heavy	BCR	Heavy V		88.0
+4G7Y_L_light	BCR	construct		145.0
+5HDQ_H_heavy	BCR	Heavy V		86.0
+5HDQ_L_light	BCR	construct		142.0
+5B3J_H_heavy	BCR	Heavy V		81.0
+5B3J_L_light	BCR	Kappa V		144.0
+3JWD_H_heavy	BCR	Heavy V		77.0
+3JWD_L_light	BCR	construct		151.0
+4U6V_H_heavy	BCR	Heavy V		87.0
+4U6V_L_light	BCR	construct		158.0
+3TJE_H_heavy	BCR	Heavy V		65.0
+3TJE_L_light	BCR	construct		133.0
+3THM_H_heavy	BCR	Heavy V		64.0
+3THM_L_light	BCR	construct		135.0
+4Y7M_A_heavy	BCR	Heavy V		86.0
+1Z3G_H_heavy	BCR	Heavy V		84.0
+1Z3G_L_light	BCR	construct		149.0
+4HFU_H_heavy	BCR	Heavy V		59.0
+4HFU_L_light	BCR	construct		150.0
+4HG4_J_heavy	BCR	Heavy V		60.0
+4HG4_K_light	BCR	Kappa V		78.0
+4HF5_H_heavy	BCR	Heavy V		83.0
+4HF5_L_light	BCR	construct		132.0
+4HLZ_G_heavy	BCR	Heavy V		70.0
+4HLZ_H_light	BCR	construct		139.0
+3MXW_H_heavy	BCR	Heavy V		73.0
+3MXW_L_light	BCR	construct		150.0
+4CMH_B_heavy	BCR	Heavy V		80.0
+4CMH_C_light	BCR	construct		153.0
+5F21_B_heavy	BCR	Heavy V		53.0
+5F1O_B_heavy	BCR	Heavy V		90.0
+5F1K_C_heavy	BCR	Heavy V		85.0
+5GRJ_H_heavy	BCR	Heavy V		104.0
+5GRJ_L_light	BCR	Lambda V		65.0
+5GGT_H_heavy	BCR	Heavy V		72.0
+5GGT_L_light	BCR	construct		147.0
+4CDG_C_heavy	BCR	Heavy V		85.0
+4ZFG_H_heavy	BCR	Heavy V		105.0
+4ZFG_L_light	BCR	construct		150.0
+3G04_B_heavy	BCR	Heavy V		64.0
+3G04_A_light	BCR	construct		129.0
+2XWT_A_heavy	BCR	Heavy V		66.0
+2XWT_B_light	BCR	construct		136.0
+1NSN_H_heavy	BCR	Heavy V		56.0
+1NSN_L_light	BCR	construct		144.0
+4ALA_H_heavy	BCR	Heavy V		78.0
+4ALA_L_light	BCR	construct		142.0
+2XRA_H_heavy	BCR	Heavy V		65.0
+2XRA_L_light	BCR	construct		155.0
+4C58_B_heavy	BCR	Heavy V		38.0
+3V0A_C_heavy	BCR	Heavy V		66.0
+1PKQ_B_heavy	BCR	Heavy V		76.0
+1PKQ_A_light	BCR	construct		153.0
+4X7F_C_heavy	BCR	Heavy V		79.0
+3K1K_C_heavy	BCR	Heavy V		85.0
+1JRH_H_heavy	BCR	Heavy V		59.0
+1JRH_L_light	BCR	construct		128.0
+2FJH_H_heavy	BCR	Heavy V		91.0
+2FJH_L_light	BCR	construct		158.0
+4ZFF_H_heavy	BCR	Heavy V		105.0
+4ZFF_L_light	BCR	construct		150.0
+1TZI_B_heavy	BCR	Heavy V		90.0
+1TZI_A_light	BCR	construct		158.0
+3BDY_H_heavy	BCR	Heavy V		90.0
+3BDY_L_light	BCR	construct		153.0
+2QR0_H_heavy	BCR	Heavy V		91.0
+2QR0_G_light	BCR	construct		147.0
+3P9W_D_heavy	BCR	Heavy V		61.0
+2VXQ_H_heavy	BCR	Heavy V		72.0
+2VXQ_L_light	BCR	construct		153.0
+3WIH_H_heavy	BCR	Heavy V		84.0
+3WIH_L_light	BCR	Kappa V		142.0
+2R29_H_heavy	BCR	Heavy V		79.0
+2R29_L_light	BCR	construct		144.0
+4UT6_H_heavy	BCR	Heavy V		70.0
+4UT6_L_light	BCR	Lambda V		58.0
+4UT9_H_heavy	BCR	Heavy V		81.0
+4UT9_L_light	BCR	Lambda V		68.0
+4F3F_B_heavy	BCR	Heavy V		73.0
+4F3F_A_light	BCR	construct		150.0
+3LIZ_H_heavy	BCR	Heavy V		90.0
+3LIZ_L_light	BCR	construct		139.0
+3LIZ_H_heavy	BCR	Heavy V		90.0
+3LIZ_L_light	BCR	construct		139.0
+2NR6_D_heavy	BCR	Heavy V		77.0
+2NR6_C_light	BCR	construct		139.0
+1EGJ_H_heavy	BCR	Heavy V		80.0
+1EGJ_L_light	BCR	construct		130.0
+4BFB_D_heavy	BCR	Heavy V		82.0
+4HWB_H_heavy	BCR	Heavy V		78.0
+4HWB_L_light	BCR	construct		159.0
+3N85_H_heavy	BCR	Heavy V		85.0
+3N85_L_light	BCR	construct		158.0
+3HMX_H_heavy	BCR	Heavy V		70.0
+3HMX_L_light	BCR	construct		158.0
+4KI5_C_heavy	BCR	Heavy V		55.0
+4KI5_D_light	BCR	construct		150.0
+4XZU_A_heavy	BCR	Heavy V		56.0
+4XZU_B_light	BCR	construct		147.0
+4KI5_E_heavy	BCR	Heavy V		79.0
+4KI5_F_light	BCR	Kappa V		149.0
+1IQD_B_heavy	BCR	Heavy V		69.0
+1IQD_A_light	BCR	construct		144.0
+5C0R_H_heavy	BCR	Heavy V		70.0
+5C0R_L_light	BCR	construct		150.0
+4W6Y_B_heavy	BCR	Heavy V		82.0
+4W6W_B_heavy	BCR	Heavy V		60.0
+4W6X_B_heavy	BCR	Heavy V		80.0
+4F2M_A_heavy	BCR	Heavy V		83.0
+4F2M_B_light	BCR	Kappa V		145.0
+4CNI_H_heavy	BCR	Heavy V		91.0
+4CNI_L_light	BCR	construct		158.0
+3BT2_H_heavy	BCR	Heavy V		84.0
+3BT2_L_light	BCR	construct		144.0
+4TNW_H_heavy	BCR	Heavy V		83.0
+4TNW_L_light	BCR	Lambda V		105.0
+3H3B_C_light	BCR	construct		78.0
+3H3B_nan_heavy	BCR	construct		78.0
+4XMP_H_heavy	BCR	Heavy V		23.0
+4XMP_L_light	BCR	Kappa V		158.0
+4XNY_H_heavy	BCR	Heavy V		15.0
+4XNY_L_light	BCR	Kappa V		158.0
+1QFW_H_heavy	BCR	Heavy V		81.0
+1QFW_L_light	BCR	Kappa V		76.0
+1QFW_I_heavy	BCR	Heavy V		72.0
+1QFW_M_light	BCR	Kappa V		66.0
+3VI4_F_heavy	BCR	Heavy V		82.0
+3VI4_E_light	BCR	Kappa V		150.0
+1NMB_H_heavy	BCR	Heavy V		86.0
+1NMB_L_light	BCR	Kappa V		68.0
+1NMC_H_heavy	BCR	Heavy V		89.0
+1NMC_L_light	BCR	Kappa V		65.0
+1A14_H_heavy	BCR	Heavy V		84.0
+1A14_L_light	BCR	Kappa V		52.0
+1NMA_H_heavy	BCR	Heavy V		86.0
+1NMA_L_light	BCR	Kappa V		68.0
+1NCD_H_heavy	BCR	Heavy V		61.0
+1NCD_L_light	BCR	construct		150.0
+1NCA_H_heavy	BCR	Heavy V		62.0
+1NCA_L_light	BCR	construct		150.0
+1NCB_H_heavy	BCR	Heavy V		61.0
+1NCB_L_light	BCR	construct		150.0
+1NCC_H_heavy	BCR	Heavy V		62.0
+1NCC_L_light	BCR	construct		150.0
+2ADF_H_heavy	BCR	Heavy V		66.0
+2ADF_L_light	BCR	construct		136.0
+4PIR_F_heavy	BCR	Heavy V		93.0
+5GXB_B_heavy	BCR	Heavy V		103.0
+4AL8_H_heavy	BCR	Heavy V		78.0
+4AL8_L_light	BCR	construct		144.0
+3UZQ_A_heavy	BCR	construct		69.0
+3UZQ_A_light	BCR	construct		69.0
+4FFY_H_heavy	BCR	Heavy V		75.0
+4FFY_L_light	BCR	Kappa V		77.0
+4L5F_H_heavy	BCR	Heavy V		82.0
+4L5F_L_light	BCR	Kappa V		144.0
+4M1C_C_heavy	BCR	Heavy V		83.0
+4M1C_D_light	BCR	construct		132.0
+5EN2_A_heavy	BCR	Heavy V		77.0
+5EN2_B_light	BCR	construct		142.0
+3U4E_H_heavy	BCR	Heavy V		45.0
+3U4E_L_light	BCR	construct		133.0
+3D85_B_heavy	BCR	Heavy V		84.0
+3D85_A_light	BCR	Kappa V		153.0
+1YNT_B_heavy	BCR	Heavy V		74.0
+1YNT_A_light	BCR	construct		144.0
+2Q8A_H_heavy	BCR	Heavy V		63.0
+2Q8A_L_light	BCR	Kappa V		149.0
+3OGO_F_heavy	BCR	Heavy V		87.0
+3G9A_B_heavy	BCR	Heavy V		66.0
+5HVH_C_heavy	BCR	Heavy V		93.0
+5HVG_B_heavy	BCR	Heavy V		108.0
+5HVH_B_heavy	BCR	Heavy V		103.0
+3SKJ_H_heavy	BCR	Heavy V		94.0
+3SKJ_L_light	BCR	construct		158.0
+2XTJ_D_heavy	BCR	Heavy V		68.0
+2XTJ_B_light	BCR	Kappa V		87.0
+3H42_H_heavy	BCR	Heavy V		93.0
+3H42_L_light	BCR	construct		133.0
+3SQO_H_heavy	BCR	Heavy V		85.0
+3SQO_L_light	BCR	construct		154.0
+3OPZ_H_heavy	BCR	Heavy V		73.0
+3OPZ_L_light	BCR	construct		144.0
+1OAZ_H_heavy	BCR	Heavy V		95.0
+1OAZ_L_light	BCR	Lambda V		92.0
+1OAZ_H_heavy	BCR	Heavy V		95.0
+1OAZ_L_light	BCR	Lambda V		92.0
+4LF3_B_heavy	BCR	Heavy V		85.0
+4LF3_A_light	BCR	construct		158.0
+1KXT_B_heavy	BCR	Heavy V		73.0
+1KXQ_H_heavy	BCR	Heavy V		59.0
+1KXV_C_heavy	BCR	Heavy V		57.0
+4TVS_a_heavy	BCR	Heavy V		103.0
+4DKF_H_heavy	BCR	Heavy V		96.0
+4DKF_L_light	BCR	construct		150.0
+4DKE_H_heavy	BCR	Heavy V		89.0
+4DKE_L_light	BCR	construct		158.0
+5LCV_H_heavy	BCR	Heavy V		69.0
+5LCV_L_light	BCR	construct		133.0
+5LBS_H_heavy	BCR	Heavy V		95.0
+5LBS_L_light	BCR	Kappa V		79.0
+5JHL_H_heavy	BCR	Heavy V		76.0
+5JHL_L_light	BCR	construct		139.0
+5KVD_H_heavy	BCR	Heavy V		80.0
+5KVD_L_light	BCR	construct		150.0
+5KVE_H_heavy	BCR	Heavy V		84.0
+5KVE_L_light	BCR	Kappa V		88.0
+5KVF_H_heavy	BCR	Heavy V		90.0
+5KVF_L_light	BCR	construct		149.0
+5KVG_H_heavy	BCR	Heavy V		63.0
+5KVG_L_light	BCR	construct		150.0
+5GZN_H_heavy	BCR	Heavy V		98.0
+5GZN_L_light	BCR	construct		133.0
+5GZO_C_heavy	BCR	Heavy V		86.0
+5GZO_D_light	BCR	construct		153.0
+3K80_A_heavy	BCR	Heavy V		93.0
+2XQB_H_heavy	BCR	Heavy V		74.0
+2XQB_L_light	BCR	construct		130.0
+4P2C_G_heavy	BCR	Heavy V		93.0
+2J88_H_heavy	BCR	Heavy V		53.0
+2J88_L_light	BCR	construct		123.0
+4IJ3_C_heavy	BCR	Heavy V		67.0
+4IJ3_B_light	BCR	construct		150.0
+5D96_C_heavy	BCR	Heavy V		66.0
+5D96_B_light	BCR	construct		150.0
+5D93_C_heavy	BCR	Heavy V		87.0
+5D93_B_light	BCR	construct		153.0
+4QNP_E_heavy	BCR	Heavy V		74.0
+4QNP_F_light	BCR	construct		144.0
+5C0N_H_heavy	BCR	Heavy V		73.0
+5C0N_L_light	BCR	construct		135.0
+5D8J_H_heavy	BCR	Heavy V		82.0
+5D8J_L_light	BCR	construct		143.0
+3SOB_H_heavy	BCR	Heavy V		89.0
+3SOB_L_light	BCR	construct		153.0
+3KJ4_H_heavy	BCR	Heavy V		69.0
+3KJ4_L_light	BCR	construct		150.0
+2OZ4_H_heavy	BCR	Heavy V		72.0
+2OZ4_L_light	BCR	construct		150.0
+3U30_C_heavy	BCR	Heavy V		97.0
+3U30_B_light	BCR	construct		147.0
+1ORS_B_heavy	BCR	Heavy V		74.0
+1ORS_A_light	BCR	construct		150.0
+1ORQ_B_heavy	BCR	Heavy V		64.0
+1ORQ_A_light	BCR	construct		150.0
+5L0Q_C_heavy	BCR	Heavy V		72.0
+5L0Q_B_light	BCR	construct		142.0
+4DW2_H_heavy	BCR	Heavy V		85.0
+4DW2_L_light	BCR	construct		150.0
+5I9Q_B_heavy	BCR	Heavy V		39.0
+5I9Q_C_light	BCR	Kappa V		153.0
+1ZTX_H_heavy	BCR	Heavy V		71.0
+1ZTX_L_light	BCR	construct		142.0
+5IWL_A_heavy	BCR	construct		87.0
+5IWL_nan_light	BCR	construct		87.0
+5TZ2_H_heavy	BCR	Heavy V		81.0
+5TZ2_L_light	BCR	construct		150.0
+5TZT_H_heavy	BCR	Heavy V		83.0
+5TZT_L_light	BCR	construct		158.0
+5TZU_H_heavy	BCR	Heavy V		86.0
+5TZU_L_light	BCR	Kappa V		153.0
+5J3H_C_heavy	BCR	Heavy V		71.0
+5J3H_D_light	BCR	Kappa V		84.0
+3P0G_B_heavy	BCR	Heavy V		101.0
+4LDO_B_heavy	BCR	Heavy V		100.0
+4LDE_B_heavy	BCR	Heavy V		100.0
+4LDL_B_heavy	BCR	Heavy V		100.0
+4QKX_B_heavy	BCR	Heavy V		100.0
+5JQH_C_heavy	BCR	Heavy V		105.0
+5FCU_H_heavy	BCR	Heavy V		61.0
+5FCU_L_light	BCR	construct		130.0
+3KR3_H_heavy	BCR	Heavy V		105.0
+3KR3_L_light	BCR	construct		148.0
+3MA9_H_heavy	BCR	Heavy V		74.0
+3MA9_L_light	BCR	construct		132.0
+3BN9_D_heavy	BCR	Heavy V		107.0
+3BN9_C_light	BCR	construct		144.0
+3NPS_B_heavy	BCR	Heavy V		67.0
+3NPS_C_light	BCR	construct		150.0
+3SO3_C_heavy	BCR	Heavy V		107.0
+3SO3_B_light	BCR	construct		153.0
+1DVF_D_heavy	BCR	Heavy V		76.0
+1DVF_C_light	BCR	Kappa V		77.0
+4K94_H_heavy	BCR	Heavy V		96.0
+4K94_L_light	BCR	construct		144.0
+4K9E_H_heavy	BCR	Heavy V		96.0
+4K9E_L_light	BCR	construct		158.0
+1N8Z_B_heavy	BCR	Heavy V		90.0
+1N8Z_A_light	BCR	construct		158.0
+3HI6_H_heavy	BCR	Heavy V		104.0
+3HI6_L_light	BCR	construct		150.0
+3EOA_H_heavy	BCR	Heavy V		94.0
+3EOA_L_light	BCR	construct		158.0
+4LGP_B_heavy	BCR	Heavy V		69.0
+4LGR_B_heavy	BCR	Heavy V		93.0
+4LGS_B_heavy	BCR	Heavy V		94.0
+4LHJ_B_heavy	BCR	Heavy V		88.0
+4LHQ_B_heavy	BCR	Heavy V		77.0
+4Z9K_B_heavy	BCR	Heavy V		74.0
+5E1H_B_heavy	BCR	Heavy V		90.0
+5SV3_A_heavy	BCR	Heavy V		78.0
+5J56_B_heavy	BCR	Heavy V		94.0
+5BOZ_G_heavy	BCR	Heavy V		87.0
+5J57_B_heavy	BCR	Heavy V		66.0
+4KUC_H_heavy	BCR	Heavy V		69.0
+4KUC_D_light	BCR	Kappa V		126.0
+4WGV_B_heavy	BCR	Heavy V		78.0
+4WGW_B_heavy	BCR	Heavy V		78.0
+4JLR_H_heavy	BCR	Heavy V		64.0
+4JLR_L_light	BCR	construct		147.0
+3NCY_P_heavy	BCR	Heavy V		83.0
+3NCY_S_light	BCR	construct		134.0
+3CFI_C_heavy	BCR	Heavy V		90.0
+2B4C_H_heavy	BCR	Heavy V		52.0
+2B4C_L_light	BCR	construct		154.0
+4U1G_B_heavy	BCR	Heavy V		76.0
+4U1G_C_light	BCR	construct		139.0
+4U0R_B_heavy	BCR	Heavy V		66.0
+4U0R_C_light	BCR	construct		144.0
+4YUE_H_heavy	BCR	Heavy V		63.0
+4YUE_L_light	BCR	Kappa V		122.0
+5C2U_B_heavy	BCR	Heavy V		83.0
+3BSZ_H_heavy	BCR	Heavy V		64.0
+3BSZ_L_light	BCR	construct		139.0
+3PNW_B_heavy	BCR	Heavy V		92.0
+3PNW_A_light	BCR	construct		143.0
+3NH7_H_heavy	BCR	Heavy V		101.0
+3NH7_L_light	BCR	construct		133.0
+4LQF_H_heavy	BCR	Heavy V		88.0
+4LQF_L_light	BCR	construct		137.0
+4LU5_H_heavy	BCR	Heavy V		76.0
+4LU5_L_light	BCR	Kappa V		150.0
+4M1G_H_heavy	BCR	Heavy V		71.0
+4M1G_L_light	BCR	construct		144.0
+3RKD_H_heavy	BCR	Heavy V		48.0
+3RKD_L_light	BCR	construct		144.0
+4PLJ_H_heavy	BCR	Heavy V		72.0
+4PLJ_L_light	BCR	construct		135.0
+3EJY_C_heavy	BCR	Heavy V		64.0
+3EJY_D_light	BCR	construct		140.0
+4KJP_C_heavy	BCR	Heavy V		64.0
+4KJP_D_light	BCR	construct		140.0
+4KK6_C_heavy	BCR	Heavy V		64.0
+4KK6_D_light	BCR	construct		140.0
+4KK9_C_heavy	BCR	Heavy V		64.0
+4KK9_D_light	BCR	construct		140.0
+4KKA_C_heavy	BCR	Heavy V		64.0
+4KKA_D_light	BCR	construct		140.0
+4JM2_D_heavy	BCR	Heavy V		54.0
+4JM2_C_light	BCR	construct		151.0
+4JM2_A_heavy	BCR	Heavy V		41.0
+4JM2_B_light	BCR	Kappa V		158.0
+4R2G_Q_heavy	BCR	Heavy V		46.0
+4R2G_P_light	BCR	construct		127.0
+3LH2_H_heavy	BCR	Heavy V		65.0
+3LH2_L_light	BCR	Kappa V		75.0
+4K2U_H_heavy	BCR	Heavy V		84.0
+4K2U_L_light	BCR	construct		113.0
+3K7U_A_heavy	BCR	Heavy V		94.0
+3EO1_B_heavy	BCR	Heavy V		76.0
+3EO1_A_light	BCR	construct		158.0
+4KV5_H_heavy	BCR	Heavy V		79.0
+4KV5_L_light	BCR	Kappa V		83.0
+4KXZ_H_heavy	BCR	Heavy V		74.0
+4KXZ_L_light	BCR	construct		151.0
+1BGX_H_heavy	BCR	Heavy V		63.0
+1BGX_L_light	BCR	construct		139.0
+5K59_H_heavy	BCR	Heavy V		80.0
+5K59_L_light	BCR	construct		150.0
+4WEM_B_heavy	BCR	Heavy V		73.0
+4WEN_B_heavy	BCR	Heavy V		87.0
+4I9W_E_heavy	BCR	Heavy V		80.0
+4I9W_D_light	BCR	construct		142.0
+4WFF_E_heavy	BCR	Heavy V		80.0
+4WFF_D_light	BCR	construct		142.0
+4WFH_E_heavy	BCR	Heavy V		80.0
+4WFH_D_light	BCR	construct		142.0
+4DK3_A_heavy	BCR	Heavy V		101.0
+3VG9_C_heavy	BCR	Heavy V		77.0
+3VG9_B_light	BCR	Kappa V		142.0
+3VGA_C_heavy	BCR	Heavy V		77.0
+3VGA_B_light	BCR	Kappa V		142.0
+4UAO_C_heavy	BCR	Heavy V		86.0
+4UAO_B_light	BCR	construct		160.0
+3UAJ_H_heavy	BCR	Heavy V		56.0
+3UAJ_L_light	BCR	construct		148.0
+4AM0_H_heavy	BCR	Heavy V		78.0
+4AM0_L_light	BCR	construct		142.0
+3UYP_A_heavy	BCR	construct		69.0
+3UYP_A_light	BCR	construct		69.0
+5AAM_B_heavy	BCR	construct		81.0
+5AAM_nan_light	BCR	construct		81.0
+5AAW_H_heavy	BCR	construct		81.0
+5AAW_nan_light	BCR	construct		81.0
+2QAD_D_heavy	BCR	Heavy V		57.0
+2QAD_C_light	BCR	construct		151.0
+3I50_H_heavy	BCR	Heavy V		70.0
+3I50_L_light	BCR	construct		130.0
+5FUC_V_heavy	BCR	Heavy V		78.0
+4K3J_H_heavy	BCR	Heavy V		90.0
+4K3J_L_light	BCR	construct		147.0
+3GI8_H_heavy	BCR	Heavy V		79.0
+3GI8_L_light	BCR	construct		150.0
+3GI9_H_heavy	BCR	Heavy V		79.0
+3GI9_L_light	BCR	construct		144.0
+1FE8_H_heavy	BCR	Heavy V		62.0
+1FE8_L_light	BCR	construct		137.0
+4OGX_H_heavy	BCR	Heavy V		100.0
+4OGX_L_light	BCR	construct		153.0
+4OGY_H_heavy	BCR	Heavy V		100.0
+4OGY_L_light	BCR	construct		153.0
+4NX3_B_heavy	BCR	Heavy V		75.0
+4NX3_A_light	BCR	construct		139.0
+4RGN_B_heavy	BCR	Heavy V		61.0
+4RGN_C_light	BCR	Kappa V		145.0
+4RGN_D_heavy	BCR	Heavy V		85.0
+4RGN_E_light	BCR	construct		149.0
+4G3Y_H_heavy	BCR	Heavy V		74.0
+4G3Y_L_light	BCR	Kappa V		158.0
+3WD5_H_heavy	BCR	Heavy V		101.0
+3WD5_L_light	BCR	construct		153.0
+1PG7_X_heavy	BCR	Heavy V		74.0
+1PG7_W_light	BCR	Lambda V		96.0
+3AB0_B_heavy	BCR	Heavy V		81.0
+3AB0_C_light	BCR	Kappa V		64.0
+2JEL_H_heavy	BCR	Heavy V		71.0
+2JEL_L_light	BCR	construct		127.0
+5FYK_H_heavy	BCR	Heavy V		27.0
+5FYK_L_light	BCR	construct		128.0
+5FYK_D_heavy	BCR	Heavy V		13.0
+5FYK_E_light	BCR	construct		129.0
+3NFP_H_heavy	BCR	Heavy V		86.0
+3NFP_L_light	BCR	construct		153.0
+4OCN_C_heavy	BCR	Heavy V		95.0
+4LVO_C_heavy	BCR	Heavy V		66.0
+4LVO_B_light	BCR	construct		139.0
+4LVN_C_heavy	BCR	Heavy V		66.0
+4LVN_B_light	BCR	construct		139.0
+3TT1_H_heavy	BCR	Heavy V		79.0
+3TT1_L_light	BCR	construct		139.0
+3TT3_H_heavy	BCR	Heavy V		70.0
+3TT3_L_light	BCR	construct		142.0
+4XVU_C_heavy	BCR	Heavy V		90.0
+4XVU_D_light	BCR	construct		155.0
+4XHJ_D_heavy	BCR	Heavy V		67.0
+4XHJ_C_light	BCR	construct		147.0
+5HGG_S_heavy	BCR	Heavy V		102.0
+3P30_H_heavy	BCR	Heavy V		59.0
+3P30_L_light	BCR	construct		131.0
+2Q8B_H_heavy	BCR	Heavy V		62.0
+2Q8B_L_light	BCR	Kappa V		144.0
+3ZKS_D_heavy	BCR	Heavy V		86.0
+5F7L_B_heavy	BCR	Heavy V		93.0
+5F7M_C_heavy	BCR	Heavy V		90.0
+5F7W_C_heavy	BCR	Heavy V		90.0
+5F8Q_C_heavy	BCR	Heavy V		90.0
+4RFN_H_heavy	BCR	Heavy V		61.0
+4RFN_L_light	BCR	construct		130.0
+4ZXB_A_heavy	BCR	Heavy V		73.0
+4ZXB_B_light	BCR	construct		144.0
+4ZXB_C_heavy	BCR	Heavy V		76.0
+4ZXB_D_light	BCR	Kappa V		133.0
+1V7M_H_heavy	BCR	Heavy V		68.0
+1V7M_L_light	BCR	construct		144.0
+1V7N_H_heavy	BCR	Heavy V		68.0
+1V7N_L_light	BCR	construct		150.0
+3S35_H_heavy	BCR	Heavy V		75.0
+3S35_L_light	BCR	construct		144.0
+3S36_H_heavy	BCR	Heavy V		94.0
+3S36_L_light	BCR	construct		158.0
+3S37_H_heavy	BCR	Heavy V		94.0
+3S37_L_light	BCR	construct		153.0
+3V6Z_A_heavy	BCR	Heavy V		83.0
+3V6Z_B_light	BCR	construct		142.0
+5T29_H_heavy	BCR	Heavy V		49.0
+5T29_L_light	BCR	construct		129.0
+2BSE_E_heavy	BCR	Heavy V		70.0
+5GGR_H_heavy	BCR	Heavy V		83.0
+5GGR_L_light	BCR	construct		150.0
+3DVN_H_heavy	BCR	Heavy V		88.0
+3DVN_L_light	BCR	construct		158.0
+4Y5Y_A_heavy	BCR	Heavy V		101.0
+4Y5Y_B_light	BCR	Lambda V		75.0
+4OQT_H_heavy	BCR	Heavy V		104.0
+4OQT_L_light	BCR	construct		153.0
+3C09_H_heavy	BCR	Heavy V		82.0
+3C09_L_light	BCR	construct		150.0
+3B2U_H_heavy	BCR	Heavy V		86.0
+3B2U_L_light	BCR	construct		151.0
+3B2V_H_heavy	BCR	Heavy V		86.0
+3B2V_L_light	BCR	construct		151.0
+4KRL_B_heavy	BCR	Heavy V		84.0
+4KRM_B_heavy	BCR	Heavy V		88.0
+4KRO_B_heavy	BCR	Heavy V		102.0
+4KRP_B_heavy	BCR	Heavy V		107.0
+4UV7_H_heavy	BCR	Heavy V		87.0
+4UV7_L_light	BCR	Kappa V		144.0
+4KRO_D_heavy	BCR	Heavy V		74.0
+4KRO_C_light	BCR	construct		147.0
+1YY9_D_heavy	BCR	Heavy V		74.0
+1YY9_C_light	BCR	construct		147.0
+4KRP_D_heavy	BCR	Heavy V		74.0
+4KRP_C_light	BCR	construct		147.0
+5SX4_H_heavy	BCR	Heavy V		77.0
+5SX4_L_light	BCR	construct		153.0
+5SX5_H_heavy	BCR	Heavy V		77.0
+5SX5_L_light	BCR	construct		150.0
+1NFD_F_heavy	BCR	Heavy V		80.0
+1NFD_E_light	BCR	construct		69.0
+1NFD_H_heavy	BCR	Heavy V		80.0
+1NFD_G_light	BCR	construct		69.0
+4YZF_E_heavy	BCR	Heavy V		52.0
+4YZF_F_light	BCR	construct		149.0
+5FB8_B_heavy	BCR	Heavy V		81.0
+5FB8_A_light	BCR	construct		158.0
+4WFE_E_heavy	BCR	Heavy V		80.0
+4WFE_D_light	BCR	construct		142.0
+4WFG_E_heavy	BCR	Heavy V		80.0
+4WFG_D_light	BCR	construct		142.0
+4NIK_B_heavy	BCR	construct		84.0
+4NIK_nan_light	BCR	construct		84.0
+3U9U_A_heavy	BCR	Heavy V		54.0
+3U9U_B_light	BCR	construct		150.0
+1MHP_X_heavy	BCR	Heavy V		109.0
+1MHP_Y_light	BCR	Kappa V		69.0
+2B2X_H_heavy	BCR	Heavy V		105.0
+2B2X_L_light	BCR	construct		139.0
+4OII_H_heavy	BCR	Heavy V		77.0
+4OII_L_light	BCR	construct		144.0
+4YDJ_H_heavy	BCR	Heavy V		6.0
+4YDJ_L_light	BCR	construct		129.0
+3EZJ_B_heavy	BCR	Heavy V		103.0
+5B8C_B_heavy	BCR	Heavy V		78.0
+5B8C_A_light	BCR	Kappa V		82.0
+5GGS_A_heavy	BCR	Heavy V		73.0
+5GGS_B_light	BCR	construct		153.0
+3L95_H_heavy	BCR	Heavy V		96.0
+3L95_L_light	BCR	construct		150.0
+4MXV_H_heavy	BCR	Heavy V		85.0
+4MXV_L_light	BCR	construct		147.0
+5J1T_C_heavy	BCR	Heavy V		86.0
+4LIQ_H_heavy	BCR	Heavy V		78.0
+4LIQ_L_light	BCR	construct		158.0
+4ZS7_H_heavy	BCR	Heavy V		93.0
+4ZS7_L_light	BCR	construct		132.0
+4J6R_H_heavy	BCR	Heavy V		54.0
+4J6R_L_light	BCR	construct		158.0
+4DQO_H_heavy	BCR	Heavy V		49.0
+4DQO_L_light	BCR	construct		133.0
+4XWG_H_heavy	BCR	Heavy V		89.0
+4XWG_L_light	BCR	construct		131.0
+5BV7_C_heavy	BCR	Heavy V		89.0
+5BV7_B_light	BCR	construct		137.0
+5BV7_H_heavy	BCR	Heavy V		75.0
+5BV7_L_light	BCR	construct		133.0
+4O9H_H_heavy	BCR	Heavy V		115.0
+4O9H_L_light	BCR	construct		132.0
+2ATK_A_heavy	BCR	Heavy V		79.0
+2ATK_B_light	BCR	Kappa V		142.0
+2BOB_A_heavy	BCR	Heavy V		79.0
+2BOB_B_light	BCR	Kappa V		142.0
+2BOC_A_heavy	BCR	Heavy V		79.0
+2BOC_B_light	BCR	Kappa V		142.0
+1K4D_A_heavy	BCR	Heavy V		79.0
+1K4D_B_light	BCR	Kappa V		142.0
+2DWD_A_heavy	BCR	Heavy V		79.0
+2DWD_B_light	BCR	Kappa V		142.0
+2DWE_A_heavy	BCR	Heavy V		79.0
+2DWE_B_light	BCR	Kappa V		142.0
+2H8P_A_heavy	BCR	Heavy V		79.0
+2H8P_B_light	BCR	Kappa V		142.0
+2HFE_A_heavy	BCR	Heavy V		79.0
+2HFE_B_light	BCR	Kappa V		139.0
+2HG5_A_heavy	BCR	Heavy V		79.0
+2HG5_B_light	BCR	Kappa V		142.0
+2HJF_A_heavy	BCR	Heavy V		79.0
+2HJF_B_light	BCR	Kappa V		142.0
+2HVJ_A_heavy	BCR	Heavy V		77.0
+2HVJ_B_light	BCR	Kappa V		142.0
+2HVK_A_heavy	BCR	Heavy V		79.0
+2HVK_B_light	BCR	Kappa V		142.0
+2IH1_A_heavy	BCR	Heavy V		79.0
+2IH1_B_light	BCR	Kappa V		142.0
+2IH3_A_heavy	BCR	Heavy V		79.0
+2IH3_B_light	BCR	Kappa V		142.0
+2ITC_A_heavy	BCR	Heavy V		79.0
+2ITC_B_light	BCR	Kappa V		142.0
+2ITD_A_heavy	BCR	Heavy V		79.0
+2ITD_B_light	BCR	Kappa V		142.0
+2JK5_A_heavy	BCR	Heavy V		79.0
+2JK5_B_light	BCR	Kappa V		142.0
+2NLJ_B_heavy	BCR	Heavy V		79.0
+2NLJ_A_light	BCR	Kappa V		142.0
+1R3I_H_heavy	BCR	Heavy V		79.0
+1R3I_L_light	BCR	Kappa V		142.0
+2W0F_A_heavy	BCR	Heavy V		79.0
+2W0F_B_light	BCR	Kappa V		142.0
+3F5W_A_heavy	BCR	Heavy V		79.0
+3F5W_B_light	BCR	Kappa V		142.0
+3F7V_A_heavy	BCR	Heavy V		79.0
+3F7V_B_light	BCR	Kappa V		142.0
+3F7Y_A_heavy	BCR	Heavy V		79.0
+3F7Y_B_light	BCR	Kappa V		142.0
+3FB5_A_heavy	BCR	Heavy V		79.0
+3FB5_B_light	BCR	Kappa V		142.0
+3FB6_A_heavy	BCR	Heavy V		79.0
+3FB6_B_light	BCR	Kappa V		142.0
+1R3J_B_heavy	BCR	Heavy V		79.0
+1R3J_A_light	BCR	Kappa V		142.0
+3FB7_A_heavy	BCR	Heavy V		79.0
+3FB7_B_light	BCR	Kappa V		142.0
+3GB7_A_heavy	BCR	Heavy V		79.0
+3GB7_B_light	BCR	Kappa V		142.0
+3HPL_A_heavy	BCR	Heavy V		79.0
+3HPL_B_light	BCR	Kappa V		142.0
+3IGA_A_heavy	BCR	Heavy V		79.0
+3IGA_B_light	BCR	Kappa V		142.0
+3OR6_A_heavy	BCR	Heavy V		79.0
+3OR6_B_light	BCR	Kappa V		142.0
+3STL_A_heavy	BCR	Heavy V		79.0
+3STL_B_light	BCR	Kappa V		142.0
+3STZ_A_heavy	BCR	Heavy V		79.0
+3STZ_B_light	BCR	Kappa V		142.0
+4LBE_A_heavy	BCR	Heavy V		79.0
+4LBE_B_light	BCR	Kappa V		142.0
+4LCU_A_heavy	BCR	Heavy V		79.0
+4LCU_B_light	BCR	Kappa V		142.0
+4MSW_A_heavy	BCR	Heavy V		79.0
+4MSW_B_light	BCR	Kappa V		142.0
+4UUJ_A_heavy	BCR	Heavy V		79.0
+4UUJ_B_light	BCR	Kappa V		142.0
+5E1A_A_heavy	BCR	Heavy V		79.0
+5E1A_B_light	BCR	Kappa V		142.0
+5EBL_A_heavy	BCR	Heavy V		79.0
+5EBL_B_light	BCR	Kappa V		142.0
+5EBM_A_heavy	BCR	Heavy V		79.0
+5EBM_B_light	BCR	Kappa V		142.0
+5EBW_A_heavy	BCR	Heavy V		79.0
+5EBW_B_light	BCR	Kappa V		136.0
+5EC1_A_heavy	BCR	Heavy V		79.0
+5EC1_B_light	BCR	Kappa V		133.0
+5EC2_A_heavy	BCR	Heavy V		79.0
+5EC2_B_light	BCR	Kappa V		142.0
+3OR7_A_heavy	BCR	Heavy V		79.0
+3OR7_B_light	BCR	Kappa V		142.0
+5J9P_A_heavy	BCR	Heavy V		79.0
+5J9P_B_light	BCR	Kappa V		142.0
+1R3K_B_heavy	BCR	Heavy V		79.0
+1R3K_A_light	BCR	Kappa V		142.0
+1R3L_B_heavy	BCR	Heavy V		79.0
+1R3L_A_light	BCR	Kappa V		142.0
+1S5H_B_heavy	BCR	Heavy V		79.0
+1S5H_A_light	BCR	Kappa V		139.0
+1ZWI_A_heavy	BCR	Heavy V		79.0
+1ZWI_B_light	BCR	Kappa V		142.0
+1K4C_A_heavy	BCR	Heavy V		79.0
+1K4C_B_light	BCR	Kappa V		142.0
+3G6D_H_heavy	BCR	Heavy V		103.0
+3G6D_L_light	BCR	construct		133.0
+3L5W_H_heavy	BCR	Heavy V		56.0
+3L5W_L_light	BCR	construct		153.0
+3L5X_H_heavy	BCR	Heavy V		62.0
+3L5X_L_light	BCR	construct		158.0
+4I77_H_heavy	BCR	Heavy V		60.0
+4I77_L_light	BCR	construct		158.0
+5L6Y_H_heavy	BCR	Heavy V		76.0
+5L6Y_L_light	BCR	construct		140.0
+4I2X_B_heavy	BCR	Heavy V		88.0
+4I2X_A_light	BCR	construct		150.0
+5E0Q_A_heavy	BCR	Heavy V		75.0
+4RX4_H_heavy	BCR	Heavy V		17.0
+4RX4_L_light	BCR	Kappa V		155.0
+4LEO_A_heavy	BCR	Heavy V		76.0
+4LEO_B_light	BCR	construct		153.0
+4P59_H_heavy	BCR	Heavy V		113.0
+4P59_L_light	BCR	construct		147.0
+5CUS_H_heavy	BCR	Heavy V		106.0
+5CUS_L_light	BCR	construct		114.0
+4YE4_H_heavy	BCR	Heavy V		20.0
+4YE4_L_light	BCR	construct		147.0
+3IU3_H_heavy	BCR	Heavy V		68.0
+3IU3_L_light	BCR	construct		147.0
+4HT1_H_heavy	BCR	Heavy V		87.0
+4HT1_L_light	BCR	Kappa V		152.0
+4WEU_D_heavy	BCR	Heavy V		107.0
+3BE1_H_heavy	BCR	Heavy V		90.0
+3BE1_L_light	BCR	construct		150.0
+5E94_B_heavy	BCR	Heavy V		69.0
+5E94_A_light	BCR	construct		158.0
+3G6J_F_heavy	BCR	Heavy V		86.0
+3G6J_E_light	BCR	construct		158.0
+4Y5V_A_heavy	BCR	Heavy V		103.0
+4Y5V_B_light	BCR	Lambda V		70.0
+4ORZ_C_heavy	BCR	Heavy V		87.0
+2ZJS_H_heavy	BCR	Heavy V		85.0
+2ZJS_L_light	BCR	construct		150.0
+4OCM_C_heavy	BCR	Heavy V		95.0
+1RJL_B_heavy	BCR	Heavy V		82.0
+1RJL_A_light	BCR	construct		142.0
+4C59_B_heavy	BCR	Heavy V		38.0
+4OCL_C_heavy	BCR	Heavy V		95.0
+4YGA_B_heavy	BCR	Heavy V		75.0
+5IP4_A_heavy	BCR	Heavy V		59.0
+5E8E_B_heavy	BCR	Heavy V		59.0
+5E8E_A_light	BCR	construct		149.0
+4QO1_A_heavy	BCR	Heavy V		79.0
+4NP4_I_heavy	BCR	Heavy V		74.0
+4NP4_M_light	BCR	construct		150.0
+4NP4_H_heavy	BCR	Heavy V		74.0
+4NP4_L_light	BCR	construct		150.0
+3CX5_J_heavy	BCR	Heavy V		69.0
+3CX5_K_light	BCR	Kappa V		68.0
+1P84_J_heavy	BCR	Heavy V		69.0
+1P84_K_light	BCR	Kappa V		68.0
+2IBZ_X_heavy	BCR	Heavy V		69.0
+2IBZ_Y_light	BCR	Kappa V		68.0
+3CXH_J_heavy	BCR	Heavy V		69.0
+3CXH_K_light	BCR	Kappa V		68.0
+4PD4_J_heavy	BCR	Heavy V		69.0
+4PD4_K_light	BCR	Kappa V		68.0
+1EZV_X_heavy	BCR	Heavy V		69.0
+1EZV_Y_light	BCR	Kappa V		68.0
+1KB9_J_heavy	BCR	Heavy V		69.0
+1KB9_K_light	BCR	Kappa V		68.0
+1KYO_J_heavy	BCR	Heavy V		69.0
+1KYO_K_light	BCR	Kappa V		68.0
+5GS0_D_heavy	BCR	Heavy V		76.0
+5GS0_C_light	BCR	Lambda V		69.0
+3W9E_A_heavy	BCR	Heavy V		61.0
+3W9E_B_light	BCR	construct		145.0
+1LK3_H_heavy	BCR	Heavy V		66.0
+1LK3_L_light	BCR	construct		149.0
+5T5F_H_heavy	BCR	Heavy V		84.0
+5T5F_L_light	BCR	construct		139.0
+5C8J_A_heavy	BCR	Heavy V		89.0
+5C8J_B_light	BCR	construct		155.0
+5GJS_H_heavy	BCR	Heavy V		64.0
+5GJS_L_light	BCR	construct		150.0
+3V6O_C_heavy	BCR	Heavy V		64.0
+3V6O_E_light	BCR	construct		150.0
+4I18_H_heavy	BCR	Heavy V		86.0
+4I18_L_light	BCR	construct		153.0
+1YJD_H_heavy	BCR	Heavy V		80.0
+1YJD_L_light	BCR	construct		142.0
+4LSV_H_heavy	BCR	Heavy V		35.0
+4LSV_L_light	BCR	construct		147.0
+4Y8D_C_heavy	BCR	Heavy V		36.0
+5H35_H_heavy	BCR	Heavy V		84.0
+5H35_I_light	BCR	construct		142.0
+1JPS_H_heavy	BCR	Heavy V		89.0
+1JPS_L_light	BCR	construct		153.0
+5HVF_B_heavy	BCR	Heavy V		93.0
+4QCI_H_heavy	BCR	Heavy V		109.0
+4QCI_L_light	BCR	construct		106.0
+2YPV_H_heavy	BCR	Heavy V		84.0
+2YPV_L_light	BCR	Kappa V		142.0
+2VXT_H_heavy	BCR	Heavy V		66.0
+2VXT_L_light	BCR	Kappa V		144.0
+4XWO_C_heavy	BCR	Heavy V		90.0
+4XWO_D_light	BCR	construct		155.0
+1KB5_H_heavy	BCR	Heavy V		82.0
+1KB5_L_light	BCR	construct		150.0
+5F9A_C_heavy	BCR	Heavy V		90.0
+4YWG_H_heavy	BCR	Heavy V		54.0
+4YWG_L_light	BCR	construct		159.0
+5LQB_H_heavy	BCR	Heavy V		83.0
+5LQB_L_light	BCR	construct		144.0
+2QQN_H_heavy	BCR	Heavy V		101.0
+2QQN_L_light	BCR	construct		158.0
+4OGA_C_heavy	BCR	Heavy V		76.0
+4OGA_D_light	BCR	Kappa V		85.0
+4JR9_H_heavy	BCR	Heavy V		75.0
+4JR9_L_light	BCR	construct		139.0
+3U9P_H_heavy	BCR	Heavy V		69.0
+3U9P_L_light	BCR	construct		139.0
+3FMG_H_heavy	BCR	Heavy V		83.0
+3FMG_L_light	BCR	construct		137.0
+3V7A_E_heavy	BCR	Heavy V		82.0
+3V7A_H_light	BCR	construct		150.0
+4XT1_C_heavy	BCR	Heavy V		102.0
+5BOP_A_heavy	BCR	Heavy V		96.0
+5J1S_C_heavy	BCR	Heavy V		88.0
+4YQX_H_heavy	BCR	Heavy V		76.0
+4YQX_L_light	BCR	Kappa V		82.0
+4YBL_H_heavy	BCR	Heavy V		71.0
+4YBL_L_light	BCR	construct		132.0
+4FQJ_H_heavy	BCR	Heavy V		61.0
+4FQJ_L_light	BCR	construct		136.0
+5F9D_C_heavy	BCR	Heavy V		90.0
+4ETQ_H_heavy	BCR	Heavy V		74.0
+4ETQ_L_light	BCR	construct		145.0
+4U6H_A_heavy	BCR	Heavy V		74.0
+4U6H_B_light	BCR	Kappa V		142.0
+2I9L_B_heavy	BCR	Heavy V		91.0
+2I9L_A_light	BCR	construct		145.0
+5KW9_H_heavy	BCR	Heavy V		62.0
+5KW9_L_light	BCR	construct		147.0
+2QQL_H_heavy	BCR	Heavy V		91.0
+2QQL_L_light	BCR	construct		158.0
+1CIC_B_heavy	BCR	Heavy V		84.0
+1CIC_A_light	BCR	construct		148.0
+3MAC_H_heavy	BCR	Heavy V		69.0
+3MAC_L_light	BCR	construct		133.0
+1OP9_A_heavy	BCR	Heavy V		81.0
+3EBA_A_heavy	BCR	Heavy V		88.0
+4I0C_D_heavy	BCR	Heavy V		68.0
+2QQK_H_heavy	BCR	Heavy V		91.0
+2QQK_L_light	BCR	construct		147.0
+1FJ1_B_heavy	BCR	Heavy V		57.0
+1FJ1_A_light	BCR	Kappa V		144.0
+1OSP_H_heavy	BCR	Heavy V		45.0
+1OSP_L_light	BCR	Kappa V		150.0
+3RU8_H_heavy	BCR	Heavy V		59.0
+3RU8_L_light	BCR	construct		148.0
+3V4P_H_heavy	BCR	Heavy V		83.0
+3V4P_L_light	BCR	Kappa V		139.0
+3V4V_H_heavy	BCR	Heavy V		83.0
+3V4V_L_light	BCR	Kappa V		139.0
+3KS0_H_heavy	BCR	Heavy V		61.0
+3KS0_L_light	BCR	Lambda V		107.0
+4JZJ_H_heavy	BCR	Heavy V		74.0
+4JZJ_L_light	BCR	construct		153.0
+4DK6_A_heavy	BCR	Heavy V		101.0
+4DKA_A_heavy	BCR	Heavy V		101.0
+2J6E_H_heavy	BCR	Heavy V		76.0
+2J6E_L_light	BCR	construct		132.0
+1ADQ_H_heavy	BCR	Heavy V		88.0
+1ADQ_L_light	BCR	construct		141.0
+4Z5R_K_heavy	BCR	Heavy V		84.0
+4Z5R_J_light	BCR	construct		153.0
+4XTR_C_heavy	BCR	Heavy V		90.0
+4XTR_D_light	BCR	construct		155.0
+2VH5_H_heavy	BCR	Heavy V		89.0
+2VH5_L_light	BCR	Kappa V		73.0
+2UZI_H_heavy	BCR	Heavy V		99.0
+2UZI_L_light	BCR	Kappa V		83.0
+1AHW_B_heavy	BCR	Heavy V		81.0
+1AHW_A_light	BCR	construct		149.0
+5EU7_E_heavy	BCR	Heavy V		82.0
+5EU7_C_light	BCR	construct		147.0
+4F37_H_heavy	BCR	Heavy V		58.0
+4F37_L_light	BCR	construct		144.0
+4YDI_H_heavy	BCR	Heavy V		40.0
+4YDI_L_light	BCR	Kappa V		153.0
+4HJ0_P_heavy	BCR	Heavy V		73.0
+4HJ0_Q_light	BCR	construct		131.0
+5ESV_H_heavy	BCR	Heavy V		58.0
+5ESV_L_light	BCR	construct		153.0
+4QWW_F_heavy	BCR	Heavy V		80.0
+4QWW_E_light	BCR	construct		144.0
+3U2S_H_heavy	BCR	Heavy V		46.0
+3U2S_L_light	BCR	construct		129.0
+5T33_H_heavy	BCR	Heavy V		88.0
+5T33_L_light	BCR	construct		136.0
+3ZLQ_C_heavy	BCR	Heavy V		86.0
+4BEL_D_heavy	BCR	Heavy V		86.0
+3ZKQ_D_heavy	BCR	Heavy V		83.0
+3ZKM_H_heavy	BCR	Heavy V		70.0
+3ZKM_L_light	BCR	construct		144.0
+3ZKN_H_heavy	BCR	Heavy V		70.0
+3ZKN_L_light	BCR	construct		144.0
+3UC0_H_heavy	BCR	Heavy V		56.0
+3UC0_L_light	BCR	construct		136.0
+1FSK_C_heavy	BCR	Heavy V		75.0
+1FSK_B_light	BCR	construct		150.0
+5SY8_H_heavy	BCR	Heavy V		49.0
+5SY8_L_light	BCR	construct		136.0
+5T6L_H_heavy	BCR	Heavy V		49.0
+5T6L_L_light	BCR	construct		132.0
+5T80_H_heavy	BCR	Heavy V		49.0
+5T80_L_light	BCR	construct		132.0
+5T85_H_heavy	BCR	Heavy V		49.0
+5T85_L_light	BCR	construct		129.0
+5TFW_H_heavy	BCR	Heavy V		49.0
+5TFW_L_light	BCR	construct		139.0
+4M8Q_H_heavy	BCR	Heavy V		74.0
+4M8Q_L_light	BCR	Kappa V		78.0
+4ODX_H_heavy	BCR	Heavy V		78.0
+4ODX_B_light	BCR	Kappa V		81.0
+4M62_H_heavy	BCR	Heavy V		76.0
+4M62_L_light	BCR	Kappa V		84.0
+2W9E_H_heavy	BCR	Heavy V		66.0
+2W9E_L_light	BCR	construct		142.0
+1TPX_B_heavy	BCR	Heavy V		50.0
+1TPX_C_light	BCR	Kappa V		150.0
+1TQC_B_heavy	BCR	Heavy V		50.0
+1TQC_C_light	BCR	Kappa V		150.0
+1TQB_B_heavy	BCR	Heavy V		50.0
+1TQB_C_light	BCR	Kappa V		150.0
+4MA7_H_heavy	BCR	Heavy V		81.0
+4MA7_L_light	BCR	construct		136.0
+4MA8_H_heavy	BCR	Heavy V		81.0
+4MA8_L_light	BCR	construct		136.0
+4YX2_H_heavy	BCR	Heavy V		81.0
+4YX2_L_light	BCR	construct		136.0
+4YXH_H_heavy	BCR	Heavy V		81.0
+4YXH_L_light	BCR	construct		136.0
+4YXK_H_heavy	BCR	Heavy V		81.0
+4YXK_L_light	BCR	construct		136.0
+4YXL_H_heavy	BCR	Heavy V		81.0
+4YXL_L_light	BCR	construct		136.0
+4DGI_H_heavy	BCR	Heavy V		81.0
+4DGI_L_light	BCR	construct		136.0
+4H88_H_heavy	BCR	Heavy V		81.0
+4H88_L_light	BCR	construct		136.0
+4N9O_B_heavy	BCR	Heavy V		94.0
+4KML_B_heavy	BCR	Heavy V		94.0
+2R0L_H_heavy	BCR	Heavy V		94.0
+2R0L_L_light	BCR	construct		158.0
+2WUB_H_heavy	BCR	Heavy V		93.0
+2WUB_L_light	BCR	construct		158.0
+2WUC_H_heavy	BCR	Heavy V		93.0
+2WUC_L_light	BCR	construct		158.0
+2P42_B_heavy	BCR	Heavy V		86.0
+2P43_B_heavy	BCR	Heavy V		86.0
+2P44_B_heavy	BCR	Heavy V		83.0
+2P45_B_heavy	BCR	Heavy V		82.0
+2P46_B_heavy	BCR	Heavy V		82.0
+2P47_B_heavy	BCR	Heavy V		82.0
+2P48_B_heavy	BCR	Heavy V		82.0
+2P49_B_heavy	BCR	Heavy V		86.0
+1BZQ_L_heavy	BCR	Heavy V		86.0
+2P4A_B_heavy	BCR	Heavy V		84.0
+3QSK_B_heavy	BCR	Heavy V		85.0
+4POU_B_heavy	BCR	Heavy V		79.0
+2ARJ_H_heavy	BCR	Heavy V		61.0
+2ARJ_L_light	BCR	construct		123.0
+3WKM_H_heavy	BCR	Heavy V		73.0
+3WKM_L_light	BCR	construct		139.0
+2FD6_H_heavy	BCR	Heavy V		84.0
+2FD6_L_light	BCR	construct		146.0
+5KOV_C_heavy	BCR	construct		70.0
+5KOV_nan_light	BCR	construct		70.0
+5HHV_H_heavy	BCR	Heavy V		112.0
+5HHV_L_light	BCR	construct		133.0
+5HHX_H_heavy	BCR	Heavy V		112.0
+5HHX_L_light	BCR	construct		133.0
+5HI3_H_heavy	BCR	Heavy V		112.0
+5HI3_L_light	BCR	construct		133.0
+5HI4_H_heavy	BCR	Heavy V		112.0
+5HI4_L_light	BCR	construct		133.0
+5HI5_H_heavy	BCR	Heavy V		112.0
+5HI5_L_light	BCR	construct		133.0
+2VXS_H_heavy	BCR	Heavy V		112.0
+2VXS_L_light	BCR	construct		133.0
+1FBI_H_heavy	BCR	Heavy V		82.0
+1FBI_L_light	BCR	Kappa V		150.0
+1BVK_B_heavy	BCR	Heavy V		70.0
+1BVK_A_light	BCR	Kappa V		73.0
+1FDL_H_heavy	BCR	Heavy V		71.0
+1FDL_L_light	BCR	construct		150.0
+1KIR_B_heavy	BCR	Heavy V		75.0
+1KIR_A_light	BCR	Kappa V		65.0
+1VFB_B_heavy	BCR	Heavy V		75.0
+1VFB_A_light	BCR	Kappa V		65.0
+1A2Y_B_heavy	BCR	Heavy V		75.0
+1A2Y_A_light	BCR	Kappa V		65.0
+1G7H_B_heavy	BCR	Heavy V		75.0
+1G7H_A_light	BCR	Kappa V		65.0
+1G7I_B_heavy	BCR	Heavy V		75.0
+1G7I_A_light	BCR	Kappa V		64.0
+1G7J_B_heavy	BCR	Heavy V		75.0
+1G7J_A_light	BCR	Kappa V		65.0
+1G7L_B_heavy	BCR	Heavy V		70.0
+1G7L_A_light	BCR	Kappa V		65.0
+1G7M_B_heavy	BCR	Heavy V		75.0
+1G7M_A_light	BCR	Kappa V		64.0
+1BQL_H_heavy	BCR	Heavy V		73.0
+1BQL_L_light	BCR	construct		150.0
+1YQV_H_heavy	BCR	Heavy V		75.0
+1YQV_L_light	BCR	construct		142.0
+2IFF_H_heavy	BCR	Heavy V		73.0
+2IFF_L_light	BCR	construct		150.0
+1DQJ_B_heavy	BCR	Heavy V		51.0
+1DQJ_A_light	BCR	Kappa V		150.0
+1NBY_B_heavy	BCR	Heavy V		51.0
+1NBY_A_light	BCR	Kappa V		150.0
+1NBZ_B_heavy	BCR	Heavy V		51.0
+1NBZ_A_light	BCR	Kappa V		150.0
+1KIP_B_heavy	BCR	Heavy V		73.0
+1KIP_A_light	BCR	Kappa V		65.0
+1KIQ_B_heavy	BCR	Heavy V		75.0
+1KIQ_A_light	BCR	Kappa V		65.0
+1JHL_H_heavy	BCR	Heavy V		84.0
+1JHL_L_light	BCR	Kappa V		62.0
+1DZB_A_heavy	BCR	construct		83.0
+1DZB_A_light	BCR	construct		83.0
+1DZB_B_heavy	BCR	construct		83.0
+1DZB_B_light	BCR	construct		83.0
+1JTO_B_heavy	BCR	Heavy V		71.0
+1JTP_A_heavy	BCR	Heavy V		72.0
+1JTP_B_heavy	BCR	Heavy V		72.0
+1JTT_A_heavy	BCR	Heavy V		72.0
+1MEL_A_heavy	BCR	Heavy V		71.0
+1ZMY_A_heavy	BCR	Heavy V		79.0
+1JTO_A_heavy	BCR	Heavy V		71.0
+1NDM_B_heavy	BCR	Heavy V		60.0
+1NDM_A_light	BCR	Kappa V		150.0
+1NDG_B_heavy	BCR	Heavy V		44.0
+1NDG_A_light	BCR	Kappa V		150.0
+2EIZ_B_heavy	BCR	Heavy V		66.0
+2EIZ_A_light	BCR	Kappa V		82.0
+2EKS_B_heavy	BCR	Heavy V		69.0
+2EKS_A_light	BCR	Kappa V		82.0
+2YSS_B_heavy	BCR	Heavy V		63.0
+2YSS_A_light	BCR	Kappa V		82.0
+2DQC_H_heavy	BCR	Heavy V		55.0
+2DQC_L_light	BCR	Kappa V		66.0
+2DQF_B_heavy	BCR	Heavy V		55.0
+2DQF_A_light	BCR	Kappa V		66.0
+2DQF_E_heavy	BCR	Heavy V		55.0
+2DQF_D_light	BCR	Kappa V		66.0
+1ZVY_A_heavy	BCR	Heavy V		58.0
+1ZVH_A_heavy	BCR	Heavy V		76.0
+1ZV5_A_heavy	BCR	Heavy V		83.0
+1P2C_B_heavy	BCR	Heavy V		76.0
+1P2C_A_light	BCR	Kappa V		142.0
+1IC4_H_heavy	BCR	Heavy V		55.0
+1IC4_L_light	BCR	Kappa V		66.0
+1IC5_H_heavy	BCR	Heavy V		55.0
+1IC5_L_light	BCR	Kappa V		66.0
+1IC7_H_heavy	BCR	Heavy V		54.0
+1IC7_L_light	BCR	Kappa V		66.0
+1XGP_B_heavy	BCR	Heavy V		51.0
+1XGP_A_light	BCR	Kappa V		150.0
+1RJC_A_heavy	BCR	Heavy V		64.0
+1RI8_A_heavy	BCR	Heavy V		66.0
+1XGQ_B_heavy	BCR	Heavy V		50.0
+1XGQ_A_light	BCR	Kappa V		150.0
+1XGT_B_heavy	BCR	Heavy V		50.0
+1XGT_A_light	BCR	Kappa V		150.0
+1XGR_B_heavy	BCR	Heavy V		49.0
+1XGR_A_light	BCR	Kappa V		150.0
+1XGU_B_heavy	BCR	Heavy V		50.0
+1XGU_A_light	BCR	Kappa V		150.0
+3A67_H_heavy	BCR	Heavy V		55.0
+3A67_L_light	BCR	Kappa V		65.0
+3A6C_H_heavy	BCR	Heavy V		55.0
+3A6C_L_light	BCR	Kappa V		65.0
+3A6B_H_heavy	BCR	Heavy V		55.0
+3A6B_L_light	BCR	Kappa V		65.0
+1J1P_H_heavy	BCR	Heavy V		55.0
+1J1P_L_light	BCR	Kappa V		65.0
+1J1X_H_heavy	BCR	Heavy V		55.0
+1J1X_L_light	BCR	Kappa V		66.0
+1J1O_H_heavy	BCR	Heavy V		55.0
+1J1O_L_light	BCR	Kappa V		64.0
+1UA6_H_heavy	BCR	Heavy V		51.0
+1UA6_L_light	BCR	Kappa V		66.0
+1UAC_H_heavy	BCR	Heavy V		51.0
+1UAC_L_light	BCR	Kappa V		66.0
+2DQD_H_heavy	BCR	Heavy V		56.0
+2DQD_L_light	BCR	Kappa V		66.0
+2DQE_H_heavy	BCR	Heavy V		54.0
+2DQE_L_light	BCR	Kappa V		66.0
+2DQG_H_heavy	BCR	Heavy V		55.0
+2DQG_L_light	BCR	Kappa V		66.0
+1C08_B_heavy	BCR	Heavy V		55.0
+1C08_A_light	BCR	Kappa V		66.0
+2DQH_H_heavy	BCR	Heavy V		52.0
+2DQH_L_light	BCR	Kappa V		66.0
+2DQI_H_heavy	BCR	Heavy V		55.0
+2DQI_L_light	BCR	Kappa V		65.0
+2DQJ_H_heavy	BCR	Heavy V		55.0
+2DQJ_L_light	BCR	Kappa V		66.0
+2ZNW_A_light	BCR	construct		59.0
+2ZNW_nan_heavy	BCR	construct		59.0
+2ZNX_A_light	BCR	construct		59.0
+2ZNX_nan_heavy	BCR	construct		59.0
+3D9A_H_heavy	BCR	Heavy V		52.0
+3D9A_L_light	BCR	Kappa V		144.0
+3HFM_H_heavy	BCR	Heavy V		52.0
+3HFM_L_light	BCR	Kappa V		150.0
+1MLC_D_heavy	BCR	Heavy V		79.0
+1MLC_C_light	BCR	Kappa V		150.0
+1MLC_B_heavy	BCR	Heavy V		79.0
+1MLC_A_light	BCR	Kappa V		150.0
+4PGJ_A_heavy	BCR	Heavy V		102.0
+4U3X_A_heavy	BCR	Heavy V		102.0
+2VYR_H_heavy	BCR	Heavy V		106.0
+5UGY_H_heavy	BCR	Heavy V		72.0
+5UGY_L_light	BCR	construct		133.0
+4HKX_A_heavy	BCR	Heavy V		69.0
+4HKX_B_light	BCR	construct		133.0
+4YK4_C_heavy	BCR	Heavy V		77.0
+4YK4_B_light	BCR	construct		147.0
+4YJZ_L_light	BCR	construct		60.0
+4YJZ_nan_heavy	BCR	construct		60.0
+2BDN_H_heavy	BCR	Heavy V		76.0
+2BDN_L_light	BCR	construct		150.0
+4DN4_H_heavy	BCR	Heavy V		76.0
+4DN4_L_light	BCR	construct		147.0
+1IAI_I_heavy	BCR	Heavy V		76.0
+1IAI_M_light	BCR	construct		150.0
+4CAD_B_heavy	BCR	Heavy V		79.0
+4CAD_A_light	BCR	construct		142.0
+4DVR_H_heavy	BCR	Heavy V		77.0
+4DVR_L_light	BCR	construct		151.0
+4LST_H_heavy	BCR	Heavy V		34.0
+4LST_L_light	BCR	construct		155.0
+3NGB_H_heavy	BCR	Heavy V		34.0
+3NGB_L_light	BCR	construct		156.0
+3SE9_H_heavy	BCR	Heavy V		21.0
+3SE9_L_light	BCR	construct		159.0
+4JPV_H_heavy	BCR	Heavy V		35.0
+4JPV_L_light	BCR	construct		151.0
+4JPW_H_heavy	BCR	Heavy V		35.0
+4JPW_L_light	BCR	Kappa V		148.0
+4JAN_H_heavy	BCR	Heavy V		40.0
+4JAN_L_light	BCR	construct		125.0
+5IGX_H_heavy	BCR	Heavy V		83.0
+5IGX_L_light	BCR	construct		140.0
+4JDT_H_heavy	BCR	Heavy V		81.0
+4JDT_L_light	BCR	construct		150.0
+4JB9_H_heavy	BCR	Heavy V		8.0
+4JB9_L_light	BCR	Kappa V		158.0
+4JKP_H_heavy	BCR	Heavy V		26.0
+4JKP_L_light	BCR	construct		153.0
+3U7Y_H_heavy	BCR	Heavy V		27.0
+3U7Y_L_light	BCR	construct		158.0
+4LAJ_H_heavy	BCR	Heavy V		99.0
+4LSP_H_heavy	BCR	Heavy V		22.0
+4LSP_L_light	BCR	Kappa V		150.0
+4LSQ_H_heavy	BCR	Heavy V		22.0
+4LSQ_L_light	BCR	Kappa V		153.0
+4LSR_H_heavy	BCR	Heavy V		22.0
+4LSR_L_light	BCR	Kappa V		150.0
+4LSU_H_heavy	BCR	Heavy V		42.0
+4LSU_L_light	BCR	construct		133.0
+3SE8_H_heavy	BCR	Heavy V		12.0
+3SE8_L_light	BCR	construct		153.0
+4H8W_H_heavy	BCR	Heavy V		98.0
+4H8W_L_light	BCR	construct		132.0
+4OLV_H_heavy	BCR	Heavy V		32.0
+4OLV_L_light	BCR	construct		158.0
+4OLW_H_heavy	BCR	Heavy V		33.0
+4OLW_L_light	BCR	construct		156.0
+4OLX_H_heavy	BCR	Heavy V		32.0
+4OLX_L_light	BCR	construct		158.0
+4OLZ_H_heavy	BCR	Heavy V		31.0
+4OLZ_L_light	BCR	construct		158.0
+4OLY_H_heavy	BCR	Heavy V		33.0
+4OLY_L_light	BCR	construct		158.0
+4OM0_H_heavy	BCR	Heavy V		32.0
+4OM0_L_light	BCR	construct		158.0
+4OLU_H_heavy	BCR	Heavy V		33.0
+4OLU_L_light	BCR	construct		158.0
+4OM1_H_heavy	BCR	Heavy V		33.0
+4OM1_L_light	BCR	construct		158.0
+4S1Q_H_heavy	BCR	Heavy V		12.0
+4S1Q_L_light	BCR	construct		153.0
+4S1R_H_heavy	BCR	Heavy V		22.0
+4S1R_L_light	BCR	construct		158.0
+4S1S_H_heavy	BCR	Heavy V		35.0
+4S1S_L_light	BCR	construct		158.0
+4XNZ_H_heavy	BCR	Heavy V		9.0
+4XNZ_L_light	BCR	Kappa V		153.0
+4XVS_H_heavy	BCR	Heavy V		56.0
+4XVS_L_light	BCR	construct		156.0
+4XVT_H_heavy	BCR	Heavy V		56.0
+4XVT_L_light	BCR	construct		156.0
+4YDK_H_heavy	BCR	Heavy V		60.0
+4YDK_L_light	BCR	Kappa V		158.0
+4YDL_H_heavy	BCR	Heavy V		35.0
+4YDL_L_light	BCR	construct		158.0
+4YFL_H_heavy	BCR	Heavy V		37.0
+4YFL_L_light	BCR	construct		125.0
+4RWY_H_heavy	BCR	Heavy V		20.0
+4RWY_L_light	BCR	construct		155.0
+5F9W_H_heavy	BCR	Heavy V		73.0
+5F9W_L_light	BCR	construct		147.0
+5F9O_H_heavy	BCR	Heavy V		42.0
+5F9O_L_light	BCR	construct		147.0
+5F96_H_heavy	BCR	Heavy V		25.0
+5F96_L_light	BCR	construct		150.0
+5FEC_A_heavy	BCR	Heavy V		86.0
+5FEC_B_light	BCR	construct		153.0
+5TE6_H_heavy	BCR	Heavy V		32.0
+5TE6_L_light	BCR	Kappa V		158.0
+5TE7_H_heavy	BCR	Heavy V		32.0
+5TE7_L_light	BCR	Kappa V		158.0
+3O2D_H_heavy	BCR	Heavy V		83.0
+3O2D_L_light	BCR	construct		147.0
+1XIW_D_heavy	BCR	Heavy V		75.0
+1XIW_C_light	BCR	Kappa V		65.0
+1SY6_H_heavy	BCR	Heavy V		89.0
+1SY6_L_light	BCR	construct		149.0
+2R4S_H_heavy	BCR	Heavy V		73.0
+2R4S_L_light	BCR	Kappa V		150.0
+2R4R_H_heavy	BCR	Heavy V		73.0
+2R4R_L_light	BCR	Kappa V		150.0
+5D1Z_D_heavy	BCR	Heavy V		55.0
+5D1Z_C_light	BCR	construct		153.0
+5D1Z_B_heavy	BCR	Heavy V		88.0
+5D1Z_A_light	BCR	construct		153.0
+4FQI_H_heavy	BCR	Heavy V		66.0
+4FQI_L_light	BCR	construct		132.0
+3FKU_Y_heavy	BCR	construct		68.0
+3FKU_nan_light	BCR	construct		68.0
+5A3I_C_heavy	BCR	Heavy V		68.0
+5A3I_D_light	BCR	construct		153.0
+4XNM_H_heavy	BCR	Heavy V		81.0
+4XNM_L_light	BCR	construct		129.0
+4XNQ_H_heavy	BCR	Heavy V		81.0
+4XNQ_L_light	BCR	construct		129.0
+4XRC_H_heavy	BCR	Heavy V		81.0
+4XRC_L_light	BCR	construct		129.0
+5DUM_H_heavy	BCR	Heavy V		53.0
+5DUM_L_light	BCR	construct		151.0
+5DUP_H_heavy	BCR	Heavy V		99.0
+5DUP_L_light	BCR	construct		144.0
+5DUR_H_heavy	BCR	Heavy V		70.0
+5DUR_L_light	BCR	construct		128.0
+3GBM_H_heavy	BCR	Heavy V		62.0
+3GBM_L_light	BCR	construct		135.0
+3HB3_C_heavy	BCR	Heavy V		94.0
+3HB3_D_light	BCR	Kappa V		61.0
+1AR1_C_heavy	BCR	Heavy V		94.0
+1AR1_D_light	BCR	Kappa V		61.0
+3EHB_C_heavy	BCR	Heavy V		94.0
+3EHB_D_light	BCR	Kappa V		61.0
+1QLE_H_heavy	BCR	Heavy V		94.0
+1QLE_L_light	BCR	Kappa V		61.0
+2EXY_C_heavy	BCR	Heavy V		64.0
+2EXY_D_light	BCR	construct		140.0
+2FED_C_heavy	BCR	Heavy V		64.0
+2FED_D_light	BCR	construct		140.0
+2FEE_I_heavy	BCR	Heavy V		64.0
+2FEE_L_light	BCR	construct		140.0
+2H2P_C_heavy	BCR	Heavy V		64.0
+2H2P_D_light	BCR	construct		140.0
+2HTL_C_heavy	BCR	Heavy V		64.0
+2HTL_D_light	BCR	construct		140.0
+4FG6_C_heavy	BCR	Heavy V		64.0
+4FG6_D_light	BCR	construct		140.0
+4KJQ_C_heavy	BCR	Heavy V		64.0
+4KJQ_D_light	BCR	construct		140.0
+4KJW_C_heavy	BCR	Heavy V		64.0
+4KJW_D_light	BCR	construct		140.0
+4KK5_C_heavy	BCR	Heavy V		64.0
+4KK5_D_light	BCR	construct		140.0
+4KK8_C_heavy	BCR	Heavy V		64.0
+4KK8_D_light	BCR	construct		140.0
+1OTS_C_heavy	BCR	Heavy V		64.0
+1OTS_D_light	BCR	construct		140.0
+4KKB_C_heavy	BCR	Heavy V		64.0
+4KKB_D_light	BCR	construct		140.0
+4KKC_C_heavy	BCR	Heavy V		64.0
+4KKC_D_light	BCR	construct		140.0
+4KKL_C_heavy	BCR	Heavy V		64.0
+4KKL_D_light	BCR	construct		140.0
+2H2S_C_heavy	BCR	Heavy V		64.0
+2H2S_D_light	BCR	construct		140.0
+3EJZ_C_heavy	BCR	Heavy V		64.0
+3EJZ_D_light	BCR	construct		140.0
+3DET_C_heavy	BCR	Heavy V		64.0
+3DET_D_light	BCR	construct		140.0
+1OTT_C_heavy	BCR	Heavy V		64.0
+1OTT_D_light	BCR	construct		140.0
+1OTU_C_heavy	BCR	Heavy V		64.0
+1OTU_D_light	BCR	construct		140.0
+2EXW_C_heavy	BCR	Heavy V		64.0
+2EXW_D_light	BCR	construct		140.0
+4Y5X_A_heavy	BCR	Heavy V		110.0
+4Y5X_B_light	BCR	Lambda V		67.0
+1UJ3_B_heavy	BCR	Heavy V		70.0
+1UJ3_A_light	BCR	construct		158.0
+5JZ7_H_heavy	BCR	Heavy V		69.0
+5JZ7_L_light	BCR	Lambda V		74.0
+2VWE_E_heavy	BCR	Heavy V		87.0
+2VWE_C_light	BCR	Kappa V		145.0
+5CZV_H_heavy	BCR	Heavy V		78.0
+5CZV_L_light	BCR	construct		150.0
+5CZX_H_heavy	BCR	Heavy V		80.0
+5CZX_L_light	BCR	construct		153.0
+4ENE_C_heavy	BCR	Heavy V		65.0
+4ENE_D_light	BCR	construct		140.0
+4LOU_C_heavy	BCR	Heavy V		65.0
+4LOU_D_light	BCR	construct		140.0
+5F93_C_heavy	BCR	Heavy V		90.0
+5F97_G_heavy	BCR	Heavy V		90.0
+4UTA_H_heavy	BCR	Heavy V		92.0
+4UTA_L_light	BCR	construct		153.0
+5MES_H_heavy	BCR	Heavy V		96.0
+5MES_L_light	BCR	construct		109.0
+5MEV_H_heavy	BCR	Heavy V		96.0
+5MEV_L_light	BCR	construct		109.0
+3UZV_B_heavy	BCR	construct		69.0
+3UZV_B_light	BCR	construct		69.0
+3WLW_H_heavy	BCR	Heavy V		83.0
+3WLW_L_light	BCR	construct		155.0
+3WSQ_H_heavy	BCR	Heavy V		69.0
+3WSQ_L_light	BCR	Kappa V		154.0
+1S78_F_heavy	BCR	Heavy V		89.0
+1S78_E_light	BCR	construct		158.0
+4XPA_H_heavy	BCR	Heavy V		79.0
+4XPA_L_light	BCR	construct		144.0
+4XPF_H_heavy	BCR	Heavy V		79.0
+4XPF_L_light	BCR	construct		144.0
+4XPG_H_heavy	BCR	Heavy V		79.0
+4XPG_L_light	BCR	construct		144.0
+4XPH_H_heavy	BCR	Heavy V		79.0
+4XPH_L_light	BCR	construct		142.0
+4M48_H_heavy	BCR	Heavy V		79.0
+4M48_L_light	BCR	construct		144.0
+4XNU_H_heavy	BCR	Heavy V		79.0
+4XNU_L_light	BCR	construct		144.0
+4XNX_H_heavy	BCR	Heavy V		79.0
+4XNX_L_light	BCR	construct		144.0
+4XP1_H_heavy	BCR	Heavy V		79.0
+4XP1_L_light	BCR	construct		144.0
+4XP4_H_heavy	BCR	Heavy V		79.0
+4XP4_L_light	BCR	construct		144.0
+4XP5_H_heavy	BCR	Heavy V		79.0
+4XP5_L_light	BCR	construct		142.0
+4XP6_H_heavy	BCR	Heavy V		79.0
+4XP6_L_light	BCR	construct		142.0
+4XP9_H_heavy	BCR	Heavy V		79.0
+4XP9_L_light	BCR	construct		139.0
+2I60_H_heavy	BCR	Heavy V		52.0
+2I60_L_light	BCR	construct		151.0
+1RZK_H_heavy	BCR	Heavy V		54.0
+1RZK_L_light	BCR	construct		151.0
+1YYL_H_heavy	BCR	Heavy V		54.0
+1YYL_L_light	BCR	construct		151.0
+1YYM_H_heavy	BCR	Heavy V		54.0
+1YYM_L_light	BCR	construct		151.0
+2I5Y_H_heavy	BCR	Heavy V		54.0
+2I5Y_L_light	BCR	construct		151.0
+1G9N_H_heavy	BCR	Heavy V		50.0
+1G9N_L_light	BCR	construct		147.0
+2NY7_H_heavy	BCR	Heavy V		59.0
+2NY7_L_light	BCR	construct		156.0
+5F7K_C_heavy	BCR	Heavy V		90.0
+5F7N_C_heavy	BCR	Heavy V		90.0
+5F7Y_C_heavy	BCR	Heavy V		90.0
+5F8R_C_heavy	BCR	Heavy V		90.0
+4C57_C_heavy	BCR	Heavy V		63.0
+3QWO_H_heavy	BCR	Heavy V		66.0
+3QWO_L_light	BCR	construct		147.0
+3QWO_H_heavy	BCR	Heavy V		66.0
+3QWO_L_light	BCR	construct		147.0
+5DMJ_B_heavy	BCR	Heavy V		97.0
+5IHL_B_heavy	BCR	Heavy V		97.0
+3O0R_H_heavy	BCR	Heavy V		71.0
+3O0R_L_light	BCR	Kappa V		145.0
+4PS4_H_heavy	BCR	Heavy V		61.0
+4PS4_L_light	BCR	construct		158.0
+3TYG_H_heavy	BCR	Heavy V		33.0
+3TYG_L_light	BCR	construct		132.0
+1H0D_B_heavy	BCR	Heavy V		92.0
+1H0D_A_light	BCR	construct		136.0
+5IMM_B_heavy	BCR	Heavy V		117.0
+5IMO_B_heavy	BCR	Heavy V		117.0
+5IMK_B_heavy	BCR	Heavy V		117.0
+5IML_B_heavy	BCR	Heavy V		117.0
+1OB1_B_heavy	BCR	Heavy V		54.0
+1OB1_A_light	BCR	construct		150.0
+1OB1_E_heavy	BCR	Heavy V		54.0
+1OB1_D_light	BCR	construct		150.0
+1FYT_D_alpha	TCR	Alpha V		32.0
+1FYT_E_beta	TCR	Beta V		30.0
+2VLJ_D_alpha	TCR	Alpha V		18.0
+2VLJ_E_beta	TCR	Beta V		39.0
+2VLK_D_alpha	TCR	Alpha V		18.0
+2VLK_E_beta	TCR	Beta V		39.0
+2VLR_D_alpha	TCR	Alpha V		18.0
+2VLR_E_beta	TCR	Beta V		40.0
+2PYE_D_alpha	TCR	Alpha V		24.0
+2PYE_E_beta	TCR	Beta V		41.0
+2P5E_D_alpha	TCR	Alpha V		21.0
+2P5E_E_beta	TCR	Beta V		39.0
+2P5W_D_alpha	TCR	Alpha V		21.0
+2P5W_E_beta	TCR	Beta V		40.0
+2GJ6_D_alpha	TCR	Alpha V		30.0
+2GJ6_E_beta	TCR	Beta V		39.0
+1D9K_A_alpha	TCR	Alpha V		41.0
+1D9K_B_beta	TCR	Beta V		38.0
+2ESV_D_alpha	TCR	Alpha V		7.0
+2ESV_E_beta	TCR	Beta V		40.0
+1U3H_A_alpha	TCR	Alpha V		41.0
+1U3H_B_beta	TCR	Beta V		47.0
+2IAN_D_alpha	TCR	Alpha V		12.0
+2IAN_E_beta	TCR	Beta V		37.0
+2IAM_C_alpha	TCR	Alpha V		12.0
+2IAM_D_beta	TCR	Beta V		39.0
+1G6R_A_alpha	TCR	Alpha V		35.0
+1G6R_B_beta	TCR	Beta V		34.0
+3C5Z_A_alpha	TCR	Alpha V		25.0
+3C5Z_B_beta	TCR	Beta V		31.0
+3C6L_A_alpha	TCR	Alpha V		41.0
+3C6L_B_beta	TCR	Beta V		37.0
+3C60_A_alpha	TCR	Alpha V		24.0
+3C60_B_beta	TCR	Beta V		33.0
+2Z31_A_alpha	TCR	Alpha V		34.0
+2Z31_B_beta	TCR	Beta V		43.0
+2PXY_A_alpha	TCR	Alpha V		35.0
+2PXY_B_beta	TCR	Beta V		45.0
+3DXA_D_alpha	TCR	Alpha V		5.0
+3DXA_E_beta	TCR	Beta V		53.0
+1AO7_D_alpha	TCR	Alpha V		32.0
+1AO7_E_beta	TCR	Beta V		39.0
+2CKB_A_alpha	TCR	Alpha V		35.0
+2CKB_B_beta	TCR	Beta V		34.0
+1KJ2_A_alpha	TCR	Alpha V		47.0
+1KJ2_B_beta				-2.0
+1MWA_A_alpha	TCR	Alpha V		35.0
+1MWA_B_beta	TCR	Beta V		34.0
+1LP9_E_alpha	TCR	Alpha V		28.0
+1LP9_F_beta	TCR	Beta V		41.0
+2BNR_D_alpha	TCR	Alpha V		22.0
+2BNR_E_beta	TCR	Beta V		42.0
+2BNQ_D_alpha	TCR	Alpha V		22.0
+2BNQ_E_beta	TCR	Beta V		42.0
+2UWE_E_alpha	TCR	Alpha V		28.0
+2UWE_F_beta	TCR	Beta V		41.0
+2JCC_E_alpha	TCR	Alpha V		28.0
+2JCC_F_beta	TCR	Beta V		41.0
+2J8U_E_alpha	TCR	Alpha V		28.0
+2J8U_F_beta	TCR	Beta V		41.0
+2F54_D_alpha	TCR	Alpha V		21.0
+2F54_E_beta	TCR	Beta V		42.0
+2F53_D_alpha	TCR	Alpha V		18.0
+2F53_E_beta	TCR	Beta V		45.0
+3E3Q_D_alpha	TCR	Alpha V		30.0
+3E3Q_E_beta	TCR	Beta V		43.0
+2AK4_D_alpha	TCR	Alpha V		31.0
+2AK4_E_beta	TCR	Beta V		48.0
+2AK4_T_alpha	TCR	Alpha V		31.0
+2AK4_U_beta	TCR	Beta V		48.0
+3GSN_A_alpha	TCR	Alpha V		19.0
+3GSN_B_beta	TCR	Beta V		40.0
+2F54_K_alpha	TCR	Alpha V		23.0
+2F54_L_beta	TCR	Beta V		42.0
+2OI9_B_alpha	TCR	Alpha V		34.0
+2OI9_C_beta	TCR	Beta V		43.0
+2E7L_A_alpha	TCR	Alpha V		36.0
+2E7L_D_beta	TCR	Beta V		43.0
+3MBE_C_alpha	TCR	Alpha V		15.0
+3MBE_D_beta	TCR	Beta V		34.0
+3KXF_D_alpha	TCR	Alpha V		30.0
+3KXF_E_beta	TCR	Beta V		48.0
+3O6F_C_alpha	TCR	Alpha V		1.0
+3O6F_D_beta	TCR	Beta V		14.0
+3O4L_D_alpha	TCR	Alpha V		18.0
+3O4L_E_beta	TCR	Beta V		16.0
+3PWP_D_alpha	TCR	Alpha V		30.0
+3PWP_E_beta	TCR	Beta V		42.0
+3H9S_D_alpha	TCR	Alpha V		30.0
+3H9S_E_beta	TCR	Beta V		42.0
+3PL6_C_alpha	TCR	Alpha V		40.0
+3PL6_D_beta	TCR	Beta V		43.0
+3QIB_C_alpha	TCR	Alpha V		16.0
+3QIB_D_beta	TCR	Beta V		40.0
+3QIU_C_alpha	TCR	Alpha V		9.0
+3QIU_D_beta	TCR	Beta V		35.0
+3QIW_C_alpha	TCR	Alpha V		9.0
+3QIW_D_beta	TCR	Beta V		35.0
+3HG1_D_alpha	TCR	Alpha V		32.0
+3HG1_E_beta	TCR	Beta V		8.0
+3UTT_D_alpha	TCR	Alpha V		39.0
+3UTT_E_beta	TCR	Beta V		49.0
+3SJV_D_alpha	TCR	Alpha V		26.0
+3SJV_E_beta	TCR	Beta V		44.0
+2WBJ_C_alpha	TCR	Alpha V		23.0
+2WBJ_D_beta	TCR	Beta V		17.0
+4GG6_G_alpha	TCR	Alpha V		2.0
+4GG6_H_beta	TCR	Beta V		36.0
+4H1L_I_alpha	TCR	Alpha V		31.0
+4H1L_J_beta	TCR	Beta V		40.0
+2YPL_D_alpha	TCR	Alpha V		26.0
+2YPL_E_beta	TCR	Beta V		30.0
+3D39_D_alpha	TCR	Alpha V		30.0
+3D39_E_beta	TCR	Beta V		42.0
+3D3V_D_alpha	TCR	Alpha V		30.0
+3D3V_E_beta	TCR	Beta V		42.0
+3QFJ_D_alpha	TCR	Alpha V		30.0
+3QFJ_E_beta	TCR	Beta V		42.0
+4JRX_D_alpha	TCR	Alpha V		31.0
+4JRX_E_beta	TCR	Beta V		44.0
+4JRY_D_alpha	TCR	Alpha V		16.0
+4JRY_E_beta	TCR	Beta V		42.0
+4JFF_D_alpha	TCR	Alpha V		29.0
+4JFD_D_alpha	TCR	Alpha V		29.0
+4JFE_D_alpha	TCR	Alpha V		28.0
+4FTV_D_alpha	TCR	Alpha V		30.0
+4FTV_E_beta	TCR	Beta V		41.0
+3TF7_C_alpha	TCR	TscFv		35.0
+3TF7_C_beta	TCR	TscFv		35.0
+3TPU_C_alpha	TCR	Alpha V		38.0
+3TPU_D_beta	TCR	Beta V		26.0
+3TFK_C_alpha	TCR	Alpha V		38.0
+3TFK_D_beta	TCR	Beta V		25.0
+3TJH_C_alpha	TCR	Alpha V		38.0
+3TJH_D_beta	TCR	Beta V		26.0
+3VXR_D_alpha	TCR	Alpha V		30.0
+3VXR_E_beta	TCR	Beta V		51.0
+3W0W_D_alpha	TCR	Alpha V		22.0
+3W0W_E_beta	TCR	Beta V		37.0
+3VXS_D_alpha	TCR	Alpha V		30.0
+3VXS_E_beta	TCR	Beta V		51.0
+3VXU_D_alpha	TCR	Alpha V		21.0
+3VXU_E_beta	TCR	Beta V		37.0
+3VXM_D_alpha	TCR	Alpha V		25.0
+3VXM_E_beta	TCR	Beta V		33.0
+4MNQ_D_alpha	TCR	Alpha V		9.0
+4MNQ_E_beta	TCR	Beta V		41.0
+3MV7_D_alpha	TCR	Alpha V		32.0
+3MV7_E_beta	TCR	Beta V		36.0
+3MV8_D_alpha	TCR	Alpha V		32.0
+3MV8_E_beta	TCR	Beta V		35.0
+3MV9_D_alpha	TCR	Alpha V		32.0
+3MV9_E_beta	TCR	Beta V		35.0
+4OZI_G_alpha	TCR	Alpha V		2.0
+4OZI_H_beta	TCR	Beta V		16.0
+4OZH_G_alpha	TCR	Alpha V		4.0
+4OZH_H_beta	TCR	Beta V		49.0
+4OZG_G_alpha	TCR	Alpha V		1.0
+4OZG_H_beta	TCR	Beta V		48.0
+4OZF_G_alpha	TCR	Alpha V		4.0
+4OZF_H_beta	TCR	Beta V		49.0
+4MJI_D_alpha	TCR	Alpha V		24.0
+4MJI_E_beta	TCR	Beta V		43.0
+4P23_A_alpha	TCR	Alpha V		44.0
+4P23_B_beta	TCR	Beta V		33.0
+4P46_A_alpha	TCR	Alpha V		42.0
+4P46_B_beta	TCR	Beta V		33.0
+4P5T_A_alpha	TCR	Alpha V		44.0
+4P5T_B_beta	TCR	Beta V		33.0
+4PRH_D_alpha	TCR	Alpha V		34.0
+4PRH_E_beta	TCR	Beta V		35.0
+4PRP_D_alpha	TCR	Alpha V		32.0
+4PRP_E_beta	TCR	Beta V		36.0
+4PRI_D_alpha	TCR	Alpha V		34.0
+4PRI_E_beta	TCR	Beta V		35.0
+4P2O_C_alpha	TCR	Alpha V		16.0
+4P2O_D_beta	TCR	Beta V		41.0
+4P2R_D_alpha	TCR	Alpha V		13.0
+4P2R_E_beta	TCR	Beta V		35.0
+4P2Q_D_alpha	TCR	Alpha V		13.0
+4P2Q_E_beta	TCR	Beta V		35.0
+4P2O_C_alpha	TCR	Alpha V		16.0
+4P2O_D_beta	TCR	Beta V		41.0
+4P2R_D_alpha	TCR	Alpha V		13.0
+4P2R_E_beta	TCR	Beta V		35.0
+4P2Q_D_alpha	TCR	Alpha V		13.0
+4P2Q_E_beta	TCR	Beta V		35.0
+4P4K_C_alpha	TCR	Alpha V		28.0
+4P4K_D_beta	TCR	Beta V		36.0
+4L3E_D_alpha	TCR	Alpha V		34.0
+4L3E_E_beta	TCR	Beta V		38.0
+3QDM_D_alpha	TCR	Alpha V		11.0
+3QDM_E_beta	TCR	Beta V		47.0
+3QDG_D_alpha	TCR	Alpha V		34.0
+3QDG_E_beta	TCR	Beta V		39.0
+3QEQ_D_alpha	TCR	Alpha V		11.0
+3QEQ_E_beta	TCR	Beta V		49.0
+3QDJ_D_alpha	TCR	Alpha V		34.0
+3QDJ_E_beta	TCR	Beta V		39.0
+4QRP_D_alpha	TCR	Alpha V		27.0
+4QRP_E_beta	TCR	Beta V		41.0
+4QOK_D_alpha	TCR	Alpha V		32.0
+4QOK_E_beta	TCR	Beta V		8.0
+4QRR_E_beta	TCR	Beta V		39.0
+4QRR_D_beta	TCR	Beta V		39.0
+4GRL_C_alpha	TCR	Alpha V		40.0
+4GRL_D_beta	TCR	Beta V		43.0
+4MAY_C_alpha	TCR	Alpha V		40.0
+4MAY_D_beta	TCR	Beta V		43.0
+4Z7V_E_alpha	TCR	Alpha V		5.0
+4Z7V_F_beta	TCR	Beta V		40.0
+4Z7U_E_alpha	TCR	Alpha V		2.0
+4Z7U_F_beta	TCR	Beta V		35.0
+4Z7W_E_alpha	TCR	Alpha V		25.0
+4Z7W_F_beta	TCR	Beta V		53.0
+4Y19_D_alpha	TCR	Alpha V		33.0
+4Y19_E_beta	TCR	Beta V		45.0
+5BRZ_D_alpha	TCR	Alpha V		23.0
+5BRZ_E_beta	TCR	Beta V		37.0
+5BS0_D_alpha	TCR	Alpha V		23.0
+5BS0_E_beta	TCR	Beta V		37.0
+5EU6_D_alpha	TCR	Alpha V		28.0
+5EU6_E_beta	TCR	Beta V		46.0
+5E9D_D_alpha	TCR	Alpha V		31.0
+5E9D_E_beta	TCR	Beta V		42.0
+5C0A_D_alpha	TCR	Alpha V		39.0
+5C0A_E_beta	TCR	Beta V		52.0
+5C09_D_alpha	TCR	Alpha V		39.0
+5C09_E_beta	TCR	Beta V		49.0
+5HYJ_D_alpha	TCR	Alpha V		40.0
+5HYJ_E_beta	TCR	Beta V		52.0
+5C0C_I_alpha	TCR	Alpha V		39.0
+5C0C_J_beta	TCR	Beta V		52.0
+5C08_D_alpha	TCR	Alpha V		39.0
+5C08_E_beta	TCR	Beta V		49.0
+5C07_D_alpha	TCR	Alpha V		40.0
+5C07_E_beta	TCR	Beta V		52.0
+5C0B_D_alpha	TCR	Alpha V		39.0
+5C0B_E_beta	TCR	Beta V		52.0
+5KS9_G_alpha	TCR	Alpha V		27.0
+5KS9_H_beta	TCR	Beta V		38.0
+5KSA_C_alpha	TCR	Alpha V		29.0
+5KSA_D_beta	TCR	Beta V		38.0
+5KSB_G_alpha	TCR	Alpha V		25.0
+5KSB_H_beta	TCR	Beta V		39.0
+5MEN_D_alpha	TCR	Alpha V		14.0
+5MEN_E_beta	TCR	Beta V		43.0
+5HHO_D_alpha	TCR	Alpha V		18.0
+5HHO_E_beta	TCR	Beta V		40.0
+5HHM_D_alpha	TCR	Alpha V		18.0
+5HHM_E_beta	TCR	Beta V		40.0
+5EUO_E_alpha	TCR	Alpha V		19.0
+5EUO_F_beta	TCR	Beta V		38.0
+3QIW_C_alpha	TCR	Alpha V		9.0
+3QIW_D_beta	TCR	Beta V		35.0
+5WKF_D_alpha	TCR	Alpha V		7.0
+5WKF_E_beta	TCR	Beta V		42.0
+5WKH_D_alpha	TCR	Alpha V		7.0
+5WKH_E_beta	TCR	Beta V		42.0
