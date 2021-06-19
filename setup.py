@@ -23,6 +23,7 @@ setuptools.setup(
     install_requires=[
         'pandas',
         'biopython',
+        'numpy',
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
