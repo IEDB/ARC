@@ -590,16 +590,15 @@ class SeqClassifier:
         cnt = 0
         for seq in seq_list:
             if seq.seq == "":
-                raise Exception(
-                    'Some input sequence was blank. Please check file integrity'
-                )
+                print(f'{seq.description} has empty sequence. Skipping sequence.')
+                continue
             if self.check_seq(seq):
                 receptor, chain_type, calc_mhc_allele, score = self.classify(
                     seq)
             else:
-                raise Exception(
-                    f'{seq} Some input sequence is invalid. Please check file integrity'
-                )
+                print(f'{seq.description} contains invalid amino acid sequence. Skipping sequence.')
+                continue
+                
             out.loc[cnt, 'id'] = seq.description
             out.loc[cnt, 'class'] = receptor
             out.loc[cnt, 'chain_type'] = chain_type
