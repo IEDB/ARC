@@ -2,3 +2,4 @@ numpy
 biopython
 pandas
 sphinx-autobuild==2021.3.14
+-e .
