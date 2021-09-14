@@ -1,5 +1,3 @@
 numpy
 biopython
 pandas
-sphinx
-sphinx-autobuild
