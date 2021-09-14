@@ -18,7 +18,7 @@ Here is a segment of code used in the PDB Classifier
 
 This will return a tuple ``(receptor, chain_type, calc_mhc_allele)``
 
-Further documentation for the classifier.py and mhc_G_domain.py files can be found below
+Further documentation for the classifier.py and mhc_G_domain.py modules can be found below
 
 Classifier
 ==========
