@@ -64,6 +64,26 @@ python -m ARC classify -i /path/to/input.fasta -o /path/to/output.csv
 | 1FYT_E_beta                             | TCR	   | beta C      | |
 | 3TF7_C_alpha                            |	TCR    | TscFv      | |
 
+### Building and using the Singularity image
+
+Building the singularity image requires root-level access and should thus be built on a machine where you have such access.  Once it's built, it can be run by
+any non-root user and can be transferred to other machines.  To build:
+
+```bash
+singularity build arc.sif Singularity
+```
+
+The input and output directories need to be made available to the running container.  If these directories are not within your home directory or the directory from
+which you will be running the container ($PWD), you will need to bind mount these directories in your call to the 'singularity run' command.  Otherwise, usage is identical
+to the non-containerized version:
+
+```bash
+singularity run \
+--writable-tmpfs \
+--bind /path/to/host_dir:/host \
+arc.sif python3 ARC -m classify -i /host/input_file.fasta -o /host/output_file.tsv
+```
+
 ## How it works:
 - BCR and TCR chains are identified using HMMs. A given protein sequence is searched against HMMs built using BCR and TCR chain sequences from IMGT. HMMER is used to align an input sequence to the HMMs.
 - MHC class I (alpha1-alpha2 domains) and MHC class I alpha and beta chain HMMs are downloaded from Pfam website. An input protein sequence is searched against these HMMs. A HMMER bit score threshold of 25 was used to identify MHC chain sequences.
