@@ -726,20 +726,17 @@ class SeqClassifier:
         Args:
             seq_file: the name of a FASTA file of sequences
         """
-        np.warnings.filterwarnings("ignore", category=np.VisibleDeprecationWarning)
         seq_records = list(SeqIO.parse(seq_file, "fasta"))
         if len(seq_records) == 1:
             out = self.classify_multiproc(seq_records)
         else:
-            pool = mp.Pool(processes=self.num_threads)
-            results = list(
-                pool.map(
-                    self.classify_multiproc,
-                    np.array_split(seq_records, self.num_threads),
-                )
-            )
-            pool.close()
-            pool.join()
-            out = pd.concat(results)
-
+            num_records = len(seq_records)
+            records_per_thread = num_records // self.num_threads
+            # Create chunks of sequences to be processed by each thread
+            chunks = [seq_records[i:i + records_per_thread] for i in range(0, num_records, records_per_thread)]
+            with mp.Pool(processes=self.num_threads) as pool:
+                # Use the map function to distribute the workload
+                results = pool.map(self.classify_multiproc, chunks)
+                out = pd.concat(results)
+        
         out.to_csv(self.outfile, sep="\t", index=False)
