@@ -22,6 +22,10 @@ class TestClassifier(unittest.TestCase):
 		# This just tests to make sure nothing odd happens for standard sequences
 		sc.classify_seqfile("ARC/tests/crosscheck_s_ids_names.fasta")
 
+	def test_multiprocessing(self):
+		sc = SeqClassifier(threads=10)
+		sc.classify_seqfile("ARC/tests/test.fa")
+
 	@unittest.mock.patch('sys.stdout', new_callable=io.StringIO)
 	def test_empty(self, mock_stdout):
 		sc = SeqClassifier()
@@ -33,6 +37,7 @@ class TestClassifier(unittest.TestCase):
 		sc = SeqClassifier()
 		sc.classify_seqfile("ARC/tests/invalid_amino_acid.subset")
 		self.assertEqual(mock_stdout.getvalue(), "5E94_A_light contains invalid amino acid sequence. Skipping sequence.\n")
+
 
 if __name__ == '__main__':
     unittest.main()
