@@ -733,11 +733,6 @@ class SeqClassifier:
             num_records = len(seq_records)
             records_per_thread = max(num_records // self.num_threads, 1) # ensure at least 1 record per thread
 
-            # If records_per_thread is 0, set it and num_threads to 1
-            if records_per_thread == 0:
-                records_per_thread = 1
-                self.num_threads = 1
-
             # Create chunks of sequences to be processed by each thread
             chunks = [seq_records[i:i + records_per_thread] for i in range(0, num_records, records_per_thread)]
             with mp.Pool(processes=self.num_threads) as pool:
