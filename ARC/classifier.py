@@ -731,7 +731,7 @@ class SeqClassifier:
             out = self.classify_multiproc(seq_records)
         else:
             num_records = len(seq_records)
-            records_per_thread = num_records // self.num_threads
+            records_per_thread = max(num_records // self.num_threads, 1) # ensure at least 1 record per thread
 
             # If records_per_thread is 0, set it and num_threads to 1
             if records_per_thread == 0:
